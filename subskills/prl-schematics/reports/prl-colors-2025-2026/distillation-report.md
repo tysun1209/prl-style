@@ -1,9 +1,11 @@
 # PRL color collection
 
-The collection contains 117 palettes extracted from 111 reviewed figures in
-90 PRL papers published between 2025-01-01 and 2026-11-08: 99 categorical,
-12 sequential, 3 diverging and 3 multihue palettes. It is a source-linked
-design collection, not a journal-wide frequency estimate.
+The collection contains 133 palettes extracted from
+126 reviewed figures in 105 PRL papers.
+It combines the original 2025–2026 collection and the recent cross-field visual
+development cohort. It is a source-linked design collection, not a journal-wide
+frequency estimate. The archived PDF atlas contains the original 117 palettes;
+the gallery and machine-readable collection contain the current complete set.
 
 Each palette retains source DOI, figure/panel, role, color order, numeric bins
 where applicable, and hashes identifying the development PDF/crop. Source

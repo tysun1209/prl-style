@@ -1,9 +1,10 @@
-# PRL 近两年配色：选择、含义与调用
+# PRL 来源配色：选择、含义与调用
 
-用这份资源为曲线、相图、场图、频谱、误差带或示意图挑选有真实论文来源的颜色。范围为 **2025-01-01 至 2026-11-08** 正式发表的 PRL；这是本 skill 的来源配色库，不是期刊统一规定。
+用这份资源为曲线、相图、场图、频谱、误差带或示意图挑选有真实论文来源的颜色。当前共 **133 组**：原有 2025–2026 年的 117 组，加上[近五年跨领域增补](crossfield-visual-design.md)的 16 组。来源发表日期与逐项用途保存在机器可读库；这是本 skill 的来源配色库，不是期刊统一规定。
 
 - [可搜索配色图册](../reports/prl-colors-2025-2026/index.html)：按名称、用途、DOI 和类型查询。
-- [完整色卡 PDF](../reports/prl-colors-2025-2026/palette-atlas.pdf)：每张色卡有稳定 ID、颜色及原论文链接。
+- [跨领域新增色卡 PNG 1](../assets/showcase/crossfield-palettes-1.png) / [PNG 2](../assets/showcase/crossfield-palettes-2.png)：16 组新增配色。
+- [原 117 组色卡 PDF](../reports/prl-colors-2025-2026/palette-atlas.pdf)：历史图册；最新完整集合见上面的可搜索图册。
 - [机器可读配色库](../profiles/prl-color-palettes.json)：RGB、色序、采样路径、面板角色和来源哈希。
 - [采样与复核报告](../reports/prl-colors-2025-2026/distillation-report.md)：实际数量、来源范围和验收记录。
 - [调用示例](../reports/prl-colors-2025-2026/usage-examples.pdf)：合成数据演示，配有[独立图注](../reports/prl-colors-2025-2026/usage-examples-caption.md)。

@@ -2,7 +2,7 @@
 
 面向支持 Agent Skills 的 AI 助手的科研绘图与中英文写作 skill。参考 *Physical Review Letters*（PRL）的图形表达和论文组织方式，帮助研究者把数据、图注与正文组织成清晰、紧凑的科学论证。
 
-| **36 类图型** | **117 组配色** | **100 篇 PRL 写作参考** | **中英文写作** |
+| **36 类图型** | **133 组配色** | **100 篇 PRL 写作参考** | **中英文写作** |
 | :---: | :---: | :---: | :---: |
 | 曲线、统计图、场图与组图 | 按数据含义选择，附文献来源 | 粒子运动、活性粒子与强化学习 | 起草、润色、翻译与图注 |
 
@@ -30,11 +30,17 @@
 
 ### 从 PRL 图件中提取的配色
 
-117 组配色覆盖类别、顺序、发散和多色相色标。下图为其中 9 组类别配色，每组保留配色 ID、色值及论文来源。绘图时可自动按数据含义选色，也可以指定喜欢的方案。
+133 组配色覆盖类别、顺序、发散和多色相色标。下图为其中 9 组类别配色，每组保留配色 ID、色值及论文来源。绘图时可自动按数据含义选色，也可以指定喜欢的方案。
 
 [![PRL 2025–2026 色卡节选：prl-025 至 prl-033](assets/showcase/palette-preview.png)](reports/prl-colors-2025-2026/palette-atlas.pdf)
 
-[查看完整色卡 PDF](reports/prl-colors-2025-2026/palette-atlas.pdf) · [配色选择与调用](references/prl-color-palettes.md)
+[检索全部配色](reports/prl-colors-2025-2026/index.html) · [原 117 组色卡 PDF](reports/prl-colors-2025-2026/palette-atlas.pdf) · [配色选择与调用](references/prl-color-palettes.md)
+
+新增 50 篇近五年、跨领域 PRL 图形参考，补充 **14 种构图方式和 16 组配色**，包括量子线路、光路反馈、散射顶点、自旋结构、微观放大和状态序列。
+
+[![跨领域新增色卡](assets/showcase/crossfield-palettes-1.png)](assets/showcase/crossfield-palettes-1.png)
+
+[第二页色卡](assets/showcase/crossfield-palettes-2.png) · [构图方式与来源](references/crossfield-visual-design.md)
 
 ### 更多图型
 
@@ -63,7 +69,7 @@
 | 入口 | 功能 |
 | --- | --- |
 | `$prl-figures` | 根据数据绘图、修改已有绘图代码，调整多面板布局、配色、字体、坐标轴与图例；默认保存 600 dpi PNG，按需导出 PDF、EPS、SVG 等格式。 |
-| `$prl-schematics` | 用内置绘图模型生成 Fig. 1、模型／装置示意和流程图，再重建可编辑 PPT；依据已有 100 篇论文归纳科学表达规则。 |
+| `$prl-schematics` | 用内置绘图模型生成 Fig. 1、模型／装置示意和流程图，再重建可编辑 PPT；包含量子线路、光路、散射顶点等跨领域构图指导。 |
 | `$prl-writing-en` | 起草、润色、压缩和重组英文标题、摘要、引言、结果与结论，梳理整篇 Letter 的论证结构。 |
 | `$prl-writing-zh` | 撰写和修改中文科研稿件，将紧凑的论证方式用于自然中文表达。 |
 | `$prl-bilingual` | 中英互译与双语对照，核对术语、数值、单位、符号和结论含义。 |
@@ -73,9 +79,9 @@
 
 **绘图覆盖 36 类图型**，包括曲线、散点、误差棒与误差带、统计分布、相图、热图、标度坍缩、矢量场、粒子轨迹、时空图、频谱、能带、网络、示意图和多面板组合。详见[图型目录](references/figure-families.md)。
 
-**Fig. 1 示意图子 skill**：从原有 100 篇中检查 96 张 Fig. 1，识别出 48 张示意或混合图。默认采用“模型 PNG → 可编辑 PPT”，也保留六个 Python 示例供按需使用。详见[设计指南与来源](references/prl-schematics.md)。
+**Fig. 1 示意图子 skill**：从原有 100 篇中检查 96 张 Fig. 1，识别出 48 张示意或混合图；新增 50 篇跨领域图形参考，每篇保留具体观察与来源。默认采用“模型 PNG → 可编辑 PPT”，也保留六个 Python 示例供按需使用。详见[设计指南](references/prl-schematics.md)与[跨领域构图](references/crossfield-visual-design.md)。
 
-**配色库包含 117 组方案**，提取自 2025-01-01 至 2026-11-08 发表的 PRL 图件，覆盖类别色、顺序色标、发散色标和多色相色标，每组均附论文来源。可浏览[配色图册](reports/prl-colors-2025-2026/index.html)或下载[色卡 PDF](reports/prl-colors-2025-2026/palette-atlas.pdf)，再指定配色 ID 使用。
+**配色库包含 133 组方案**，结合 2025–2026 年配色集与近五年跨领域增补，覆盖类别色、顺序色标、发散色标和多色相色标，每组均附论文来源。可浏览[最新配色图册](reports/prl-colors-2025-2026/index.html)，再指定配色 ID 使用。
 
 **写作参考库收录 100 篇 PRL 论文**，聚焦粒子运动、活性粒子和强化学习相关研究。写作强调明确的物理问题、紧凑的证据链和直接的结果表达；精简重复铺垫与空泛限定，同时保留实际适用条件和不确定性。
 

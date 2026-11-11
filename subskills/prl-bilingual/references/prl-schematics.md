@@ -69,3 +69,5 @@ python scripts/render_schematics.py --example protocol --formats png pdf --outpu
 先对照用户内容核查实体、边界、箭头方向、操作顺序、符号与量纲；再看最终尺寸图片。逐一检查箭头是否穿过无关节点、标签是否压住结构、圆形是否拉伸、放大框是否对应、相同对象颜色是否一致、上下行是否对齐。混合图还需检查数据面板和色标。
 
 对默认流程，检查实际打开／渲染后的 PPT，确认文字、箭头和主要科学对象可独立编辑，且构图与模型 PNG 一致。对可选 Python 流程，原有辅助检查可发现节点标签溢出、重复标识、无效端点及直线路段穿越节点。两者都需要目视核查科学关系与排版。审查明细另存，不塞进图面或正文。
+
+Recent cross-field visual references: [50 additional PRL papers and 14 composition patterns](crossfield-visual-design.md), with source-scoped observations and palette additions. Query `scripts/select_crossfield_references.py`; the frozen 100-paper writing corpus and previous held-out evaluation remain separate.

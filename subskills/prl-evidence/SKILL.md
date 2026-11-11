@@ -11,6 +11,10 @@ style rules. Read [corpus method](references/corpus-method.md),
 [style-rule contract](references/style-rule-contract.md).
 
 Search figure metadata with `scripts/select_references.py --family FAMILY`.
+For recent cross-field precedents, use [cross-field design](references/crossfield-visual-design.md)
+and `scripts/select_crossfield_references.py --pattern PATTERN` or `--family FAMILY`.
+Its 50 additional papers and 14 composition patterns are visual-development
+references, separate from the frozen 100-paper writing corpus and held-out evaluation.
 Use `references/writing-sources.json` and the source-located writing cards for
 prose examples, and `scripts/prl_palette.py` for color sources. The package
 contains DOI metadata and original observations, not downloaded paper PDFs or

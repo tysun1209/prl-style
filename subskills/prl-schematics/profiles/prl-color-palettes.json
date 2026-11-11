@@ -1,15 +1,15 @@
 {
-  "built_on": "2026-11-08",
+  "built_on": "2026-11-12",
   "counts": {
     "by_kind": {
-      "categorical": 99,
-      "diverging": 3,
+      "categorical": 112,
+      "diverging": 6,
       "multihue": 3,
       "sequential": 12
     },
-    "palettes": 117,
-    "reviewed_source_figures": 111,
-    "source_papers": 90
+    "palettes": 133,
+    "reviewed_source_figures": 126,
+    "source_papers": 105
   },
   "deduplication": "Exact same categorical color sets merged irrespective of order; continuous order retained; close unordered sRGB sets linked at radius 25",
   "near_alternatives_metric": "RGB Euclidean heuristic, not perceptual Delta E or a color-vision test",
@@ -8938,14 +8938,1307 @@
         "多组散点",
         "多面板"
       ]
+    },
+    {
+      "accuracy": "rendered-source approximation; not author-native color specification",
+      "bin_edges_normalized": null,
+      "color_space": "sRGB",
+      "colors": [
+        "#D7F4EE",
+        "#FFD5D5"
+      ],
+      "id": "prl-119",
+      "interpolation": "none",
+      "kind": "categorical",
+      "name_zh": "薄荷—浅粉曲面",
+      "near_alternatives": [
+        "prl-037"
+      ],
+      "notes": "",
+      "positions": null,
+      "review_status": "agent_reviewed",
+      "sources": [
+        {
+          "bbox_pt": [
+            52.539,
+            45.056,
+            296.778,
+            195.215
+          ],
+          "direction": null,
+          "doi": "10.1103/physrevlett.128.191602",
+          "figure_number": 1,
+          "image_sha256": "44ed829cc3bbd745217bff11fe62520d46126843229cf7fe7b593a3abefd0dba",
+          "measurement_method": "review_selected_modal_srgb_pixels",
+          "page": 3,
+          "panel": "两张接口曲面",
+          "pdf_sha256": "451e069969f559eaab270b808c4e0b6bae20a090cd37df30139a18a07badd9db",
+          "published_date": "2022-05-09",
+          "review_observation": "透视边界框内用薄荷与浅粉区分两张曲面，洋红标出一条特定路径；引线就近指向接口与端点。",
+          "reviewer_type": "agent_visual_review",
+          "role": "前后两张接口曲面的身份；透视交叠不是第三类",
+          "sample_path_px": null,
+          "source_colors": [
+            "#D7F4EE",
+            "#FFD5D5"
+          ],
+          "source_id": "X001",
+          "source_selection": [
+            1,
+            0
+          ],
+          "source_url": "https://journals.aps.org/prl/abstract/10.1103/physrevlett.128.191602",
+          "title": "Quantum Thermodynamics of Holographic Quenches and Bounds on the Growth of Entanglement from the Quantum Null Energy Condition",
+          "development_image_id": "corpus/crossfield-prl-50-2026-11-12/crops/X001.png",
+          "development_pdf_id": "corpus/crossfield-prl-50-2026-11-12/pdfs/10.1103_physrevlett.128.191602.pdf"
+        }
+      ],
+      "uses": [
+        "曲面示意",
+        "柔和面积填色"
+      ]
+    },
+    {
+      "accuracy": "rendered-source approximation; not author-native color specification",
+      "bin_edges_normalized": null,
+      "color_space": "sRGB",
+      "colors": [
+        "#AECED8",
+        "#EBB8B2",
+        "#A9D4CD",
+        "#FAB999"
+      ],
+      "id": "prl-120",
+      "interpolation": "none",
+      "kind": "categorical",
+      "name_zh": "蓝灰—粉褐—薄荷—杏色量子操作",
+      "near_alternatives": [],
+      "notes": "",
+      "positions": null,
+      "review_status": "agent_reviewed",
+      "sources": [
+        {
+          "bbox_pt": [
+            84.198,
+            46.552,
+            527.48,
+            247.914
+          ],
+          "direction": null,
+          "doi": "10.1103/physrevlett.132.150607",
+          "figure_number": 1,
+          "image_sha256": "a8b47d21086f408b34dba3345076ff38835986715b22b4552978d2f474ea3c0c",
+          "measurement_method": "review_selected_modal_srgb_pixels",
+          "page": 2,
+          "panel": "b,c",
+          "pdf_sha256": "3d5ec06cc630fc17e10c687b1c215200141d78c45ab930cd50bb6b8304f3427d",
+          "published_date": "2024-04-12",
+          "review_observation": "上排是硬件与两组量子操作线路，下排是三个带共同色标的场图和保真度柱；色块区分操作。",
+          "reviewer_type": "agent_visual_review",
+          "role": "旋转、条件位移、初始化和重置操作",
+          "sample_path_px": null,
+          "source_colors": [
+            "#AECED8",
+            "#EBB8B2",
+            "#A9D4CD",
+            "#FAB999"
+          ],
+          "source_id": "X003",
+          "source_selection": [
+            {
+              "pixel_px": [
+                405,
+                108
+              ]
+            },
+            {
+              "pixel_px": [
+                460,
+                50
+              ]
+            },
+            {
+              "pixel_px": [
+                630,
+                45
+              ]
+            },
+            {
+              "pixel_px": [
+                880,
+                180
+              ]
+            }
+          ],
+          "source_url": "https://journals.aps.org/prl/abstract/10.1103/physrevlett.132.150607",
+          "title": "Autonomous Quantum Error Correction of Gottesman-Kitaev-Preskill States",
+          "development_image_id": "corpus/crossfield-prl-50-2026-11-12/crops/X003.png",
+          "development_pdf_id": "corpus/crossfield-prl-50-2026-11-12/pdfs/10.1103_physrevlett.132.150607.pdf"
+        }
+      ],
+      "uses": [
+        "量子线路",
+        "操作顺序"
+      ]
+    },
+    {
+      "accuracy": "rendered-source approximation; not author-native color specification",
+      "bin_edges_normalized": null,
+      "color_space": "sRGB",
+      "colors": [
+        "#3A53A5",
+        "#3F54A5",
+        "#4256A5",
+        "#4959A7",
+        "#515CAB",
+        "#5A62AD",
+        "#6167B0",
+        "#6E71B4",
+        "#8083BF",
+        "#8F90C7",
+        "#A4A1CF",
+        "#B5B3D9",
+        "#C7C4E2",
+        "#D6D2EA",
+        "#E4E1F1",
+        "#F3F2F9",
+        "#FEFEFE",
+        "#FEEEED",
+        "#FBDDDD",
+        "#FBCDCE",
+        "#F9BEC0",
+        "#F8ADB0",
+        "#F69D9F",
+        "#F68E91",
+        "#F48184",
+        "#F27072",
+        "#F06263",
+        "#F05658",
+        "#EF4649",
+        "#EF3B3B",
+        "#EF2F30",
+        "#EE2624",
+        "#ED2124"
+      ],
+      "id": "prl-121",
+      "interpolation": "linear",
+      "kind": "diverging",
+      "name_zh": "蓝紫—白—红特征函数",
+      "near_alternatives": [],
+      "notes": "",
+      "positions": [
+        0.0,
+        0.03125,
+        0.0625,
+        0.09375,
+        0.125,
+        0.15625,
+        0.1875,
+        0.21875,
+        0.25,
+        0.28125,
+        0.3125,
+        0.34375,
+        0.375,
+        0.40625,
+        0.4375,
+        0.46875,
+        0.5,
+        0.53125,
+        0.5625,
+        0.59375,
+        0.625,
+        0.65625,
+        0.6875,
+        0.71875,
+        0.75,
+        0.78125,
+        0.8125,
+        0.84375,
+        0.875,
+        0.90625,
+        0.9375,
+        0.96875,
+        1.0
+      ],
+      "review_status": "agent_reviewed",
+      "sources": [
+        {
+          "bbox_pt": [
+            84.198,
+            46.552,
+            527.48,
+            247.914
+          ],
+          "direction": "bottom to top = -1 to +1; white is zero",
+          "doi": "10.1103/physrevlett.132.150607",
+          "figure_number": 1,
+          "image_sha256": "a8b47d21086f408b34dba3345076ff38835986715b22b4552978d2f474ea3c0c",
+          "measurement_method": "reviewed_colorbar_path_srgb_samples",
+          "page": 2,
+          "panel": "d-f 共享色条",
+          "pdf_sha256": "3d5ec06cc630fc17e10c687b1c215200141d78c45ab930cd50bb6b8304f3427d",
+          "published_date": "2024-04-12",
+          "review_observation": "上排是硬件与两组量子操作线路，下排是三个带共同色标的场图和保真度柱；色块区分操作。",
+          "reviewer_type": "agent_visual_review",
+          "role": "特征函数实部；三态共用色标",
+          "sample_path_px": [
+            [
+              660,
+              443
+            ],
+            [
+              660,
+              260
+            ]
+          ],
+          "source_colors": [
+            "#3A53A5",
+            "#3F54A5",
+            "#4256A5",
+            "#4959A7",
+            "#515CAB",
+            "#5A62AD",
+            "#6167B0",
+            "#6E71B4",
+            "#8083BF",
+            "#8F90C7",
+            "#A4A1CF",
+            "#B5B3D9",
+            "#C7C4E2",
+            "#D6D2EA",
+            "#E4E1F1",
+            "#F3F2F9",
+            "#FEFEFE",
+            "#FEEEED",
+            "#FBDDDD",
+            "#FBCDCE",
+            "#F9BEC0",
+            "#F8ADB0",
+            "#F69D9F",
+            "#F68E91",
+            "#F48184",
+            "#F27072",
+            "#F06263",
+            "#F05658",
+            "#EF4649",
+            "#EF3B3B",
+            "#EF2F30",
+            "#EE2624",
+            "#ED2124"
+          ],
+          "source_id": "X003",
+          "source_selection": null,
+          "source_url": "https://journals.aps.org/prl/abstract/10.1103/physrevlett.132.150607",
+          "title": "Autonomous Quantum Error Correction of Gottesman-Kitaev-Preskill States",
+          "development_image_id": "corpus/crossfield-prl-50-2026-11-12/crops/X003.png",
+          "development_pdf_id": "corpus/crossfield-prl-50-2026-11-12/pdfs/10.1103_physrevlett.132.150607.pdf"
+        }
+      ],
+      "uses": [
+        "有符号场",
+        "量子态比较"
+      ]
+    },
+    {
+      "accuracy": "rendered-source approximation; not author-native color specification",
+      "bin_edges_normalized": null,
+      "color_space": "sRGB",
+      "colors": [
+        "#00FFFF",
+        "#FF00FF"
+      ],
+      "id": "prl-122",
+      "interpolation": "none",
+      "kind": "categorical",
+      "name_zh": "青—洋红边界条件",
+      "near_alternatives": [],
+      "notes": "",
+      "positions": null,
+      "review_status": "agent_reviewed",
+      "sources": [
+        {
+          "bbox_pt": [
+            75.942,
+            45.596,
+            272.584,
+            291.046
+          ],
+          "direction": null,
+          "doi": "10.1103/physrevlett.132.141604",
+          "figure_number": 1,
+          "image_sha256": "3538c6cb1eb3153b620f9fad11b7f4f7fda302dc12ca03b675ae8d5f7720b5a0",
+          "measurement_method": "review_selected_modal_srgb_pixels",
+          "page": 3,
+          "panel": "上下两幅谱",
+          "pdf_sha256": "bf66e428d2d441195c7b4e39d7631546182820b1e81754879d39d0c014b48a72",
+          "published_date": "2024-04-02",
+          "review_observation": "全谱在上、交叉附近的放大谱在下；青、洋红与黑区分三种边界条件。",
+          "reviewer_type": "agent_visual_review",
+          "role": "周期与混合边界条件；黑色为第三种边界条件的中性参照",
+          "sample_path_px": null,
+          "source_colors": [
+            "#00FFFF",
+            "#FF00FF"
+          ],
+          "source_id": "X013",
+          "source_selection": [
+            0,
+            1
+          ],
+          "source_url": "https://journals.aps.org/prl/abstract/10.1103/physrevlett.132.141604",
+          "title": "Weyl Fermions on a Finite Lattice",
+          "development_image_id": "corpus/crossfield-prl-50-2026-11-12/crops/X013.png",
+          "development_pdf_id": "corpus/crossfield-prl-50-2026-11-12/pdfs/10.1103_physrevlett.132.141604.pdf"
+        }
+      ],
+      "uses": [
+        "边界条件比较",
+        "局部谱"
+      ]
+    },
+    {
+      "accuracy": "rendered-source approximation; not author-native color specification",
+      "bin_edges_normalized": null,
+      "color_space": "sRGB",
+      "colors": [
+        "#FEAAAA",
+        "#AFC6E8",
+        "#FFFF00"
+      ],
+      "id": "prl-123",
+      "interpolation": "none",
+      "kind": "categorical",
+      "name_zh": "浅红—淡蓝—明黄相变",
+      "near_alternatives": [],
+      "notes": "",
+      "positions": null,
+      "review_status": "agent_reviewed",
+      "sources": [
+        {
+          "bbox_pt": [
+            313.553,
+            496.274,
+            561.566,
+            599.764
+          ],
+          "direction": null,
+          "doi": "10.1103/mztz-fyk3",
+          "figure_number": 1,
+          "image_sha256": "2fd9653270ba5f42c39004bf2932abaa3363ad9d000e176779f0ff491b343aab",
+          "measurement_method": "review_selected_modal_srgb_pixels",
+          "page": 1,
+          "panel": "b",
+          "pdf_sha256": "bcbffbe7333401432d19953c73b203a8023648ab6ecb01403eea73fbec724f5a",
+          "published_date": "2026-02-20",
+          "review_observation": "双层粒子模型、水平相变条和能级塔分成三块；层身份由红蓝球表示，相区采用较浅填色。",
+          "reviewer_type": "agent_visual_review",
+          "role": "两侧相及临界位置强调；黄色框不是有限宽度相区",
+          "sample_path_px": null,
+          "source_colors": [
+            "#FEAAAA",
+            "#AFC6E8",
+            "#FFFF00"
+          ],
+          "source_id": "X015",
+          "source_selection": [
+            0,
+            2,
+            1
+          ],
+          "source_url": "https://journals.aps.org/prl/abstract/10.1103/mztz-fyk3",
+          "title": "Critical Majorana Fermion at a Topological Quantum Hall Bilayer Transition",
+          "development_image_id": "corpus/crossfield-prl-50-2026-11-12/crops/X015.png",
+          "development_pdf_id": "corpus/crossfield-prl-50-2026-11-12/pdfs/10.1103_mztz-fyk3.pdf"
+        }
+      ],
+      "uses": [
+        "相变示意",
+        "状态分区"
+      ]
+    },
+    {
+      "accuracy": "rendered-source approximation; not author-native color specification",
+      "bin_edges_normalized": null,
+      "color_space": "sRGB",
+      "colors": [
+        "#D60000",
+        "#4275B6",
+        "#66AF29"
+      ],
+      "id": "prl-124",
+      "interpolation": "none",
+      "kind": "categorical",
+      "name_zh": "砖红—钢蓝—草绿自旋结构",
+      "near_alternatives": [],
+      "notes": "",
+      "positions": null,
+      "review_status": "agent_reviewed",
+      "sources": [
+        {
+          "bbox_pt": [
+            50.188,
+            44.968,
+            298.892,
+            240.992
+          ],
+          "direction": null,
+          "doi": "10.1103/physrevlett.133.156701",
+          "figure_number": 1,
+          "image_sha256": "a62b60a157f13942e9e2befb2978139324f91a7152179daab3b47448506f0887",
+          "measurement_method": "review_selected_modal_srgb_pixels",
+          "page": 2,
+          "panel": "a",
+          "pdf_sha256": "9b20ab286942d455af0241e505309142fb18c943fa670e848cf74ef1babfe194",
+          "published_date": "2024-10-07",
+          "review_observation": "显微图上的三色圆圈对应三种自旋结构；右侧沿时间方向排列脉冲与呼吸状态，形状说明动力学。",
+          "reviewer_type": "agent_visual_review",
+          "role": "顺时针、逆时针斯格明子和磁泡的圈注/身份",
+          "sample_path_px": null,
+          "source_colors": [
+            "#D60000",
+            "#4275B6",
+            "#66AF29"
+          ],
+          "source_id": "X018",
+          "source_selection": [
+            0,
+            1,
+            2
+          ],
+          "source_url": "https://journals.aps.org/prl/abstract/10.1103/physrevlett.133.156701",
+          "title": "All-Optical Control of Bubble and Skyrmion Breathing",
+          "development_image_id": "corpus/crossfield-prl-50-2026-11-12/crops/X018.png",
+          "development_pdf_id": "corpus/crossfield-prl-50-2026-11-12/pdfs/10.1103_physrevlett.133.156701.pdf"
+        }
+      ],
+      "uses": [
+        "显微图标注",
+        "自旋结构"
+      ]
+    },
+    {
+      "accuracy": "rendered-source approximation; not author-native color specification",
+      "bin_edges_normalized": null,
+      "color_space": "sRGB",
+      "colors": [
+        "#A70000",
+        "#032D99",
+        "#139999"
+      ],
+      "id": "prl-125",
+      "interpolation": "none",
+      "kind": "categorical",
+      "name_zh": "深红—深蓝—青绿模态",
+      "near_alternatives": [],
+      "notes": "",
+      "positions": null,
+      "review_status": "agent_reviewed",
+      "sources": [
+        {
+          "bbox_pt": [
+            317.161,
+            43.333,
+            557.126,
+            262.912
+          ],
+          "direction": null,
+          "doi": "10.1103/physrevlett.129.223601",
+          "figure_number": 1,
+          "image_sha256": "1b0bd4f8f274d5baaf9a7a3b73788114503ca9b3daa22d9dca0f3e9cfa6e8bf7",
+          "measurement_method": "review_selected_modal_srgb_pixels",
+          "page": 2,
+          "panel": "b,c",
+          "pdf_sha256": "d605e330a2d564aadf6ee9de90b455301fda2816801fe429e6a7091d17102499",
+          "published_date": "2022-11-23",
+          "review_observation": "上方单向晶格用水平箭头表示跃迁、红色波浪表示损耗；下方红蓝模态与趋势保持一致。",
+          "reviewer_type": "agent_visual_review",
+          "role": "两种束缚态和复谱参考环",
+          "sample_path_px": null,
+          "source_colors": [
+            "#A70000",
+            "#032D99",
+            "#139999"
+          ],
+          "source_id": "X021",
+          "source_selection": [
+            3,
+            0,
+            4
+          ],
+          "source_url": "https://journals.aps.org/prl/abstract/10.1103/physrevlett.129.223601",
+          "title": "Anomalous Behaviors of Quantum Emitters in Non-Hermitian Baths",
+          "development_image_id": "corpus/crossfield-prl-50-2026-11-12/crops/X021.png",
+          "development_pdf_id": "corpus/crossfield-prl-50-2026-11-12/pdfs/10.1103_physrevlett.129.223601.pdf"
+        }
+      ],
+      "uses": [
+        "复平面谱",
+        "曲线比较"
+      ]
+    },
+    {
+      "accuracy": "rendered-source approximation; not author-native color specification",
+      "bin_edges_normalized": null,
+      "color_space": "sRGB",
+      "colors": [
+        "#FF7F2A",
+        "#37ABC7",
+        "#337F00",
+        "#8700AA"
+      ],
+      "id": "prl-126",
+      "interpolation": "none",
+      "kind": "categorical",
+      "name_zh": "橙—青—绿—紫光机通道",
+      "near_alternatives": [],
+      "notes": "",
+      "positions": null,
+      "review_status": "agent_reviewed",
+      "sources": [
+        {
+          "bbox_pt": [
+            314.077,
+            45.097,
+            560.506,
+            164.212
+          ],
+          "direction": null,
+          "doi": "10.1103/vzhk-cdc3",
+          "figure_number": 1,
+          "image_sha256": "1e821831b74de1e77e2d8b6943aa4e9faa42708cbca64bf8fdbe692c42e64773",
+          "measurement_method": "review_selected_modal_srgb_pixels",
+          "page": 2,
+          "panel": "a,b",
+          "pdf_sha256": "f6f05363618680431090b48f28b9e47aceeab3bf710cb424227e780e282c5e12",
+          "published_date": "2025-10-09",
+          "review_observation": "镜面与弹簧图中橙色入射、青色出射，绿与紫分别标噪声；右侧时空图重复输入输出颜色。",
+          "reviewer_type": "agent_visual_review",
+          "role": "入射、出射、力噪声与感测噪声",
+          "sample_path_px": null,
+          "source_colors": [
+            "#FF7F2A",
+            "#37ABC7",
+            "#337F00",
+            "#8700AA"
+          ],
+          "source_id": "X024",
+          "source_selection": [
+            1,
+            2,
+            3,
+            4
+          ],
+          "source_url": "https://journals.aps.org/prl/abstract/10.1103/vzhk-cdc3",
+          "title": "Universality of Stationary Entanglement in an Optomechanical System Driven by Non-Markovian Noise and Squeezed Light",
+          "development_image_id": "corpus/crossfield-prl-50-2026-11-12/crops/X024.png",
+          "development_pdf_id": "corpus/crossfield-prl-50-2026-11-12/pdfs/10.1103_vzhk-cdc3.pdf"
+        }
+      ],
+      "uses": [
+        "光路",
+        "噪声通道",
+        "时空投影"
+      ]
+    },
+    {
+      "accuracy": "rendered-source approximation; not author-native color specification",
+      "bin_edges_normalized": null,
+      "color_space": "sRGB",
+      "colors": [
+        "#DD1A41",
+        "#1E90FF",
+        "#7357B8",
+        "#F2A93A"
+      ],
+      "id": "prl-127",
+      "interpolation": "none",
+      "kind": "categorical",
+      "name_zh": "玫红—天蓝—紫—金散射结构",
+      "near_alternatives": [],
+      "notes": "",
+      "positions": null,
+      "review_status": "agent_reviewed",
+      "sources": [
+        {
+          "bbox_pt": [
+            363.52,
+            457.425,
+            511.592,
+            621.582
+          ],
+          "direction": null,
+          "doi": "10.1103/physrevlett.132.041901",
+          "figure_number": 1,
+          "image_sha256": "5c887474ff3cecb8333e9bd38c2f44b499edc8e786bb59118ad95f8ad2f9ad27",
+          "measurement_method": "review_selected_modal_srgb_pixels",
+          "page": 1,
+          "panel": "a-c",
+          "pdf_sha256": "5203e8d65b504fd9e6411fa6127d1c64ea8f7dd06acb372e871b1ff1c17dbb25",
+          "published_date": "2024-01-23",
+          "review_observation": "三个散射配置纵向排列，同色入射/出射线、紫色中间对象与橙色波浪连接使拓扑差异突出。",
+          "reviewer_type": "agent_visual_review",
+          "role": "入射线、出射线、中间对象及卷曲连接",
+          "sample_path_px": null,
+          "source_colors": [
+            "#DD1A41",
+            "#1E90FF",
+            "#7357B8",
+            "#F2A93A"
+          ],
+          "source_id": "X028",
+          "source_selection": [
+            2,
+            1,
+            0,
+            5
+          ],
+          "source_url": "https://journals.aps.org/prl/abstract/10.1103/physrevlett.132.041901",
+          "title": "Exploring High-Purity Multiparton Scattering at Hadron Colliders",
+          "development_image_id": "corpus/crossfield-prl-50-2026-11-12/crops/X028.png",
+          "development_pdf_id": "corpus/crossfield-prl-50-2026-11-12/pdfs/10.1103_physrevlett.132.041901.pdf"
+        }
+      ],
+      "uses": [
+        "相互作用示意",
+        "散射拓扑"
+      ]
+    },
+    {
+      "accuracy": "rendered-source approximation; not author-native color specification",
+      "bin_edges_normalized": null,
+      "color_space": "sRGB",
+      "colors": [
+        "#2E75B6",
+        "#ADB9CA"
+      ],
+      "id": "prl-128",
+      "interpolation": "none",
+      "kind": "categorical",
+      "name_zh": "中蓝—灰蓝轨迹结果",
+      "near_alternatives": [],
+      "notes": "",
+      "positions": null,
+      "review_status": "agent_reviewed",
+      "sources": [
+        {
+          "bbox_pt": [
+            52.539,
+            45.055,
+            296.778,
+            201.406
+          ],
+          "direction": null,
+          "doi": "10.1103/physrevlett.130.221502",
+          "figure_number": 1,
+          "image_sha256": "3424f8a5c025e1d8a80bd9ea910d315db36d668ca41f9d8f82780565c674209c",
+          "measurement_method": "review_selected_modal_srgb_pixels",
+          "page": 2,
+          "panel": "上图",
+          "pdf_sha256": "e9761e11f7408dfc111955a62576d060ff0b31d1d6ea74356093427226484e09",
+          "published_date": "2023-06-02",
+          "review_observation": "灰色引力边界与径向坐标构成主场景，蓝黑浅灰轨迹区分结局；下排扇形表示随距离变化的逃逸角。",
+          "reviewer_type": "agent_visual_review",
+          "role": "捕获与湮灭路径；黑色另作逃逸参照",
+          "sample_path_px": null,
+          "source_colors": [
+            "#2E75B6",
+            "#ADB9CA"
+          ],
+          "source_id": "X032",
+          "source_selection": [
+            0,
+            1
+          ],
+          "source_url": "https://journals.aps.org/prl/abstract/10.1103/physrevlett.130.221502",
+          "title": "Gravitational Pair Production and Black Hole Evaporation",
+          "development_image_id": "corpus/crossfield-prl-50-2026-11-12/crops/X032.png",
+          "development_pdf_id": "corpus/crossfield-prl-50-2026-11-12/pdfs/10.1103_physrevlett.130.221502.pdf"
+        }
+      ],
+      "uses": [
+        "轨迹结果",
+        "角度示意"
+      ]
+    },
+    {
+      "accuracy": "rendered-source approximation; not author-native color specification",
+      "bin_edges_normalized": null,
+      "color_space": "sRGB",
+      "colors": [
+        "#00FE81",
+        "#4473C5"
+      ],
+      "id": "prl-129",
+      "interpolation": "none",
+      "kind": "categorical",
+      "name_zh": "明绿—钴蓝生物膜",
+      "near_alternatives": [],
+      "notes": "",
+      "positions": null,
+      "review_status": "agent_reviewed",
+      "sources": [
+        {
+          "bbox_pt": [
+            51.575,
+            45.056,
+            297.494,
+            169.055
+          ],
+          "direction": null,
+          "doi": "10.1103/physrevlett.128.178102",
+          "figure_number": 1,
+          "image_sha256": "dd9c902eddfc508c25a16d6f211338e13803fc7f280534104bee835a7e6b2063",
+          "measurement_method": "review_selected_modal_srgb_pixels",
+          "page": 2,
+          "panel": "主图及微观放大",
+          "pdf_sha256": "4f6cab395548a684db991467d6482d5de4ed801fa921f6ab0c433b4c1f000966",
+          "published_date": "2022-04-29",
+          "review_observation": "绿色连续生物膜夹在刚壁与变形边界间；红色放大框内显示蓝色细胞和绿色基质，尺寸箭头定义厚度。",
+          "reviewer_type": "agent_visual_review",
+          "role": "基质与细胞；同一基质颜色跨尺度保留",
+          "sample_path_px": null,
+          "source_colors": [
+            "#00FE81",
+            "#4473C5"
+          ],
+          "source_id": "X046",
+          "source_selection": [
+            0,
+            1
+          ],
+          "source_url": "https://journals.aps.org/prl/abstract/10.1103/physrevlett.128.178102",
+          "title": "Biofilm Growth under Elastic Confinement",
+          "development_image_id": "corpus/crossfield-prl-50-2026-11-12/crops/X046.png",
+          "development_pdf_id": "corpus/crossfield-prl-50-2026-11-12/pdfs/10.1103_physrevlett.128.178102.pdf"
+        }
+      ],
+      "uses": [
+        "多尺度示意",
+        "连续介质"
+      ]
+    },
+    {
+      "accuracy": "rendered-source approximation; not author-native color specification",
+      "bin_edges_normalized": null,
+      "color_space": "sRGB",
+      "colors": [
+        "#0C4D97",
+        "#FFCC03"
+      ],
+      "id": "prl-130",
+      "interpolation": "none",
+      "kind": "categorical",
+      "name_zh": "深蓝—金黄状态路径",
+      "near_alternatives": [],
+      "notes": "",
+      "positions": null,
+      "review_status": "agent_reviewed",
+      "sources": [
+        {
+          "bbox_pt": [
+            51.002,
+            45.168,
+            294.268,
+            167.635
+          ],
+          "direction": null,
+          "doi": "10.1103/physrevlett.132.267201",
+          "figure_number": 1,
+          "image_sha256": "79575577604841ffaec6c148d65029d0e537877a05be15c15f7b9ee6ff96fd27",
+          "measurement_method": "review_selected_modal_srgb_pixels",
+          "page": 2,
+          "panel": "c",
+          "pdf_sha256": "9b6c4a25e7590f91cf6f7a3a90afed412856786a7ea52cfa9841675ed0b06690",
+          "published_date": "2024-06-26",
+          "review_observation": "左侧装置与三帧真实快照按时间排列，右侧分岔曲线用蓝和金箭头对照对称/非对称路径。",
+          "reviewer_type": "agent_visual_review",
+          "role": "对称与非对称跃迁路径；与稳定分支线型分工",
+          "sample_path_px": null,
+          "source_colors": [
+            "#0C4D97",
+            "#FFCC03"
+          ],
+          "source_id": "X048",
+          "source_selection": [
+            0,
+            4
+          ],
+          "source_url": "https://journals.aps.org/prl/abstract/10.1103/physrevlett.132.267201",
+          "title": "Transient Amplification of Broken Symmetry in Elastic Snap-Through",
+          "development_image_id": "corpus/crossfield-prl-50-2026-11-12/crops/X048.png",
+          "development_pdf_id": "corpus/crossfield-prl-50-2026-11-12/pdfs/10.1103_physrevlett.132.267201.pdf"
+        }
+      ],
+      "uses": [
+        "分岔路径",
+        "状态序列"
+      ]
+    },
+    {
+      "accuracy": "rendered-source approximation; not author-native color specification",
+      "bin_edges_normalized": null,
+      "color_space": "sRGB",
+      "colors": [
+        "#5A8C26",
+        "#FAA732"
+      ],
+      "id": "prl-131",
+      "interpolation": "none",
+      "kind": "categorical",
+      "name_zh": "苔绿—琥珀材料层",
+      "near_alternatives": [],
+      "notes": "",
+      "positions": null,
+      "review_status": "agent_reviewed",
+      "sources": [
+        {
+          "bbox_pt": [
+            56.941,
+            46.664,
+            291.339,
+            218.358
+          ],
+          "direction": null,
+          "doi": "10.1103/physrevlett.134.184001",
+          "figure_number": 1,
+          "image_sha256": "5877780ba079a797c5edb78eb006def9c312c1612fae1d4d74d4814ff497ee4e",
+          "measurement_method": "review_selected_modal_srgb_pixels",
+          "page": 2,
+          "panel": "a",
+          "pdf_sha256": "dc9451474da70bc1f2eac0c17694f310f5b32f31f469fc57dbf5bfe3aa88ee9e",
+          "published_date": "2025-05-06",
+          "review_observation": "上排从未应变基底分叉为拉伸/压缩两种几何，下排给相机光源位置与真实液滴图；黄绿对应层材料。",
+          "reviewer_type": "agent_visual_review",
+          "role": "硬基底与软凝胶层",
+          "sample_path_px": null,
+          "source_colors": [
+            "#5A8C26",
+            "#FAA732"
+          ],
+          "source_id": "X049",
+          "source_selection": [
+            0,
+            1
+          ],
+          "source_url": "https://journals.aps.org/prl/abstract/10.1103/physrevlett.134.184001",
+          "title": "Nonmonotonic Motion of Sliding Droplets on Strained Soft Solids",
+          "development_image_id": "corpus/crossfield-prl-50-2026-11-12/crops/X049.png",
+          "development_pdf_id": "corpus/crossfield-prl-50-2026-11-12/pdfs/10.1103_physrevlett.134.184001.pdf"
+        }
+      ],
+      "uses": [
+        "材料分层",
+        "形变流程"
+      ]
+    },
+    {
+      "accuracy": "rendered-source approximation; not author-native color specification",
+      "bin_edges_normalized": null,
+      "color_space": "sRGB",
+      "colors": [
+        "#F8FA13",
+        "#EABB31",
+        "#80CA57",
+        "#13BEB8",
+        "#2896EB",
+        "#4658F8",
+        "#3D26A8"
+      ],
+      "id": "prl-132",
+      "interpolation": "none",
+      "kind": "categorical",
+      "name_zh": "七色不稳定模态组合",
+      "near_alternatives": [],
+      "notes": "",
+      "positions": null,
+      "review_status": "agent_reviewed",
+      "sources": [
+        {
+          "bbox_pt": [
+            52.348,
+            46.296,
+            296.596,
+            263.432
+          ],
+          "direction": null,
+          "doi": "10.1103/nbvt-fgjy",
+          "figure_number": 1,
+          "image_sha256": "8768434819c8b1b52b3c1ad87a846b515b3b57c6a1297e54b8c7b10b09785270",
+          "measurement_method": "review_selected_modal_srgb_pixels",
+          "page": 3,
+          "panel": "d",
+          "pdf_sha256": "465e4834f66107aa9f339785ee2d6b761227dd5aeec0b5f9d90c53152d53a886",
+          "published_date": "2026-04-10",
+          "review_observation": "三列参数的色散关系与两行模态区域图对齐；上排曲线颜色对应下排选点，区域填色表示不稳定模态组合。",
+          "reviewer_type": "agent_visual_review",
+          "role": "稳定区域及不同不稳定模态组合；独立类别而非连续渐变",
+          "sample_path_px": null,
+          "source_colors": [
+            "#F8FA13",
+            "#EABB31",
+            "#80CA57",
+            "#13BEB8",
+            "#2896EB",
+            "#4658F8",
+            "#3D26A8"
+          ],
+          "source_id": "X050",
+          "source_selection": [
+            0,
+            4,
+            2,
+            5,
+            3,
+            7,
+            1
+          ],
+          "source_url": "https://journals.aps.org/prl/abstract/10.1103/nbvt-fgjy",
+          "title": "Navigating Complex Phase Diagrams in Soft Matter Systems",
+          "development_image_id": "corpus/crossfield-prl-50-2026-11-12/crops/X050.png",
+          "development_pdf_id": "corpus/crossfield-prl-50-2026-11-12/pdfs/10.1103_nbvt-fgjy.pdf"
+        }
+      ],
+      "uses": [
+        "离散相区",
+        "模式组合"
+      ]
+    },
+    {
+      "accuracy": "rendered-source approximation; not author-native color specification",
+      "bin_edges_normalized": null,
+      "color_space": "sRGB",
+      "colors": [
+        "#281ECD",
+        "#281ECD",
+        "#281ECD",
+        "#281ECD",
+        "#281ECD",
+        "#2B1FCB",
+        "#2A20CE",
+        "#2C25CD",
+        "#2F29D5",
+        "#3032D4",
+        "#393FDB",
+        "#3F4EE5",
+        "#4F66E8",
+        "#6386EE",
+        "#82A6F3",
+        "#A7CAF1",
+        "#E1DDC0",
+        "#E3A98C",
+        "#D4836E",
+        "#C3655B",
+        "#B54B4D",
+        "#AA393F",
+        "#9F2C39",
+        "#962334",
+        "#911D30",
+        "#8A192B",
+        "#8A162B",
+        "#88172B",
+        "#89152A",
+        "#89152A",
+        "#89152A",
+        "#89152A",
+        "#89152A"
+      ],
+      "id": "prl-133",
+      "interpolation": "linear",
+      "kind": "diverging",
+      "name_zh": "靛蓝—浅中性—酒红共振",
+      "near_alternatives": [],
+      "notes": "",
+      "positions": [
+        0.0,
+        0.03125,
+        0.0625,
+        0.09375,
+        0.125,
+        0.15625,
+        0.1875,
+        0.21875,
+        0.25,
+        0.28125,
+        0.3125,
+        0.34375,
+        0.375,
+        0.40625,
+        0.4375,
+        0.46875,
+        0.5,
+        0.53125,
+        0.5625,
+        0.59375,
+        0.625,
+        0.65625,
+        0.6875,
+        0.71875,
+        0.75,
+        0.78125,
+        0.8125,
+        0.84375,
+        0.875,
+        0.90625,
+        0.9375,
+        0.96875,
+        1.0
+      ],
+      "review_status": "agent_reviewed",
+      "sources": [
+        {
+          "bbox_pt": [
+            315.941,
+            45.928,
+            561.812,
+            323.212
+          ],
+          "direction": "bottom to top = -10 to +10; zero at the pale middle",
+          "doi": "10.1103/47xs-223h",
+          "figure_number": 1,
+          "image_sha256": "722ba0cb307c7430a6137f894be2a07ab890cbfa51582a4e32f1c154e0cbb5f7",
+          "measurement_method": "reviewed_colorbar_path_srgb_samples",
+          "page": 2,
+          "panel": "上图色条",
+          "pdf_sha256": "e663cd45889e25536fb4d42798ef1a5a73e9e742c93888d030569d33dcda5039",
+          "published_date": "2025-07-17",
+          "review_observation": "宽场图与下方窄切片组合，虚线叠加理论共振位置；上下横轴表示不同参数。",
+          "reviewer_type": "agent_visual_review",
+          "role": "有正负号的散射长度；低值到高值",
+          "sample_path_px": [
+            [
+              558,
+              370
+            ],
+            [
+              558,
+              81
+            ]
+          ],
+          "source_colors": [
+            "#281ECD",
+            "#281ECD",
+            "#281ECD",
+            "#281ECD",
+            "#281ECD",
+            "#2B1FCB",
+            "#2A20CE",
+            "#2C25CD",
+            "#2F29D5",
+            "#3032D4",
+            "#393FDB",
+            "#3F4EE5",
+            "#4F66E8",
+            "#6386EE",
+            "#82A6F3",
+            "#A7CAF1",
+            "#E1DDC0",
+            "#E3A98C",
+            "#D4836E",
+            "#C3655B",
+            "#B54B4D",
+            "#AA393F",
+            "#9F2C39",
+            "#962334",
+            "#911D30",
+            "#8A192B",
+            "#8A162B",
+            "#88172B",
+            "#89152A",
+            "#89152A",
+            "#89152A",
+            "#89152A",
+            "#89152A"
+          ],
+          "source_id": "X009",
+          "source_selection": null,
+          "source_url": "https://journals.aps.org/prl/abstract/10.1103/47xs-223h",
+          "title": "Understanding Floquet Resonances in Ultracold Quantum Gas Scattering",
+          "development_image_id": "corpus/crossfield-prl-50-2026-11-12/crops/X009.png",
+          "development_pdf_id": "corpus/crossfield-prl-50-2026-11-12/pdfs/10.1103_47xs-223h.pdf"
+        }
+      ],
+      "uses": [
+        "有符号场",
+        "共振场"
+      ]
+    },
+    {
+      "accuracy": "rendered-source approximation; not author-native color specification",
+      "bin_edges_normalized": null,
+      "color_space": "sRGB",
+      "colors": [
+        "#0000FF",
+        "#1010FF",
+        "#2020FF",
+        "#3030FF",
+        "#4040FF",
+        "#5050FF",
+        "#6060FF",
+        "#7070FF",
+        "#8181FF",
+        "#9191FF",
+        "#A0A0FF",
+        "#B1B1FF",
+        "#C0C0FF",
+        "#D0D0FF",
+        "#E1E1FF",
+        "#F0F0FF",
+        "#FFFFFF",
+        "#FFF1F1",
+        "#FFE1E1",
+        "#FFD0D0",
+        "#FFC1C1",
+        "#FFB1B1",
+        "#FFA0A0",
+        "#FF9191",
+        "#FF8181",
+        "#FF7070",
+        "#FF6060",
+        "#FF5050",
+        "#FF4040",
+        "#FF3131",
+        "#FF2020",
+        "#FF1111",
+        "#FF0101"
+      ],
+      "id": "prl-134",
+      "interpolation": "linear",
+      "kind": "diverging",
+      "name_zh": "蓝—白—红密度涨落",
+      "near_alternatives": [],
+      "notes": "",
+      "positions": [
+        0.0,
+        0.03125,
+        0.0625,
+        0.09375,
+        0.125,
+        0.15625,
+        0.1875,
+        0.21875,
+        0.25,
+        0.28125,
+        0.3125,
+        0.34375,
+        0.375,
+        0.40625,
+        0.4375,
+        0.46875,
+        0.5,
+        0.53125,
+        0.5625,
+        0.59375,
+        0.625,
+        0.65625,
+        0.6875,
+        0.71875,
+        0.75,
+        0.78125,
+        0.8125,
+        0.84375,
+        0.875,
+        0.90625,
+        0.9375,
+        0.96875,
+        1.0
+      ],
+      "review_status": "agent_reviewed",
+      "sources": [
+        {
+          "bbox_pt": [
+            313.468,
+            452.728,
+            561.572,
+            682.112
+          ],
+          "direction": "bottom to top = -5 to +5; white is zero",
+          "doi": "10.1103/b2s6-b5c1",
+          "figure_number": 1,
+          "image_sha256": "433adf39a3edb00d3a28dcd6e38365072412df7a4e453a7b2fc4652b3ed7d1de",
+          "measurement_method": "reviewed_colorbar_path_srgb_samples",
+          "page": 1,
+          "panel": "共享色条",
+          "pdf_sha256": "096470a0c1d4df422fb5018434939c6a59d29c1626a314ffac692d08b5196bea",
+          "published_date": "2026-02-19",
+          "review_observation": "两个时刻的托卡马克截面并排，共用红白蓝色标；灰色器件轮廓与放大框保持几何位置。",
+          "reviewer_type": "agent_visual_review",
+          "role": "有符号密度涨落；两时刻共用归一化",
+          "sample_path_px": [
+            [
+              588,
+              520
+            ],
+            [
+              588,
+              32
+            ]
+          ],
+          "source_colors": [
+            "#0000FF",
+            "#1010FF",
+            "#2020FF",
+            "#3030FF",
+            "#4040FF",
+            "#5050FF",
+            "#6060FF",
+            "#7070FF",
+            "#8181FF",
+            "#9191FF",
+            "#A0A0FF",
+            "#B1B1FF",
+            "#C0C0FF",
+            "#D0D0FF",
+            "#E1E1FF",
+            "#F0F0FF",
+            "#FFFFFF",
+            "#FFF1F1",
+            "#FFE1E1",
+            "#FFD0D0",
+            "#FFC1C1",
+            "#FFB1B1",
+            "#FFA0A0",
+            "#FF9191",
+            "#FF8181",
+            "#FF7070",
+            "#FF6060",
+            "#FF5050",
+            "#FF4040",
+            "#FF3131",
+            "#FF2020",
+            "#FF1111",
+            "#FF0101"
+          ],
+          "source_id": "X040",
+          "source_selection": null,
+          "source_url": "https://journals.aps.org/prl/abstract/10.1103/b2s6-b5c1",
+          "title": "Fast Turbulence Phase Transition in a Flux-Driven Global Edge-SOL Simulation of a Tokamak Plasma",
+          "development_image_id": "corpus/crossfield-prl-50-2026-11-12/crops/X040.png",
+          "development_pdf_id": "corpus/crossfield-prl-50-2026-11-12/pdfs/10.1103_b2s6-b5c1.pdf"
+        }
+      ],
+      "uses": [
+        "涨落场",
+        "时间快照"
+      ]
     }
   ],
   "publication_window": [
-    "2025-01-01",
-    "2026-11-08"
+    "2021-11-12",
+    "2026-11-12"
   ],
   "review_source": "development-review-records (not included)",
   "review_source_sha256": "429f8495b9f06820fa88c3a0eeb2eb4d498e5eb5c8018d36a8bf88ae914ee7a6",
+  "review_sources": [
+    {
+      "path": "corpus/color-distillation-2026-11-08/reviews.jsonl",
+      "sha256": "429f8495b9f06820fa88c3a0eeb2eb4d498e5eb5c8018d36a8bf88ae914ee7a6"
+    },
+    {
+      "path": "corpus/crossfield-prl-50-2026-11-12/palette-reviews.jsonl",
+      "sha256": "3e0c6b908971c2c6b736c6a6bfec18a301d109a6677145c6350712f43f9d90c5"
+    }
+  ],
   "schema_version": 1,
   "scope": "Sampled published PRL figures; not a journal-wide frequency estimate or official palette standard",
   "distribution_assets_included": false

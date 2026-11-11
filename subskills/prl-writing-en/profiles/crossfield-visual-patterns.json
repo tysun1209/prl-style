@@ -1,0 +1,248 @@
+{
+  "schema_version": 1,
+  "pattern_count": 14,
+  "base_figure_families": 36,
+  "patterns": [
+    {
+      "id": "quantum_circuit",
+      "name_zh": "量子线路与算符网络",
+      "use_when": "量子门、重复操作、测量和多通道算符关系",
+      "design_rule": "先锁定端口、门跨度和时间顺序，再安排色块；普通箭头不能替代量子线。",
+      "evidence_class": "conditional_observation",
+      "source_ids": [
+        "X003",
+        "X005",
+        "X016"
+      ],
+      "counterexamples": [
+        "X005 黑白线路足够；X016 为自旋链算符网络，不应称作量子计算硬件。"
+      ],
+      "limitations": "Targeted visual-development sample, agent visual review; not an APS requirement or prevalence estimate."
+    },
+    {
+      "id": "optical_train",
+      "name_zh": "光路与探测链",
+      "use_when": "干涉、调制、光机装置、光学信息处理",
+      "design_rule": "连续光束或光线串联器件，信息回路沿外侧返回；器件标签靠近主体。",
+      "evidence_class": "conditional_observation",
+      "source_ids": [
+        "X002",
+        "X007",
+        "X022",
+        "X024"
+      ],
+      "counterexamples": [
+        "X024 以抽象镜面/弹簧呈现模型，并不需要完整实验台透视。"
+      ],
+      "limitations": "Targeted visual-development sample, agent visual review; not an APS requirement or prevalence estimate."
+    },
+    {
+      "id": "feedback_control",
+      "name_zh": "观测—控制闭环",
+      "use_when": "测量反馈、学习控制、光学优化",
+      "design_rule": "分别定义观测、控制的起点终点与方向，角色色跨模块保持。",
+      "evidence_class": "conditional_observation",
+      "source_ids": [
+        "X004",
+        "X022"
+      ],
+      "counterexamples": [
+        "X005 是操作序列，不能据其门图猜出不存在的反馈支路。"
+      ],
+      "limitations": "Targeted visual-development sample, agent visual review; not an APS requirement or prevalence estimate."
+    },
+    {
+      "id": "interaction_vertices",
+      "name_zh": "散射拓扑与相互作用顶点",
+      "use_when": "粒子散射、传播线、切割图",
+      "design_rule": "拓扑、端点、方向和线型先于外观；卷曲线与直线独立重建。",
+      "evidence_class": "conditional_observation",
+      "source_ids": [
+        "X028",
+        "X030",
+        "X035"
+      ],
+      "counterexamples": [
+        "X030 主要使用黑色传播线，不能要求每种顶点都彩色。"
+      ],
+      "limitations": "Targeted visual-development sample, agent visual review; not an APS requirement or prevalence estimate."
+    },
+    {
+      "id": "lattice_spin",
+      "name_zh": "晶格、自旋与耦合结构",
+      "use_when": "周期结构、双层模型、自旋纹理",
+      "design_rule": "重复单元降低视觉权重，关键耦合/缺陷突出；自旋箭头与传输箭头分开。",
+      "evidence_class": "conditional_observation",
+      "source_ids": [
+        "X008",
+        "X011",
+        "X015",
+        "X018",
+        "X021",
+        "X025"
+      ],
+      "counterexamples": [
+        "X017 只需单位胞边界向量；不必总画出大量三维粒子。"
+      ],
+      "limitations": "Targeted visual-development sample, agent visual review; not an APS requirement or prevalence estimate."
+    },
+    {
+      "id": "geometry_projection",
+      "name_zh": "空间几何与抽象投影",
+      "use_when": "曲面、复平面、单位胞、拓扑构造",
+      "design_rule": "整体几何和抽象投影沿用对象身份；有意义的前后关系保持透明/遮挡。",
+      "evidence_class": "conditional_observation",
+      "source_ids": [
+        "X001",
+        "X010",
+        "X012",
+        "X014",
+        "X017",
+        "X024",
+        "X032"
+      ],
+      "counterexamples": [
+        "X017 极简二维图已经解释几何；三维不是审美要求。"
+      ],
+      "limitations": "Targeted visual-development sample, agent visual review; not an APS requirement or prevalence estimate."
+    },
+    {
+      "id": "continuum_inset",
+      "name_zh": "连续介质与微观放大",
+      "use_when": "软物质剖面、界面、分层材料",
+      "design_rule": "主视图交代边界，局部框连接微观组成；尺度、力和运动三类箭头分别定义。",
+      "evidence_class": "conditional_observation",
+      "source_ids": [
+        "X046",
+        "X047"
+      ],
+      "counterexamples": [
+        "X046 放大图显示组成，不能把示意细胞尺寸当成定量成像。"
+      ],
+      "limitations": "Targeted visual-development sample, agent visual review; not an APS requirement or prevalence estimate."
+    },
+    {
+      "id": "state_sequence",
+      "name_zh": "状态序列与实验分支",
+      "use_when": "形变、制备路线、状态转换",
+      "design_rule": "以姿态变化或分支表达过程；时间和参数驱动区分，照片保持原始。",
+      "evidence_class": "conditional_observation",
+      "source_ids": [
+        "X048",
+        "X049"
+      ],
+      "counterexamples": [
+        "X048 照片序列是真实证据，不可让图像模型生成替代帧。"
+      ],
+      "limitations": "Targeted visual-development sample, agent visual review; not an APS requirement or prevalence estimate."
+    },
+    {
+      "id": "apparatus_evidence",
+      "name_zh": "装置—机制—证据混合 Fig. 1",
+      "use_when": "硬件示意、实验照片和数据同时出现",
+      "design_rule": "分区生成：模型负责概念示意，照片由用户提供，数值图由真实数据绘制。",
+      "evidence_class": "conditional_observation",
+      "source_ids": [
+        "X003",
+        "X007",
+        "X018",
+        "X019",
+        "X038",
+        "X047",
+        "X048",
+        "X049"
+      ],
+      "counterexamples": [
+        "X019 Fig. 1 以显微图和曲线为主，无需插入一整套方法流程框。"
+      ],
+      "limitations": "Targeted visual-development sample, agent visual review; not an APS requirement or prevalence estimate."
+    },
+    {
+      "id": "parameter_slices",
+      "name_zh": "参数切片与跨面板映射",
+      "use_when": "条件扫描、局部谱、时刻快照和多量比较",
+      "design_rule": "对齐实际绘图区；颜色、选点标记和坐标定义跨面板对应；不同量可独立色标。",
+      "evidence_class": "conditional_observation",
+      "source_ids": [
+        "X006",
+        "X009",
+        "X011",
+        "X013",
+        "X020",
+        "X023",
+        "X025",
+        "X034",
+        "X037",
+        "X040",
+        "X041",
+        "X042",
+        "X043",
+        "X044",
+        "X050"
+      ],
+      "counterexamples": [
+        "X009 上下横轴不同，不能强制共享；X037 各面板物理量不同。"
+      ],
+      "limitations": "Targeted visual-development sample, agent visual review; not an APS requirement or prevalence estimate."
+    },
+    {
+      "id": "aligned_panels",
+      "name_zh": "同步谱图与时序",
+      "use_when": "开关条件、频谱和控制响应对照",
+      "design_rule": "同一横坐标上下对齐；合理压缩间距，逐面板保留独立量纲。",
+      "evidence_class": "conditional_observation",
+      "source_ids": [
+        "X026",
+        "X039"
+      ],
+      "counterexamples": [
+        "X026 两排是不同条件的谱，并非比值；不补造归一化。"
+      ],
+      "limitations": "Targeted visual-development sample, agent visual review; not an APS requirement or prevalence estimate."
+    },
+    {
+      "id": "aligned_ratio",
+      "name_zh": "主谱加比值行",
+      "use_when": "理论层级与数据的谱比较",
+      "design_rule": "列内共享横轴，主谱较高、比值行较低；基准、误差带和实际分母明确。",
+      "evidence_class": "conditional_observation",
+      "source_ids": [
+        "X029"
+      ],
+      "counterexamples": [
+        "当前增补直接依据 X029 一张图，不据此推断 PRL 的普遍布局。"
+      ],
+      "limitations": "Targeted visual-development sample, agent visual review; not an APS requirement or prevalence estimate."
+    },
+    {
+      "id": "exclusion_limits",
+      "name_zh": "约束与稳定区域图",
+      "use_when": "参数界限、排除区、稳定性图",
+      "design_rule": "边界、填充方向和置信/稳定定义分别交代；浅填色不能代替可读边线。",
+      "evidence_class": "conditional_observation",
+      "source_ids": [
+        "X027",
+        "X036"
+      ],
+      "counterexamples": [
+        "X027 为置信上限，X036 为稳定性阈值，两种统计含义不能互换。"
+      ],
+      "limitations": "Targeted visual-development sample, agent visual review; not an APS requirement or prevalence estimate."
+    },
+    {
+      "id": "particle_transport",
+      "name_zh": "粒子、轨迹与场",
+      "use_when": "离子、示踪粒子、产生与逃逸",
+      "design_rule": "粒子身份可用颜色和符号双重编码，轨迹方向和背景场分开。",
+      "evidence_class": "conditional_observation",
+      "source_ids": [
+        "X032",
+        "X045"
+      ],
+      "counterexamples": [
+        "X045 暗背景插画是可选风格；本 skill 数据图默认仍为白底。"
+      ],
+      "limitations": "Targeted visual-development sample, agent visual review; not an APS requirement or prevalence estimate."
+    }
+  ]
+}

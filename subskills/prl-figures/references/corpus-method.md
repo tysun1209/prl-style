@@ -22,3 +22,5 @@ Use the rule schema in [style-rule contract](style-rule-contract.md). Existing
 reviewer labels describe agent review, not human peer review. A convenience
 sample supports source-scoped design observations, not journal-wide frequencies.
 Review the rendered result at its intended size before adopting a design.
+
+Recent cross-field visual references: [50 additional PRL papers and 14 composition patterns](crossfield-visual-design.md), with source-scoped observations and palette additions. Query `scripts/select_crossfield_references.py`; the frozen 100-paper writing corpus and previous held-out evaluation remain separate.
