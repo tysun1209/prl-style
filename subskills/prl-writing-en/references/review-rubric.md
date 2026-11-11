@@ -18,7 +18,7 @@ Mechanical tools check only the invariants they implement. `passed` is always sc
 | Physical argument | Question → contribution → discriminating evidence → boundary | Reader can explain what changed and why evidence supports it |
 | Cross-field readability | Unfamiliar terms, definitions, motivating problem | Neighboring-field physicist can follow without generic background padding |
 | Information density | Each paragraph's role; repeated captions/results | Necessary details retained, redundancy removed |
-| Figure communication | Final-size PDF, labels, panel semantics | Main comparison readable; no ambiguity from color or layout |
+| Figure communication | Final-size PNG (or requested format), labels, panel semantics | Main comparison readable; no ambiguity from color or layout |
 | Caption independence | Encodings, conditions, error convention | Figure can be read correctly without guessing |
 | Native language quality | English idiom or Chinese syntax in context | Precise, connected prose without translation artifacts or hype |
 | Bilingual fidelity | Claim-level comparison, including absent claims | Same evidence, scope, negative statements and causal implications |

@@ -2,9 +2,53 @@
 
 面向支持 Agent Skills 的 AI 助手的科研绘图与中英文写作 skill。参考 *Physical Review Letters*（PRL）的图形表达和论文组织方式，帮助研究者把数据、图注与正文组织成清晰、紧凑的科学论证。
 
-核心由 `SKILL.md`、参考资料、模板和 Python 脚本组成，可用于 Codex，也可接入 Claude Code、OpenCode 等支持该格式的 agent。目前工作流主要在 Codex 中验证，其他 agent 的完整执行效果尚未实测。
+| **36 类图型** | **117 组配色** | **100 篇 PRL 写作参考** | **中英文写作** |
+| :---: | :---: | :---: | :---: |
+| 曲线、统计图、场图与组图 | 按数据含义选择，附文献来源 | 粒子运动、活性粒子与强化学习 | 起草、润色、翻译与图注 |
+
+**[下载最新版](https://github.com/tysun1209/prl-style/releases/latest)** · [一句话安装](#一句话安装) · [效果预览](#效果预览) · [手动安装](#安装与接入) · [使用示例](#怎么使用)
+
+核心由 `SKILL.md`、参考资料、模板和 Python 脚本组成，可用于 Codex，也可接入 Claude Code、OpenCode、DeepSeek Harness 等支持该格式的 agent。目前工作流主要在 Codex 中验证，其他 agent 的完整执行效果尚未实测。
 
 当前默认版本见 [VERSION](VERSION)。更新后继续使用 `$prl-style` 或原来的子 skill 名称，即可应用最新规则，无需添加“新版”提示词。采用本项目链接安装的用户，更新源项目后即生效；独立发布包安装的用户，使用新包再次运行安装命令。
+
+## 一句话安装
+
+将下面这句话复制给 Codex、Claude Code、OpenCode、DeepSeek Harness 或其他支持 Agent Skills 的 agent，让它完成下载、安装和检查（需要联网及本地命令执行能力）：
+
+```text
+请从 https://github.com/tysun1209/prl-style 的最新 Release 下载完整发布包，确认当前 agent 的用户级 skills 目录，按 README 使用包内安装器安装 PRL Style 主 skill 和全部 7 个子 skill（没有对应的 --agent 选项时使用 --destination 指定目录），并验证文件完整性和当前 agent 能否发现这些 skill。
+```
+
+## 效果预览
+
+### 同一批数据，使用前后
+
+下面展示直方图、箱线图、热图与离散相图。左右使用相同数据和基础任务提示，完整原图按相同显示宽度呈现，原始物理尺寸标在图中。重点观察字体、图例、配色、留白和坐标轴的变化。
+
+[![没用 skill 与用了 PRL Style 的四类图型对比](assets/showcase/skill-comparison.png)](assets/showcase/skill-comparison.png)
+
+### 从 PRL 图件中提取的配色
+
+117 组配色覆盖类别、顺序、发散和多色相色标。下图为其中 9 组类别配色，每组保留配色 ID、色值及论文来源。绘图时可自动按数据含义选色，也可以指定喜欢的方案。
+
+[![PRL 2025–2026 色卡节选：prl-025 至 prl-033](assets/showcase/palette-preview.png)](reports/prl-colors-2025-2026/palette-atlas.pdf)
+
+[查看完整色卡 PDF](reports/prl-colors-2025-2026/palette-atlas.pdf) · [配色选择与调用](references/prl-color-palettes.md)
+
+### 更多图型
+
+除了常见曲线和统计图，也支持轨迹、流线、时空场、三维曲面与网络等表达方式。点击图片可查看完整尺寸。
+
+| 误差带 | 流线场 | 粒子轨迹 |
+| :---: | :---: | :---: |
+| [<img src="assets/showcase/uncertainty-band.png" width="240" alt="误差带图示例">](assets/showcase/uncertainty-band.png) | [<img src="assets/showcase/streamlines.png" width="240" alt="流线场示例">](assets/showcase/streamlines.png) | [<img src="assets/showcase/trajectory.png" width="240" alt="粒子轨迹示例">](assets/showcase/trajectory.png) |
+
+| 时空图 | 三维曲面 | 网络图 |
+| :---: | :---: | :---: |
+| [<img src="assets/showcase/space-time.png" width="240" alt="时空图示例">](assets/showcase/space-time.png) | [<img src="assets/showcase/surface-3d.png" width="240" alt="三维曲面示例">](assets/showcase/surface-3d.png) | [<img src="assets/showcase/network.png" width="240" alt="网络图示例">](assets/showcase/network.png) |
+
+对比图和图型示例使用合成数据；六张画廊图由随附绘图配方生成。[查看全部 36 类图型](references/figure-families.md)。
 
 ## 能做什么
 
@@ -12,7 +56,7 @@
 
 | 入口 | 功能 |
 | --- | --- |
-| `$prl-figures` | 根据数据绘图、修改已有绘图代码，调整多面板布局、配色、字体、坐标轴与图例，导出 PDF、PNG 和绘图代码。 |
+| `$prl-figures` | 根据数据绘图、修改已有绘图代码，调整多面板布局、配色、字体、坐标轴与图例；默认保存 600 dpi PNG，按需导出 PDF、EPS、SVG 等格式。 |
 | `$prl-writing-en` | 起草、润色、压缩和重组英文标题、摘要、引言、结果与结论，梳理整篇 Letter 的论证结构。 |
 | `$prl-writing-zh` | 撰写和修改中文科研稿件，将紧凑的论证方式用于自然中文表达。 |
 | `$prl-bilingual` | 中英互译与双语对照，核对术语、数值、单位、符号和结论含义。 |
@@ -46,9 +90,22 @@ Codex 尊重 `CODEX_HOME`，OpenCode 尊重 `XDG_CONFIG_HOME`。可用 `--destin
 | Codex | `$prl-style` |
 | [Claude Code](https://code.claude.com/docs/en/skills) | `/prl-style` |
 | [OpenCode](https://opencode.ai/docs/skills) | `@prl-style` |
+| [DeepSeek Harness](https://github.com/deepseek-ai/deepseek-harness/blob/master/docs/subsystems/skills.md) | `/prl-style` |
 
-子 skill 沿用各平台的前缀，例如 `/prl-writing-en`。也可以让能够读取本地文件的 agent
-直接读取解压目录中的 `SKILL.md`。绘图和检查需要文件读写、Python 执行及图像查看能力。
+子 skill 沿用各平台的前缀，例如 `/prl-writing-en`。
+
+**DeepSeek Harness：** 默认配置下扫描 `~/.dsh/skills`（设置了 `DSH_HOME` 时使用其下的 `skills` 目录），可直接使用现有安装器：
+
+```bash
+python3 install.py --destination "${DSH_HOME:-$HOME/.dsh}/skills"
+python3 install.py --destination "${DSH_HOME:-$HOME/.dsh}/skills" --check
+```
+
+安装后在 DeepSeek Harness 中输入 `/prl-style`，或 `/prl-figures`、`/prl-writing-zh` 等子 skill 名称。自定义了技能目录时，使用配置中的实际路径；其目录发现和调用方式见 [Skills 文档](https://github.com/deepseek-ai/deepseek-harness/blob/master/docs/subsystems/skills.md)与[调用说明](https://github.com/deepseek-ai/deepseek-harness/blob/master/packages/skill/tool-skill/README.md)。
+
+**其他 agent：** 支持 Agent Skills 时，用 `--destination PATH` 指向该 agent 的技能父目录，安装器会创建 8 个独立 skill 文件夹并携带完整资源。安装后在目标 agent 中确认能发现并加载 `prl-style`；`--check` 只检查已安装文件。没有自动发现功能时，可让 agent 直接读取解压目录中的 `SKILL.md` 和相关资料。
+
+绘图和检查需要文件读写、Python 执行及图像查看能力。
 上面的命令适用于 Linux/macOS；Windows 可将 `python3` 换成 `python -X utf8`，该系统尚未实测。
 
 需要绘图或运行检查脚本时，在发布包根目录准备 Python 环境：
@@ -78,9 +135,11 @@ python3 install.py --agent codex --check
 
 ```text
 $prl-style 根据 results.csv 绘制五组参数的曲线对比图。
-从配色库中选择适合白底曲线的五色方案，输出单栏 PDF、PNG、绘图代码和英文图注。
+从配色库中选择适合白底曲线的五色方案，输出单栏 PNG、绘图代码和英文图注。
 各列含义、单位和误差定义见 data-notes.md。
 ```
+
+不指定格式时，图片仅保存为 **600 dpi PNG**。需要其他格式时直接补充“同时保存 PDF”或“只导出 EPS”；也可指定其他 dpi。脚本对应参数为 `--formats png pdf`、`--formats eps` 和 `--dpi 1200`。
 
 **修改英文稿件：**
 
@@ -118,7 +177,7 @@ $prl-bilingual 对照 manuscript-zh.md 与 manuscript-en.tex，
 - **图面：** 刻度朝内；保留坐标、单位、图例、色标和面板编号，解释性小字放在独立图注或正文中。
 - **图例与布局：** 图例优先放在不遮挡数据的图内空白处；多面板按实际绘图区对齐，压缩不必要的间距，为色标单独预留空间。
 - **配色与刻度：** 未指定颜色时，按数据含义调用 PRL 配色库；上侧、右侧刻度逐面板选择，不默认全部开启。
-- **输出：** 图件默认提供彩色 PDF 与 PNG；灰度版本按需生成。文字任务先交付正文，随后简要说明必要的修改或缺失信息。
+- **输出：** 图件默认只保存彩色 PNG，分辨率为 600 dpi；PDF、EPS、SVG 等格式及灰度版本按需生成。文字任务先交付正文，随后简要说明必要的修改或缺失信息。
 - **写作：** 保留科学事实与证据强度，直接陈述有依据的结果，减少重复限定和无信息量的套话。
 
 本项目是独立工具，以上为可调整的默认设置。中文写作用于科研工作稿；实际投稿的语言、篇幅与格式要求以 PRL 官方指南为准。

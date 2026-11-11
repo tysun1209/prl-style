@@ -1,6 +1,8 @@
 #!/usr/bin/env python3
 """Render the source-linked swatchbook and original synthetic usage examples."""
 from pathlib import Path
+import argparse
+from contextlib import ExitStack
 import json
 
 import matplotlib
@@ -12,18 +14,21 @@ from matplotlib.colors import BoundaryNorm, Normalize, TwoSlopeNorm
 import numpy as np
 
 from prl_palette import load_catalog, colormap, categorical
-from prl_figure import figure_context, new_figure, export_figure
+from prl_figure import figure_context, new_figure, export_figure, resolve_export_options, SUPPORTED_FORMATS
 from corpus_lib import write_json, sha256
 
 ROOT = Path(__file__).resolve().parents[1]
 OUT = ROOT/'reports/prl-colors-2025-2026'
 
 
-def render():
+def render(out=OUT,*,formats=None,dpi=None):
+    formats,dpi=resolve_export_options(formats,dpi)
+    out=Path(out)
     catalog = load_catalog()
     rows = catalog['palettes']
-    OUT.mkdir(parents=True,exist_ok=True)
-    with figure_context(), PdfPages(OUT/'palette-atlas.pdf',metadata={'Title':'PRL 2025-2026 source-backed color palettes'}) as pdf:
+    out.mkdir(parents=True,exist_ok=True)
+    with figure_context(), ExitStack() as stack:
+        pdf=stack.enter_context(PdfPages(out/'palette-atlas.pdf',metadata={'Title':'PRL 2025-2026 source-backed color palettes'})) if 'pdf' in formats else None
         for offset in range(0,len(rows),12):
             fig,axes = plt.subplots(4,3,figsize=(11.7,8.3))
             fig.subplots_adjust(left=.045,right=.985,bottom=.04,top=.91,hspace=.42,wspace=.18)
@@ -42,8 +47,9 @@ def render():
                 s=p['sources'][0]
                 ax.text(0,.04,f"{s['doi']} | Fig. {s['figure_number']}",fontsize=8,url=s['source_url'])
             for ax in list(axes.flat)[len(rows[offset:offset+12]):]: ax.set_axis_off()
-            pdf.savefig(fig)
-            fig.savefig(OUT/f"atlas-{offset//12+1:02d}.png",dpi=150)
+            if pdf is not None:pdf.savefig(fig,dpi=dpi)
+            for fmt in formats:
+                if fmt!='pdf':fig.savefig(out/f"atlas-{offset//12+1:02d}.{fmt}",format=fmt,dpi=dpi,bbox_inches=None)
             plt.close(fig)
     selected = {p['name_zh']:p for p in rows}
     names=['玫红—钢蓝—芥黄','蓝—浅蓝—绿—橙—紫五相','深紫—蓝绿—黄强度',
@@ -80,14 +86,20 @@ def render():
         fig.colorbar(plt.cm.ScalarMappable(norm=Normalize(0,1),cmap=cmap),ax=axs[1,2],pad=.03,label='s',ticks=[0,.5,1])
         axs[1,2].set(xlabel='x',ylabel='Response')
         for i,ax in enumerate(axs.flat):ax.set_title(f'({chr(97+i)})',loc='left')
-        report=export_figure(fig,OUT/'usage-examples',{'data_kind':'synthetic_demonstration',
-             'palette_ids':[p['id'] for p in ps], 'purpose':'Exercise color selection and mapping; not scientific evidence'})
+        report=export_figure(fig,out/'usage-examples',{'data_kind':'synthetic_demonstration',
+             'palette_ids':[p['id'] for p in ps], 'purpose':'Exercise color selection and mapping; not scientific evidence'},formats=formats,dpi=dpi)
         plt.close(fig)
-    (OUT/'usage-examples-caption.md').write_text('配色调用示例，全部数据为合成演示。(a) 三组曲线与同色误差带；(b) 五类相区及黑色边界；(c) 正值强度场；(d) 以零为中心的有符号场；(e) 十级概率分箱；(f) 按连续参数着色的曲线族。配色来源见图册及 JSON；这些示例不表示论文原始研究结果。\n',encoding='utf-8')
-    write_json(OUT/'render-manifest.json',{'catalog_sha256':sha256(ROOT/'profiles/prl-color-palettes.json'),
-        'pdf_pages':(len(rows)+11)//12,'example_report_passed':report['passed'],
+    (out/'usage-examples-caption.md').write_text('配色调用示例，全部数据为合成演示。(a) 三组曲线与同色误差带；(b) 五类相区及黑色边界；(c) 正值强度场；(d) 以零为中心的有符号场；(e) 十级概率分箱；(f) 按连续参数着色的曲线族。配色来源见图册及 JSON；这些示例不表示论文原始研究结果。\n',encoding='utf-8')
+    write_json(out/'render-manifest.json',{'catalog_sha256':sha256(ROOT/'profiles/prl-color-palettes.json'),
+        'formats':formats,'dpi':dpi,'pdf_pages':(len(rows)+11)//12 if 'pdf' in formats else 0,'example_report_passed':report['passed'],
         'example_palette_ids':[p['id'] for p in ps], 'data_kind':'synthetic_demonstration'})
     print(json.dumps({'pages':(len(rows)+11)//12,'example_passed':report['passed']}))
 
 
-if __name__=='__main__':render()
+if __name__=='__main__':
+    parser=argparse.ArgumentParser(description=__doc__)
+    parser.add_argument('--output',type=Path,default=OUT)
+    parser.add_argument('--formats',nargs='+',choices=SUPPORTED_FORMATS,help='Image formats; default: png only; pdf adds the atlas PDF')
+    parser.add_argument('--dpi',type=float,help='Raster resolution; default: 600')
+    args=parser.parse_args()
+    render(args.output,formats=args.formats,dpi=args.dpi)

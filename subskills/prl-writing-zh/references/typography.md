@@ -13,7 +13,7 @@ This is the user's local default, not a claim about PRL's publisher typeface.
 
 Mathtext uses Times New Roman for ordinary Latin letters and digits, including italic and bold variants. Calligraphic alphabets and missing mathematical symbols use STIX; do not replace a scientific symbol to force a text font. Check actual exported math glyphs. This follows Matplotlib's [custom math font mechanism](https://matplotlib.org/stable/users/explain/text/mathtext.html).
 
-English-only figures can render with Times New Roman when SimSun is absent. A default-style figure containing Chinese must have SimSun installed; `export_figure` rejects it before writing PDF/PNG if that font is missing. Do not replace SimSun with a generic `serif`, Nimbus, Droid, or another CJK font and claim compliance.
+English-only figures can render with Times New Roman when SimSun is absent. A default-style figure containing Chinese must have SimSun installed; `export_figure` rejects it before writing any requested images if that font is missing. Do not replace SimSun with a generic `serif`, Nimbus, Droid, or another CJK font and claim compliance.
 
 ## Writing and export
 

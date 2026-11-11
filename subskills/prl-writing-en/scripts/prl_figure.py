@@ -2,6 +2,7 @@
 """Reproducible local style and fixed-size scientific figure exports."""
 from contextlib import contextmanager
 import csv
+from io import BytesIO
 import json
 import platform
 import warnings
@@ -19,6 +20,20 @@ ROOT=Path(__file__).resolve().parents[1]
 DEFAULTS=json.loads((ROOT/'profiles/figure-defaults.json').read_text())
 # Compatibility for family recipes: colors are resolved from the real catalog.
 DEFAULTS['colors']=categorical(DEFAULTS['categorical_palette'])
+SUPPORTED_FORMATS=('png','pdf','eps','svg','jpg','tiff')
+
+
+def resolve_export_options(formats=None,dpi=None):
+    """Resolve user overrides; all image formats beyond PNG require opt-in."""
+    formats=DEFAULTS['export_formats'] if formats is None else formats
+    if isinstance(formats,str):formats=[formats]
+    formats=list(dict.fromkeys(formats))
+    if not formats or any(fmt not in SUPPORTED_FORMATS for fmt in formats):
+        raise ValueError('formats must select one or more of: '+', '.join(SUPPORTED_FORMATS))
+    dpi=DEFAULTS['export_dpi'] if dpi is None else dpi
+    if isinstance(dpi,bool) or not isinstance(dpi,(int,float)) or not np.isfinite(dpi) or dpi<=0:
+        raise ValueError('dpi must be a positive finite number')
+    return formats,dpi
 
 
 def default_colormap(role='sequential'):
@@ -68,12 +83,14 @@ def read_xy_csv(path):
     return np.asarray(rows,dtype=float)
 
 
-def export_figure(fig,output_stem,provenance,*,grayscale=False):
-    """Export PDF, PNG and inspection JSON; grayscale preview requires explicit opt-in."""
+def export_figure(fig,output_stem,provenance,*,formats=None,dpi=None,grayscale=False):
+    """Export a 600 dpi PNG and inspection JSON by default; other images are opt-in."""
     from inspect_figure import inspect_artists,inspect_pdf
     from quantity_audit import collect_labels
+    formats,dpi=resolve_export_options(formats,dpi)
     font_paths=check_figure_fonts(fig)
     stem=Path(output_stem);stem.parent.mkdir(parents=True,exist_ok=True)
+    artifacts={}
     with warnings.catch_warnings(record=True) as captured:
         warnings.simplefilter('always')
         # Equal-aspect axes with a colorbar can need several layout passes.
@@ -86,21 +103,39 @@ def export_figure(fig,output_stem,provenance,*,grayscale=False):
                 break
             previous=positions
         artist_report=inspect_artists(fig)
-        fig.savefig(stem.with_suffix('.pdf'),bbox_inches=None,metadata={'Creator':'prl-style','CreationDate':None,'ModDate':None})
-        fig.savefig(stem.with_suffix('.png'),dpi=600,bbox_inches=None)
-    if grayscale:
+        for fmt in formats:
+            path=stem.with_suffix('.'+fmt)
+            options={'metadata':{'Creator':'prl-style','CreationDate':None,'ModDate':None}} if fmt=='pdf' else {}
+            fig.savefig(path,format=fmt,dpi=dpi,bbox_inches=None,**options)
+            artifacts[fmt]={'path':path.name,'sha256':sha256(path)}
+        if grayscale:
+            # Render an in-memory PNG when only another format was requested.
+            with BytesIO() as buffer:
+                if 'png' in formats:
+                    buffer.write(stem.with_suffix('.png').read_bytes())
+                else:
+                    fig.savefig(buffer,format='png',dpi=dpi,bbox_inches=None)
+                buffer.seek(0)
+                path=stem.with_name(stem.name+'-gray').with_suffix('.png')
+                with Image.open(buffer) as im:im.convert('L').save(path,dpi=(dpi,dpi))
+                artifacts['gray_png']={'path':path.name,'sha256':sha256(path)}
+    png_report=None
+    if 'png' in formats:
         with Image.open(stem.with_suffix('.png')) as im:
-            im.convert('L').save(stem.with_name(stem.name+'-gray').with_suffix('.png'))
-    pdf_report=inspect_pdf(stem.with_suffix('.pdf'))
-    if pdf_report['vector_stroke_min_pt'] is not None and pdf_report['vector_stroke_min_pt']<.499:
+            actual_dpi=im.info['dpi']
+            png_report={'width_px':im.width,'height_px':im.height,'dpi':list(actual_dpi),
+                        'width_mm':im.width/actual_dpi[0]*25.4,'height_mm':im.height/actual_dpi[1]*25.4}
+    pdf_report=inspect_pdf(stem.with_suffix('.pdf')) if 'pdf' in formats else None
+    if pdf_report and pdf_report['vector_stroke_min_pt'] is not None and pdf_report['vector_stroke_min_pt']<.499:
         artist_report['warnings'].append({'code':'thin_pdf_stroke_requires_review','width_pt':pdf_report['vector_stroke_min_pt'],'reason':'PDF stroke has no semantic role; inspect whether it is a curve, error bar, decorative detail, or transform artifact.'})
     messages=[str(w.message) for w in captured]
     glyph_errors=[m for m in messages if 'Glyph' in m and 'missing' in m]
-    report={'passed':not artist_report['errors'] and not glyph_errors and pdf_report['fonts_embedded'],
-      'artist_inspection':artist_report,'pdf_inspection':pdf_report,'render_warnings':messages,
+    report={'passed':not artist_report['errors'] and not glyph_errors and (pdf_report is None or pdf_report['fonts_embedded']),
+      'formats':formats,'dpi':dpi,'artifacts':artifacts,'grayscale_requested':grayscale,
+      'artist_inspection':artist_report,'png_inspection':png_report,'pdf_inspection':pdf_report,'render_warnings':messages,
       'labels':collect_labels(fig),'label_inventory_scope':'visible axis/title/legend/annotation text, including inset axes; tick values excluded',
       'provenance':provenance,'python':platform.python_version(),'matplotlib':mpl.__version__,
-      'numpy':np.__version__,'pdf_sha256':sha256(stem.with_suffix('.pdf')),
+      'numpy':np.__version__,'pdf_sha256':artifacts.get('pdf',{}).get('sha256'),
       'requested_font_files':font_paths,
       'font_defaults_sha256':sha256(ROOT/'profiles/figure-defaults.json'),
       'style_sha256':sha256(ROOT/'assets/styles/prl.mplstyle'),

@@ -1,5 +1,7 @@
 {
   "classification": "local_default",
+  "export_formats": ["png"],
+  "export_dpi": 600,
   "single_width_mm": 85,
   "wide_width_mm": 178,
   "wide_width_note": "Working preview width; replace with the actual document text width.",

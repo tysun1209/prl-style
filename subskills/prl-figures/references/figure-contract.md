@@ -17,7 +17,7 @@ python3 scripts/figure_spec.py path/to/figure-spec.json --output figure-spec-rep
 The report includes `passed`, actionable error codes, warnings, an input hash,
 catalog counts and a `semantic_review_required` flag. A failed report is a
 blocking input error. A passed report still requires inspection of the actual
-PDF/PNG and the supplied source data.
+exported image and the supplied source data.
 
 ## Required fields
 
@@ -57,5 +57,6 @@ significance, causal mechanism, or physical interpretation. See
 
 After validation, render with the existing family recipe or `scripts/prl_figure.py`.
 Keep the validated JSON, source/data provenance, caption text, facts manifest,
-PDF, PNG and JSON export together. Inspect final physical dimensions, fonts,
+600 dpi PNG and JSON export together. Other image formats are exported only
+when requested. Inspect final physical dimensions, fonts,
 inward ticks, labels, occlusion, legends/colorbars and the separate caption.

@@ -77,7 +77,7 @@ def collect_labels(fig):
 
 
 def load_artifacts(figure_reports=(), texts=()):
-    """Load ID=PATH CLI bindings. Figure reports must still match their sibling PDF."""
+    """Load ID=PATH bindings and verify the images recorded by each figure report."""
     artifacts, provenance = {}, {}
     for kind, specs in [('figure', figure_reports), ('text', texts)]:
         for spec in specs:
@@ -93,9 +93,22 @@ def load_artifacts(figure_reports=(), texts=()):
                 report = json.loads(path.read_text(encoding='utf-8'))
                 if not isinstance(report, dict):
                     raise ValueError('figure report must be an object: ' + str(path))
-                pdf = path.with_suffix('.pdf')
-                if not pdf.is_file() or report.get('pdf_sha256') != sha256(pdf):
-                    raise ValueError('stale or absent PDF for report: ' + str(path))
+                if 'artifacts' in report:
+                    outputs=report['artifacts']
+                    if not isinstance(outputs,dict) or not outputs:
+                        raise ValueError('report lacks exported image bindings: ' + str(path))
+                    for output in outputs.values():
+                        filename=output.get('path') if isinstance(output,dict) else None
+                        if not isinstance(filename,str) or not filename or Path(filename).name!=filename:
+                            raise ValueError('invalid exported image binding: ' + str(path))
+                        image=path.parent/filename
+                        if not image.is_file() or output.get('sha256')!=sha256(image):
+                            raise ValueError('stale or absent exported image: ' + str(image))
+                else:
+                    # Existing archived reports bind only a sibling PDF.
+                    pdf = path.with_suffix('.pdf')
+                    if not pdf.is_file() or report.get('pdf_sha256') != sha256(pdf):
+                        raise ValueError('stale or absent PDF for report: ' + str(path))
                 rows = report.get('labels')
                 if not isinstance(rows, list) or not rows:
                     raise ValueError('report lacks actual label inventory: ' + str(path))

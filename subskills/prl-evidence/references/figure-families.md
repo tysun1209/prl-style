@@ -8,7 +8,7 @@ Use the closest scientific role rather than the closest-looking thumbnail. For a
 
 `python scripts/select_references.py --family finite_size_collapse --query "critical scaling"` returns reviewed source metadata, with exact versus related-family tags and DOI provenance; source images are obtained separately. Inspect the actual image, caption and source page before adopting a design decision. If no eligible reference exists, use the scientific design guidance and label the result as an original design; do not invent a PRL precedent.
 
-`python scripts/render_families.py --family finite_size_collapse --output /path/to/project/examples` renders an original demonstration. `--all` renders the complete catalog. Replace demonstration data with author data and preserve definitions; the recipes are not scientific fitting routines. Outputs are PDF, PNG, JSON and captions; grayscale requires `--grayscale`.
+`python scripts/render_families.py --family finite_size_collapse --output /path/to/project/examples` renders an original demonstration. `--all` renders the complete catalog. Replace demonstration data with author data and preserve definitions; the recipes are not scientific fitting routines. Images default to PNG only at 600 dpi, alongside source data, JSON and captions. Other formats require `--formats` (for example, `--formats png pdf` or `--formats eps`); `--dpi` overrides resolution and grayscale requires `--grayscale`.
 
 ## Catalog
 

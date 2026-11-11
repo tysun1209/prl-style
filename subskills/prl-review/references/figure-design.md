@@ -45,7 +45,7 @@ Default major and minor ticks point inward (`in`) on both x and y axes. Apply th
 
 Use `scripts/prl_figure.py`: a local `figure_context`, a figure created at the final width/height, and `export_figure`. Never globally set the user's rcParams. `assets/templates/figure_from_csv.py` accepts x/y and optional yerr and does not drop missing rows, smooth, interpolate, refit, or change units. It requires a description for uncertainty bars. For a copied template, provide `--skill-root`.
 
-Default exports are PDF, PNG and the JSON inspection report. Generate a grayscale preview only on an explicit user request: pass `grayscale=True` to `export_figure`, or `--grayscale` to the CSV template. Grayscale generation and review are not default acceptance requirements; the recorded APS color-readability recommendation does not require an extra preview file.
+The only default image export is PNG at 600 dpi; retain the JSON inspection record and source/provenance as needed. PDF, EPS, SVG, JPEG and TIFF are opt-in: pass `formats=['png', 'pdf']` to `export_figure`, or `--formats png pdf` to the CSV/gallery CLI, when both are requested. `formats=['pdf']` exports only PDF; `dpi=1200` / `--dpi 1200` overrides the raster resolution. Generate a grayscale PNG only on an explicit user request: pass `grayscale=True` or `--grayscale`. Grayscale generation and review are not default acceptance requirements; the recorded APS color-readability recommendation does not require an extra preview file.
 
 If error extents are supplied but their definition is unknown, use an honest description such as `--uncertainty-description 'Supplied yerr extents; statistical definition unknown'`. Preserve the bars and mark the missing definition in the caption and review. This supports a review draft, not statistical certification. Never guess SD, SEM or a confidence level to satisfy the interface.
 
@@ -61,7 +61,7 @@ Use colors consistently for the same physical objects across a manuscript. For c
 
 **Panel geometry.** For a rectangular grid, align the *drawn data boxes*, not merely the subplot slots or label bounding boxes. Fixed aspect can shrink and center a heatmap within its slot; `fig.colorbar(..., ax=ax)` can also steal width from a single panel. After drawing, compare `ax.get_window_extent()` for each column. A local working tolerance is **0.5 pt** for corresponding left/right edges. Start with a **12–18 mm** horizontal gap for ordinary 85–178 mm scientific layouts, then adjust to the actual labels; this is a design budget, not an APS rule. Do not leave a large empty strip in every row to accommodate one colorbar. Prefer a dedicated colorbar slot, or a horizontal bar below the field when its vertical gutter is easier to budget. Different-size/asymmetric argument layouts need their own declared alignments rather than forced equal boxes.
 
-`layout_panel_grid(axes, column_gap_mm=16, row_gap_mm=18, ...)` aligns a 2-D grid after all data/limits have been set, preserving equal spatial units and keeping the canvas size fixed. Pass only data axes. Budget an external legend/colorbar in the margins or gaps; the helper does not place those decorations. It freezes automatic layout, so do not call `tight_layout` or turn constrained layout back on afterward. `measure_panel_grid(axes)` returns actual boxes, edge spread and gaps. If fixed-aspect panels would be too small, choose a better canvas height or layout, not unequal spatial scales. Top-align panels within each row; different spatial ranges may need different heights while retaining column alignment. Check the exported PDF for label/colorbar clearance as well as the numeric geometry.
+`layout_panel_grid(axes, column_gap_mm=16, row_gap_mm=18, ...)` aligns a 2-D grid after all data/limits have been set, preserving equal spatial units and keeping the canvas size fixed. Pass only data axes. Budget an external legend/colorbar in the margins or gaps; the helper does not place those decorations. It freezes automatic layout, so do not call `tight_layout` or turn constrained layout back on afterward. `measure_panel_grid(axes)` returns actual boxes, edge spread and gaps. If fixed-aspect panels would be too small, choose a better canvas height or layout, not unequal spatial scales. Top-align panels within each row; different spatial ranges may need different heights while retaining column alignment. Check the exported image for label/colorbar clearance as well as the numeric geometry.
 
 **Tick sides.** Direction and visibility are separate decisions. Retain inward ticks, start with bottom/left marks for ordinary trends, scatter and distributions, and consider top/right marks when a framed spatial map, trajectory or long plotting range benefits from reading coordinates on the far edges. Dense field boundaries, category-only axes, small panels and adjacent colorbars often benefit from fewer marks. Choose per panel from the rendered appearance; neither four-sided ticks everywhere nor their blanket prohibition is the rule. `style_ticks(ax, top=False, right=False)` makes the choice explicit; setting either argument true enables it. Apply the direction separately on the colorbar's own reading side and on meaningful secondary axes. Spines can remain visible without tick marks; do not duplicate numeric labels merely to add opposite ticks.
 
@@ -79,19 +79,19 @@ When a wide dynamic range hides a scientifically relevant difference, select a j
 
 For example, three MSD curves on logarithmic axes can obscure a late-time ordering that is visible on a linear late-time view. Give the inset's time and ordinate range, retain the full logarithmic panel, use the same group encodings, and distinguish visible numerical ordering from statistical significance. Verify that the new panel remains legible at final size and does not cover important main-panel data. If the claimed effect remains unreadable, revise the layout or qualify the claim; do not mark the figure accepted solely because font and line-width checks pass.
 
-The 85 mm preset is tied to single-column planning. The 178 mm gallery width is a working two-column preview, not a measured universal PRL width. Read the real template's text width. Save fixed-size PDF and PNG without `bbox_inches='tight'`, which can change physical dimensions. Keep vector text and curves; large heatmaps can be rasterized while labels remain vector. Verify accepted upload formats at submission rather than treating every preview format as a production deliverable.
+The 85 mm preset is tied to single-column planning. The 178 mm gallery width is a working two-column preview, not a measured universal PRL width. Read the real template's text width. Save fixed-size PNG at 600 dpi without `bbox_inches='tight'`, which can change physical dimensions. Check the actual pixel dimensions and dpi metadata against that size. If vector output is requested, retain vector text and curves; large heatmaps may be rasterized at the requested dpi. Verify accepted upload formats at submission rather than treating every working format as a production deliverable.
 
 ## Inspect both the figure and the page
 
 1. Inspect source artists for small base lettering, line/marker dimensions, out-of-figure text and missing glyphs. Error-bar stems use LineCollection; caps have separate stroke widths. Both are checked explicitly.
-2. Inspect exported PDF dimensions and embedded fonts. Embedded raster text, arbitrary fonts, subscripts and custom transforms need explicit visual review.
+2. Inspect the actual PNG dimensions, dpi metadata and rendered typography. Only when PDF is requested, inspect PDF dimensions and embedded fonts. Embedded raster text, arbitrary fonts, subscripts and custom transforms need explicit visual review.
 3. View the exported figure at intended physical size and a larger diagnostic size. Check overlapping labels, data occlusion, colorbar units, legend ambiguity, panel order, sparse/dense regions and mathematical symbols. If the user requested a grayscale preview, also check that its encodings and decisive comparisons remain readable.
 4. Place the figure in the manuscript layout and check scaling again. A figure that passed at 85 mm can fail if subsequently reduced.
 5. Review the caption using [caption writing](caption-writing.md) and verify every referenced panel and encoding. Audit the source identity of named quantities using the [quantity ledger](claim-ledger.md#physical-quantity-identity-across-sources-figures-and-text), including normalization denominators; inspect the exported `labels` rather than only the plotting code.
 
 `inspect_figure.py` returns measurements, not a blanket publication-ready verdict. A base-font H-height estimate does not certify every glyph. Its output explicitly identifies untested perception/science dimensions. Thin filled raster boundaries and scatter marker areas are not equivalent to Line2D marker diameters.
 
-Deliver the figure and caption first, with source/data provenance, PDF, PNG and the inspection report as linked artifacts. Follow [calibrated, direct writing](assertive-writing.md) for the explanation and mention concrete issues that affect this figure. Include a grayscale preview only when explicitly requested. Label synthetic gallery data as demonstrations.
+Deliver the PNG and requested caption first, with source/data provenance and inspection records as relevant linked artifacts. Include other image formats only when requested. Follow [calibrated, direct writing](assertive-writing.md) for the explanation and mention concrete issues that affect this figure. Include a grayscale preview only when explicitly requested. Label synthetic gallery data as demonstrations.
 
 ## Commands
 
@@ -99,8 +99,11 @@ From the skill root, use `.venv/bin/python` if the supplied environment exists, 
 
 ```bash
 python assets/templates/figure_from_csv.py data.csv --output figures/result --xlabel 'Time (s)' --ylabel 'Distance (m)'
-python scripts/inspect_figure.py figures/result.pdf --output figures/result-pdf-inspection.json
 python scripts/render_gallery.py --output reports/gallery
 ```
+
+When PDF is requested, add `--formats png pdf` to the CSV command; then
+`python scripts/inspect_figure.py figures/result.pdf --output figures/result-pdf-inspection.json`
+can inspect the exported PDF.
 
 For subsequent user work, put generated outputs in the user's project, not in this skill's corpus or reference gallery.

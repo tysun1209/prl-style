@@ -9,7 +9,7 @@ sys.path.insert(0,str(ROOT/'scripts'))
 import matplotlib
 matplotlib.use('Agg')
 import matplotlib.pyplot as plt
-from prl_figure import figure_context,new_figure,export_figure
+from prl_figure import figure_context,new_figure,export_figure,SUPPORTED_FORMATS
 from quantity_audit import load_artifacts
 from validate_claims import validate
 from corpus_lib import write_json
@@ -18,6 +18,8 @@ from corpus_lib import write_json
 def main():
     parser=argparse.ArgumentParser(description=__doc__)
     parser.add_argument('--output',type=Path,required=True)
+    parser.add_argument('--formats',nargs='+',choices=SUPPORTED_FORMATS,help='Image formats; default: png only')
+    parser.add_argument('--dpi',type=float,help='Raster resolution; default: 600')
     args=parser.parse_args();args.output.mkdir(parents=True,exist_ok=True)
     ledger=json.loads((ROOT/'assets/templates/claim-ledger.json').read_text())
     ledger['evidence']=[dict(id='E1',kind='synthetic_demo',source=__file__,locator='main: two distinct coefficients equal to one',description='Invented API example; no research inference.')]
@@ -28,7 +30,7 @@ def main():
     ledger['quantity_usages']=[dict(quantity_id=q,symbol=s,artifact_id='F',locator='axes[0].ylabel') for q,s in [('effective','D_eff'),('tracer','D_y')]]+[dict(quantity_id=q,symbol=s,artifact_id='captions',locator='text') for q,m,s in definitions]
     (args.output/'captions.txt').write_text('Synthetic demonstration. D_eff is the effective tracer diffusivity; D_y is the bare tracer diffusivity; D_0 is the distinct field diffusivity. Each is set to one in arbitrary units.\n虚构示例。D_eff 为有效示踪扩散系数，D_y 为裸示踪扩散系数，D_0 为另一个场扩散系数；三者均取任意单位下的数值 1。\n')
     with figure_context():
-        fig,ax=new_figure();ax.plot([0,1],[1,1],marker='o');ax.set(xlabel='Dimensionless time',ylabel=r'$D_{\mathrm{eff}}/D_y$');export_figure(fig,args.output/'figure',{'kind':'synthetic_demo'});plt.close(fig)
+        fig,ax=new_figure();ax.plot([0,1],[1,1],marker='o');ax.set(xlabel='Dimensionless time',ylabel=r'$D_{\mathrm{eff}}/D_y$');export_figure(fig,args.output/'figure',{'kind':'synthetic_demo'},formats=args.formats,dpi=args.dpi);plt.close(fig)
     write_json(args.output/'ledger.json',ledger)
     artifacts,provenance=load_artifacts([f'F={args.output}/figure.json'],[f'captions={args.output}/captions.txt'])
     result=validate(ledger,artifacts);result['audited_artifacts']=provenance;write_json(args.output/'audit.json',result)

@@ -7,14 +7,15 @@ import matplotlib
 matplotlib.use('Agg')
 import matplotlib.pyplot as plt
 from matplotlib.patches import Circle,FancyArrowPatch
-from prl_figure import default_colormap,figure_context,new_figure,export_figure,DEFAULTS
+from prl_figure import default_colormap,figure_context,new_figure,export_figure,DEFAULTS,resolve_export_options,SUPPORTED_FORMATS
 from corpus_lib import write_json
 
 
-def render_gallery(out):
+def render_gallery(out,*,formats=None,dpi=None):
+    formats,dpi=resolve_export_options(formats,dpi)
     out.mkdir(parents=True,exist_ok=True);reports=[];colors=DEFAULTS['colors']
     def finish(fig,name,caption,role):
-        report=export_figure(fig,out/name,{'data_kind':'synthetic_demonstration','seed':20261015,'role':role,'caption':caption,'scientific_claim':'None; original layout example, not a research result.'})
+        report=export_figure(fig,out/name,{'data_kind':'synthetic_demonstration','seed':20261015,'role':role,'caption':caption,'scientific_claim':'None; original layout example, not a research result.'},formats=formats,dpi=dpi)
         (out/(name+'.caption.txt')).write_text('SYNTHETIC DEMONSTRATION. '+caption+'\n')
         reports.append({'name':name,'passed':report['passed'],'errors':report['artist_inspection']['errors']});plt.close(fig)
     with figure_context():
@@ -70,11 +71,14 @@ def render_gallery(out):
         ax.add_patch(FancyArrowPatch((2.15,.9),(.85,.9),arrowstyle='->',mutation_scale=12,lw=1.1,linestyle='--',color='black'))
         ax.text(1.5,1.4,'Forward',ha='center');ax.text(1.5,.5,'Reverse',ha='center')
         finish(fig,'07-schematic','Original two-state schematic. Solid and dashed arrows identify opposite transitions; no transition rates or physical equivalence are asserted.','schematic')
-    write_json(out/'gallery-report.json',{'passed':all(r['passed'] for r in reports),'figures':reports,'visual_review':'pending'})
+    write_json(out/'gallery-report.json',{'passed':all(r['passed'] for r in reports),'figures':reports,'formats':formats,'dpi':dpi,'visual_review':'pending'})
     return reports
 
 
 if __name__=='__main__':
-    p=argparse.ArgumentParser(description=__doc__);p.add_argument('--output',type=Path,default=Path('reports/gallery'));a=p.parse_args();r=render_gallery(a.output)
+    p=argparse.ArgumentParser(description=__doc__);p.add_argument('--output',type=Path,default=Path('reports/gallery'))
+    p.add_argument('--formats',nargs='+',choices=SUPPORTED_FORMATS,help='Image formats; default: png only')
+    p.add_argument('--dpi',type=float,help='Raster resolution; default: 600')
+    a=p.parse_args();r=render_gallery(a.output,formats=a.formats,dpi=a.dpi)
     for item in r:print(item)
     raise SystemExit(0 if all(x['passed'] for x in r) else 1)
