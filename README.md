@@ -8,16 +8,16 @@
 
 **[下载最新版](https://github.com/tysun1209/prl-style/releases/latest)** · [一句话安装](#一句话安装) · [效果预览](#效果预览) · [手动安装](#安装与接入) · [使用示例](#怎么使用)
 
-核心由 `SKILL.md`、参考资料、模板和 Python 脚本组成，可用于 Codex，也可接入 Claude Code、OpenCode 等支持该格式的 agent。目前工作流主要在 Codex 中验证，其他 agent 的完整执行效果尚未实测。
+核心由 `SKILL.md`、参考资料、模板和 Python 脚本组成，可用于 Codex，也可接入 Claude Code、OpenCode、DeepSeek Harness 等支持该格式的 agent。目前工作流主要在 Codex 中验证，其他 agent 的完整执行效果尚未实测。
 
 当前默认版本见 [VERSION](VERSION)。更新后继续使用 `$prl-style` 或原来的子 skill 名称，即可应用最新规则，无需添加“新版”提示词。采用本项目链接安装的用户，更新源项目后即生效；独立发布包安装的用户，使用新包再次运行安装命令。
 
 ## 一句话安装
 
-将下面这句话复制给 Codex、Claude Code 或 OpenCode，让 agent 完成下载、安装和检查（需要联网及本地命令执行能力）：
+将下面这句话复制给 Codex、Claude Code、OpenCode、DeepSeek Harness 或其他支持 Agent Skills 的 agent，让它完成下载、安装和检查（需要联网及本地命令执行能力）：
 
 ```text
-请从 https://github.com/tysun1209/prl-style 的最新 Release 下载完整发布包，阅读安装说明，使用包内安装器将 PRL Style 主 skill 和全部 7 个子 skill 安装到当前 agent 的用户级 skills 目录，并验证安装结果。
+请从 https://github.com/tysun1209/prl-style 的最新 Release 下载完整发布包，确认当前 agent 的用户级 skills 目录，按 README 使用包内安装器安装 PRL Style 主 skill 和全部 7 个子 skill（没有对应的 --agent 选项时使用 --destination 指定目录），并验证文件完整性和当前 agent 能否发现这些 skill。
 ```
 
 ## 效果预览
@@ -90,9 +90,22 @@ Codex 尊重 `CODEX_HOME`，OpenCode 尊重 `XDG_CONFIG_HOME`。可用 `--destin
 | Codex | `$prl-style` |
 | [Claude Code](https://code.claude.com/docs/en/skills) | `/prl-style` |
 | [OpenCode](https://opencode.ai/docs/skills) | `@prl-style` |
+| [DeepSeek Harness](https://github.com/deepseek-ai/deepseek-harness/blob/master/docs/subsystems/skills.md) | `/prl-style` |
 
-子 skill 沿用各平台的前缀，例如 `/prl-writing-en`。也可以让能够读取本地文件的 agent
-直接读取解压目录中的 `SKILL.md`。绘图和检查需要文件读写、Python 执行及图像查看能力。
+子 skill 沿用各平台的前缀，例如 `/prl-writing-en`。
+
+**DeepSeek Harness：** 默认配置下扫描 `~/.dsh/skills`（设置了 `DSH_HOME` 时使用其下的 `skills` 目录），可直接使用现有安装器：
+
+```bash
+python3 install.py --destination "${DSH_HOME:-$HOME/.dsh}/skills"
+python3 install.py --destination "${DSH_HOME:-$HOME/.dsh}/skills" --check
+```
+
+安装后在 DeepSeek Harness 中输入 `/prl-style`，或 `/prl-figures`、`/prl-writing-zh` 等子 skill 名称。自定义了技能目录时，使用配置中的实际路径；其目录发现和调用方式见 [Skills 文档](https://github.com/deepseek-ai/deepseek-harness/blob/master/docs/subsystems/skills.md)与[调用说明](https://github.com/deepseek-ai/deepseek-harness/blob/master/packages/skill/tool-skill/README.md)。
+
+**其他 agent：** 支持 Agent Skills 时，用 `--destination PATH` 指向该 agent 的技能父目录，安装器会创建 8 个独立 skill 文件夹并携带完整资源。安装后在目标 agent 中确认能发现并加载 `prl-style`；`--check` 只检查已安装文件。没有自动发现功能时，可让 agent 直接读取解压目录中的 `SKILL.md` 和相关资料。
+
+绘图和检查需要文件读写、Python 执行及图像查看能力。
 上面的命令适用于 Linux/macOS；Windows 可将 `python3` 换成 `python -X utf8`，该系统尚未实测。
 
 需要绘图或运行检查脚本时，在发布包根目录准备 Python 环境：
