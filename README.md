@@ -6,11 +6,19 @@
 | :---: | :---: | :---: | :---: |
 | 曲线、统计图、场图与组图 | 按数据含义选择，附文献来源 | 粒子运动、活性粒子与强化学习 | 起草、润色、翻译与图注 |
 
-**[下载最新版](https://github.com/tysun1209/prl-style/releases/latest)** · [效果预览](#效果预览) · [安装与接入](#安装与接入) · [使用示例](#怎么使用)
+**[下载最新版](https://github.com/tysun1209/prl-style/releases/latest)** · [一句话安装](#一句话安装) · [效果预览](#效果预览) · [手动安装](#安装与接入) · [使用示例](#怎么使用)
 
 核心由 `SKILL.md`、参考资料、模板和 Python 脚本组成，可用于 Codex，也可接入 Claude Code、OpenCode 等支持该格式的 agent。目前工作流主要在 Codex 中验证，其他 agent 的完整执行效果尚未实测。
 
 当前默认版本见 [VERSION](VERSION)。更新后继续使用 `$prl-style` 或原来的子 skill 名称，即可应用最新规则，无需添加“新版”提示词。采用本项目链接安装的用户，更新源项目后即生效；独立发布包安装的用户，使用新包再次运行安装命令。
+
+## 一句话安装
+
+将下面这句话复制给 Codex、Claude Code 或 OpenCode，让 agent 完成下载、安装和检查（需要联网及本地命令执行能力）：
+
+```text
+请从 https://github.com/tysun1209/prl-style 的最新 Release 下载完整发布包，阅读安装说明，使用包内安装器将 PRL Style 主 skill 和全部 7 个子 skill 安装到当前 agent 的用户级 skills 目录，并验证安装结果。
+```
 
 ## 效果预览
 
