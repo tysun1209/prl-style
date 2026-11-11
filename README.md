@@ -2,9 +2,45 @@
 
 面向支持 Agent Skills 的 AI 助手的科研绘图与中英文写作 skill。参考 *Physical Review Letters*（PRL）的图形表达和论文组织方式，帮助研究者把数据、图注与正文组织成清晰、紧凑的科学论证。
 
+| **36 类图型** | **117 组配色** | **100 篇 PRL 写作参考** | **中英文写作** |
+| :---: | :---: | :---: | :---: |
+| 曲线、统计图、场图与组图 | 按数据含义选择，附文献来源 | 粒子运动、活性粒子与强化学习 | 起草、润色、翻译与图注 |
+
+**[下载最新版](https://github.com/tysun1209/prl-style/releases/latest)** · [效果预览](#效果预览) · [安装与接入](#安装与接入) · [使用示例](#怎么使用)
+
 核心由 `SKILL.md`、参考资料、模板和 Python 脚本组成，可用于 Codex，也可接入 Claude Code、OpenCode 等支持该格式的 agent。目前工作流主要在 Codex 中验证，其他 agent 的完整执行效果尚未实测。
 
 当前默认版本见 [VERSION](VERSION)。更新后继续使用 `$prl-style` 或原来的子 skill 名称，即可应用最新规则，无需添加“新版”提示词。采用本项目链接安装的用户，更新源项目后即生效；独立发布包安装的用户，使用新包再次运行安装命令。
+
+## 效果预览
+
+### 同一批数据，使用前后
+
+下面展示直方图、箱线图、热图与离散相图。左右使用相同数据和基础任务提示，完整原图按相同显示宽度呈现，原始物理尺寸标在图中。重点观察字体、图例、配色、留白和坐标轴的变化。
+
+[![没用 skill 与用了 PRL Style 的四类图型对比](assets/showcase/skill-comparison.png)](assets/showcase/skill-comparison.png)
+
+### 从 PRL 图件中提取的配色
+
+117 组配色覆盖类别、顺序、发散和多色相色标。下图为其中 9 组类别配色，每组保留配色 ID、色值及论文来源。绘图时可自动按数据含义选色，也可以指定喜欢的方案。
+
+[![PRL 2025–2026 色卡节选：prl-025 至 prl-033](assets/showcase/palette-preview.png)](reports/prl-colors-2025-2026/palette-atlas.pdf)
+
+[查看完整色卡 PDF](reports/prl-colors-2025-2026/palette-atlas.pdf) · [配色选择与调用](references/prl-color-palettes.md)
+
+### 更多图型
+
+除了常见曲线和统计图，也支持轨迹、流线、时空场、三维曲面与网络等表达方式。点击图片可查看完整尺寸。
+
+| 误差带 | 流线场 | 粒子轨迹 |
+| :---: | :---: | :---: |
+| [<img src="assets/showcase/uncertainty-band.png" width="240" alt="误差带图示例">](assets/showcase/uncertainty-band.png) | [<img src="assets/showcase/streamlines.png" width="240" alt="流线场示例">](assets/showcase/streamlines.png) | [<img src="assets/showcase/trajectory.png" width="240" alt="粒子轨迹示例">](assets/showcase/trajectory.png) |
+
+| 时空图 | 三维曲面 | 网络图 |
+| :---: | :---: | :---: |
+| [<img src="assets/showcase/space-time.png" width="240" alt="时空图示例">](assets/showcase/space-time.png) | [<img src="assets/showcase/surface-3d.png" width="240" alt="三维曲面示例">](assets/showcase/surface-3d.png) | [<img src="assets/showcase/network.png" width="240" alt="网络图示例">](assets/showcase/network.png) |
+
+对比图和图型示例使用合成数据；六张画廊图由随附绘图配方生成。[查看全部 36 类图型](references/figure-families.md)。
 
 ## 能做什么
 
