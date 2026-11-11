@@ -1,0 +1,6 @@
+interface:
+  display_name: "PRL Schematics"
+  short_description: "Draw scientific Fig. 1 schematics and process diagrams"
+  default_prompt: "Use $prl-schematics to draw a clear Fig. 1 from my model, apparatus or method."
+policy:
+  allow_implicit_invocation: true

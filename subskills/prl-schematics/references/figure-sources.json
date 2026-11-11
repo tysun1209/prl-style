@@ -1,0 +1,4245 @@
+{
+  "scope": "reviewed development metadata; original image/PDF assets excluded",
+  "assets_included": false,
+  "references": [
+    {
+      "figure_id": "10.1103/physrevlett.132.222301_fig1",
+      "doi": "10.1103/physrevlett.132.222301",
+      "title": "Heavy-Quark Momentum Broadening in a Non-Abelian Plasma away from Thermal Equilibrium",
+      "source_url": "https://doi.org/10.1103/physrevlett.132.222301",
+      "family_ids": [],
+      "figure_type": "comparison",
+      "page": 3,
+      "bbox_pt": [
+        72.594,
+        516.194,
+        276.042,
+        664.239
+      ],
+      "observations": "Complete visible comparison composition; 1 top-level panels. Color is visible; marker and line-style observations are recorded separately. No font identity or scientific validity inferred.",
+      "review_limitations": [],
+      "reviewer_type": "agent_visual_review",
+      "image_sha256": "675ba6ce299a6296f97e77d1b3f5f51219a69207c221c4f72a83c0708aebbb42",
+      "pdf_sha256": "2b937739f13842269f9491d463e5d2ee49232d2105a2ec09ffd6d59939303551"
+    },
+    {
+      "figure_id": "10.1103/physrevlett.132.222301_fig2",
+      "doi": "10.1103/physrevlett.132.222301",
+      "title": "Heavy-Quark Momentum Broadening in a Non-Abelian Plasma away from Thermal Equilibrium",
+      "source_url": "https://doi.org/10.1103/physrevlett.132.222301",
+      "family_ids": [],
+      "figure_type": "distribution",
+      "page": 4,
+      "bbox_pt": [
+        58.304,
+        44.686,
+        289.58,
+        210.142
+      ],
+      "observations": "Complete visible distribution composition; 4 top-level panels. Color is visible; marker and line-style observations are recorded separately. No font identity or scientific validity inferred.",
+      "review_limitations": [],
+      "reviewer_type": "agent_visual_review",
+      "image_sha256": "5527d7d445eea8f6c9b8411ba13aeaad6f85f27b6dc41aab7d37a3572da6b956",
+      "pdf_sha256": "2b937739f13842269f9491d463e5d2ee49232d2105a2ec09ffd6d59939303551"
+    },
+    {
+      "figure_id": "10.1103/physrevlett.132.222301_fig3",
+      "doi": "10.1103/physrevlett.132.222301",
+      "title": "Heavy-Quark Momentum Broadening in a Non-Abelian Plasma away from Thermal Equilibrium",
+      "source_url": "https://doi.org/10.1103/physrevlett.132.222301",
+      "family_ids": [],
+      "figure_type": "trend",
+      "page": 4,
+      "bbox_pt": [
+        63.786,
+        459.742,
+        283.439,
+        620.583
+      ],
+      "observations": "Complete visible trend composition; 1 top-level panels. Color is visible; marker and line-style observations are recorded separately. No font identity or scientific validity inferred.",
+      "review_limitations": [],
+      "reviewer_type": "agent_visual_review",
+      "image_sha256": "62d6ad9257c494f48187d41ad314f16458989e4b7dbbc64eeea73a08a53d2a7d",
+      "pdf_sha256": "2b937739f13842269f9491d463e5d2ee49232d2105a2ec09ffd6d59939303551"
+    },
+    {
+      "figure_id": "10.1103/physrevlett.132.222301_fig4",
+      "doi": "10.1103/physrevlett.132.222301",
+      "title": "Heavy-Quark Momentum Broadening in a Non-Abelian Plasma away from Thermal Equilibrium",
+      "source_url": "https://doi.org/10.1103/physrevlett.132.222301",
+      "family_ids": [],
+      "figure_type": "comparison",
+      "page": 5,
+      "bbox_pt": [
+        77.03,
+        45.055,
+        272.021,
+        195.931
+      ],
+      "observations": "Complete visible comparison composition; 1 top-level panels. Color is visible; marker and line-style observations are recorded separately. No font identity or scientific validity inferred.",
+      "review_limitations": [],
+      "reviewer_type": "agent_visual_review",
+      "image_sha256": "d6c48a413b69b2cf92626c888fc8106b2df3561d80fc54a688bb23047fcabee6",
+      "pdf_sha256": "2b937739f13842269f9491d463e5d2ee49232d2105a2ec09ffd6d59939303551"
+    },
+    {
+      "figure_id": "10.1103/physrevlett.132.222301_fig5",
+      "doi": "10.1103/physrevlett.132.222301",
+      "title": "Heavy-Quark Momentum Broadening in a Non-Abelian Plasma away from Thermal Equilibrium",
+      "source_url": "https://doi.org/10.1103/physrevlett.132.222301",
+      "family_ids": [],
+      "figure_type": "multi_panel",
+      "page": 7,
+      "bbox_pt": [
+        71.418,
+        44.608,
+        303.0,
+        359.464
+      ],
+      "observations": "Complete visible multi_panel composition; 9 top-level panels. Color is visible; marker and line-style observations are recorded separately. No font identity or scientific validity inferred.",
+      "review_limitations": [],
+      "reviewer_type": "agent_visual_review",
+      "image_sha256": "8aca63aa4618c0a5ace1a88c0ed27f0e858e63af2fcd8a69e1e84179cef8a1a5",
+      "pdf_sha256": "2b937739f13842269f9491d463e5d2ee49232d2105a2ec09ffd6d59939303551"
+    },
+    {
+      "figure_id": "10.1103/physrevlett.132.203001_fig1",
+      "doi": "10.1103/physrevlett.132.203001",
+      "title": "Anisotropic Photodetachment of Positronium Negative Ions with Linearly Polarized Light",
+      "source_url": "https://doi.org/10.1103/physrevlett.132.203001",
+      "family_ids": [],
+      "figure_type": "schematic",
+      "page": 2,
+      "bbox_pt": [
+        51.697,
+        45.808,
+        298.772,
+        173.673
+      ],
+      "observations": "Complete visible schematic composition; 1 top-level panels. Color is visible; marker and line-style observations are recorded separately. No font identity or scientific validity inferred.",
+      "review_limitations": [],
+      "reviewer_type": "agent_visual_review",
+      "image_sha256": "70eaa7c90c7209ee0705a914a5b84a6277af8dd28cc7df539b6d01c374a2ce39",
+      "pdf_sha256": "34d79bb6961666d5db0ad13fbb3b68ce7f6ecec6128d23089f85aa051b0c79f3"
+    },
+    {
+      "figure_id": "10.1103/physrevlett.132.203001_fig2",
+      "doi": "10.1103/physrevlett.132.203001",
+      "title": "Anisotropic Photodetachment of Positronium Negative Ions with Linearly Polarized Light",
+      "source_url": "https://doi.org/10.1103/physrevlett.132.203001",
+      "family_ids": [],
+      "figure_type": "spectrum",
+      "page": 2,
+      "bbox_pt": [
+        338.899,
+        443.874,
+        536.735,
+        662.807
+      ],
+      "observations": "Complete visible spectrum composition; 1 top-level panels. Color is visible; marker and line-style observations are recorded separately. No font identity or scientific validity inferred.",
+      "review_limitations": [],
+      "reviewer_type": "agent_visual_review",
+      "image_sha256": "57751255230a9c9c8c5ecb4d74a072f610fc4baed49f78ab59d31a9203506658",
+      "pdf_sha256": "34d79bb6961666d5db0ad13fbb3b68ce7f6ecec6128d23089f85aa051b0c79f3"
+    },
+    {
+      "figure_id": "10.1103/physrevlett.132.203001_fig3",
+      "doi": "10.1103/physrevlett.132.203001",
+      "title": "Anisotropic Photodetachment of Positronium Negative Ions with Linearly Polarized Light",
+      "source_url": "https://doi.org/10.1103/physrevlett.132.203001",
+      "family_ids": [],
+      "figure_type": "multi_panel",
+      "page": 3,
+      "bbox_pt": [
+        80.118,
+        472.269,
+        531.521,
+        675.778
+      ],
+      "observations": "Complete visible multi_panel composition; 10 top-level panels. Color is visible; marker and line-style observations are recorded separately. No font identity or scientific validity inferred.",
+      "review_limitations": [],
+      "reviewer_type": "agent_visual_review",
+      "image_sha256": "f82ea8f6029778bcc53908b0d076c7ac5e937fdf0adc02a013b4d6a145f33bf1",
+      "pdf_sha256": "34d79bb6961666d5db0ad13fbb3b68ce7f6ecec6128d23089f85aa051b0c79f3"
+    },
+    {
+      "figure_id": "10.1103/physrevlett.132.196602_fig1",
+      "doi": "10.1103/physrevlett.132.196602",
+      "title": "Fermi Surface Spin Texture and Topological Superconductivity in Spin-Orbit Free Noncollinear Antiferromagnets",
+      "source_url": "https://doi.org/10.1103/physrevlett.132.196602",
+      "family_ids": [],
+      "figure_type": "mixed",
+      "page": 2,
+      "bbox_pt": [
+        52.935,
+        45.055,
+        296.179,
+        187.5
+      ],
+      "observations": "Complete visible mixed composition; 4 top-level panels. Color is visible; marker and line-style observations are recorded separately. No font identity or scientific validity inferred.",
+      "review_limitations": [],
+      "reviewer_type": "agent_visual_review",
+      "image_sha256": "094abc879e9b37af0f968fac28d6b21363c57659d163839de5381cc09a02a2eb",
+      "pdf_sha256": "e517bb4da26f382188fb2afcd2fcb8f2ad0373c7ecb285433f74dfcc3b88f9ef"
+    },
+    {
+      "figure_id": "10.1103/physrevlett.132.196602_fig2",
+      "doi": "10.1103/physrevlett.132.196602",
+      "title": "Fermi Surface Spin Texture and Topological Superconductivity in Spin-Orbit Free Noncollinear Antiferromagnets",
+      "source_url": "https://doi.org/10.1103/physrevlett.132.196602",
+      "family_ids": [],
+      "figure_type": "schematic",
+      "page": 3,
+      "bbox_pt": [
+        314.573,
+        45.055,
+        560.492,
+        124.346
+      ],
+      "observations": "Complete visible schematic composition; 2 top-level panels. Color is visible; marker and line-style observations are recorded separately. No font identity or scientific validity inferred.",
+      "review_limitations": [],
+      "reviewer_type": "agent_visual_review",
+      "image_sha256": "c5795f17e83e4c7c389976884c0099947f3acdd3f662c6555f22da91e5e003e2",
+      "pdf_sha256": "e517bb4da26f382188fb2afcd2fcb8f2ad0373c7ecb285433f74dfcc3b88f9ef"
+    },
+    {
+      "figure_id": "10.1103/physrevlett.132.196602_fig3",
+      "doi": "10.1103/physrevlett.132.196602",
+      "title": "Fermi Surface Spin Texture and Topological Superconductivity in Spin-Orbit Free Noncollinear Antiferromagnets",
+      "source_url": "https://doi.org/10.1103/physrevlett.132.196602",
+      "family_ids": [],
+      "figure_type": "phase_map",
+      "page": 4,
+      "bbox_pt": [
+        313.553,
+        45.055,
+        561.529,
+        238.517
+      ],
+      "observations": "Complete visible phase_map composition; 3 top-level panels. Color is visible; marker and line-style observations are recorded separately. No font identity or scientific validity inferred.",
+      "review_limitations": [],
+      "reviewer_type": "agent_visual_review",
+      "image_sha256": "db0fa48fbd5fe709d6613ca0d1f404dc96ac27bc547d0464755d97547e9a3a4a",
+      "pdf_sha256": "e517bb4da26f382188fb2afcd2fcb8f2ad0373c7ecb285433f74dfcc3b88f9ef"
+    },
+    {
+      "figure_id": "10.1103/bk2n-lgps_fig1",
+      "doi": "10.1103/bk2n-lgps",
+      "title": "First Measurement of the D s + → K 0 μ + ν μ Decay",
+      "source_url": "https://doi.org/10.1103/bk2n-lgps",
+      "family_ids": [],
+      "figure_type": "multi_panel",
+      "page": 2,
+      "bbox_pt": [
+        316.568,
+        45.733,
+        558.07,
+        279.315
+      ],
+      "observations": "Complete visible multi_panel composition; ambiguous top-level panels. Color is visible; marker and line-style observations are recorded separately. No font identity or scientific validity inferred.",
+      "review_limitations": [],
+      "reviewer_type": "agent_visual_review",
+      "image_sha256": "0b010c76d99769c45576d1bb34ca8b9750b044e5045a7981df8c36c7605266ab",
+      "pdf_sha256": "c758002dc958521a1dfcd17d57ce21b9d98b34047fefbe2162d39c3b40b8b996"
+    },
+    {
+      "figure_id": "10.1103/bk2n-lgps_fig2",
+      "doi": "10.1103/bk2n-lgps",
+      "title": "First Measurement of the D s + → K 0 μ + ν μ Decay",
+      "source_url": "https://doi.org/10.1103/bk2n-lgps",
+      "family_ids": [],
+      "figure_type": "spectrum",
+      "page": 3,
+      "bbox_pt": [
+        340.461,
+        46.216,
+        534.529,
+        188.583
+      ],
+      "observations": "Complete visible spectrum composition; 1 top-level panels. Color is visible; marker and line-style observations are recorded separately. No font identity or scientific validity inferred.",
+      "review_limitations": [],
+      "reviewer_type": "agent_visual_review",
+      "image_sha256": "ebb599cdf3c0e7b3dcb4531b631738ea4223adb7678b152593cd99113af55b1a",
+      "pdf_sha256": "c758002dc958521a1dfcd17d57ce21b9d98b34047fefbe2162d39c3b40b8b996"
+    },
+    {
+      "figure_id": "10.1103/bk2n-lgps_fig5",
+      "doi": "10.1103/bk2n-lgps",
+      "title": "First Measurement of the D s + → K 0 μ + ν μ Decay",
+      "source_url": "https://doi.org/10.1103/bk2n-lgps",
+      "family_ids": [],
+      "figure_type": "comparison",
+      "page": 6,
+      "bbox_pt": [
+        64.204,
+        45.988,
+        284.435,
+        202.718
+      ],
+      "observations": "Complete visible comparison composition; 1 top-level panels. Color is visible; marker and line-style observations are recorded separately. No font identity or scientific validity inferred.",
+      "review_limitations": [],
+      "reviewer_type": "agent_visual_review",
+      "image_sha256": "98b44bb1f7053af7e2ffe5ce89f56b5ad31dbd7ed5185b911ee27a9e23a20fc7",
+      "pdf_sha256": "c758002dc958521a1dfcd17d57ce21b9d98b34047fefbe2162d39c3b40b8b996"
+    },
+    {
+      "figure_id": "10.1103/bk2n-lgps_fig6",
+      "doi": "10.1103/bk2n-lgps",
+      "title": "First Measurement of the D s + → K 0 μ + ν μ Decay",
+      "source_url": "https://doi.org/10.1103/bk2n-lgps",
+      "family_ids": [],
+      "figure_type": "comparison",
+      "page": 6,
+      "bbox_pt": [
+        56.533,
+        504.883,
+        292.72,
+        617.681
+      ],
+      "observations": "Complete visible comparison composition; 2 top-level panels. Color is visible; marker and line-style observations are recorded separately. No font identity or scientific validity inferred.",
+      "review_limitations": [],
+      "reviewer_type": "agent_visual_review",
+      "image_sha256": "13f2f756a5e8621016df1f404a7ea2aec572132a827ca23ab2da3ab5ae19f108",
+      "pdf_sha256": "c758002dc958521a1dfcd17d57ce21b9d98b34047fefbe2162d39c3b40b8b996"
+    },
+    {
+      "figure_id": "10.1103/physrevlett.132.115001_fig1",
+      "doi": "10.1103/physrevlett.132.115001",
+      "title": "Direct Observation of Sub-Poissonian Temporal Statistics in a Continuous Free-Electron Beam with Subpicosecond Resolution",
+      "source_url": "https://doi.org/10.1103/physrevlett.132.115001",
+      "family_ids": [],
+      "figure_type": "distribution",
+      "page": 2,
+      "bbox_pt": [
+        56.668,
+        45.568,
+        292.532,
+        184.952
+      ],
+      "observations": "Complete visible distribution composition; 1 top-level panels. Color is visible; marker and line-style observations are recorded separately. No font identity or scientific validity inferred.",
+      "review_limitations": [],
+      "reviewer_type": "agent_visual_review",
+      "image_sha256": "55ec1f6e100a4b0841326804c87d9fc3b0c1e837b3081b9d6193296686f33f83",
+      "pdf_sha256": "37aced375636f1e7805afad6394baa913e547e73313a0f0cbdf61d2706bcdc61"
+    },
+    {
+      "figure_id": "10.1103/physrevlett.132.115001_fig3",
+      "doi": "10.1103/physrevlett.132.115001",
+      "title": "Direct Observation of Sub-Poissonian Temporal Statistics in a Continuous Free-Electron Beam with Subpicosecond Resolution",
+      "source_url": "https://doi.org/10.1103/physrevlett.132.115001",
+      "family_ids": [],
+      "figure_type": "image",
+      "page": 3,
+      "bbox_pt": [
+        70.588,
+        528.928,
+        540.692,
+        675.992
+      ],
+      "observations": "Complete visible image composition; 3 top-level panels. Color is visible; marker and line-style observations are recorded separately. No font identity or scientific validity inferred.",
+      "review_limitations": [],
+      "reviewer_type": "agent_visual_review",
+      "image_sha256": "bded41614722c2b70e73cc30c27fdf113a7cbaa511329804dfc9179a13fd4ca3",
+      "pdf_sha256": "37aced375636f1e7805afad6394baa913e547e73313a0f0cbdf61d2706bcdc61"
+    },
+    {
+      "figure_id": "10.1103/physrevlett.132.115001_fig4",
+      "doi": "10.1103/physrevlett.132.115001",
+      "title": "Direct Observation of Sub-Poissonian Temporal Statistics in a Continuous Free-Electron Beam with Subpicosecond Resolution",
+      "source_url": "https://doi.org/10.1103/physrevlett.132.115001",
+      "family_ids": [],
+      "figure_type": "multi_panel",
+      "page": 4,
+      "bbox_pt": [
+        58.228,
+        457.381,
+        553.772,
+        664.952
+      ],
+      "observations": "Complete visible multi_panel composition; 8 top-level panels. Color is visible; marker and line-style observations are recorded separately. No font identity or scientific validity inferred.",
+      "review_limitations": [],
+      "reviewer_type": "agent_visual_review",
+      "image_sha256": "ff3d6fc99f255f74aaa0e7603d4612ec943e04770dbaec90f1227e47908e06c7",
+      "pdf_sha256": "37aced375636f1e7805afad6394baa913e547e73313a0f0cbdf61d2706bcdc61"
+    },
+    {
+      "figure_id": "10.1103/physrevlett.132.206101_fig1",
+      "doi": "10.1103/physrevlett.132.206101",
+      "title": "Dipolar Order Controls Dielectric Response of Glass-Forming Liquids",
+      "source_url": "https://doi.org/10.1103/physrevlett.132.206101",
+      "family_ids": [],
+      "figure_type": "comparison",
+      "page": 2,
+      "bbox_pt": [
+        327.057,
+        46.18,
+        547.787,
+        331.859
+      ],
+      "observations": "Complete visible comparison composition; 1 top-level panels. Color is visible; marker and line-style observations are recorded separately. No font identity or scientific validity inferred.",
+      "review_limitations": [],
+      "reviewer_type": "agent_visual_review",
+      "image_sha256": "aabb74431cc092a387007be94f2c8eb317e1f9fc358be5d3b22f8f27f9742cfd",
+      "pdf_sha256": "a2a66019a51a70db32d3e3478d50f0edf7bb9ad925e6ecdeabea80bb6573bca6"
+    },
+    {
+      "figure_id": "10.1103/physrevlett.132.206101_fig2",
+      "doi": "10.1103/physrevlett.132.206101",
+      "title": "Dipolar Order Controls Dielectric Response of Glass-Forming Liquids",
+      "source_url": "https://doi.org/10.1103/physrevlett.132.206101",
+      "family_ids": [],
+      "figure_type": "spectrum",
+      "page": 3,
+      "bbox_pt": [
+        319.156,
+        365.45,
+        554.036,
+        629.406
+      ],
+      "observations": "Complete visible spectrum composition; 2 top-level panels. Color is visible; marker and line-style observations are recorded separately. No font identity or scientific validity inferred.",
+      "review_limitations": [],
+      "reviewer_type": "agent_visual_review",
+      "image_sha256": "0cb77d02672e7506779c399fdda2f4f4672ac9b9be69107ea1b657b2a8f8c231",
+      "pdf_sha256": "a2a66019a51a70db32d3e3478d50f0edf7bb9ad925e6ecdeabea80bb6573bca6"
+    },
+    {
+      "figure_id": "10.1103/physrevlett.132.206101_fig3",
+      "doi": "10.1103/physrevlett.132.206101",
+      "title": "Dipolar Order Controls Dielectric Response of Glass-Forming Liquids",
+      "source_url": "https://doi.org/10.1103/physrevlett.132.206101",
+      "family_ids": [],
+      "figure_type": "comparison",
+      "page": 4,
+      "bbox_pt": [
+        67.324,
+        470.996,
+        544.522,
+        640.903
+      ],
+      "observations": "Complete visible comparison composition; 2 top-level panels. Color is visible; marker and line-style observations are recorded separately. No font identity or scientific validity inferred.",
+      "review_limitations": [],
+      "reviewer_type": "agent_visual_review",
+      "image_sha256": "effc35c702246c47a1dbc825b377648a09982d063df7f03c50ded8fcc22088db",
+      "pdf_sha256": "a2a66019a51a70db32d3e3478d50f0edf7bb9ad925e6ecdeabea80bb6573bca6"
+    },
+    {
+      "figure_id": "10.1103/physrevlett.132.011401_fig1",
+      "doi": "10.1103/physrevlett.132.011401",
+      "title": "Detectability of Single Spinless Stellar-Mass Black Holes through Gravitational Lensing of Gravitational Waves with Advanced LIGO",
+      "source_url": "https://doi.org/10.1103/physrevlett.132.011401",
+      "family_ids": [],
+      "figure_type": "spatial_field",
+      "page": 2,
+      "bbox_pt": [
+        93.555,
+        46.412,
+        518.029,
+        283.437
+      ],
+      "observations": "Complete visible spatial_field composition; 4 top-level panels. Color is visible; marker and line-style observations are recorded separately. No font identity or scientific validity inferred.",
+      "review_limitations": [],
+      "reviewer_type": "agent_visual_review",
+      "image_sha256": "e1bd114d8eac946a3f25bc97f80bdecf8a0d14218f361f4f35eb46439f24d1e5",
+      "pdf_sha256": "734f99fd12b14995fd84700dba99a43a7e791a369fa2c2baf471710e57229cbc"
+    },
+    {
+      "figure_id": "10.1103/physrevlett.132.011401_fig2",
+      "doi": "10.1103/physrevlett.132.011401",
+      "title": "Detectability of Single Spinless Stellar-Mass Black Holes through Gravitational Lensing of Gravitational Waves with Advanced LIGO",
+      "source_url": "https://doi.org/10.1103/physrevlett.132.011401",
+      "family_ids": [],
+      "figure_type": "trajectory",
+      "page": 3,
+      "bbox_pt": [
+        81.744,
+        46.352,
+        530.112,
+        300.479
+      ],
+      "observations": "Complete visible trajectory composition; 1 top-level panels. Color is visible; marker and line-style observations are recorded separately. No font identity or scientific validity inferred.",
+      "review_limitations": [],
+      "reviewer_type": "agent_visual_review",
+      "image_sha256": "323ad23295dd65d17995a719f31c211094a578456f15886c8ef4e9c03e058a17",
+      "pdf_sha256": "734f99fd12b14995fd84700dba99a43a7e791a369fa2c2baf471710e57229cbc"
+    },
+    {
+      "figure_id": "10.1103/physrevlett.132.011401_fig3",
+      "doi": "10.1103/physrevlett.132.011401",
+      "title": "Detectability of Single Spinless Stellar-Mass Black Holes through Gravitational Lensing of Gravitational Waves with Advanced LIGO",
+      "source_url": "https://doi.org/10.1103/physrevlett.132.011401",
+      "family_ids": [],
+      "figure_type": "trajectory",
+      "page": 4,
+      "bbox_pt": [
+        83.283,
+        45.702,
+        528.946,
+        268.087
+      ],
+      "observations": "Complete visible trajectory composition; 2 top-level panels. Color is visible; marker and line-style observations are recorded separately. No font identity or scientific validity inferred.",
+      "review_limitations": [],
+      "reviewer_type": "agent_visual_review",
+      "image_sha256": "f42ffa04b66edb53dd6e1034cceab8607795d3ca2be0862555ced83f2bd5e428",
+      "pdf_sha256": "734f99fd12b14995fd84700dba99a43a7e791a369fa2c2baf471710e57229cbc"
+    },
+    {
+      "figure_id": "10.1103/physrevlett.132.011401_fig4",
+      "doi": "10.1103/physrevlett.132.011401",
+      "title": "Detectability of Single Spinless Stellar-Mass Black Holes through Gravitational Lensing of Gravitational Waves with Advanced LIGO",
+      "source_url": "https://doi.org/10.1103/physrevlett.132.011401",
+      "family_ids": [],
+      "figure_type": "comparison",
+      "page": 4,
+      "bbox_pt": [
+        315.631,
+        473.269,
+        558.606,
+        653.966
+      ],
+      "observations": "Complete visible comparison composition; 1 top-level panels. Color is visible; marker and line-style observations are recorded separately. No font identity or scientific validity inferred.",
+      "review_limitations": [],
+      "reviewer_type": "agent_visual_review",
+      "image_sha256": "f5bfab7e4979ab97960a34072981edad720f6d79ee4803cda84de59c45f79020",
+      "pdf_sha256": "734f99fd12b14995fd84700dba99a43a7e791a369fa2c2baf471710e57229cbc"
+    },
+    {
+      "figure_id": "10.1103/physrevlett.132.011401_fig5",
+      "doi": "10.1103/physrevlett.132.011401",
+      "title": "Detectability of Single Spinless Stellar-Mass Black Holes through Gravitational Lensing of Gravitational Waves with Advanced LIGO",
+      "source_url": "https://doi.org/10.1103/physrevlett.132.011401",
+      "family_ids": [],
+      "figure_type": "trend",
+      "page": 5,
+      "bbox_pt": [
+        53.061,
+        43.714,
+        298.301,
+        222.512
+      ],
+      "observations": "Complete visible trend composition; 1 top-level panels. Color is visible; marker and line-style observations are recorded separately. No font identity or scientific validity inferred.",
+      "review_limitations": [],
+      "reviewer_type": "agent_visual_review",
+      "image_sha256": "c982bbda7c91132936229785c91db71e9dc8437ba8e8ee62261721e6b876911e",
+      "pdf_sha256": "734f99fd12b14995fd84700dba99a43a7e791a369fa2c2baf471710e57229cbc"
+    },
+    {
+      "figure_id": "10.1103/physrevlett.132.065105_fig1",
+      "doi": "10.1103/physrevlett.132.065105",
+      "title": "Electromagnetically Induced Transparency in the Strongly Relativistic Regime",
+      "source_url": "https://doi.org/10.1103/physrevlett.132.065105",
+      "family_ids": [],
+      "figure_type": "multi_panel",
+      "page": 2,
+      "bbox_pt": [
+        104.908,
+        44.968,
+        507.332,
+        232.952
+      ],
+      "observations": "Complete visible multi_panel composition; 6 top-level panels. Color is visible; marker and line-style observations are recorded separately. No font identity or scientific validity inferred.",
+      "review_limitations": [],
+      "reviewer_type": "agent_visual_review",
+      "image_sha256": "40e4fa1a16afde59937d526c1db59d6443468b9024c1ec3ec16f75c83b1af922",
+      "pdf_sha256": "552a4d749b7ab67342a2093fa7c62f11e3fcada6e04040739e61c29a6ac7ec6a"
+    },
+    {
+      "figure_id": "10.1103/physrevlett.132.065105_fig2",
+      "doi": "10.1103/physrevlett.132.065105",
+      "title": "Electromagnetically Induced Transparency in the Strongly Relativistic Regime",
+      "source_url": "https://doi.org/10.1103/physrevlett.132.065105",
+      "family_ids": [],
+      "figure_type": "mixed",
+      "page": 3,
+      "bbox_pt": [
+        313.383,
+        45.055,
+        561.702,
+        233.494
+      ],
+      "observations": "Complete visible mixed composition; 4 top-level panels. Color is visible; marker and line-style observations are recorded separately. No font identity or scientific validity inferred.",
+      "review_limitations": [],
+      "reviewer_type": "agent_visual_review",
+      "image_sha256": "c77cef84c628be64b29f449c33d22f3ba3cdd849ba392db86260e2a8d8dba855",
+      "pdf_sha256": "552a4d749b7ab67342a2093fa7c62f11e3fcada6e04040739e61c29a6ac7ec6a"
+    },
+    {
+      "figure_id": "10.1103/physrevlett.132.065105_fig3",
+      "doi": "10.1103/physrevlett.132.065105",
+      "title": "Electromagnetically Induced Transparency in the Strongly Relativistic Regime",
+      "source_url": "https://doi.org/10.1103/physrevlett.132.065105",
+      "family_ids": [],
+      "figure_type": "multi_panel",
+      "page": 4,
+      "bbox_pt": [
+        313.553,
+        45.055,
+        561.512,
+        223.414
+      ],
+      "observations": "Complete visible multi_panel composition; 4 top-level panels. Color is visible; marker and line-style observations are recorded separately. No font identity or scientific validity inferred.",
+      "review_limitations": [],
+      "reviewer_type": "agent_visual_review",
+      "image_sha256": "46ec9a5b4a8deae20ecee2a537f8cd6b008c47a52eaf52b394d14e2158a551f3",
+      "pdf_sha256": "552a4d749b7ab67342a2093fa7c62f11e3fcada6e04040739e61c29a6ac7ec6a"
+    },
+    {
+      "figure_id": "10.1103/hq41-8bt5_fig1",
+      "doi": "10.1103/hq41-8bt5",
+      "title": "Fast Ionic Transport Governed by Collective Vibrational Dynamics",
+      "source_url": "https://doi.org/10.1103/hq41-8bt5",
+      "family_ids": [],
+      "figure_type": "schematic",
+      "page": 2,
+      "bbox_pt": [
+        313.588,
+        44.968,
+        561.572,
+        203.432
+      ],
+      "observations": "Complete visible schematic composition; 1 top-level panels. Color is visible; marker and line-style observations are recorded separately. No font identity or scientific validity inferred.",
+      "review_limitations": [],
+      "reviewer_type": "agent_visual_review",
+      "image_sha256": "579cc57917a005ebf0dab4fcbaa4a8c0cdb71be0bbed204c96721accc4ab6deb",
+      "pdf_sha256": "88c2840f66eb4562ece1c97ba939fe094f4c6fff3a2e9934837360ce4a5c82cc"
+    },
+    {
+      "figure_id": "10.1103/hq41-8bt5_fig2",
+      "doi": "10.1103/hq41-8bt5",
+      "title": "Fast Ionic Transport Governed by Collective Vibrational Dynamics",
+      "source_url": "https://doi.org/10.1103/hq41-8bt5",
+      "family_ids": [],
+      "figure_type": "multi_panel",
+      "page": 3,
+      "bbox_pt": [
+        50.548,
+        44.968,
+        298.532,
+        279.992
+      ],
+      "observations": "Complete visible multi_panel composition; 4 top-level panels. Color is visible; marker and line-style observations are recorded separately. No font identity or scientific validity inferred.",
+      "review_limitations": [],
+      "reviewer_type": "agent_visual_review",
+      "image_sha256": "684770d55cb3cba7a05a66f52e8184291cd08ae85de4fd0a5d587b7a37232c35",
+      "pdf_sha256": "88c2840f66eb4562ece1c97ba939fe094f4c6fff3a2e9934837360ce4a5c82cc"
+    },
+    {
+      "figure_id": "10.1103/hq41-8bt5_fig3",
+      "doi": "10.1103/hq41-8bt5",
+      "title": "Fast Ionic Transport Governed by Collective Vibrational Dynamics",
+      "source_url": "https://doi.org/10.1103/hq41-8bt5",
+      "family_ids": [],
+      "figure_type": "mixed",
+      "page": 4,
+      "bbox_pt": [
+        50.548,
+        44.968,
+        298.532,
+        277.832
+      ],
+      "observations": "Complete visible mixed composition; 4 top-level panels. Color is visible; marker and line-style observations are recorded separately. No font identity or scientific validity inferred.",
+      "review_limitations": [],
+      "reviewer_type": "agent_visual_review",
+      "image_sha256": "bf2ed327da01acf7fcb4fe62125d6e2030b11401d022288435b87d14ad6166a4",
+      "pdf_sha256": "88c2840f66eb4562ece1c97ba939fe094f4c6fff3a2e9934837360ce4a5c82cc"
+    },
+    {
+      "figure_id": "10.1103/hq41-8bt5_fig4",
+      "doi": "10.1103/hq41-8bt5",
+      "title": "Fast Ionic Transport Governed by Collective Vibrational Dynamics",
+      "source_url": "https://doi.org/10.1103/hq41-8bt5",
+      "family_ids": [],
+      "figure_type": "comparison",
+      "page": 5,
+      "bbox_pt": [
+        50.548,
+        44.968,
+        298.532,
+        240.512
+      ],
+      "observations": "Complete visible comparison composition; 1 top-level panels. Color is visible; marker and line-style observations are recorded separately. No font identity or scientific validity inferred.",
+      "review_limitations": [],
+      "reviewer_type": "agent_visual_review",
+      "image_sha256": "c42ca587620053c28b4fcaff86caf9e288582cd0a06b01b11f07da96f7f6e597",
+      "pdf_sha256": "88c2840f66eb4562ece1c97ba939fe094f4c6fff3a2e9934837360ce4a5c82cc"
+    },
+    {
+      "figure_id": "10.1103/vp79-8t1l_fig1",
+      "doi": "10.1103/vp79-8t1l",
+      "title": "Connection between Memory Performance and Optical Absorption in Quantum Reservoir Computing",
+      "source_url": "https://doi.org/10.1103/vp79-8t1l",
+      "family_ids": [],
+      "figure_type": "schematic",
+      "page": 2,
+      "bbox_pt": [
+        313.828,
+        45.568,
+        561.092,
+        156.872
+      ],
+      "observations": "Complete visible schematic composition; 1 top-level panels. Color is visible; marker and line-style observations are recorded separately. No font identity or scientific validity inferred.",
+      "review_limitations": [],
+      "reviewer_type": "agent_visual_review",
+      "image_sha256": "6523b7dbbf9867d9f4034b373d795f6d84782b8d86b48b73e6b42ca8833a5f60",
+      "pdf_sha256": "954fa5288d30f4ce26843be8d5beff949fcf0285017f2e07c206cc3e23633032"
+    },
+    {
+      "figure_id": "10.1103/vp79-8t1l_fig2",
+      "doi": "10.1103/vp79-8t1l",
+      "title": "Connection between Memory Performance and Optical Absorption in Quantum Reservoir Computing",
+      "source_url": "https://doi.org/10.1103/vp79-8t1l",
+      "family_ids": [],
+      "figure_type": "trajectory",
+      "page": 3,
+      "bbox_pt": [
+        53.583,
+        46.088,
+        558.502,
+        202.303
+      ],
+      "observations": "Complete visible trajectory composition; 1 top-level panels. Color is visible; marker and line-style observations are recorded separately. No font identity or scientific validity inferred.",
+      "review_limitations": [],
+      "reviewer_type": "agent_visual_review",
+      "image_sha256": "5f3ea39e32851cd9f39c1b91fac177a0532298005066a81b981ecafc361a4ca6",
+      "pdf_sha256": "954fa5288d30f4ce26843be8d5beff949fcf0285017f2e07c206cc3e23633032"
+    },
+    {
+      "figure_id": "10.1103/vp79-8t1l_fig3",
+      "doi": "10.1103/vp79-8t1l",
+      "title": "Connection between Memory Performance and Optical Absorption in Quantum Reservoir Computing",
+      "source_url": "https://doi.org/10.1103/vp79-8t1l",
+      "family_ids": [],
+      "figure_type": "trend",
+      "page": 4,
+      "bbox_pt": [
+        51.237,
+        45.88,
+        297.566,
+        200.48
+      ],
+      "observations": "Complete visible trend composition; 1 top-level panels. Color is visible; marker and line-style observations are recorded separately. No font identity or scientific validity inferred.",
+      "review_limitations": [],
+      "reviewer_type": "agent_visual_review",
+      "image_sha256": "fa09a5e3a21e7b815cb2b5d1628e31af787fae393a1d81fa694b4112fc85d95b",
+      "pdf_sha256": "954fa5288d30f4ce26843be8d5beff949fcf0285017f2e07c206cc3e23633032"
+    },
+    {
+      "figure_id": "10.1103/physrevlett.132.158103_fig2",
+      "doi": "10.1103/physrevlett.132.158103",
+      "title": "Origin of Anomalously Large Depletion Zones in Like-Charged Colloid-Polyelectrolyte Mixtures",
+      "source_url": "https://doi.org/10.1103/physrevlett.132.158103",
+      "family_ids": [],
+      "figure_type": "comparison",
+      "page": 4,
+      "bbox_pt": [
+        52.17,
+        46.382,
+        296.569,
+        193.376
+      ],
+      "observations": "Complete visible comparison composition; 1 top-level panels. Color is visible; marker and line-style observations are recorded separately. No font identity or scientific validity inferred.",
+      "review_limitations": [],
+      "reviewer_type": "agent_visual_review",
+      "image_sha256": "656cbe4758596bb8bc85d130a20ba69c8895c50dc2a0934561f250158413e0fc",
+      "pdf_sha256": "d41a446b5a372f84563f061b6cd219a4b49975b65cf679c5eb1d34acb1ef0109"
+    },
+    {
+      "figure_id": "10.1103/physrevlett.132.158103_fig4",
+      "doi": "10.1103/physrevlett.132.158103",
+      "title": "Origin of Anomalously Large Depletion Zones in Like-Charged Colloid-Polyelectrolyte Mixtures",
+      "source_url": "https://doi.org/10.1103/physrevlett.132.158103",
+      "family_ids": [],
+      "figure_type": "scaling",
+      "page": 4,
+      "bbox_pt": [
+        309.0,
+        481.032,
+        570.761,
+        641.994
+      ],
+      "observations": "Complete visible scaling composition; 1 top-level panels. Color is visible; marker and line-style observations are recorded separately. No font identity or scientific validity inferred.",
+      "review_limitations": [],
+      "reviewer_type": "agent_visual_review",
+      "image_sha256": "cefe9f70b5f6dfad0f98fdcf28490d1d8d775ed733fc159d752ee1372f9e3524",
+      "pdf_sha256": "d41a446b5a372f84563f061b6cd219a4b49975b65cf679c5eb1d34acb1ef0109"
+    },
+    {
+      "figure_id": "10.1103/physrevlett.132.266401_fig1",
+      "doi": "10.1103/physrevlett.132.266401",
+      "title": "Spin-Dependent π π * Gap in Graphene on a Magnetic Substrate",
+      "source_url": "https://doi.org/10.1103/physrevlett.132.266401",
+      "family_ids": [],
+      "figure_type": "mixed",
+      "page": 2,
+      "bbox_pt": [
+        51.575,
+        45.056,
+        560.532,
+        183.335
+      ],
+      "observations": "Complete visible mixed composition; 4 top-level panels. Color is visible; marker and line-style observations are recorded separately. No font identity or scientific validity inferred.",
+      "review_limitations": [],
+      "reviewer_type": "agent_visual_review",
+      "image_sha256": "e54e5d3288a3c498a3353384e8a14723da993c5f30100363f01dec4bb51880e9",
+      "pdf_sha256": "85ae69b957f9254257d3b22d62f798db83a39fd3488898752c2592d415c5792e"
+    },
+    {
+      "figure_id": "10.1103/physrevlett.132.266401_fig2",
+      "doi": "10.1103/physrevlett.132.266401",
+      "title": "Spin-Dependent π π * Gap in Graphene on a Magnetic Substrate",
+      "source_url": "https://doi.org/10.1103/physrevlett.132.266401",
+      "family_ids": [],
+      "figure_type": "mixed",
+      "page": 3,
+      "bbox_pt": [
+        51.575,
+        45.055,
+        560.532,
+        243.574
+      ],
+      "observations": "Complete visible mixed composition; 9 top-level panels. Color is visible; marker and line-style observations are recorded separately. No font identity or scientific validity inferred.",
+      "review_limitations": [],
+      "reviewer_type": "agent_visual_review",
+      "image_sha256": "a4d28c89b740eb2f4934b6301f28376af9b925d4ea6ef45fab2893cc9e53ada5",
+      "pdf_sha256": "85ae69b957f9254257d3b22d62f798db83a39fd3488898752c2592d415c5792e"
+    },
+    {
+      "figure_id": "10.1103/physrevlett.132.266401_fig3",
+      "doi": "10.1103/physrevlett.132.266401",
+      "title": "Spin-Dependent π π * Gap in Graphene on a Magnetic Substrate",
+      "source_url": "https://doi.org/10.1103/physrevlett.132.266401",
+      "family_ids": [],
+      "figure_type": "heatmap",
+      "page": 4,
+      "bbox_pt": [
+        51.575,
+        45.055,
+        560.532,
+        293.614
+      ],
+      "observations": "Complete visible heatmap composition; 8 top-level panels. Color is visible; marker and line-style observations are recorded separately. No font identity or scientific validity inferred.",
+      "review_limitations": [],
+      "reviewer_type": "agent_visual_review",
+      "image_sha256": "d0d65493ed15798d621dffcaaaefb630b1026369740da57151cfe836d143e293",
+      "pdf_sha256": "85ae69b957f9254257d3b22d62f798db83a39fd3488898752c2592d415c5792e"
+    },
+    {
+      "figure_id": "10.1103/physrevlett.132.266401_fig4",
+      "doi": "10.1103/physrevlett.132.266401",
+      "title": "Spin-Dependent π π * Gap in Graphene on a Magnetic Substrate",
+      "source_url": "https://doi.org/10.1103/physrevlett.132.266401",
+      "family_ids": [],
+      "figure_type": "spectrum",
+      "page": 5,
+      "bbox_pt": [
+        57.528,
+        45.055,
+        291.567,
+        242.854
+      ],
+      "observations": "Complete visible spectrum composition; 4 top-level panels. Color is visible; marker and line-style observations are recorded separately. No font identity or scientific validity inferred.",
+      "review_limitations": [],
+      "reviewer_type": "agent_visual_review",
+      "image_sha256": "1fc37bb58f021a84d6d208895eb28ce84ad259a7f6446f70fe6344a28f78a880",
+      "pdf_sha256": "85ae69b957f9254257d3b22d62f798db83a39fd3488898752c2592d415c5792e"
+    },
+    {
+      "figure_id": "10.1103/qy4y-171h_fig1",
+      "doi": "10.1103/qy4y-171h",
+      "title": "Non-Abelian Electric Field and Zitterbewegung on a Photonic Frequency Chain",
+      "source_url": "https://doi.org/10.1103/qy4y-171h",
+      "family_ids": [],
+      "figure_type": "mixed",
+      "page": 2,
+      "bbox_pt": [
+        53.296,
+        238.944,
+        560.132,
+        575.672
+      ],
+      "observations": "Complete visible mixed composition; 5 top-level panels. Color is visible; marker and line-style observations are recorded separately. No font identity or scientific validity inferred.",
+      "review_limitations": [],
+      "reviewer_type": "agent_visual_review",
+      "image_sha256": "1fb465af4bac0b9407664257e0ade93dbdaaf5db3138a854a0033b89ca040936",
+      "pdf_sha256": "fb22375c4334cf6fbf525f6ddde9011576d0cb486c5314507507925938b3934f"
+    },
+    {
+      "figure_id": "10.1103/qy4y-171h_fig2",
+      "doi": "10.1103/qy4y-171h",
+      "title": "Non-Abelian Electric Field and Zitterbewegung on a Photonic Frequency Chain",
+      "source_url": "https://doi.org/10.1103/qy4y-171h",
+      "family_ids": [],
+      "figure_type": "mixed",
+      "page": 4,
+      "bbox_pt": [
+        53.494,
+        46.194,
+        558.828,
+        268.1
+      ],
+      "observations": "Complete visible mixed composition; 7 top-level panels. Color is visible; marker and line-style observations are recorded separately. No font identity or scientific validity inferred.",
+      "review_limitations": [],
+      "reviewer_type": "agent_visual_review",
+      "image_sha256": "72c7c76351c656de878d30101d9da7815893869d977b84364af9010f0b1ca808",
+      "pdf_sha256": "fb22375c4334cf6fbf525f6ddde9011576d0cb486c5314507507925938b3934f"
+    },
+    {
+      "figure_id": "10.1103/qy4y-171h_fig3",
+      "doi": "10.1103/qy4y-171h",
+      "title": "Non-Abelian Electric Field and Zitterbewegung on a Photonic Frequency Chain",
+      "source_url": "https://doi.org/10.1103/qy4y-171h",
+      "family_ids": [],
+      "figure_type": "mixed",
+      "page": 5,
+      "bbox_pt": [
+        53.403,
+        45.895,
+        557.449,
+        316.457
+      ],
+      "observations": "Complete visible mixed composition; 4 top-level panels. Color is visible; marker and line-style observations are recorded separately. No font identity or scientific validity inferred.",
+      "review_limitations": [],
+      "reviewer_type": "agent_visual_review",
+      "image_sha256": "f5b1909f737571762fb7b3188b83cd21528016309b6aa5bd6864ea6cea2bcb0c",
+      "pdf_sha256": "fb22375c4334cf6fbf525f6ddde9011576d0cb486c5314507507925938b3934f"
+    },
+    {
+      "figure_id": "10.1103/w9bj-bqq1_fig1",
+      "doi": "10.1103/w9bj-bqq1",
+      "title": "Vortex to Rotons Transition in Dipolar Bose-Einstein Condensates",
+      "source_url": "https://doi.org/10.1103/w9bj-bqq1",
+      "family_ids": [],
+      "figure_type": "mixed",
+      "page": 2,
+      "bbox_pt": [
+        57.679,
+        45.328,
+        555.092,
+        157.352
+      ],
+      "observations": "Complete visible mixed composition; 3 top-level panels. Color is visible; marker and line-style observations are recorded separately. No font identity or scientific validity inferred.",
+      "review_limitations": [],
+      "reviewer_type": "agent_visual_review",
+      "image_sha256": "7dae3fb10dfb7ec97a8f2a5db1cf95d2349f57bf692b515ff62c80bc152ea5e1",
+      "pdf_sha256": "a8b2ee84d9c4224ca2b74ecef4ea29d2cf74a2979b8fda9f083dfdde7af62360"
+    },
+    {
+      "figure_id": "10.1103/w9bj-bqq1_fig2",
+      "doi": "10.1103/w9bj-bqq1",
+      "title": "Vortex to Rotons Transition in Dipolar Bose-Einstein Condensates",
+      "source_url": "https://doi.org/10.1103/w9bj-bqq1",
+      "family_ids": [],
+      "figure_type": "mixed",
+      "page": 4,
+      "bbox_pt": [
+        54.628,
+        45.568,
+        556.292,
+        239.672
+      ],
+      "observations": "Complete visible mixed composition; 4 top-level panels. Color is visible; marker and line-style observations are recorded separately. No font identity or scientific validity inferred.",
+      "review_limitations": [],
+      "reviewer_type": "agent_visual_review",
+      "image_sha256": "deed04639c1f07e0ce20dddc04c6eefd0af0119bf828105e1dafeb27376e6721",
+      "pdf_sha256": "a8b2ee84d9c4224ca2b74ecef4ea29d2cf74a2979b8fda9f083dfdde7af62360"
+    },
+    {
+      "figure_id": "10.1103/w9bj-bqq1_fig3",
+      "doi": "10.1103/w9bj-bqq1",
+      "title": "Vortex to Rotons Transition in Dipolar Bose-Einstein Condensates",
+      "source_url": "https://doi.org/10.1103/w9bj-bqq1",
+      "family_ids": [],
+      "figure_type": "mixed",
+      "page": 4,
+      "bbox_pt": [
+        314.548,
+        355.888,
+        560.612,
+        654.032
+      ],
+      "observations": "Complete visible mixed composition; 2 top-level panels. Color is visible; marker and line-style observations are recorded separately. No font identity or scientific validity inferred.",
+      "review_limitations": [],
+      "reviewer_type": "agent_visual_review",
+      "image_sha256": "6e911de84ec41c321b2e1cfb3233f96f354e98a34c6787969f48353f735168a8",
+      "pdf_sha256": "a8b2ee84d9c4224ca2b74ecef4ea29d2cf74a2979b8fda9f083dfdde7af62360"
+    },
+    {
+      "figure_id": "10.1103/w9bj-bqq1_fig4",
+      "doi": "10.1103/w9bj-bqq1",
+      "title": "Vortex to Rotons Transition in Dipolar Bose-Einstein Condensates",
+      "source_url": "https://doi.org/10.1103/w9bj-bqq1",
+      "family_ids": [],
+      "figure_type": "comparison",
+      "page": 5,
+      "bbox_pt": [
+        62.428,
+        512.848,
+        286.652,
+        643.832
+      ],
+      "observations": "Complete visible comparison composition; 1 top-level panels. Color is visible; marker and line-style observations are recorded separately. No font identity or scientific validity inferred.",
+      "review_limitations": [],
+      "reviewer_type": "agent_visual_review",
+      "image_sha256": "1359fe43c71bc6f49190266d62f45dcbd4db8f2c915f9879c71e5dde680231ce",
+      "pdf_sha256": "a8b2ee84d9c4224ca2b74ecef4ea29d2cf74a2979b8fda9f083dfdde7af62360"
+    },
+    {
+      "figure_id": "10.1103/vjb8-qghf_fig1",
+      "doi": "10.1103/vjb8-qghf",
+      "title": "Electron-Phonon Origins of Unconventional Resistivity in Moderately Correlated Perovskite Oxides",
+      "source_url": "https://doi.org/10.1103/vjb8-qghf",
+      "family_ids": [],
+      "figure_type": "scaling",
+      "page": 2,
+      "bbox_pt": [
+        40.0,
+        422.528,
+        282.381,
+        624.268
+      ],
+      "observations": "Complete visible scaling composition; 1 top-level panels. Color is visible; marker and line-style observations are recorded separately. No font identity or scientific validity inferred.",
+      "review_limitations": [],
+      "reviewer_type": "agent_visual_review",
+      "image_sha256": "1f853de4d70ad537e8ea4fc182aa02af4e91f95a2874bd804c8bd57eb3b9a370",
+      "pdf_sha256": "539d6ecadac4342bc9deaffcc5fa7b7691d494add8d7b5879710f23d001030b2"
+    },
+    {
+      "figure_id": "10.1103/vjb8-qghf_fig2",
+      "doi": "10.1103/vjb8-qghf",
+      "title": "Electron-Phonon Origins of Unconventional Resistivity in Moderately Correlated Perovskite Oxides",
+      "source_url": "https://doi.org/10.1103/vjb8-qghf",
+      "family_ids": [],
+      "figure_type": "spectrum",
+      "page": 3,
+      "bbox_pt": [
+        54.308,
+        509.488,
+        559.412,
+        679.472
+      ],
+      "observations": "Complete visible spectrum composition; 4 top-level panels. Color is visible; marker and line-style observations are recorded separately. No font identity or scientific validity inferred.",
+      "review_limitations": [],
+      "reviewer_type": "agent_visual_review",
+      "image_sha256": "71dd8212dcb7fe7b1e7d300dd973127be5f1a5319f2b781151495fa9a79c6a6b",
+      "pdf_sha256": "539d6ecadac4342bc9deaffcc5fa7b7691d494add8d7b5879710f23d001030b2"
+    },
+    {
+      "figure_id": "10.1103/vjb8-qghf_fig3",
+      "doi": "10.1103/vjb8-qghf",
+      "title": "Electron-Phonon Origins of Unconventional Resistivity in Moderately Correlated Perovskite Oxides",
+      "source_url": "https://doi.org/10.1103/vjb8-qghf",
+      "family_ids": [],
+      "figure_type": "comparison",
+      "page": 4,
+      "bbox_pt": [
+        56.36,
+        44.711,
+        303.0,
+        277.504
+      ],
+      "observations": "Complete visible comparison composition; 1 top-level panels. Color is visible; marker and line-style observations are recorded separately. No font identity or scientific validity inferred.",
+      "review_limitations": [],
+      "reviewer_type": "agent_visual_review",
+      "image_sha256": "70d3039d8e9b1ae937d24959db6470005f22db7e8e0e43fd6b2431b5cfc5c754",
+      "pdf_sha256": "539d6ecadac4342bc9deaffcc5fa7b7691d494add8d7b5879710f23d001030b2"
+    },
+    {
+      "figure_id": "10.1103/vjb8-qghf_fig4",
+      "doi": "10.1103/vjb8-qghf",
+      "title": "Electron-Phonon Origins of Unconventional Resistivity in Moderately Correlated Perovskite Oxides",
+      "source_url": "https://doi.org/10.1103/vjb8-qghf",
+      "family_ids": [],
+      "figure_type": "multi_panel",
+      "page": 8,
+      "bbox_pt": [
+        54.605,
+        289.862,
+        558.52,
+        633.195
+      ],
+      "observations": "Complete visible multi_panel composition; 6 top-level panels. Color is visible; marker and line-style observations are recorded separately. No font identity or scientific validity inferred.",
+      "review_limitations": [],
+      "reviewer_type": "agent_visual_review",
+      "image_sha256": "a5f659b0997c5a90ec08d21ab3f44c6fed302f5d940e6adf3039b3ca62116edf",
+      "pdf_sha256": "539d6ecadac4342bc9deaffcc5fa7b7691d494add8d7b5879710f23d001030b2"
+    },
+    {
+      "figure_id": "10.1103/lngc-vpr4_fig1",
+      "doi": "10.1103/lngc-vpr4",
+      "title": "Impact of Thermal Fields on Rydberg Atom Radio Frequency Sensors",
+      "source_url": "https://doi.org/10.1103/lngc-vpr4",
+      "family_ids": [],
+      "figure_type": "mixed",
+      "page": 2,
+      "bbox_pt": [
+        313.609,
+        45.055,
+        561.491,
+        179.571
+      ],
+      "observations": "Complete visible mixed composition; 3 top-level panels. Color is visible; marker and line-style observations are recorded separately. No font identity or scientific validity inferred.",
+      "review_limitations": [],
+      "reviewer_type": "agent_visual_review",
+      "image_sha256": "5bbbc3ef9cf182113e6249d43fa3ba3ca338f91c6c25321f8851d55043ac42f4",
+      "pdf_sha256": "565fa336a8eff85557e2477eeb91ceaae761872e54396fab8b4914ac2ba9514c"
+    },
+    {
+      "figure_id": "10.1103/lngc-vpr4_fig2",
+      "doi": "10.1103/lngc-vpr4",
+      "title": "Impact of Thermal Fields on Rydberg Atom Radio Frequency Sensors",
+      "source_url": "https://doi.org/10.1103/lngc-vpr4",
+      "family_ids": [],
+      "figure_type": "comparison",
+      "page": 3,
+      "bbox_pt": [
+        313.588,
+        44.968,
+        561.572,
+        345.152
+      ],
+      "observations": "Complete visible comparison composition; 2 top-level panels. Color is visible; marker and line-style observations are recorded separately. No font identity or scientific validity inferred.",
+      "review_limitations": [],
+      "reviewer_type": "agent_visual_review",
+      "image_sha256": "5b0db77203b01c54e2081177f2441b176d1956f3f26f67f6ba80e90d1e4938e8",
+      "pdf_sha256": "565fa336a8eff85557e2477eeb91ceaae761872e54396fab8b4914ac2ba9514c"
+    },
+    {
+      "figure_id": "10.1103/lngc-vpr4_fig3",
+      "doi": "10.1103/lngc-vpr4",
+      "title": "Impact of Thermal Fields on Rydberg Atom Radio Frequency Sensors",
+      "source_url": "https://doi.org/10.1103/lngc-vpr4",
+      "family_ids": [],
+      "figure_type": "comparison",
+      "page": 4,
+      "bbox_pt": [
+        50.428,
+        44.968,
+        298.652,
+        197.072
+      ],
+      "observations": "Complete visible comparison composition; 1 top-level panels. Color is visible; marker and line-style observations are recorded separately. No font identity or scientific validity inferred.",
+      "review_limitations": [],
+      "reviewer_type": "agent_visual_review",
+      "image_sha256": "1b040e9b427554ca62f1a31d7d92c4aa485a1d23816af05eaddab1961dc64ba7",
+      "pdf_sha256": "565fa336a8eff85557e2477eeb91ceaae761872e54396fab8b4914ac2ba9514c"
+    },
+    {
+      "figure_id": "10.1103/84n3-tgxj_fig1",
+      "doi": "10.1103/84n3-tgxj",
+      "title": "Non-Hermiticity Induced Universal Anomalies in Kondo Conductance",
+      "source_url": "https://doi.org/10.1103/84n3-tgxj",
+      "family_ids": [],
+      "figure_type": "schematic",
+      "page": 2,
+      "bbox_pt": [
+        50.548,
+        44.968,
+        298.652,
+        157.592
+      ],
+      "observations": "Complete visible schematic composition; 1 top-level panels. Color is visible; marker and line-style observations are recorded separately. No font identity or scientific validity inferred.",
+      "review_limitations": [],
+      "reviewer_type": "agent_visual_review",
+      "image_sha256": "ed31cd08ba6070944db6d0eaa0e01408039df54e91f8ea7157e0c4ba75ef1395",
+      "pdf_sha256": "1fa39b0fc79c72cf1293357c8f4e0777a308daa9c0aa47c7e11f11681b799a11"
+    },
+    {
+      "figure_id": "10.1103/84n3-tgxj_fig3",
+      "doi": "10.1103/84n3-tgxj",
+      "title": "Non-Hermiticity Induced Universal Anomalies in Kondo Conductance",
+      "source_url": "https://doi.org/10.1103/84n3-tgxj",
+      "family_ids": [],
+      "figure_type": "mixed",
+      "page": 3,
+      "bbox_pt": [
+        50.548,
+        44.968,
+        298.652,
+        334.952
+      ],
+      "observations": "Complete visible mixed composition; 6 top-level panels. Color is visible; marker and line-style observations are recorded separately. No font identity or scientific validity inferred.",
+      "review_limitations": [],
+      "reviewer_type": "agent_visual_review",
+      "image_sha256": "35ecadd06f198712126a515be2f5e2f2e0dd8bc23df3682cdfe5fda8dd2cfd37",
+      "pdf_sha256": "1fa39b0fc79c72cf1293357c8f4e0777a308daa9c0aa47c7e11f11681b799a11"
+    },
+    {
+      "figure_id": "10.1103/84n3-tgxj_fig4",
+      "doi": "10.1103/84n3-tgxj",
+      "title": "Non-Hermiticity Induced Universal Anomalies in Kondo Conductance",
+      "source_url": "https://doi.org/10.1103/84n3-tgxj",
+      "family_ids": [],
+      "figure_type": "mixed",
+      "page": 4,
+      "bbox_pt": [
+        50.548,
+        44.968,
+        298.652,
+        279.872
+      ],
+      "observations": "Complete visible mixed composition; 3 top-level panels. Color is visible; marker and line-style observations are recorded separately. No font identity or scientific validity inferred.",
+      "review_limitations": [],
+      "reviewer_type": "agent_visual_review",
+      "image_sha256": "db4692e66c32d32a3b934e87576988c1898f98a2165523b602cc1a5afbbd39cd",
+      "pdf_sha256": "1fa39b0fc79c72cf1293357c8f4e0777a308daa9c0aa47c7e11f11681b799a11"
+    },
+    {
+      "figure_id": "10.1103/physrevlett.134.196502_fig1",
+      "doi": "10.1103/physrevlett.134.196502",
+      "title": "Intertwined Superconductivity and Orbital Selectivity in a Three-Orbital Hubbard Model for the Iron Pnictides",
+      "source_url": "https://doi.org/10.1103/physrevlett.134.196502",
+      "family_ids": [],
+      "figure_type": "multi_panel",
+      "page": 3,
+      "bbox_pt": [
+        54.784,
+        45.152,
+        550.08,
+        234.486
+      ],
+      "observations": "Complete visible multi_panel composition; 6 top-level panels. Color is visible; marker and line-style observations are recorded separately. No font identity or scientific validity inferred.",
+      "review_limitations": [],
+      "reviewer_type": "agent_visual_review",
+      "image_sha256": "10918d023865d257e2be511a50de643002e69000bc47defd25822484db14bb61",
+      "pdf_sha256": "07fe066497d7acb7c587e8758f517cab70da297093024d9d0a4af303a70a0f7b"
+    },
+    {
+      "figure_id": "10.1103/physrevlett.134.196502_fig3",
+      "doi": "10.1103/physrevlett.134.196502",
+      "title": "Intertwined Superconductivity and Orbital Selectivity in a Three-Orbital Hubbard Model for the Iron Pnictides",
+      "source_url": "https://doi.org/10.1103/physrevlett.134.196502",
+      "family_ids": [],
+      "figure_type": "comparison",
+      "page": 4,
+      "bbox_pt": [
+        62.875,
+        438.489,
+        285.548,
+        666.85
+      ],
+      "observations": "Complete visible comparison composition; 2 top-level panels. Color is visible; marker and line-style observations are recorded separately. No font identity or scientific validity inferred.",
+      "review_limitations": [],
+      "reviewer_type": "agent_visual_review",
+      "image_sha256": "862ca3644420a3f1a284f2dcadd04f1811ed6d74f307df539abce0a73f24b882",
+      "pdf_sha256": "07fe066497d7acb7c587e8758f517cab70da297093024d9d0a4af303a70a0f7b"
+    },
+    {
+      "figure_id": "10.1103/physrevlett.134.196502_fig4",
+      "doi": "10.1103/physrevlett.134.196502",
+      "title": "Intertwined Superconductivity and Orbital Selectivity in a Three-Orbital Hubbard Model for the Iron Pnictides",
+      "source_url": "https://doi.org/10.1103/physrevlett.134.196502",
+      "family_ids": [],
+      "figure_type": "phase_map",
+      "page": 5,
+      "bbox_pt": [
+        56.893,
+        48.377,
+        292.172,
+        235.613
+      ],
+      "observations": "Complete visible phase_map composition; 1 top-level panels. Color is visible; marker and line-style observations are recorded separately. No font identity or scientific validity inferred.",
+      "review_limitations": [],
+      "reviewer_type": "agent_visual_review",
+      "image_sha256": "573b9fd126009776ab0048213db3b844ba306ea5a8957fc7f1284e0d102cba07",
+      "pdf_sha256": "07fe066497d7acb7c587e8758f517cab70da297093024d9d0a4af303a70a0f7b"
+    },
+    {
+      "figure_id": "10.1103/ymzt-2mq4_fig1",
+      "doi": "10.1103/ymzt-2mq4",
+      "title": "Transient and Steady-State Chaos in Dissipative Quantum Systems",
+      "source_url": "https://doi.org/10.1103/ymzt-2mq4",
+      "family_ids": [],
+      "figure_type": "schematic",
+      "page": 1,
+      "bbox_pt": [
+        314.373,
+        459.341,
+        560.767,
+        598.712
+      ],
+      "observations": "Complete visible schematic composition; 1 top-level panels. Color is visible; marker and line-style observations are recorded separately. No font identity or scientific validity inferred.",
+      "review_limitations": [],
+      "reviewer_type": "agent_visual_review",
+      "image_sha256": "ab13bbe35bd1d08dee3aec6b045e0e69d01c4584f38a164791b1b84bf676fe85",
+      "pdf_sha256": "ec7efe4088fd2a81a9f9cf9df97da47b4909b8fff2a348628697e8d151461836"
+    },
+    {
+      "figure_id": "10.1103/ymzt-2mq4_fig3",
+      "doi": "10.1103/ymzt-2mq4",
+      "title": "Transient and Steady-State Chaos in Dissipative Quantum Systems",
+      "source_url": "https://doi.org/10.1103/ymzt-2mq4",
+      "family_ids": [],
+      "figure_type": "multi_panel",
+      "page": 4,
+      "bbox_pt": [
+        51.028,
+        44.968,
+        298.052,
+        262.952
+      ],
+      "observations": "Complete visible multi_panel composition; 4 top-level panels. Color is visible; marker and line-style observations are recorded separately. No font identity or scientific validity inferred.",
+      "review_limitations": [],
+      "reviewer_type": "agent_visual_review",
+      "image_sha256": "1851eb3046cb4934263b341a4276e1d46ae2e6c818d2731d0990e9e597fb1dc6",
+      "pdf_sha256": "ec7efe4088fd2a81a9f9cf9df97da47b4909b8fff2a348628697e8d151461836"
+    },
+    {
+      "figure_id": "10.1103/physrevlett.134.243603_fig1",
+      "doi": "10.1103/physrevlett.134.243603",
+      "title": "Squeezing at the Normal-Mode Splitting Frequency of a Nonlinear Coupled Cavity",
+      "source_url": "https://doi.org/10.1103/physrevlett.134.243603",
+      "family_ids": [],
+      "figure_type": "schematic",
+      "page": 2,
+      "bbox_pt": [
+        51.375,
+        45.185,
+        296.65,
+        107.958
+      ],
+      "observations": "Complete visible schematic composition; 1 top-level panels. Color is visible; marker and line-style observations are recorded separately. No font identity or scientific validity inferred.",
+      "review_limitations": [],
+      "reviewer_type": "agent_visual_review",
+      "image_sha256": "33a22aebbb9a7f7872bac53df18fb13b38bbaf3a062e97b395df8d96b0f3e825",
+      "pdf_sha256": "96e067cce216ebf7b72623f0a38477253bfad1c04ed7d6c26454af3f90e6b203"
+    },
+    {
+      "figure_id": "10.1103/physrevlett.134.243603_fig3",
+      "doi": "10.1103/physrevlett.134.243603",
+      "title": "Squeezing at the Normal-Mode Splitting Frequency of a Nonlinear Coupled Cavity",
+      "source_url": "https://doi.org/10.1103/physrevlett.134.243603",
+      "family_ids": [],
+      "figure_type": "spectrum",
+      "page": 4,
+      "bbox_pt": [
+        51.869,
+        45.655,
+        296.912,
+        339.481
+      ],
+      "observations": "Complete visible spectrum composition; 2 top-level panels. Color is visible; marker and line-style observations are recorded separately. No font identity or scientific validity inferred.",
+      "review_limitations": [],
+      "reviewer_type": "agent_visual_review",
+      "image_sha256": "998dda31c36cd331d257aa106e904b588240f6e13115f295211e133a10ac826f",
+      "pdf_sha256": "96e067cce216ebf7b72623f0a38477253bfad1c04ed7d6c26454af3f90e6b203"
+    },
+    {
+      "figure_id": "10.1103/physrevlett.134.243603_fig4",
+      "doi": "10.1103/physrevlett.134.243603",
+      "title": "Squeezing at the Normal-Mode Splitting Frequency of a Nonlinear Coupled Cavity",
+      "source_url": "https://doi.org/10.1103/physrevlett.134.243603",
+      "family_ids": [],
+      "figure_type": "spectrum",
+      "page": 5,
+      "bbox_pt": [
+        51.991,
+        46.709,
+        296.288,
+        328.776
+      ],
+      "observations": "Complete visible spectrum composition; 2 top-level panels. Color is visible; marker and line-style observations are recorded separately. No font identity or scientific validity inferred.",
+      "review_limitations": [],
+      "reviewer_type": "agent_visual_review",
+      "image_sha256": "7a7616b9e6a4274192fe1425c68ec8c63fde9a4a829aa8e30086a50cd49db27a",
+      "pdf_sha256": "96e067cce216ebf7b72623f0a38477253bfad1c04ed7d6c26454af3f90e6b203"
+    },
+    {
+      "figure_id": "10.1103/wws8-m34w_fig1",
+      "doi": "10.1103/wws8-m34w",
+      "title": "Low Energy Limit of Banks-Fischler-Shenker-Susskind Quantum Mechanics",
+      "source_url": "https://doi.org/10.1103/wws8-m34w",
+      "family_ids": [],
+      "figure_type": "schematic",
+      "page": 3,
+      "bbox_pt": [
+        68.157,
+        584.207,
+        281.571,
+        664.894
+      ],
+      "observations": "Complete visible schematic composition; 3 top-level panels. Color is visible; marker and line-style observations are recorded separately. No font identity or scientific validity inferred.",
+      "review_limitations": [],
+      "reviewer_type": "agent_visual_review",
+      "image_sha256": "fa804fe6c76a326614cddf5f883de58638cb10c0a412cf6c186fe6e943d15f04",
+      "pdf_sha256": "ecc476cb5d0d0b8eaae77e79aeb2322d9981f2bc711a2defa3d8fd2306dbd890"
+    },
+    {
+      "figure_id": "10.1103/wws8-m34w_fig2",
+      "doi": "10.1103/wws8-m34w",
+      "title": "Low Energy Limit of Banks-Fischler-Shenker-Susskind Quantum Mechanics",
+      "source_url": "https://doi.org/10.1103/wws8-m34w",
+      "family_ids": [],
+      "figure_type": "trend",
+      "page": 4,
+      "bbox_pt": [
+        344.407,
+        45.426,
+        530.478,
+        218.444
+      ],
+      "observations": "Complete visible trend composition; 1 top-level panels. Color is visible; marker and line-style observations are recorded separately. No font identity or scientific validity inferred.",
+      "review_limitations": [],
+      "reviewer_type": "agent_visual_review",
+      "image_sha256": "73547fb519448afd9898173c78487fc826cb6bf763bed8452292fac3ad936303",
+      "pdf_sha256": "ecc476cb5d0d0b8eaae77e79aeb2322d9981f2bc711a2defa3d8fd2306dbd890"
+    },
+    {
+      "figure_id": "10.1103/wws8-m34w_fig3",
+      "doi": "10.1103/wws8-m34w",
+      "title": "Low Energy Limit of Banks-Fischler-Shenker-Susskind Quantum Mechanics",
+      "source_url": "https://doi.org/10.1103/wws8-m34w",
+      "family_ids": [],
+      "figure_type": "trend",
+      "page": 4,
+      "bbox_pt": [
+        344.922,
+        473.917,
+        530.094,
+        654.215
+      ],
+      "observations": "Complete visible trend composition; 1 top-level panels. Color is visible; marker and line-style observations are recorded separately. No font identity or scientific validity inferred.",
+      "review_limitations": [],
+      "reviewer_type": "agent_visual_review",
+      "image_sha256": "eadf4f477ee7b5cffd3ca5c3d09419ceefbc50dd6e430441852e414767454967",
+      "pdf_sha256": "ecc476cb5d0d0b8eaae77e79aeb2322d9981f2bc711a2defa3d8fd2306dbd890"
+    },
+    {
+      "figure_id": "10.1103/rpj5-cns6_fig1",
+      "doi": "10.1103/rpj5-cns6",
+      "title": "Bound on Entanglement in Neural Quantum States",
+      "source_url": "https://doi.org/10.1103/rpj5-cns6",
+      "family_ids": [],
+      "figure_type": "schematic",
+      "page": 2,
+      "bbox_pt": [
+        351.496,
+        45.899,
+        524.131,
+        113.383
+      ],
+      "observations": "Complete visible schematic composition; 1 top-level panels. Color is visible; marker and line-style observations are recorded separately. No font identity or scientific validity inferred.",
+      "review_limitations": [],
+      "reviewer_type": "agent_visual_review",
+      "image_sha256": "af95087cf4efbf59babd95c15ddc46b57f299746da89c15608a1e8ec15104c79",
+      "pdf_sha256": "877f8c39cd35cb0aa4dfdaec00ece94ed2fca94d5afe19b435b08327df39163c"
+    },
+    {
+      "figure_id": "10.1103/rpj5-cns6_fig2",
+      "doi": "10.1103/rpj5-cns6",
+      "title": "Bound on Entanglement in Neural Quantum States",
+      "source_url": "https://doi.org/10.1103/rpj5-cns6",
+      "family_ids": [],
+      "figure_type": "mixed",
+      "page": 4,
+      "bbox_pt": [
+        51.251,
+        43.329,
+        298.772,
+        278.192
+      ],
+      "observations": "Complete visible mixed composition; 4 top-level panels. Color is visible; marker and line-style observations are recorded separately. No font identity or scientific validity inferred.",
+      "review_limitations": [],
+      "reviewer_type": "agent_visual_review",
+      "image_sha256": "b6e6ea90a93e9be9774fc1d3068ede8830b96c734c22d63950b59ff0bd2d8248",
+      "pdf_sha256": "877f8c39cd35cb0aa4dfdaec00ece94ed2fca94d5afe19b435b08327df39163c"
+    },
+    {
+      "figure_id": "10.1103/rpj5-cns6_fig3",
+      "doi": "10.1103/rpj5-cns6",
+      "title": "Bound on Entanglement in Neural Quantum States",
+      "source_url": "https://doi.org/10.1103/rpj5-cns6",
+      "family_ids": [],
+      "figure_type": "comparison",
+      "page": 5,
+      "bbox_pt": [
+        50.793,
+        43.177,
+        295.302,
+        134.759
+      ],
+      "observations": "Complete visible comparison composition; 2 top-level panels. Color is visible; marker and line-style observations are recorded separately. No font identity or scientific validity inferred.",
+      "review_limitations": [],
+      "reviewer_type": "agent_visual_review",
+      "image_sha256": "66aabac7d07052c610ae810643e7ec3d07288519d12790d5878291381e164703",
+      "pdf_sha256": "877f8c39cd35cb0aa4dfdaec00ece94ed2fca94d5afe19b435b08327df39163c"
+    },
+    {
+      "figure_id": "10.1103/z161-sd1y_fig1",
+      "doi": "10.1103/z161-sd1y",
+      "title": "Observing the Glass and Jamming Transitions of Dense Granular Material in Microgravity",
+      "source_url": "https://doi.org/10.1103/z161-sd1y",
+      "family_ids": [],
+      "figure_type": "mixed",
+      "page": 2,
+      "bbox_pt": [
+        51.518,
+        45.056,
+        297.557,
+        157.415
+      ],
+      "observations": "Complete visible mixed composition; 1 top-level panels. Color is visible; marker and line-style observations are recorded separately. No font identity or scientific validity inferred.",
+      "review_limitations": [],
+      "reviewer_type": "agent_visual_review",
+      "image_sha256": "8af6d3baecae177f2b133b07c0ce24f87ac3e3b1153da4835d2e155d0a6a9497",
+      "pdf_sha256": "048f398d6b77a04a9dd292a1f807b29ba3c5278d88c55bfdfa49cc8385f31756"
+    },
+    {
+      "figure_id": "10.1103/z161-sd1y_fig2",
+      "doi": "10.1103/z161-sd1y",
+      "title": "Observing the Glass and Jamming Transitions of Dense Granular Material in Microgravity",
+      "source_url": "https://doi.org/10.1103/z161-sd1y",
+      "family_ids": [],
+      "figure_type": "multi_panel",
+      "page": 3,
+      "bbox_pt": [
+        80.583,
+        47.776,
+        529.519,
+        239.942
+      ],
+      "observations": "Complete visible multi_panel composition; 4 top-level panels. Color is visible; marker and line-style observations are recorded separately. No font identity or scientific validity inferred.",
+      "review_limitations": [],
+      "reviewer_type": "agent_visual_review",
+      "image_sha256": "dca45f835a6a400e7f86c8014d37883b79bbeed3bdd27a6caed7c85049739ec0",
+      "pdf_sha256": "048f398d6b77a04a9dd292a1f807b29ba3c5278d88c55bfdfa49cc8385f31756"
+    },
+    {
+      "figure_id": "10.1103/z161-sd1y_fig3",
+      "doi": "10.1103/z161-sd1y",
+      "title": "Observing the Glass and Jamming Transitions of Dense Granular Material in Microgravity",
+      "source_url": "https://doi.org/10.1103/z161-sd1y",
+      "family_ids": [],
+      "figure_type": "multi_panel",
+      "page": 4,
+      "bbox_pt": [
+        52.201,
+        46.824,
+        296.601,
+        420.295
+      ],
+      "observations": "Complete visible multi_panel composition; 3 top-level panels. Color is visible; marker and line-style observations are recorded separately. No font identity or scientific validity inferred.",
+      "review_limitations": [],
+      "reviewer_type": "agent_visual_review",
+      "image_sha256": "224e42ea235eecb35d78aca0afcabc19ccc132f022db0e603b6776b5630ef4d8",
+      "pdf_sha256": "048f398d6b77a04a9dd292a1f807b29ba3c5278d88c55bfdfa49cc8385f31756"
+    },
+    {
+      "figure_id": "10.1103/z161-sd1y_fig5",
+      "doi": "10.1103/z161-sd1y",
+      "title": "Observing the Glass and Jamming Transitions of Dense Granular Material in Microgravity",
+      "source_url": "https://doi.org/10.1103/z161-sd1y",
+      "family_ids": [],
+      "figure_type": "comparison",
+      "page": 7,
+      "bbox_pt": [
+        315.508,
+        46.09,
+        559.907,
+        286.855
+      ],
+      "observations": "Complete visible comparison composition; 2 top-level panels. Color is visible; marker and line-style observations are recorded separately. No font identity or scientific validity inferred.",
+      "review_limitations": [],
+      "reviewer_type": "agent_visual_review",
+      "image_sha256": "e18c3f79f34e0e2fbb4f3fa09d5f625831de16212d06ff7e125bc511bb276cc7",
+      "pdf_sha256": "048f398d6b77a04a9dd292a1f807b29ba3c5278d88c55bfdfa49cc8385f31756"
+    },
+    {
+      "figure_id": "10.1103/bkzn-qpqg_fig1",
+      "doi": "10.1103/bkzn-qpqg",
+      "title": "Surface Magnon Propagation in a van der Waals Antiferromagnet",
+      "source_url": "https://doi.org/10.1103/bkzn-qpqg",
+      "family_ids": [],
+      "figure_type": "mixed",
+      "page": 2,
+      "bbox_pt": [
+        62.637,
+        45.938,
+        550.312,
+        301.4
+      ],
+      "observations": "Complete visible mixed composition; 5 top-level panels. Color is visible; marker and line-style observations are recorded separately. No font identity or scientific validity inferred.",
+      "review_limitations": [],
+      "reviewer_type": "agent_visual_review",
+      "image_sha256": "25c24ae0e87d2be1ad3f65ffea8a48c93a1d9aadd2c1d86152c014bed334b713",
+      "pdf_sha256": "fb5a94ee0c84cd3708fb5a51353f9d55c9561df4d8021b3a39c2458700b5e66c"
+    },
+    {
+      "figure_id": "10.1103/bkzn-qpqg_fig2",
+      "doi": "10.1103/bkzn-qpqg",
+      "title": "Surface Magnon Propagation in a van der Waals Antiferromagnet",
+      "source_url": "https://doi.org/10.1103/bkzn-qpqg",
+      "family_ids": [],
+      "figure_type": "mixed",
+      "page": 3,
+      "bbox_pt": [
+        61.491,
+        44.82,
+        546.423,
+        191.506
+      ],
+      "observations": "Complete visible mixed composition; 5 top-level panels. Color is visible; marker and line-style observations are recorded separately. No font identity or scientific validity inferred.",
+      "review_limitations": [],
+      "reviewer_type": "agent_visual_review",
+      "image_sha256": "387b3e4b4ebbe7c72eefe9f01c70dd1501524cce33b7fe9c8232e96bba77d69d",
+      "pdf_sha256": "fb5a94ee0c84cd3708fb5a51353f9d55c9561df4d8021b3a39c2458700b5e66c"
+    },
+    {
+      "figure_id": "10.1103/bkzn-qpqg_fig3",
+      "doi": "10.1103/bkzn-qpqg",
+      "title": "Surface Magnon Propagation in a van der Waals Antiferromagnet",
+      "source_url": "https://doi.org/10.1103/bkzn-qpqg",
+      "family_ids": [],
+      "figure_type": "comparison",
+      "page": 4,
+      "bbox_pt": [
+        52.16,
+        45.769,
+        297.076,
+        183.377
+      ],
+      "observations": "Complete visible comparison composition; 1 top-level panels. Color is visible; marker and line-style observations are recorded separately. No font identity or scientific validity inferred.",
+      "review_limitations": [],
+      "reviewer_type": "agent_visual_review",
+      "image_sha256": "891580910b3d67a7a08b761457dc20129acd4e3bfc9c0691d813d2cbd4ddfce3",
+      "pdf_sha256": "fb5a94ee0c84cd3708fb5a51353f9d55c9561df4d8021b3a39c2458700b5e66c"
+    },
+    {
+      "figure_id": "10.1103/bkzn-qpqg_fig4",
+      "doi": "10.1103/bkzn-qpqg",
+      "title": "Surface Magnon Propagation in a van der Waals Antiferromagnet",
+      "source_url": "https://doi.org/10.1103/bkzn-qpqg",
+      "family_ids": [],
+      "figure_type": "spectrum",
+      "page": 5,
+      "bbox_pt": [
+        62.743,
+        45.519,
+        548.845,
+        197.734
+      ],
+      "observations": "Complete visible spectrum composition; 3 top-level panels. Color is visible; marker and line-style observations are recorded separately. No font identity or scientific validity inferred.",
+      "review_limitations": [],
+      "reviewer_type": "agent_visual_review",
+      "image_sha256": "514f63cfe7ce94848ab9f4b5c9713fce071722144f2322c4f9f78ffa79ea1714",
+      "pdf_sha256": "fb5a94ee0c84cd3708fb5a51353f9d55c9561df4d8021b3a39c2458700b5e66c"
+    },
+    {
+      "figure_id": "10.1103/physrevlett.133.246605_fig2",
+      "doi": "10.1103/physrevlett.133.246605",
+      "title": "Splitting of the Girvin-MacDonald-Platzman Density Wave and the Nature of Chiral Gravitons in the Fractional Quantum Hall Effect",
+      "source_url": "https://doi.org/10.1103/physrevlett.133.246605",
+      "family_ids": [],
+      "figure_type": "spectrum",
+      "page": 4,
+      "bbox_pt": [
+        56.439,
+        45.328,
+        554.972,
+        231.032
+      ],
+      "observations": "Complete visible spectrum composition; 6 top-level panels. Color is visible; marker and line-style observations are recorded separately. No font identity or scientific validity inferred.",
+      "review_limitations": [],
+      "reviewer_type": "agent_visual_review",
+      "image_sha256": "13d0ec46b049d410a3309ee1de7a815ce0fdd5179bf292c9a12eeb7cc2b12d3c",
+      "pdf_sha256": "320c31cc9ea19d5b1bf86f2e2793d0cb586eb54a4972eb84e6c920fec7bc5fc9"
+    },
+    {
+      "figure_id": "10.1103/physrevlett.133.246605_fig3",
+      "doi": "10.1103/physrevlett.133.246605",
+      "title": "Splitting of the Girvin-MacDonald-Platzman Density Wave and the Nature of Chiral Gravitons in the Fractional Quantum Hall Effect",
+      "source_url": "https://doi.org/10.1103/physrevlett.133.246605",
+      "family_ids": [],
+      "figure_type": "spatial_field",
+      "page": 4,
+      "bbox_pt": [
+        52.356,
+        598.35,
+        295.862,
+        665.205
+      ],
+      "observations": "Complete visible spatial_field composition; 3 top-level panels. Color is visible; marker and line-style observations are recorded separately. No font identity or scientific validity inferred.",
+      "review_limitations": [],
+      "reviewer_type": "agent_visual_review",
+      "image_sha256": "880b98addb6e3a6d82cf58566210cf67af6e967973099cfc8055d2ceff11a744",
+      "pdf_sha256": "320c31cc9ea19d5b1bf86f2e2793d0cb586eb54a4972eb84e6c920fec7bc5fc9"
+    },
+    {
+      "figure_id": "10.1103/5jnj-97vs_fig1",
+      "doi": "10.1103/5jnj-97vs",
+      "title": "Control of Molecular Rotation in Helium Nanodroplets with an Optical Centrifuge",
+      "source_url": "https://doi.org/10.1103/5jnj-97vs",
+      "family_ids": [],
+      "figure_type": "schematic",
+      "page": 3,
+      "bbox_pt": [
+        76.828,
+        45.808,
+        537.932,
+        200.912
+      ],
+      "observations": "Complete visible schematic composition; 3 top-level panels. Color is visible; marker and line-style observations are recorded separately. No font identity or scientific validity inferred.",
+      "review_limitations": [],
+      "reviewer_type": "agent_visual_review",
+      "image_sha256": "94c8bef01890a581fe37b7d7ba18108705920945140e38f1bcf40b62a41bd0bc",
+      "pdf_sha256": "06cd23ac75c1bc8f451fd93eb797f98c353d19182b35a2065877f7fd4619af83"
+    },
+    {
+      "figure_id": "10.1103/5jnj-97vs_fig2",
+      "doi": "10.1103/5jnj-97vs",
+      "title": "Control of Molecular Rotation in Helium Nanodroplets with an Optical Centrifuge",
+      "source_url": "https://doi.org/10.1103/5jnj-97vs",
+      "family_ids": [],
+      "figure_type": "trajectory",
+      "page": 3,
+      "bbox_pt": [
+        315.565,
+        306.547,
+        559.739,
+        575.166
+      ],
+      "observations": "Complete visible trajectory composition; 3 top-level panels. Color is visible; marker and line-style observations are recorded separately. No font identity or scientific validity inferred.",
+      "review_limitations": [],
+      "reviewer_type": "agent_visual_review",
+      "image_sha256": "371a316ba6e90819e6c0cd1ec650b81eb7caa4a67da242e3dffc0c3f1a25e5f1",
+      "pdf_sha256": "06cd23ac75c1bc8f451fd93eb797f98c353d19182b35a2065877f7fd4619af83"
+    },
+    {
+      "figure_id": "10.1103/5jnj-97vs_fig3",
+      "doi": "10.1103/5jnj-97vs",
+      "title": "Control of Molecular Rotation in Helium Nanodroplets with an Optical Centrifuge",
+      "source_url": "https://doi.org/10.1103/5jnj-97vs",
+      "family_ids": [],
+      "figure_type": "spectrum",
+      "page": 4,
+      "bbox_pt": [
+        51.811,
+        46.758,
+        296.489,
+        263.901
+      ],
+      "observations": "Complete visible spectrum composition; 1 top-level panels. Color is visible; marker and line-style observations are recorded separately. No font identity or scientific validity inferred.",
+      "review_limitations": [],
+      "reviewer_type": "agent_visual_review",
+      "image_sha256": "1557e5d93f7daa1c65134a4c2c644ef4cccc55044e24877babd72f72dac6a5dd",
+      "pdf_sha256": "06cd23ac75c1bc8f451fd93eb797f98c353d19182b35a2065877f7fd4619af83"
+    },
+    {
+      "figure_id": "10.1103/38ds-xjl3_fig1",
+      "doi": "10.1103/38ds-xjl3",
+      "title": "Microscopic Origin of Reduced Magnetic Order in a Frustrated Metal",
+      "source_url": "https://doi.org/10.1103/38ds-xjl3",
+      "family_ids": [],
+      "figure_type": "mixed",
+      "page": 2,
+      "bbox_pt": [
+        52.588,
+        44.968,
+        296.612,
+        272.312
+      ],
+      "observations": "Complete visible mixed composition; 4 top-level panels. Color is visible; marker and line-style observations are recorded separately. No font identity or scientific validity inferred.",
+      "review_limitations": [],
+      "reviewer_type": "agent_visual_review",
+      "image_sha256": "f97672d32c2e1dd3518e007b94dfe885e58d0c66cab82060b105c024bd8b2b43",
+      "pdf_sha256": "60da507b3fdb45d56ad42e1ea389a055e3f67bf04ddf35f76b8c9de1651a21a7"
+    },
+    {
+      "figure_id": "10.1103/38ds-xjl3_fig2",
+      "doi": "10.1103/38ds-xjl3",
+      "title": "Microscopic Origin of Reduced Magnetic Order in a Frustrated Metal",
+      "source_url": "https://doi.org/10.1103/38ds-xjl3",
+      "family_ids": [],
+      "figure_type": "comparison",
+      "page": 3,
+      "bbox_pt": [
+        69.028,
+        473.608,
+        279.452,
+        630.992
+      ],
+      "observations": "Complete visible comparison composition; 4 top-level panels. Color is visible; marker and line-style observations are recorded separately. No font identity or scientific validity inferred.",
+      "review_limitations": [],
+      "reviewer_type": "agent_visual_review",
+      "image_sha256": "db6acb2f7959fdbae8203ed2afffa8605f0c30d015db44df553f090665471c9d",
+      "pdf_sha256": "60da507b3fdb45d56ad42e1ea389a055e3f67bf04ddf35f76b8c9de1651a21a7"
+    },
+    {
+      "figure_id": "10.1103/38ds-xjl3_fig4",
+      "doi": "10.1103/38ds-xjl3",
+      "title": "Microscopic Origin of Reduced Magnetic Order in a Frustrated Metal",
+      "source_url": "https://doi.org/10.1103/38ds-xjl3",
+      "family_ids": [],
+      "figure_type": "mixed",
+      "page": 4,
+      "bbox_pt": [
+        314.788,
+        44.968,
+        560.252,
+        237.272
+      ],
+      "observations": "Complete visible mixed composition; 4 top-level panels. Color is visible; marker and line-style observations are recorded separately. No font identity or scientific validity inferred.",
+      "review_limitations": [],
+      "reviewer_type": "agent_visual_review",
+      "image_sha256": "0a3b145c9bd6a7031c57b2a8f9586ad03993f6dd45e1db15985d4d6bace48563",
+      "pdf_sha256": "60da507b3fdb45d56ad42e1ea389a055e3f67bf04ddf35f76b8c9de1651a21a7"
+    },
+    {
+      "figure_id": "10.1103/31q1-hj3n_fig1",
+      "doi": "10.1103/31q1-hj3n",
+      "title": "Pseudogiant Number Fluctuations and Nematic Order in Microswimmer Suspensions",
+      "source_url": "https://doi.org/10.1103/31q1-hj3n",
+      "family_ids": [],
+      "figure_type": "comparison",
+      "page": 3,
+      "bbox_pt": [
+        81.714,
+        46.54,
+        267.3,
+        212.788
+      ],
+      "observations": "Complete visible comparison composition; 1 top-level panels. Color is visible; marker and line-style observations are recorded separately. No font identity or scientific validity inferred.",
+      "review_limitations": [],
+      "reviewer_type": "agent_visual_review",
+      "image_sha256": "aa587f5fd4157f06585cc2796526d5ed352a9e3f3df7155d4174e7783d0516a4",
+      "pdf_sha256": "938f405825155b18e83649c7a33288133280e02059dc8f77d2806b795f8b0873"
+    },
+    {
+      "figure_id": "10.1103/31q1-hj3n_fig3",
+      "doi": "10.1103/31q1-hj3n",
+      "title": "Pseudogiant Number Fluctuations and Nematic Order in Microswimmer Suspensions",
+      "source_url": "https://doi.org/10.1103/31q1-hj3n",
+      "family_ids": [],
+      "figure_type": "comparison",
+      "page": 5,
+      "bbox_pt": [
+        65.556,
+        47.171,
+        283.766,
+        336.964
+      ],
+      "observations": "Complete visible comparison composition; 2 top-level panels. Color is visible; marker and line-style observations are recorded separately. No font identity or scientific validity inferred.",
+      "review_limitations": [],
+      "reviewer_type": "agent_visual_review",
+      "image_sha256": "cab632ce326963bafc8cb982453b9b3fca7386ee6360f9a1ce4d7620c3f8324c",
+      "pdf_sha256": "938f405825155b18e83649c7a33288133280e02059dc8f77d2806b795f8b0873"
+    },
+    {
+      "figure_id": "10.1103/31q1-hj3n_fig4",
+      "doi": "10.1103/31q1-hj3n",
+      "title": "Pseudogiant Number Fluctuations and Nematic Order in Microswimmer Suspensions",
+      "source_url": "https://doi.org/10.1103/31q1-hj3n",
+      "family_ids": [],
+      "figure_type": "spatial_field",
+      "page": 7,
+      "bbox_pt": [
+        351.624,
+        476.128,
+        524.651,
+        664.253
+      ],
+      "observations": "Complete visible spatial_field composition; 4 top-level panels. Color is visible; marker and line-style observations are recorded separately. No font identity or scientific validity inferred.",
+      "review_limitations": [],
+      "reviewer_type": "agent_visual_review",
+      "image_sha256": "61215f9912fa8644a49462db20193737832a4b7f6bf53a6ccc3b206128723c0b",
+      "pdf_sha256": "938f405825155b18e83649c7a33288133280e02059dc8f77d2806b795f8b0873"
+    },
+    {
+      "figure_id": "10.1103/physrevlett.132.236002_fig1",
+      "doi": "10.1103/physrevlett.132.236002",
+      "title": "Normal Fermi Surface in the Nodal Superconductor CeCoIn 5 Revealed via Thermal Conductivity",
+      "source_url": "https://doi.org/10.1103/physrevlett.132.236002",
+      "family_ids": [],
+      "figure_type": "schematic",
+      "page": 2,
+      "bbox_pt": [
+        93.028,
+        44.968,
+        256.052,
+        197.912
+      ],
+      "observations": "Complete visible schematic composition; 1 top-level panels. Color is visible; marker and line-style observations are recorded separately. No font identity or scientific validity inferred.",
+      "review_limitations": [],
+      "reviewer_type": "agent_visual_review",
+      "image_sha256": "d2bdb0f46e561728b0392d9976a8b83a018a425e573111abeb1b008781a27363",
+      "pdf_sha256": "a3b4242155a088e57547a31ae61cb7c077fa78e5c5b63941c257c0d5586c8a2d"
+    },
+    {
+      "figure_id": "10.1103/physrevlett.132.236002_fig2",
+      "doi": "10.1103/physrevlett.132.236002",
+      "title": "Normal Fermi Surface in the Nodal Superconductor CeCoIn 5 Revealed via Thermal Conductivity",
+      "source_url": "https://doi.org/10.1103/physrevlett.132.236002",
+      "family_ids": [],
+      "figure_type": "comparison",
+      "page": 2,
+      "bbox_pt": [
+        61.948,
+        501.208,
+        287.132,
+        654.872
+      ],
+      "observations": "Complete visible comparison composition; 1 top-level panels. Color is visible; marker and line-style observations are recorded separately. No font identity or scientific validity inferred.",
+      "review_limitations": [],
+      "reviewer_type": "agent_visual_review",
+      "image_sha256": "a3f168aad172bf3913cf28fea3b3533e1eda7d7c5fc4114316fe28a07ab410fa",
+      "pdf_sha256": "a3b4242155a088e57547a31ae61cb7c077fa78e5c5b63941c257c0d5586c8a2d"
+    },
+    {
+      "figure_id": "10.1103/physrevlett.132.236002_fig3",
+      "doi": "10.1103/physrevlett.132.236002",
+      "title": "Normal Fermi Surface in the Nodal Superconductor CeCoIn 5 Revealed via Thermal Conductivity",
+      "source_url": "https://doi.org/10.1103/physrevlett.132.236002",
+      "family_ids": [],
+      "figure_type": "multi_panel",
+      "page": 3,
+      "bbox_pt": [
+        145.355,
+        46.288,
+        468.647,
+        309.476
+      ],
+      "observations": "Complete visible multi_panel composition; 4 top-level panels. Color is visible; marker and line-style observations are recorded separately. No font identity or scientific validity inferred.",
+      "review_limitations": [],
+      "reviewer_type": "agent_visual_review",
+      "image_sha256": "ffa60ef2a647836dd670da9db7e59e7f7387aecc86bf3ca3cdc9c72c11f5678f",
+      "pdf_sha256": "a3b4242155a088e57547a31ae61cb7c077fa78e5c5b63941c257c0d5586c8a2d"
+    },
+    {
+      "figure_id": "10.1103/physrevlett.132.236002_fig5",
+      "doi": "10.1103/physrevlett.132.236002",
+      "title": "Normal Fermi Surface in the Nodal Superconductor CeCoIn 5 Revealed via Thermal Conductivity",
+      "source_url": "https://doi.org/10.1103/physrevlett.132.236002",
+      "family_ids": [],
+      "figure_type": "mixed",
+      "page": 4,
+      "bbox_pt": [
+        50.668,
+        379.528,
+        298.412,
+        665.792
+      ],
+      "observations": "Complete visible mixed composition; ambiguous top-level panels. Color is visible; marker and line-style observations are recorded separately. No font identity or scientific validity inferred.",
+      "review_limitations": [],
+      "reviewer_type": "agent_visual_review",
+      "image_sha256": "786752487ae37e6af5f8554ff0cfac026f0c5c34619ed9719eea13a5685875e6",
+      "pdf_sha256": "a3b4242155a088e57547a31ae61cb7c077fa78e5c5b63941c257c0d5586c8a2d"
+    },
+    {
+      "figure_id": "10.1103/flv6-zw1v_fig1",
+      "doi": "10.1103/flv6-zw1v",
+      "title": "Enzyme as Maxwell’s Demon: Steady-State Deviation from Chemical Equilibrium by Enhanced Enzyme Diffusion",
+      "source_url": "https://doi.org/10.1103/flv6-zw1v",
+      "family_ids": [],
+      "figure_type": "mixed",
+      "page": 2,
+      "bbox_pt": [
+        51.988,
+        44.968,
+        560.132,
+        181.472
+      ],
+      "observations": "Complete visible mixed composition; 3 top-level panels. Color is visible; marker and line-style observations are recorded separately. No font identity or scientific validity inferred.",
+      "review_limitations": [],
+      "reviewer_type": "agent_visual_review",
+      "image_sha256": "f1ca7bd78de4345efa5d9bacc9b667c273f8ed938f3feb516f6fa2603d42b085",
+      "pdf_sha256": "954cc53efb012297498e327d5b3d7c46b511a190d032977a9ff033efb0fecb8d"
+    },
+    {
+      "figure_id": "10.1103/flv6-zw1v_fig2",
+      "doi": "10.1103/flv6-zw1v",
+      "title": "Enzyme as Maxwell’s Demon: Steady-State Deviation from Chemical Equilibrium by Enhanced Enzyme Diffusion",
+      "source_url": "https://doi.org/10.1103/flv6-zw1v",
+      "family_ids": [],
+      "figure_type": "schematic",
+      "page": 3,
+      "bbox_pt": [
+        335.188,
+        44.968,
+        539.972,
+        360.272
+      ],
+      "observations": "Complete visible schematic composition; 2 top-level panels. Color is visible; marker and line-style observations are recorded separately. No font identity or scientific validity inferred.",
+      "review_limitations": [],
+      "reviewer_type": "agent_visual_review",
+      "image_sha256": "af7df07f3daa3924998ea04914cfd43282b11e751e92eb7040988ebca5178e65",
+      "pdf_sha256": "954cc53efb012297498e327d5b3d7c46b511a190d032977a9ff033efb0fecb8d"
+    },
+    {
+      "figure_id": "10.1103/flv6-zw1v_fig3",
+      "doi": "10.1103/flv6-zw1v",
+      "title": "Enzyme as Maxwell’s Demon: Steady-State Deviation from Chemical Equilibrium by Enhanced Enzyme Diffusion",
+      "source_url": "https://doi.org/10.1103/flv6-zw1v",
+      "family_ids": [],
+      "figure_type": "heatmap",
+      "page": 4,
+      "bbox_pt": [
+        62.428,
+        44.968,
+        286.652,
+        201.992
+      ],
+      "observations": "Complete visible heatmap composition; 1 top-level panels. Color is visible; marker and line-style observations are recorded separately. No font identity or scientific validity inferred.",
+      "review_limitations": [],
+      "reviewer_type": "agent_visual_review",
+      "image_sha256": "5c8d8d5fdaab1eddda8aff54fa22e252c32e49ec30a59dbc20475e3d1e068abc",
+      "pdf_sha256": "954cc53efb012297498e327d5b3d7c46b511a190d032977a9ff033efb0fecb8d"
+    },
+    {
+      "figure_id": "10.1103/56q8-bjw2_fig1",
+      "doi": "10.1103/56q8-bjw2",
+      "title": "Wavenumber Lock-in in Buckled Elastic Structures: An Analogue to Parametric Instabilities",
+      "source_url": "https://doi.org/10.1103/56q8-bjw2",
+      "family_ids": [],
+      "figure_type": "mixed",
+      "page": 2,
+      "bbox_pt": [
+        51.229,
+        43.696,
+        295.43,
+        319.734
+      ],
+      "observations": "Complete visible mixed composition; 4 top-level panels. Color is visible; marker and line-style observations are recorded separately. No font identity or scientific validity inferred.",
+      "review_limitations": [],
+      "reviewer_type": "agent_visual_review",
+      "image_sha256": "3735700f846f0707f7029c696cd12498a216e9d370512bb70963eba3ab3e1114",
+      "pdf_sha256": "36b0029035a73d65c2ff8495397bef060a903451a7eec7bbd8e9c95ca19a5016"
+    },
+    {
+      "figure_id": "10.1103/56q8-bjw2_fig2",
+      "doi": "10.1103/56q8-bjw2",
+      "title": "Wavenumber Lock-in in Buckled Elastic Structures: An Analogue to Parametric Instabilities",
+      "source_url": "https://doi.org/10.1103/56q8-bjw2",
+      "family_ids": [],
+      "figure_type": "mixed",
+      "page": 3,
+      "bbox_pt": [
+        51.367,
+        43.85,
+        297.736,
+        456.29
+      ],
+      "observations": "Complete visible mixed composition; 5 top-level panels. Color is visible; marker and line-style observations are recorded separately. No font identity or scientific validity inferred.",
+      "review_limitations": [],
+      "reviewer_type": "agent_visual_review",
+      "image_sha256": "3be4c91f024ac1a55bf604c55fc48a84e8ee947b47d592e18ea516e6f3b4651e",
+      "pdf_sha256": "36b0029035a73d65c2ff8495397bef060a903451a7eec7bbd8e9c95ca19a5016"
+    },
+    {
+      "figure_id": "10.1103/56q8-bjw2_fig3",
+      "doi": "10.1103/56q8-bjw2",
+      "title": "Wavenumber Lock-in in Buckled Elastic Structures: An Analogue to Parametric Instabilities",
+      "source_url": "https://doi.org/10.1103/56q8-bjw2",
+      "family_ids": [],
+      "figure_type": "mixed",
+      "page": 4,
+      "bbox_pt": [
+        50.188,
+        43.967,
+        297.812,
+        461.192
+      ],
+      "observations": "Complete visible mixed composition; 4 top-level panels. Color is visible; marker and line-style observations are recorded separately. No font identity or scientific validity inferred.",
+      "review_limitations": [],
+      "reviewer_type": "agent_visual_review",
+      "image_sha256": "5904f826471a74ee83734346e161117bb63fe57c8ba0a6d5803f4efe4ae34ca2",
+      "pdf_sha256": "36b0029035a73d65c2ff8495397bef060a903451a7eec7bbd8e9c95ca19a5016"
+    },
+    {
+      "figure_id": "10.1103/m2dl-ghbf_fig1",
+      "doi": "10.1103/m2dl-ghbf",
+      "title": "Dual-Circular Raman Optical Activity of Axial Multipolar Order",
+      "source_url": "https://doi.org/10.1103/m2dl-ghbf",
+      "family_ids": [
+        "schematic",
+        "multipanel"
+      ],
+      "page": 2,
+      "bbox_pt": [
+        52.822,
+        45.055,
+        296.341,
+        205.774
+      ],
+      "observations": [
+        "Four labeled conceptual panels show octahedral faces, a mirror plane and circular-polarization arrows, matching the supplied Fig. 1 caption."
+      ],
+      "review_limitations": [
+        "Arrows represent conceptual polarization directions, not a sampled quantitative vector field.",
+        "Appearance and caption-association review only; no independent validation of scientific results or extraction of exact typography."
+      ],
+      "reviewer_type": "agent_visual_review",
+      "image_sha256": "52605e3ac8712afe03f75cbf77f458fca37d2dd4c56287db928eb84cfbce3782",
+      "pdf_sha256": "91d0a439c1b678928dea8f81407b8fb88e2dd82ed18d3b32a69054f0e04c3d6d"
+    },
+    {
+      "figure_id": "10.1103/m2dl-ghbf_fig3",
+      "doi": "10.1103/m2dl-ghbf",
+      "title": "Dual-Circular Raman Optical Activity of Axial Multipolar Order",
+      "source_url": "https://doi.org/10.1103/m2dl-ghbf",
+      "family_ids": [
+        "line_comparison",
+        "scatter",
+        "spectrum",
+        "multipanel"
+      ],
+      "page": 4,
+      "bbox_pt": [
+        335.776,
+        45.055,
+        539.359,
+        284.35
+      ],
+      "observations": [
+        "Three vertically aligned panels retain frequency axes, susceptibility markers, and signed red/blue cross-circular curves; the source caption names all three panels."
+      ],
+      "review_limitations": [
+        "The color-sign relation is source-specific and must not become a universal palette rule.",
+        "Visual appearance, crop completeness and caption association only; scientific validity and numerical reproducibility are not certified."
+      ],
+      "reviewer_type": "agent_visual_review",
+      "image_sha256": "f2f74c7353930672f9b40949ec1ae2222c360f9ea3bea37a4d0ca666a8ff1a8f",
+      "pdf_sha256": "91d0a439c1b678928dea8f81407b8fb88e2dd82ed18d3b32a69054f0e04c3d6d"
+    },
+    {
+      "figure_id": "10.1103/m2dl-ghbf_fig4",
+      "doi": "10.1103/m2dl-ghbf",
+      "title": "Dual-Circular Raman Optical Activity of Axial Multipolar Order",
+      "source_url": "https://doi.org/10.1103/m2dl-ghbf",
+      "family_ids": [
+        "spectrum",
+        "line_comparison",
+        "multipanel"
+      ],
+      "page": 5,
+      "bbox_pt": [
+        63.289,
+        45.638,
+        285.894,
+        299.606
+      ],
+      "observations": [
+        "Upper panel contains paired red/blue Raman peak spectra with vertical reference lines; lower panel is a connected-marker optical-activity indicator versus photon energy. PDF page confirms both panels and caption association."
+      ],
+      "review_limitations": [
+        "Imported caption is truncated; the full source-page caption was visually consulted.",
+        "Appearance and caption-association review only; no independent validation of scientific results or extraction of exact typography."
+      ],
+      "reviewer_type": "agent_visual_review",
+      "image_sha256": "3e34cc19405c7d440e54105f4c69890161273432a0169e70d3c40a439bcd1a2e",
+      "pdf_sha256": "91d0a439c1b678928dea8f81407b8fb88e2dd82ed18d3b32a69054f0e04c3d6d"
+    },
+    {
+      "figure_id": "10.1103/physrevlett.132.246302_fig1",
+      "doi": "10.1103/physrevlett.132.246302",
+      "title": "Phonon Bloch Oscillations",
+      "source_url": "https://doi.org/10.1103/physrevlett.132.246302",
+      "family_ids": [
+        "line_comparison",
+        "wide_narrow"
+      ],
+      "page": 2,
+      "bbox_pt": [
+        93.218,
+        46.077,
+        255.862,
+        195.913
+      ],
+      "observations": [
+        "A wider black eigenfrequency-versus-index panel sits beside a narrower red adjacent-mode-spacing panel; both numerical scales and bottom labels are intact."
+      ],
+      "review_limitations": [
+        "This is a mode-index comparison, not an energy-versus-wave-vector dispersion curve.",
+        "Visual appearance, crop completeness and caption association only; scientific validity and numerical reproducibility are not certified."
+      ],
+      "reviewer_type": "agent_visual_review",
+      "image_sha256": "5ef0432f2121bde95bdfb0adf1d66777e7510d7b4a0c72a6625d60b5f849be52",
+      "pdf_sha256": "1fe245e1f2f5c0d184067736a86e097a95765eb4687a1d0479116835e46baca6"
+    },
+    {
+      "figure_id": "10.1103/physrevlett.132.246302_fig3",
+      "doi": "10.1103/physrevlett.132.246302",
+      "title": "Phonon Bloch Oscillations",
+      "source_url": "https://doi.org/10.1103/physrevlett.132.246302",
+      "family_ids": [
+        "line_comparison",
+        "scatter",
+        "multipanel"
+      ],
+      "page": 3,
+      "bbox_pt": [
+        309.0,
+        46.182,
+        572.0,
+        134.534
+      ],
+      "observations": [
+        "Two side-by-side displacement-versus-cell-index panels compare open-circle numerical values with orange analytical curves; both labeled axes and differing vertical scales are retained."
+      ],
+      "review_limitations": [
+        "The caption describes an intentional three-cell shift of analytical curves; this must not become a general plotting convention.",
+        "Appearance and caption-association review only; no independent validation of scientific results or extraction of exact typography."
+      ],
+      "reviewer_type": "agent_visual_review",
+      "image_sha256": "05f5b20493eaebbb6691d6e6046a953b4bfa13c8777c6436e5dd951064ffea2f",
+      "pdf_sha256": "1fe245e1f2f5c0d184067736a86e097a95765eb4687a1d0479116835e46baca6"
+    },
+    {
+      "figure_id": "10.1103/physrevlett.134.203603_fig1",
+      "doi": "10.1103/physrevlett.134.203603",
+      "title": "Modular Variable Laser Cooling for Efficient Entropy Extraction",
+      "source_url": "https://doi.org/10.1103/physrevlett.134.203603",
+      "family_ids": [
+        "schematic",
+        "multipanel"
+      ],
+      "page": 2,
+      "bbox_pt": [
+        59.494,
+        46.821,
+        289.376,
+        215.552
+      ],
+      "observations": [
+        "Two circuit rows distinguish position and momentum contraction, followed by two schematic phase-space distributions; the control symbols and repump boxes are complete."
+      ],
+      "review_limitations": [
+        "The ellipses are conceptual distributions; they do not establish measured trajectories or vector-field samples.",
+        "Visual appearance, crop completeness and caption association only; scientific validity and numerical reproducibility are not certified."
+      ],
+      "reviewer_type": "agent_visual_review",
+      "image_sha256": "95078c4b35c013c216a464187c418b1e9a98004c982520ff5e6b65b2a06de877",
+      "pdf_sha256": "c5c35d248bd753039ebbe682c8fe58f33d8052451b4672f0b5a01f7379b5424c"
+    },
+    {
+      "figure_id": "10.1103/physrevlett.134.203603_fig2",
+      "doi": "10.1103/physrevlett.134.203603",
+      "title": "Modular Variable Laser Cooling for Efficient Entropy Extraction",
+      "source_url": "https://doi.org/10.1103/physrevlett.134.203603",
+      "family_ids": [
+        "line_comparison",
+        "multipanel"
+      ],
+      "page": 3,
+      "bbox_pt": [
+        72.635,
+        48.506,
+        287.209,
+        346.093
+      ],
+      "observations": [
+        "Two vertically stacked probability-density comparisons use directly labeled curves; the lower panel uses a logarithmic vertical axis. Full PDF page confirms the crop and caption."
+      ],
+      "review_limitations": [
+        "Analytical probability curves are not empirical histograms. Imported caption is truncated; consult the source page for full definitions.",
+        "Appearance and caption-association review only; no independent validation of scientific results or extraction of exact typography."
+      ],
+      "reviewer_type": "agent_visual_review",
+      "image_sha256": "46a79c88950d2883e90a2e9398ded03e4c0a2beffbc28ed1b6e454525a5c27f8",
+      "pdf_sha256": "c5c35d248bd753039ebbe682c8fe58f33d8052451b4672f0b5a01f7379b5424c"
+    },
+    {
+      "figure_id": "10.1103/physrevlett.134.203603_fig3",
+      "doi": "10.1103/physrevlett.134.203603",
+      "title": "Modular Variable Laser Cooling for Efficient Entropy Extraction",
+      "source_url": "https://doi.org/10.1103/physrevlett.134.203603",
+      "family_ids": [
+        "line_comparison",
+        "scatter",
+        "uncertainty_bars",
+        "parameter_sweep",
+        "multipanel"
+      ],
+      "page": 4,
+      "bbox_pt": [
+        53.794,
+        345.118,
+        293.89,
+        575.589
+      ],
+      "observations": [
+        "Three cooling traces have visible vertical capped errors, red simulations and blue dashed predictions; both characteristic-function inset panels are complete. The caption defines the bars as 95% confidence intervals."
+      ],
+      "review_limitations": [
+        "The inset panels display different observables and are not zooms of the main data.",
+        "Visual appearance, crop completeness and caption association only; scientific validity and numerical reproducibility are not certified."
+      ],
+      "reviewer_type": "agent_visual_review",
+      "image_sha256": "4598fb0f1b70f63ca927287ef1e53f83193409fae553dc513a66d95ce44b190d",
+      "pdf_sha256": "c5c35d248bd753039ebbe682c8fe58f33d8052451b4672f0b5a01f7379b5424c"
+    },
+    {
+      "figure_id": "10.1103/physrevlett.134.023601_fig1",
+      "doi": "10.1103/physrevlett.134.023601",
+      "title": "Coherence of an Electronic Two-Level System under Continuous Charge Sensing by a Quantum Dot Detector",
+      "source_url": "https://doi.org/10.1103/physrevlett.134.023601",
+      "family_ids": [
+        "schematic",
+        "heatmap",
+        "multipanel"
+      ],
+      "page": 2,
+      "bbox_pt": [
+        50.188,
+        44.848,
+        296.883,
+        252.594
+      ],
+      "observations": [
+        "Panel (a) combines a scanning-electron image with gate/electrical annotations; (b)-(d) show current maps with colorbars, voltage axes and panel labels, consistent with the four caption parts."
+      ],
+      "review_limitations": [
+        "No spatial scale bar is visible in the electron image, so this is not tagged image_scalebar.",
+        "Appearance and caption-association review only; no independent validation of scientific results or extraction of exact typography."
+      ],
+      "reviewer_type": "agent_visual_review",
+      "image_sha256": "654109a313b6991c57f4299d15b0bcc2048c74280da82bf36bf8299dee528281",
+      "pdf_sha256": "dda8ccfb7db8cd71cf66a7453b44fe76f8100b3d38dc02d6406b45c0f6e96d80"
+    },
+    {
+      "figure_id": "10.1103/physrevlett.134.023601_fig2",
+      "doi": "10.1103/physrevlett.134.023601",
+      "title": "Coherence of an Electronic Two-Level System under Continuous Charge Sensing by a Quantum Dot Detector",
+      "source_url": "https://doi.org/10.1103/physrevlett.134.023601",
+      "family_ids": [
+        "heatmap",
+        "multipanel"
+      ],
+      "page": 3,
+      "bbox_pt": [
+        54.697,
+        45.637,
+        294.309,
+        343.628
+      ],
+      "observations": [
+        "Six complete frequency-detuning heatmaps pair measured and calculated responses by row, with a shared reflection-coefficient color scale and bottom axis labels."
+      ],
+      "review_limitations": [
+        "Grid values and normalization cannot be numerically audited from the raster alone.",
+        "Visual appearance, crop completeness and caption association only; scientific validity and numerical reproducibility are not certified."
+      ],
+      "reviewer_type": "agent_visual_review",
+      "image_sha256": "49a22ed2edee0efd0c7ba4c73082eed26a22c65bb59cba66c9500c751561c628",
+      "pdf_sha256": "dda8ccfb7db8cd71cf66a7453b44fe76f8100b3d38dc02d6406b45c0f6e96d80"
+    },
+    {
+      "figure_id": "10.1103/physrevlett.133.033601_fig2",
+      "doi": "10.1103/physrevlett.133.033601",
+      "title": "Symmetry Protected Two-Photon Coherence Time",
+      "source_url": "https://doi.org/10.1103/physrevlett.133.033601",
+      "family_ids": [
+        "energy_levels",
+        "schematic",
+        "spectrum",
+        "line_comparison",
+        "scatter",
+        "multipanel"
+      ],
+      "page": 2,
+      "bbox_pt": [
+        316.903,
+        357.144,
+        558.783,
+        631.483
+      ],
+      "observations": [
+        "The upper panels show atomic levels with transition arrows and the optical apparatus; four lower panels compare spectra/coincidence-count data with curves. Panels (a)-(f) match the caption."
+      ],
+      "review_limitations": [
+        "Counts-versus-time panels are distinct from the spectral panels; error definitions are not visually established.",
+        "Appearance and caption-association review only; no independent validation of scientific results or extraction of exact typography."
+      ],
+      "reviewer_type": "agent_visual_review",
+      "image_sha256": "2839b75b8958896ede81d4818f71504a3ed23762e12ef8af91438f716b732b2b",
+      "pdf_sha256": "a12798ccfcc73b95f6b240433a8865e8e4e506f9f09ca5c3990eaddb6e9e032e"
+    },
+    {
+      "figure_id": "10.1103/physrevlett.133.033601_fig3",
+      "doi": "10.1103/physrevlett.133.033601",
+      "title": "Symmetry Protected Two-Photon Coherence Time",
+      "source_url": "https://doi.org/10.1103/physrevlett.133.033601",
+      "family_ids": [
+        "energy_levels",
+        "schematic",
+        "spectrum",
+        "scatter",
+        "line_comparison",
+        "multipanel"
+      ],
+      "page": 3,
+      "bbox_pt": [
+        316.862,
+        45.555,
+        558.332,
+        326.877
+      ],
+      "observations": [
+        "The six-panel figure combines a labeled atomic energy-level scheme, an optical apparatus diagram, and two rows of spectral/transmission and coincidence data-versus-theory plots."
+      ],
+      "review_limitations": [
+        "Qualitative arrow meanings and the time-bin width must be read with the source caption; no apparatus dimensions are inferred.",
+        "Visual appearance, crop completeness and caption association only; scientific validity and numerical reproducibility are not certified."
+      ],
+      "reviewer_type": "agent_visual_review",
+      "image_sha256": "0a6cd5b888ea7da56e048fb4881d5d307730b3bdd5f07b83ec56f6fd4291560e",
+      "pdf_sha256": "a12798ccfcc73b95f6b240433a8865e8e4e506f9f09ca5c3990eaddb6e9e032e"
+    },
+    {
+      "figure_id": "10.1103/physrevlett.133.033601_fig4",
+      "doi": "10.1103/physrevlett.133.033601",
+      "title": "Symmetry Protected Two-Photon Coherence Time",
+      "source_url": "https://doi.org/10.1103/physrevlett.133.033601",
+      "family_ids": [
+        "schematic",
+        "line_comparison",
+        "scatter",
+        "multipanel"
+      ],
+      "page": 4,
+      "bbox_pt": [
+        58.651,
+        46.043,
+        291.158,
+        293.145
+      ],
+      "observations": [
+        "A complete optical-path schematic sits above a coincidence-count plot with two marker series and an oscillatory blue curve; these match caption panels (a) and (b)."
+      ],
+      "review_limitations": [
+        "No claim about fit quality or scientific validity follows from the visual comparison.",
+        "Appearance and caption-association review only; no independent validation of scientific results or extraction of exact typography."
+      ],
+      "reviewer_type": "agent_visual_review",
+      "image_sha256": "f41407dc744cfc461c60b18d70ea4925b7c592f6d5637588768e163e19031e4f",
+      "pdf_sha256": "a12798ccfcc73b95f6b240433a8865e8e4e506f9f09ca5c3990eaddb6e9e032e"
+    },
+    {
+      "figure_id": "10.1103/n518-jlf6_fig1",
+      "doi": "10.1103/n518-jlf6",
+      "title": "High-Order Anisotropic Magnetoresistance in a Cubic Ferromagnet",
+      "source_url": "https://doi.org/10.1103/n518-jlf6",
+      "family_ids": [
+        "polar",
+        "schematic",
+        "line_comparison",
+        "multipanel"
+      ],
+      "page": 2,
+      "bbox_pt": [
+        52.117,
+        46.424,
+        296.714,
+        247.612
+      ],
+      "observations": [
+        "A measurement-geometry schematic, two angular polar plots with black/red comparisons, and a four-series field-dependence panel are complete and match caption panels (a)–(d)."
+      ],
+      "review_limitations": [
+        "Polar radius represents the stated resistance difference, not an angular probability density.",
+        "Visual appearance, crop completeness and caption association only; scientific validity and numerical reproducibility are not certified."
+      ],
+      "reviewer_type": "agent_visual_review",
+      "image_sha256": "3eef3c2c0ed84a9f1dd8a79169b2f88377b2f1d699f852dcc3a548afcd027e54",
+      "pdf_sha256": "086679d4e02d884f519edd9b04db2108722c1590421c40d452b3ed51fe13c11d"
+    },
+    {
+      "figure_id": "10.1103/n518-jlf6_fig3",
+      "doi": "10.1103/n518-jlf6",
+      "title": "High-Order Anisotropic Magnetoresistance in a Cubic Ferromagnet",
+      "source_url": "https://doi.org/10.1103/n518-jlf6",
+      "family_ids": [
+        "line_comparison",
+        "heatmap",
+        "phase_continuous",
+        "multipanel"
+      ],
+      "page": 4,
+      "bbox_pt": [
+        74.491,
+        45.798,
+        538.156,
+        263.824
+      ],
+      "observations": [
+        "Temperature/thickness-dependent angular traces, coefficient comparisons and two continuous color maps occupy labeled panels (a)-(f); the PDF page confirms the full wide figure and colorbars."
+      ],
+      "review_limitations": [
+        "The paper calls the final panels phase diagrams, but they encode continuous coefficients; the sign boundary is not automatically proof of a thermodynamic phase transition.",
+        "Appearance and caption-association review only; no independent validation of scientific results or extraction of exact typography."
+      ],
+      "reviewer_type": "agent_visual_review",
+      "image_sha256": "8aceb6f5a9f11469be5ce9d641013f5f9c4a546f26e821c9ab6030987405dc24",
+      "pdf_sha256": "086679d4e02d884f519edd9b04db2108722c1590421c40d452b3ed51fe13c11d"
+    },
+    {
+      "figure_id": "10.1103/n518-jlf6_fig4",
+      "doi": "10.1103/n518-jlf6",
+      "title": "High-Order Anisotropic Magnetoresistance in a Cubic Ferromagnet",
+      "source_url": "https://doi.org/10.1103/n518-jlf6",
+      "family_ids": [
+        "spectrum",
+        "line_comparison",
+        "scatter",
+        "multipanel"
+      ],
+      "page": 5,
+      "bbox_pt": [
+        74.353,
+        45.307,
+        537.897,
+        169.877
+      ],
+      "observations": [
+        "Three horizontal panels show spin-resolved DOS, a transport trend with square symbols, and a cutoff-wavevector trend with a scattering-geometry inset."
+      ],
+      "review_limitations": [
+        "The inset illustrates the scattering constraint; it is not a zoom or an independent dataset.",
+        "Visual appearance, crop completeness and caption association only; scientific validity and numerical reproducibility are not certified."
+      ],
+      "reviewer_type": "agent_visual_review",
+      "image_sha256": "f95c19ddc422f6edc2999f72e820b5387ff8631cb6c52735afe1fb315622ef3a",
+      "pdf_sha256": "086679d4e02d884f519edd9b04db2108722c1590421c40d452b3ed51fe13c11d"
+    },
+    {
+      "figure_id": "10.1103/n518-jlf6_fig5",
+      "doi": "10.1103/n518-jlf6",
+      "title": "High-Order Anisotropic Magnetoresistance in a Cubic Ferromagnet",
+      "source_url": "https://doi.org/10.1103/n518-jlf6",
+      "family_ids": [
+        "schematic",
+        "surface_3d",
+        "line_comparison",
+        "parameter_sweep",
+        "uncertainty_bars",
+        "multipanel"
+      ],
+      "page": 9,
+      "bbox_pt": [
+        81.451,
+        47.06,
+        529.497,
+        400.724
+      ],
+      "observations": [
+        "Eleven panels combine angular-rotation geometry, offset angular sweeps, error-bar comparisons and two colored three-dimensional angular surfaces. The full PDF page confirms all panels and caption association."
+      ],
+      "review_limitations": [
+        "The 3D examples are radial angular surfaces, not Cartesian height maps; this distinction must be preserved when selecting a recipe.",
+        "Appearance and caption-association review only; no independent validation of scientific results or extraction of exact typography."
+      ],
+      "reviewer_type": "agent_visual_review",
+      "image_sha256": "c5a2e9b7b7b30aa98bcb4c3b7d77a7f524c50e5984ccb01845d03ede9fa1a18c",
+      "pdf_sha256": "086679d4e02d884f519edd9b04db2108722c1590421c40d452b3ed51fe13c11d"
+    },
+    {
+      "figure_id": "10.1103/physrevlett.134.017401_fig1",
+      "doi": "10.1103/physrevlett.134.017401",
+      "title": "Universal Statistics of Competition in Democratic Elections",
+      "source_url": "https://doi.org/10.1103/physrevlett.134.017401",
+      "family_ids": [
+        "line_comparison",
+        "scatter",
+        "uncertainty_band",
+        "multipanel",
+        "wide_narrow"
+      ],
+      "page": 2,
+      "bbox_pt": [
+        54.866,
+        521.474,
+        557.908,
+        669.625
+      ],
+      "observations": [
+        "A larger turnout-distribution plot precedes six smaller scaled-distribution plots; open circles and model curves are visible. Narrow colored envelopes are present around predictions and the caption identifies them as variability over realizations."
+      ],
+      "review_limitations": [
+        "Scaled distributions across countries are not finite-size collapse. The faint variability bands require the full-resolution source rather than thumbnail inspection.",
+        "Visual appearance, crop completeness and caption association only; scientific validity and numerical reproducibility are not certified."
+      ],
+      "reviewer_type": "agent_visual_review",
+      "image_sha256": "cd9b7ea5149d218fd91ae3249d7e18c9830ec9150bc0052a1df1df5b8fcde44a",
+      "pdf_sha256": "678156483296a6ec780d7364f56bc27ef110bf03839668b19df3ddb13a78c6f3"
+    },
+    {
+      "figure_id": "10.1103/physrevlett.134.017401_fig2",
+      "doi": "10.1103/physrevlett.134.017401",
+      "title": "Universal Statistics of Competition in Democratic Elections",
+      "source_url": "https://doi.org/10.1103/physrevlett.134.017401",
+      "family_ids": [
+        "line_comparison",
+        "scatter",
+        "uncertainty_band",
+        "wide_narrow",
+        "multipanel"
+      ],
+      "page": 3,
+      "bbox_pt": [
+        54.355,
+        499.183,
+        557.398,
+        647.334
+      ],
+      "observations": [
+        "One larger turnout-distribution panel is paired with six smaller model-versus-data distribution panels. Open circles, solid/dashed lines and faint model-variability shading match the supplied caption; the full-resolution image was checked."
+      ],
+      "review_limitations": [
+        "Logarithmic axes do not establish power-law behavior. The figure does not specify bin construction in the visible image.",
+        "Appearance and caption-association review only; no independent validation of scientific results or extraction of exact typography."
+      ],
+      "reviewer_type": "agent_visual_review",
+      "image_sha256": "39d8ad793f1cdc1564b4be016fa25b056b6d3e699a9dae136533baf521db9cb2",
+      "pdf_sha256": "678156483296a6ec780d7364f56bc27ef110bf03839668b19df3ddb13a78c6f3"
+    },
+    {
+      "figure_id": "10.1103/physrevlett.134.017401_fig3",
+      "doi": "10.1103/physrevlett.134.017401",
+      "title": "Universal Statistics of Competition in Democratic Elections",
+      "source_url": "https://doi.org/10.1103/physrevlett.134.017401",
+      "family_ids": [
+        "line_comparison",
+        "scatter",
+        "multipanel"
+      ],
+      "page": 4,
+      "bbox_pt": [
+        54.962,
+        46.329,
+        557.554,
+        197.5
+      ],
+      "observations": [
+        "Two complete log-axis distribution panels compare colored simulation/data symbols with a red analytical curve; each retains a distribution inset and its panel-specific legend."
+      ],
+      "review_limitations": [
+        "F(x) is a density-derived distribution in the caption; no ECDF, survival, or finite-size tag is inferred from its decreasing shape.",
+        "Visual appearance, crop completeness and caption association only; scientific validity and numerical reproducibility are not certified."
+      ],
+      "reviewer_type": "agent_visual_review",
+      "image_sha256": "c5cb64d8acf504ad709430cd30e091ccbdb0890be87a4fedccf78d0ef866899f",
+      "pdf_sha256": "678156483296a6ec780d7364f56bc27ef110bf03839668b19df3ddb13a78c6f3"
+    },
+    {
+      "figure_id": "10.1103/physrevlett.134.017401_fig4",
+      "doi": "10.1103/physrevlett.134.017401",
+      "title": "Universal Statistics of Competition in Democratic Elections",
+      "source_url": "https://doi.org/10.1103/physrevlett.134.017401",
+      "family_ids": [
+        "line_comparison",
+        "scatter",
+        "uncertainty_band",
+        "multipanel"
+      ],
+      "page": 4,
+      "bbox_pt": [
+        318.077,
+        479.284,
+        558.31,
+        648.911
+      ],
+      "observations": [
+        "Four distribution panels use open blue empirical points, red prediction curves and clearly visible red variability envelopes, matching the two-country caption."
+      ],
+      "review_limitations": [
+        "The shaded region is model-realization variability, not automatically a confidence interval for measured data.",
+        "Appearance and caption-association review only; no independent validation of scientific results or extraction of exact typography."
+      ],
+      "reviewer_type": "agent_visual_review",
+      "image_sha256": "5a32701f2e2cac919e119a04d674033dd163bb7ff41ac90a8d40678b9779b9a2",
+      "pdf_sha256": "678156483296a6ec780d7364f56bc27ef110bf03839668b19df3ddb13a78c6f3"
+    },
+    {
+      "figure_id": "10.1103/46g3-n7cx_fig1",
+      "doi": "10.1103/46g3-n7cx",
+      "title": "Tricritical Directed Percolation Controls the Laminar-Turbulent Transition in Pipes with Body Forces",
+      "source_url": "https://doi.org/10.1103/46g3-n7cx",
+      "family_ids": [
+        "line_comparison",
+        "scatter",
+        "parameter_sweep"
+      ],
+      "page": 4,
+      "bbox_pt": [
+        52.652,
+        45.055,
+        296.411,
+        230.014
+      ],
+      "observations": [
+        "The turbulent-fraction plot retains four time-coded marker series, a dash-dot comparison curve, and direct labels for the two force regimes."
+      ],
+      "review_limitations": [
+        "A one-dimensional diagnostic sweep is not itself a two-dimensional phase diagram.",
+        "Visual appearance, crop completeness and caption association only; scientific validity and numerical reproducibility are not certified."
+      ],
+      "reviewer_type": "agent_visual_review",
+      "image_sha256": "0f906681764519f658f998740a889b535d7e5e251cda455ee9767cef74466069",
+      "pdf_sha256": "46c381e45f821ca3b2715d4fec2131317309707be9b3c094becad1194c2a3890"
+    },
+    {
+      "figure_id": "10.1103/46g3-n7cx_fig3",
+      "doi": "10.1103/46g3-n7cx",
+      "title": "Tricritical Directed Percolation Controls the Laminar-Turbulent Transition in Pipes with Body Forces",
+      "source_url": "https://doi.org/10.1103/46g3-n7cx",
+      "family_ids": [
+        "phase_discrete",
+        "schematic"
+      ],
+      "page": 7,
+      "bbox_pt": [
+        315.594,
+        45.055,
+        559.533,
+        248.674
+      ],
+      "observations": [
+        "A labeled two-parameter diagram separates laminar, phase-coexistence and turbulent regions, includes a tricritical point and potential-shape sketches in each region."
+      ],
+      "review_limitations": [
+        "The caption explicitly calls this schematic; boundaries should not be treated as direct measurements.",
+        "Appearance and caption-association review only; no independent validation of scientific results or extraction of exact typography."
+      ],
+      "reviewer_type": "agent_visual_review",
+      "image_sha256": "32414f7fcd7ec8f7cd5384368499389854615001dc9b2b1cc4ad8731174f144c",
+      "pdf_sha256": "46c381e45f821ca3b2715d4fec2131317309707be9b3c094becad1194c2a3890"
+    },
+    {
+      "figure_id": "10.1103/physrevlett.134.200402_fig1",
+      "doi": "10.1103/physrevlett.134.200402",
+      "title": "Run-and-Tumble Exact Work Statistics in a Lazy Quantum Measurement Engine: Stochastic Information Processing",
+      "source_url": "https://doi.org/10.1103/physrevlett.134.200402",
+      "family_ids": [
+        "schematic",
+        "multipanel"
+      ],
+      "page": 2,
+      "bbox_pt": [
+        55.341,
+        45.119,
+        294.452,
+        152.752
+      ],
+      "observations": [
+        "Both Bloch-sphere panels are present, with state labels and distinct dashed, dotted and solid process arrows explained by the shared legend."
+      ],
+      "review_limitations": [
+        "These are conceptual quantum-state process illustrations, not sampled vector fields or dynamical phase-portrait data.",
+        "Visual appearance, crop completeness and caption association only; scientific validity and numerical reproducibility are not certified."
+      ],
+      "reviewer_type": "agent_visual_review",
+      "image_sha256": "d4d97cdaffe143f4e6c6ce74d3d0750030712d6514b19135bcfb43612c1f3b61",
+      "pdf_sha256": "03c1ad711b113428dcff388e90f8cca81f4d855f6a5ce3e3f6688e4049cc5bf4"
+    },
+    {
+      "figure_id": "10.1103/physrevlett.134.200402_fig2",
+      "doi": "10.1103/physrevlett.134.200402",
+      "title": "Run-and-Tumble Exact Work Statistics in a Lazy Quantum Measurement Engine: Stochastic Information Processing",
+      "source_url": "https://doi.org/10.1103/physrevlett.134.200402",
+      "family_ids": [
+        "network",
+        "schematic"
+      ],
+      "page": 3,
+      "bbox_pt": [
+        318.748,
+        45.688,
+        556.652,
+        177.752
+      ],
+      "observations": [
+        "A state-transition graph uses nodes, directed arrows, repeated cells and a legend distinguishing measurement, feedback and work-extraction steps. This matches the run-and-tumble mapping caption."
+      ],
+      "review_limitations": [
+        "Graph node locations are organizational; they are not metric spatial coordinates.",
+        "Appearance and caption-association review only; no independent validation of scientific results or extraction of exact typography."
+      ],
+      "reviewer_type": "agent_visual_review",
+      "image_sha256": "44a072d7ae27b7fdaf4a28949f0890b0504931a04cc223fa27a5f7e55cd07410",
+      "pdf_sha256": "03c1ad711b113428dcff388e90f8cca81f4d855f6a5ce3e3f6688e4049cc5bf4"
+    },
+    {
+      "figure_id": "10.1103/physrevlett.134.200402_fig3",
+      "doi": "10.1103/physrevlett.134.200402",
+      "title": "Run-and-Tumble Exact Work Statistics in a Lazy Quantum Measurement Engine: Stochastic Information Processing",
+      "source_url": "https://doi.org/10.1103/physrevlett.134.200402",
+      "family_ids": [
+        "heatmap",
+        "contours",
+        "line_comparison",
+        "parameter_sweep",
+        "multipanel"
+      ],
+      "page": 4,
+      "bbox_pt": [
+        323.429,
+        46.43,
+        551.293,
+        339.043
+      ],
+      "observations": [
+        "The upper panel includes a continuous probability color scale and black contour lines over two control variables; the lower panel contains six line/marker traces with ordered parameter values and complete axes."
+      ],
+      "review_limitations": [
+        "The mapped quantity is an optimal probability; do not relabel its color transitions as phase transitions.",
+        "Visual appearance, crop completeness and caption association only; scientific validity and numerical reproducibility are not certified."
+      ],
+      "reviewer_type": "agent_visual_review",
+      "image_sha256": "983b3edf3d5fb57e30488ce891da2d7e467c904fa1903101b35815ced4b1ec39",
+      "pdf_sha256": "03c1ad711b113428dcff388e90f8cca81f4d855f6a5ce3e3f6688e4049cc5bf4"
+    },
+    {
+      "figure_id": "10.1103/physrevlett.134.200402_fig5",
+      "doi": "10.1103/physrevlett.134.200402",
+      "title": "Run-and-Tumble Exact Work Statistics in a Lazy Quantum Measurement Engine: Stochastic Information Processing",
+      "source_url": "https://doi.org/10.1103/physrevlett.134.200402",
+      "family_ids": [
+        "line_comparison",
+        "parameter_sweep"
+      ],
+      "page": 7,
+      "bbox_pt": [
+        188.948,
+        434.017,
+        422.293,
+        587.056
+      ],
+      "observations": [
+        "Four probability-coded curves and two reference lines are shown against logarithmic cycle count, with the exponent axis, legend and all boundaries complete."
+      ],
+      "review_limitations": [
+        "This figure is in End Matter/Appendix: Diffusion. An exponent-versus-time view is not itself a fitted log-log scaling plot.",
+        "Visual appearance, crop completeness and caption association only; scientific validity and numerical reproducibility are not certified."
+      ],
+      "reviewer_type": "agent_visual_review",
+      "image_sha256": "b2d19a12cb8a2735e99d9c936126a555220015e96f0633df09a03c428488d90d",
+      "pdf_sha256": "03c1ad711b113428dcff388e90f8cca81f4d855f6a5ce3e3f6688e4049cc5bf4"
+    },
+    {
+      "figure_id": "10.1103/5cks-j4ht_fig1",
+      "doi": "10.1103/5cks-j4ht",
+      "title": "Momentum-Resolved Direct Observation of Chiral Phonons in Elemental Tellurium",
+      "source_url": "https://doi.org/10.1103/5cks-j4ht",
+      "family_ids": [
+        "schematic"
+      ],
+      "page": 2,
+      "bbox_pt": [
+        52.468,
+        44.968,
+        296.612,
+        144.632
+      ],
+      "observations": [
+        "Three labeled conceptual drawings show scattering geometry, circular phonon motion and linear phonon motion, including labeled axes and arrows. These match the supplied IXS caption."
+      ],
+      "review_limitations": [
+        "Conceptual arrows are not a quantitative vector field, and the circular path is not a measured trajectory.",
+        "Appearance and caption-association review only; no independent validation of scientific results or extraction of exact typography."
+      ],
+      "reviewer_type": "agent_visual_review",
+      "image_sha256": "3e2166d0e247672a5932adc4e1d3b628ea91d925f404886c9d347309585c5723",
+      "pdf_sha256": "958d33a8ba201c841d4336ae40644702a039676f57059655755880a6d8194dd1"
+    },
+    {
+      "figure_id": "10.1103/5cks-j4ht_fig2",
+      "doi": "10.1103/5cks-j4ht",
+      "title": "Momentum-Resolved Direct Observation of Chiral Phonons in Elemental Tellurium",
+      "source_url": "https://doi.org/10.1103/5cks-j4ht",
+      "family_ids": [
+        "dispersion",
+        "scatter",
+        "uncertainty_bars",
+        "line_comparison",
+        "schematic",
+        "trajectory",
+        "multipanel",
+        "wide_narrow"
+      ],
+      "page": 2,
+      "bbox_pt": [
+        54.028,
+        416.248,
+        558.092,
+        632.912
+      ],
+      "observations": [
+        "The complete figure includes phonon branches with experimental symbols and visible vertical errors, a reciprocal-space inset, atomic-motion schematics with overlaid trajectories, a 3-by-3 eigenvector grid and an ellipticity panel. The full page confirms all four major groups."
+      ],
+      "review_limitations": [
+        "Atomic-motion arrows are schematic, not an independently sampled vector field. Trajectory tags concern the explicitly captioned atom-motion loops only.",
+        "Visual appearance, crop completeness and caption association only; scientific validity and numerical reproducibility are not certified."
+      ],
+      "reviewer_type": "agent_visual_review",
+      "image_sha256": "1f63e9157aa0006ecbcb170d810f0efd088e00e76c334f298598d064838681b5",
+      "pdf_sha256": "958d33a8ba201c841d4336ae40644702a039676f57059655755880a6d8194dd1"
+    },
+    {
+      "figure_id": "10.1103/5cks-j4ht_fig3",
+      "doi": "10.1103/5cks-j4ht",
+      "title": "Momentum-Resolved Direct Observation of Chiral Phonons in Elemental Tellurium",
+      "source_url": "https://doi.org/10.1103/5cks-j4ht",
+      "family_ids": [
+        "spectrum",
+        "line_comparison",
+        "uncertainty_bars",
+        "multipanel",
+        "wide_narrow"
+      ],
+      "page": 4,
+      "bbox_pt": [
+        54.148,
+        44.968,
+        558.092,
+        163.112
+      ],
+      "observations": [
+        "Eight small energy-spectrum panels plus a taller peak-area comparison panel are visible. Source-page inspection confirms the right panel, error-bar points and the complete wide figure."
+      ],
+      "review_limitations": [
+        "The narrow summary panel uses categorical mode labels; the spectral curves and peak-area summary have distinct units.",
+        "Appearance and caption-association review only; no independent validation of scientific results or extraction of exact typography."
+      ],
+      "reviewer_type": "agent_visual_review",
+      "image_sha256": "3bdfcd55ecbad2db2c07153b72a1bed513cd6862f45f0dc08026f688dfae7134",
+      "pdf_sha256": "958d33a8ba201c841d4336ae40644702a039676f57059655755880a6d8194dd1"
+    },
+    {
+      "figure_id": "10.1103/physrevlett.134.151803_fig1",
+      "doi": "10.1103/physrevlett.134.151803",
+      "title": "Axion Detection Experiments Can Probe Majoron Models",
+      "source_url": "https://doi.org/10.1103/physrevlett.134.151803",
+      "family_ids": [
+        "line_comparison"
+      ],
+      "page": 3,
+      "bbox_pt": [
+        110.355,
+        43.364,
+        501.688,
+        307.914
+      ],
+      "observations": [
+        "The full log-axis constraint map retains the majoron prediction strips, colored excluded regions, named search curves and both physical axes."
+      ],
+      "review_limitations": [
+        "Exclusion/prior ranges are neither discrete physical phases nor confidence bands by default; this taxonomy lacks a dedicated constraint-map family.",
+        "Visual appearance, crop completeness and caption association only; scientific validity and numerical reproducibility are not certified."
+      ],
+      "reviewer_type": "agent_visual_review",
+      "image_sha256": "873d7a9793cdb76717590a59a1164eab6d3a39e22a4e691c706dbe8249022701",
+      "pdf_sha256": "57b461f36cdaf56e0eef6a6031b9278d58da991a9c8f6c91f5906608c9daf888"
+    },
+    {
+      "figure_id": "10.1103/ffxr-mmlg_fig1",
+      "doi": "10.1103/ffxr-mmlg",
+      "title": "Clustered Nature of Hot and Dense Nuclear Matter: Signatures from Heavy-Ion Collisions",
+      "source_url": "https://doi.org/10.1103/ffxr-mmlg",
+      "family_ids": [
+        "line_comparison",
+        "uncertainty_bars",
+        "multipanel"
+      ],
+      "page": 3,
+      "bbox_pt": [
+        315.722,
+        51.048,
+        559.872,
+        241.675
+      ],
+      "observations": [
+        "A shared-border 2-by-2 layout compares nuclear-yield curves with black data markers and vertical error bars; right-hand panels retain their own labeled axes."
+      ],
+      "review_limitations": [
+        "The visual check does not establish the meaning or confidence level of the experimental error bars.",
+        "Appearance and caption-association review only; no independent validation of scientific results or extraction of exact typography."
+      ],
+      "reviewer_type": "agent_visual_review",
+      "image_sha256": "2e45bf068f2223a2c46bf62539e4cfc556752cf29ac655362564cc08c4ab39ba",
+      "pdf_sha256": "a108d1b6d831eb6535e5abd9af4f26d8a6c9e26188f340b309e5a0c7dc4dd5ef"
+    },
+    {
+      "figure_id": "10.1103/ffxr-mmlg_fig2",
+      "doi": "10.1103/ffxr-mmlg",
+      "title": "Clustered Nature of Hot and Dense Nuclear Matter: Signatures from Heavy-Ion Collisions",
+      "source_url": "https://doi.org/10.1103/ffxr-mmlg",
+      "family_ids": [
+        "histogram",
+        "contours",
+        "uncertainty_bars",
+        "multipanel"
+      ],
+      "page": 4,
+      "bbox_pt": [
+        87.988,
+        45.568,
+        260.852,
+        290.792
+      ],
+      "observations": [
+        "The upper panel contains three visible stepped density histograms with shaded central probability intervals. The lower panel has explicitly labeled fraction contours and three horizontal capped intervals; the caption connects them to the upper 68.3% regions."
+      ],
+      "review_limitations": [
+        "Horizontal bars represent distribution intervals here, not automatically measurement standard errors. The shaded histogram support is not a central-curve uncertainty band.",
+        "Visual appearance, crop completeness and caption association only; scientific validity and numerical reproducibility are not certified."
+      ],
+      "reviewer_type": "agent_visual_review",
+      "image_sha256": "f02c858e4349a66bebb110974170e7f0e1abbc914e6040c05a80f94a5608ede7",
+      "pdf_sha256": "a108d1b6d831eb6535e5abd9af4f26d8a6c9e26188f340b309e5a0c7dc4dd5ef"
+    },
+    {
+      "figure_id": "10.1103/rsx1-zvbp_fig1",
+      "doi": "10.1103/rsx1-zvbp",
+      "title": "General Class of Functionals for Certifying Quantum Incompatibility",
+      "source_url": "https://doi.org/10.1103/rsx1-zvbp",
+      "family_ids": [
+        "schematic",
+        "multipanel"
+      ],
+      "page": 2,
+      "bbox_pt": [
+        50.554,
+        45.055,
+        298.567,
+        149.593
+      ],
+      "observations": [
+        "Two complete labeled device cartoons distinguish an opaque assemblage device from an explicit hidden-object mechanism with internal arrows, matching caption parts (a) and (b)."
+      ],
+      "review_limitations": [
+        "This is a conceptual model illustration, not a physical apparatus geometry.",
+        "Appearance and caption-association review only; no independent validation of scientific results or extraction of exact typography."
+      ],
+      "reviewer_type": "agent_visual_review",
+      "image_sha256": "04afd0461cdceee1d0583da769a04ccd6c5ea2f9727f8aec76ddcf436a4ae04a",
+      "pdf_sha256": "e515ec051fed35b026aca44a79b0b63f35777ebcdb145c6ca014efa222015e01"
+    },
+    {
+      "figure_id": "10.1103/rsx1-zvbp_fig2",
+      "doi": "10.1103/rsx1-zvbp",
+      "title": "General Class of Functionals for Certifying Quantum Incompatibility",
+      "source_url": "https://doi.org/10.1103/rsx1-zvbp",
+      "family_ids": [
+        "surface_3d",
+        "multipanel"
+      ],
+      "page": 5,
+      "bbox_pt": [
+        50.428,
+        44.968,
+        298.652,
+        308.432
+      ],
+      "observations": [
+        "Four perspective surface panels retain two horizontal parameter axes, vertical violation-degree axes, zero-boundary dashed curves and highlighted slices."
+      ],
+      "review_limitations": [
+        "Perspective produces occlusion; surface height, not an unlabeled colormap, carries the quantitative scale.",
+        "Visual appearance, crop completeness and caption association only; scientific validity and numerical reproducibility are not certified."
+      ],
+      "reviewer_type": "agent_visual_review",
+      "image_sha256": "b332c28286356c1e049384fe25771ee8761ff1848ed8f18ceb8517db499e33cc",
+      "pdf_sha256": "e515ec051fed35b026aca44a79b0b63f35777ebcdb145c6ca014efa222015e01"
+    },
+    {
+      "figure_id": "10.1103/physrevlett.133.266605_fig1",
+      "doi": "10.1103/physrevlett.133.266605",
+      "title": "Dressed Majorana Fermion in a Hybrid Nanowire",
+      "source_url": "https://doi.org/10.1103/physrevlett.133.266605",
+      "family_ids": [
+        "schematic"
+      ],
+      "page": 2,
+      "bbox_pt": [
+        64.653,
+        46.408,
+        285.452,
+        169.687
+      ],
+      "observations": [
+        "A nanowire drawing above a lead/lattice/superconductor schematic retains the sites, lead labels and orientation axes described in the caption."
+      ],
+      "review_limitations": [
+        "Drawn structure and sites do not specify a physical length calibration.",
+        "Appearance and caption-association review only; no independent validation of scientific results or extraction of exact typography."
+      ],
+      "reviewer_type": "agent_visual_review",
+      "image_sha256": "6b0f0e5e6cbfed0bcf15459c656b0f5de80c9e2e8937e2e6900357dec9d6c3c7",
+      "pdf_sha256": "30c9f4d1316e5a4e0cf09a50c4c8d9515a11641a517748581ca1196227c4b3fc"
+    },
+    {
+      "figure_id": "10.1103/physrevlett.133.266605_fig2",
+      "doi": "10.1103/physrevlett.133.266605",
+      "title": "Dressed Majorana Fermion in a Hybrid Nanowire",
+      "source_url": "https://doi.org/10.1103/physrevlett.133.266605",
+      "family_ids": [
+        "line_comparison",
+        "scatter",
+        "spectrum",
+        "phase_discrete",
+        "multipanel"
+      ],
+      "page": 3,
+      "bbox_pt": [
+        315.32,
+        44.945,
+        561.932,
+        290.432
+      ],
+      "observations": [
+        "All six panels are complete: eigenvalue points, wave-function weights and ratio inset, two spatial-component plots, a bias spectrum and a shaded topological-region comparison."
+      ],
+      "review_limitations": [
+        "The phase_discrete tag applies only to the explicitly captioned topological region in panel (f); eigenvalue index is not wave vector.",
+        "Visual appearance, crop completeness and caption association only; scientific validity and numerical reproducibility are not certified."
+      ],
+      "reviewer_type": "agent_visual_review",
+      "image_sha256": "26327ebbb264be0aabc4a8674a156b740d19cc61ec5c86f8cb0c1eb80ebe6074",
+      "pdf_sha256": "30c9f4d1316e5a4e0cf09a50c4c8d9515a11641a517748581ca1196227c4b3fc"
+    },
+    {
+      "figure_id": "10.1103/fdvq-9m8m_fig1",
+      "doi": "10.1103/fdvq-9m8m",
+      "title": "Quantum Advantage in Storage and Retrieval of Isometry Channels",
+      "source_url": "https://doi.org/10.1103/fdvq-9m8m",
+      "family_ids": [
+        "schematic",
+        "multipanel"
+      ],
+      "page": 2,
+      "bbox_pt": [
+        50.428,
+        44.968,
+        298.652,
+        298.952
+      ],
+      "observations": [
+        "Two labeled diagrams distinguish estimation/storage/retrieval from a port-based quantum protocol. The PDF page confirms the lower panel and full caption association."
+      ],
+      "review_limitations": [
+        "Imported caption is truncated; full source-page caption was consulted.",
+        "Appearance and caption-association review only; no independent validation of scientific results or extraction of exact typography."
+      ],
+      "reviewer_type": "agent_visual_review",
+      "image_sha256": "f47e6d33ff3af9a3447858acf82a30833bfa8cd4bb16101cabf9d5cdf8aac9fb",
+      "pdf_sha256": "5c14e10c5d1e5bf16b816fbf374c0b04540ba4de1c237c5a17763928c6d6faf3"
+    },
+    {
+      "figure_id": "10.1103/rf7b-96z1_fig1",
+      "doi": "10.1103/rf7b-96z1",
+      "title": "Dynamic Focusing to Suppress Emittance Transfer in Crab-Crossing Flat Beam Collisions",
+      "source_url": "https://doi.org/10.1103/rf7b-96z1",
+      "family_ids": [
+        "heatmap"
+      ],
+      "page": 2,
+      "bbox_pt": [
+        72.508,
+        44.968,
+        276.692,
+        192.152
+      ],
+      "observations": [
+        "The complete frequency map includes two tune axes, an irregular colored support, labeled resonance guides and a diffusion-index colorbar, matching the Fig. 1 caption."
+      ],
+      "review_limitations": [
+        "The coordinate support is nonrectangular and the color encodes diffusion index, not a probability density.",
+        "Appearance and caption-association review only; no independent validation of scientific results or extraction of exact typography."
+      ],
+      "reviewer_type": "agent_visual_review",
+      "image_sha256": "95aef3d186eda519ed7df40b3c12491d5a4c2974129ecec11f56ad676555a9aa",
+      "pdf_sha256": "9a678024e6efebbc3ef8ed2788b190d5aa93b44adc48f247bb038a4fca940c0b"
+    },
+    {
+      "figure_id": "10.1103/rf7b-96z1_fig2",
+      "doi": "10.1103/rf7b-96z1",
+      "title": "Dynamic Focusing to Suppress Emittance Transfer in Crab-Crossing Flat Beam Collisions",
+      "source_url": "https://doi.org/10.1103/rf7b-96z1",
+      "family_ids": [
+        "line_comparison",
+        "parameter_sweep",
+        "multipanel"
+      ],
+      "page": 2,
+      "bbox_pt": [
+        320.428,
+        44.968,
+        554.612,
+        301.712
+      ],
+      "observations": [
+        "Two complete stacked emittance-time plots compare four fluctuation scenarios with separate vertical-axis magnitudes and explicit growth-rate legends."
+      ],
+      "review_limitations": [
+        "The noisiness of a trace is not an uncertainty band; the simulations and normalization need the scientific source.",
+        "Visual appearance, crop completeness and caption association only; scientific validity and numerical reproducibility are not certified."
+      ],
+      "reviewer_type": "agent_visual_review",
+      "image_sha256": "2a2e9aa8bff389d90eaa0ec5f886163d7b417045201a7591cd9b00c0818d05bb",
+      "pdf_sha256": "9a678024e6efebbc3ef8ed2788b190d5aa93b44adc48f247bb038a4fca940c0b"
+    },
+    {
+      "figure_id": "10.1103/rf7b-96z1_fig3",
+      "doi": "10.1103/rf7b-96z1",
+      "title": "Dynamic Focusing to Suppress Emittance Transfer in Crab-Crossing Flat Beam Collisions",
+      "source_url": "https://doi.org/10.1103/rf7b-96z1",
+      "family_ids": [
+        "schematic"
+      ],
+      "page": 3,
+      "bbox_pt": [
+        342.994,
+        45.234,
+        521.113,
+        114.211
+      ],
+      "observations": [
+        "An accelerator-line schematic labels two sextupoles, a crab cavity, IP and CP, with dashed phase-advance connectors above. The supplied Fig. 3 caption matches these components."
+      ],
+      "review_limitations": [
+        "Distances are schematic; phase-advance annotations should not be converted to spatial measurements.",
+        "Appearance and caption-association review only; no independent validation of scientific results or extraction of exact typography."
+      ],
+      "reviewer_type": "agent_visual_review",
+      "image_sha256": "15a9c556b20f15ac6f30cbffab87667cd5692a1dbf4ba039ca8617bc6bb66111",
+      "pdf_sha256": "9a678024e6efebbc3ef8ed2788b190d5aa93b44adc48f247bb038a4fca940c0b"
+    },
+    {
+      "figure_id": "10.1103/rf7b-96z1_fig4",
+      "doi": "10.1103/rf7b-96z1",
+      "title": "Dynamic Focusing to Suppress Emittance Transfer in Crab-Crossing Flat Beam Collisions",
+      "source_url": "https://doi.org/10.1103/rf7b-96z1",
+      "family_ids": [
+        "line_comparison",
+        "parameter_sweep"
+      ],
+      "page": 4,
+      "bbox_pt": [
+        72.508,
+        44.968,
+        276.692,
+        176.792
+      ],
+      "observations": [
+        "Four complete vertical-emittance traces with distinct colors compare focusing settings, and the legend includes each reported growth rate."
+      ],
+      "review_limitations": [
+        "Curve growth rates are source claims, not quantities recomputed during this visual review.",
+        "Visual appearance, crop completeness and caption association only; scientific validity and numerical reproducibility are not certified."
+      ],
+      "reviewer_type": "agent_visual_review",
+      "image_sha256": "33de67c87613fd5ac06c77e05041e12443b0c9f17aef0005023e73c404d45867",
+      "pdf_sha256": "9a678024e6efebbc3ef8ed2788b190d5aa93b44adc48f247bb038a4fca940c0b"
+    },
+    {
+      "figure_id": "10.1103/rf7b-96z1_fig5",
+      "doi": "10.1103/rf7b-96z1",
+      "title": "Dynamic Focusing to Suppress Emittance Transfer in Crab-Crossing Flat Beam Collisions",
+      "source_url": "https://doi.org/10.1103/rf7b-96z1",
+      "family_ids": [
+        "heatmap"
+      ],
+      "page": 4,
+      "bbox_pt": [
+        72.388,
+        540.328,
+        276.692,
+        687.872
+      ],
+      "observations": [
+        "A second complete frequency map uses the same tune axes and diffusion-index colorbar as the earlier map, with shifted colored support and resonance guides; the caption identifies dynamic sextupoles."
+      ],
+      "review_limitations": [
+        "This is a scalar map over nonrectangular support, not an experimentally sampled phase boundary.",
+        "Appearance and caption-association review only; no independent validation of scientific results or extraction of exact typography."
+      ],
+      "reviewer_type": "agent_visual_review",
+      "image_sha256": "0059424204ac2a9dbe56ed1641e26f8f0bb2401e338e1a1410bee9e5f186f038",
+      "pdf_sha256": "9a678024e6efebbc3ef8ed2788b190d5aa93b44adc48f247bb038a4fca940c0b"
+    },
+    {
+      "figure_id": "10.1103/z8v9-f8j2_fig1",
+      "doi": "10.1103/z8v9-f8j2",
+      "title": "Quantum Critical Dynamics Induced by Topological Zero Modes",
+      "source_url": "https://doi.org/10.1103/z8v9-f8j2",
+      "family_ids": [
+        "schematic",
+        "network"
+      ],
+      "page": 1,
+      "bbox_pt": [
+        326.184,
+        512.159,
+        548.965,
+        585.557
+      ],
+      "observations": [
+        "The full one-dimensional node/link chain, rare weak link, paired mode profiles, energy-splitting arrow and coupling annotation are visible and match the caption."
+      ],
+      "review_limitations": [
+        "Graph geometry and mode-profile drawing are conceptual; no physical spatial calibration or measured graph weights are established.",
+        "Visual appearance, crop completeness and caption association only; scientific validity and numerical reproducibility are not certified."
+      ],
+      "reviewer_type": "agent_visual_review",
+      "image_sha256": "0e0ef64f70aac8036683ebe995595cfa54c4537b31696445a8d5b017f4372bf6",
+      "pdf_sha256": "75ac47e578cff2d58584d7ec06dfacecd985cac9382c3f2af38bea531c60c01a"
+    },
+    {
+      "figure_id": "10.1103/z8v9-f8j2_fig3",
+      "doi": "10.1103/z8v9-f8j2",
+      "title": "Quantum Critical Dynamics Induced by Topological Zero Modes",
+      "source_url": "https://doi.org/10.1103/z8v9-f8j2",
+      "family_ids": [
+        "line_comparison",
+        "scatter"
+      ],
+      "page": 4,
+      "bbox_pt": [
+        343.381,
+        453.002,
+        558.662,
+        605.814
+      ],
+      "observations": [
+        "A full transition-amplitude comparison shows turquoise symbols and two distinct fit curves; the inset displays a fitted coefficient against a different coordinate, matching the caption."
+      ],
+      "review_limitations": [
+        "The inset is not a magnified portion of the main axis and is not tagged inset_zoom. Visual appearance does not validate either fit.",
+        "Appearance and caption-association review only; no independent validation of scientific results or extraction of exact typography."
+      ],
+      "reviewer_type": "agent_visual_review",
+      "image_sha256": "0b163831d7dce91e00512281e9fcb3386f17a94ae1d9bcf7596d5be0ce4e3f79",
+      "pdf_sha256": "75ac47e578cff2d58584d7ec06dfacecd985cac9382c3f2af38bea531c60c01a"
+    },
+    {
+      "figure_id": "10.1103/55pk-rxzg_fig1",
+      "doi": "10.1103/55pk-rxzg",
+      "title": "Nondipole Effects on Electron Correlation Dynamics of Xe Atoms in Circularly Polarized Laser Fields",
+      "source_url": "https://doi.org/10.1103/55pk-rxzg",
+      "family_ids": [
+        "joint_density",
+        "heatmap",
+        "uncertainty_bars",
+        "scatter",
+        "multipanel"
+      ],
+      "page": 2,
+      "bbox_pt": [
+        313.799,
+        373.845,
+        561.425,
+        597.277
+      ],
+      "observations": [
+        "Three momentum-distribution maps and one mean-momentum trace form a complete 2-by-2 arrangement; the last panel has vertical capped statistical errors and the image maps have the yield scale."
+      ],
+      "review_limitations": [
+        "Momentum-space density maps are not microscopy images. The caption defines statistical uncertainty but binning cannot be reconstructed from the raster.",
+        "Visual appearance, crop completeness and caption association only; scientific validity and numerical reproducibility are not certified."
+      ],
+      "reviewer_type": "agent_visual_review",
+      "image_sha256": "0addba54068ceb07a1ff9c175a5796774fc9a3e7d43200a99cb6d13f9ff014eb",
+      "pdf_sha256": "dfcbc4bab408453fd2c315f4243b44deb3cdd39a4dd892dacabee5393a8ff373"
+    },
+    {
+      "figure_id": "10.1103/55pk-rxzg_fig2",
+      "doi": "10.1103/55pk-rxzg",
+      "title": "Nondipole Effects on Electron Correlation Dynamics of Xe Atoms in Circularly Polarized Laser Fields",
+      "source_url": "https://doi.org/10.1103/55pk-rxzg",
+      "family_ids": [
+        "joint_density",
+        "heatmap",
+        "line_comparison",
+        "multipanel"
+      ],
+      "page": 4,
+      "bbox_pt": [
+        50.692,
+        45.664,
+        298.539,
+        269.157
+      ],
+      "observations": [
+        "Three two-dimensional momentum-distribution maps with a common yield color scale accompany a radial-momentum comparison curve in the fourth panel, matching caption parts (a)-(d)."
+      ],
+      "review_limitations": [
+        "Color represents simulated yield rather than a correlation coefficient; this is not a correlation_matrix example.",
+        "Appearance and caption-association review only; no independent validation of scientific results or extraction of exact typography."
+      ],
+      "reviewer_type": "agent_visual_review",
+      "image_sha256": "2ca471014df857f314a093b6ff54bbe844ef7953331b141c1ea73c4b0884c8c8",
+      "pdf_sha256": "dfcbc4bab408453fd2c315f4243b44deb3cdd39a4dd892dacabee5393a8ff373"
+    },
+    {
+      "figure_id": "10.1103/55pk-rxzg_fig3",
+      "doi": "10.1103/55pk-rxzg",
+      "title": "Nondipole Effects on Electron Correlation Dynamics of Xe Atoms in Circularly Polarized Laser Fields",
+      "source_url": "https://doi.org/10.1103/55pk-rxzg",
+      "family_ids": [
+        "trajectory",
+        "line_comparison",
+        "multipanel"
+      ],
+      "page": 4,
+      "bbox_pt": [
+        313.626,
+        413.652,
+        561.053,
+        654.176
+      ],
+      "observations": [
+        "The full 2-by-2 figure pairs two real-space electron-trajectory panels with corresponding energy-versus-time comparisons and horizontal threshold guides."
+      ],
+      "review_limitations": [
+        "Trajectory paths are individual illustrated realizations, not ensemble density or streamlines of a steady field.",
+        "Visual appearance, crop completeness and caption association only; scientific validity and numerical reproducibility are not certified."
+      ],
+      "reviewer_type": "agent_visual_review",
+      "image_sha256": "ed4657d964c3e3018647ae4fda4223ed98fa9643a1e7fd01e1472581c029753a",
+      "pdf_sha256": "dfcbc4bab408453fd2c315f4243b44deb3cdd39a4dd892dacabee5393a8ff373"
+    },
+    {
+      "figure_id": "10.1103/55pk-rxzg_fig4",
+      "doi": "10.1103/55pk-rxzg",
+      "title": "Nondipole Effects on Electron Correlation Dynamics of Xe Atoms in Circularly Polarized Laser Fields",
+      "source_url": "https://doi.org/10.1103/55pk-rxzg",
+      "family_ids": [
+        "line_comparison",
+        "uncertainty_bars",
+        "multipanel"
+      ],
+      "page": 5,
+      "bbox_pt": [
+        51.5,
+        395.446,
+        298.275,
+        608.5
+      ],
+      "observations": [
+        "The upper two panels use separately colored left/right axes; lower panels compare theory and simulation with experimental points and vertical error bars. The source page verifies all four panels and caption association."
+      ],
+      "review_limitations": [
+        "Imported caption is truncated; source-page caption was consulted. The dual-axis upper panels require separate unit definitions.",
+        "Appearance and caption-association review only; no independent validation of scientific results or extraction of exact typography."
+      ],
+      "reviewer_type": "agent_visual_review",
+      "image_sha256": "54f06a3c1c5b0af807c96da094f79d92ec22ae895b3e2be5271187c587fa0ddd",
+      "pdf_sha256": "dfcbc4bab408453fd2c315f4243b44deb3cdd39a4dd892dacabee5393a8ff373"
+    },
+    {
+      "figure_id": "10.1103/6xw1-1715_fig1",
+      "doi": "10.1103/6xw1-1715",
+      "title": "Detecting the QCD Axion via the Ferroaxionic Force with Piezoelectric Materials",
+      "source_url": "https://doi.org/10.1103/6xw1-1715",
+      "family_ids": [
+        "schematic"
+      ],
+      "page": 4,
+      "bbox_pt": [
+        314.264,
+        45.844,
+        560.71,
+        202.466
+      ],
+      "observations": [
+        "The apparatus schematic retains the source mass, quartz sample block, superconducting shield, SQUID readout, distance marker and labeled thermal connections."
+      ],
+      "review_limitations": [
+        "This is a device drawing without a scale bar; rendered distances and arrow lengths are not quantitative.",
+        "Visual appearance, crop completeness and caption association only; scientific validity and numerical reproducibility are not certified."
+      ],
+      "reviewer_type": "agent_visual_review",
+      "image_sha256": "d66a4386a9a5c0c66ac9d2e72c52a4fe3d6d9dc5d49870e830e65bed75b71ac1",
+      "pdf_sha256": "f3b3e0eb1ca57795f6ddf4e33203ceb4cc4a1f527301c65538d55aef9faa1bb7"
+    },
+    {
+      "figure_id": "10.1103/6xw1-1715_fig2",
+      "doi": "10.1103/6xw1-1715",
+      "title": "Detecting the QCD Axion via the Ferroaxionic Force with Piezoelectric Materials",
+      "source_url": "https://doi.org/10.1103/6xw1-1715",
+      "family_ids": [
+        "line_comparison",
+        "log_scaling"
+      ],
+      "page": 5,
+      "bbox_pt": [
+        51.347,
+        45.203,
+        297.947,
+        218.655
+      ],
+      "observations": [
+        "A complete logarithmic coupling-sensitivity-versus-mass plot contains multiple styled sensitivity curves, a diagonal QCD-axion reference and a shaded cooling-limit region; a second top coordinate is retained."
+      ],
+      "review_limitations": [
+        "The shaded area is an exclusion/constraint region, not an uncertainty band. Log axes do not by themselves validate a scaling law.",
+        "Appearance and caption-association review only; no independent validation of scientific results or extraction of exact typography."
+      ],
+      "reviewer_type": "agent_visual_review",
+      "image_sha256": "3f420f7d07bbef5cf359864699409b4eacbb44bf3a4ee98462162740a6672956",
+      "pdf_sha256": "f3b3e0eb1ca57795f6ddf4e33203ceb4cc4a1f527301c65538d55aef9faa1bb7"
+    },
+    {
+      "figure_id": "10.1103/6xw1-1715_fig4",
+      "doi": "10.1103/6xw1-1715",
+      "title": "Detecting the QCD Axion via the Ferroaxionic Force with Piezoelectric Materials",
+      "source_url": "https://doi.org/10.1103/6xw1-1715",
+      "family_ids": [
+        "line_comparison",
+        "log_scaling"
+      ],
+      "page": 8,
+      "bbox_pt": [
+        72.786,
+        513.214,
+        275.577,
+        676.348
+      ],
+      "observations": [
+        "The log-log field-magnitude plot retains both center and edge traces, line-style legend and numerical distance/field axes."
+      ],
+      "review_limitations": [
+        "This is an End Matter/appendix figure. Log axes alone do not establish a power-law model or fitted exponent.",
+        "Visual appearance, crop completeness and caption association only; scientific validity and numerical reproducibility are not certified."
+      ],
+      "reviewer_type": "agent_visual_review",
+      "image_sha256": "f780a9fdb415d7c748de6d52f64046a52a65b51cec7e2af81f0b247d4d9375c5",
+      "pdf_sha256": "f3b3e0eb1ca57795f6ddf4e33203ceb4cc4a1f527301c65538d55aef9faa1bb7"
+    },
+    {
+      "figure_id": "10.1103/nnk7-xy4v_fig1",
+      "doi": "10.1103/nnk7-xy4v",
+      "title": "Physical Interpretation of Imaginary Time Delay",
+      "source_url": "https://doi.org/10.1103/nnk7-xy4v",
+      "family_ids": [
+        "schematic",
+        "multipanel"
+      ],
+      "page": 2,
+      "bbox_pt": [
+        316.557,
+        45.055,
+        558.567,
+        314.014
+      ],
+      "observations": [
+        "Two complete apparatus drawings show the AWG/oscilloscope ring setup and network-analyzer ring setup. The original PDF page confirms the direct image is Fig. 1."
+      ],
+      "review_limitations": [
+        "This is an apparatus rendering, not a micrograph with a calibrated scale bar.",
+        "Appearance and caption-association review only; no independent validation of scientific results or extraction of exact typography."
+      ],
+      "reviewer_type": "agent_visual_review",
+      "image_sha256": "45a3f1332530588833e454f9ff9bb063a33b0ec5eae1a1194b622f2a86645ca6",
+      "pdf_sha256": "e2671bd4e0a354c0c8558369912a8418a608c056590d7343df4306f6a875749a"
+    },
+    {
+      "figure_id": "10.1103/nnk7-xy4v_fig2",
+      "doi": "10.1103/nnk7-xy4v",
+      "title": "Physical Interpretation of Imaginary Time Delay",
+      "source_url": "https://doi.org/10.1103/nnk7-xy4v",
+      "family_ids": [
+        "spectrum",
+        "line_comparison",
+        "inset_zoom",
+        "multipanel"
+      ],
+      "page": 3,
+      "bbox_pt": [
+        57.584,
+        45.055,
+        291.571,
+        281.511
+      ],
+      "observations": [
+        "Both complete frequency panels match the PDF: scattering amplitudes above and complex delay below. Each boxed frequency interval is linked to an enlarged inset, and the upper inset labels its 3 dB width."
+      ],
+      "review_limitations": [
+        "The direct raster matches the source figure; legend overlap of the two transmission channels is an intentional source observation, not evidence of indistinguishable underlying data.",
+        "Visual appearance, crop completeness and caption association only; scientific validity and numerical reproducibility are not certified."
+      ],
+      "reviewer_type": "agent_visual_review",
+      "image_sha256": "2a38214bd208b0fac9afb6ca6859b0dcfd3ace6cb58245a22d2b7a5cc6076313",
+      "pdf_sha256": "e2671bd4e0a354c0c8558369912a8418a608c056590d7343df4306f6a875749a"
+    },
+    {
+      "figure_id": "10.1103/nnk7-xy4v_fig4",
+      "doi": "10.1103/nnk7-xy4v",
+      "title": "Physical Interpretation of Imaginary Time Delay",
+      "source_url": "https://doi.org/10.1103/nnk7-xy4v",
+      "family_ids": [
+        "line_comparison",
+        "scatter",
+        "spectrum",
+        "inset_zoom",
+        "multipanel"
+      ],
+      "page": 4,
+      "bbox_pt": [
+        79.108,
+        423.208,
+        533.132,
+        654.872
+      ],
+      "observations": [
+        "Four frequency-sweep comparison panels use model curves and green measured symbols; highlighted narrow frequency windows correspond to inset magnifications. The source PDF confirms this is the complete Fig. 4."
+      ],
+      "review_limitations": [
+        "The vertical quantities are delay and frequency shift; preserve those meanings rather than substituting a generic spectral-intensity axis.",
+        "Appearance and caption-association review only; no independent validation of scientific results or extraction of exact typography."
+      ],
+      "reviewer_type": "agent_visual_review",
+      "image_sha256": "a702a50cbda49d314686de22a0cfb9147fac391f3ff956cec0e0a6da3a8c99c5",
+      "pdf_sha256": "e2671bd4e0a354c0c8558369912a8418a608c056590d7343df4306f6a875749a"
+    },
+    {
+      "figure_id": "10.1103/h48q-1s1c_fig1",
+      "doi": "10.1103/h48q-1s1c",
+      "title": "Inverse Clausius Thermodynamics in Run-and-Tumble Dynamics",
+      "source_url": "https://doi.org/10.1103/h48q-1s1c",
+      "family_ids": [
+        "line_comparison",
+        "multipanel"
+      ],
+      "page": 4,
+      "bbox_pt": [
+        63.211,
+        46.244,
+        283.557,
+        485.988
+      ],
+      "observations": [
+        "Three full vertically stacked panels retain solid/dashed density/flux curves, a temperature-field curve with a second-case inset, and symbol-versus-curve entropy-production comparisons."
+      ],
+      "review_limitations": [
+        "The inset changes parameter case rather than enlarging a bounded region, so it is not tagged inset_zoom.",
+        "Visual appearance, crop completeness and caption association only; scientific validity and numerical reproducibility are not certified."
+      ],
+      "reviewer_type": "agent_visual_review",
+      "image_sha256": "0dc476e24565b2460c221c50458c86b53cb513346150af5ea8b7347732618998",
+      "pdf_sha256": "af27dd6fc652bc66c23e5eeb806816f24c5b710e22eaa2332b64cff0c0f86ff9"
+    },
+    {
+      "figure_id": "10.1103/h48q-1s1c_fig3",
+      "doi": "10.1103/h48q-1s1c",
+      "title": "Inverse Clausius Thermodynamics in Run-and-Tumble Dynamics",
+      "source_url": "https://doi.org/10.1103/h48q-1s1c",
+      "family_ids": [
+        "line_comparison",
+        "scatter",
+        "multipanel"
+      ],
+      "page": 5,
+      "bbox_pt": [
+        64.112,
+        46.592,
+        284.971,
+        339.09
+      ],
+      "observations": [
+        "Two stacked entropy-production panels compare open-circle exact values with solid/dashed approximation curves; each includes a temperature-field inset, matching the caption."
+      ],
+      "review_limitations": [
+        "The insets show a different observable, so they are not tagged inset_zoom.",
+        "Appearance and caption-association review only; no independent validation of scientific results or extraction of exact typography."
+      ],
+      "reviewer_type": "agent_visual_review",
+      "image_sha256": "d81ac616f89859bd1c406d55f6cd7fa019f1b1a47031bcdcee730d21ebf6718d",
+      "pdf_sha256": "af27dd6fc652bc66c23e5eeb806816f24c5b710e22eaa2332b64cff0c0f86ff9"
+    },
+    {
+      "figure_id": "10.1103/94pm-hp34_fig1",
+      "doi": "10.1103/94pm-hp34",
+      "title": "Truncated Photon",
+      "source_url": "https://doi.org/10.1103/94pm-hp34",
+      "family_ids": [
+        "schematic"
+      ],
+      "page": 2,
+      "bbox_pt": [
+        57.996,
+        45.566,
+        291.463,
+        172.924
+      ],
+      "observations": [
+        "The reflected-wavepacket drawing, propagating arrows, boundary at zero and two field-expression rows all belong to the figure and match the photon-reflection caption."
+      ],
+      "review_limitations": [
+        "These expressions are part of the schematic, unlike the unrelated body equation in the rejected fdvq-9m8m crop.",
+        "Visual appearance, crop completeness and caption association only; scientific validity and numerical reproducibility are not certified."
+      ],
+      "reviewer_type": "agent_visual_review",
+      "image_sha256": "162746d3c4628359af176d0e856e3e1adbcf45858aee80f38574afcbdb171afc",
+      "pdf_sha256": "fffab15f4bd3022afea64937c54e42b6fc68f137a27570dec648a8d370aa8a61"
+    },
+    {
+      "figure_id": "10.1103/94pm-hp34_fig2",
+      "doi": "10.1103/94pm-hp34",
+      "title": "Truncated Photon",
+      "source_url": "https://doi.org/10.1103/94pm-hp34",
+      "family_ids": [
+        "schematic"
+      ],
+      "page": 5,
+      "bbox_pt": [
+        83.29,
+        45.481,
+        265.865,
+        100.204
+      ],
+      "observations": [
+        "The simple left-region photon/right-region vacuum drawing includes a blue localized profile and two transition-region boundaries. Source-page inspection confirms the complete Fig. 2 and its caption."
+      ],
+      "review_limitations": [
+        "Imported caption is truncated; source-page caption was consulted. The drawing is conceptual rather than a sampled probability distribution.",
+        "Appearance and caption-association review only; no independent validation of scientific results or extraction of exact typography."
+      ],
+      "reviewer_type": "agent_visual_review",
+      "image_sha256": "ebd8ae82c2b3affabe1e813d37bf81649d2f4050f234b82c90e5b872269f455a",
+      "pdf_sha256": "fffab15f4bd3022afea64937c54e42b6fc68f137a27570dec648a8d370aa8a61"
+    },
+    {
+      "figure_id": "10.1103/physrevlett.133.216401_fig1",
+      "doi": "10.1103/physrevlett.133.216401",
+      "title": "Universal Spectral Moment Theorem and Its Applications in Non-Hermitian Systems",
+      "source_url": "https://doi.org/10.1103/physrevlett.133.216401",
+      "family_ids": [
+        "network",
+        "schematic",
+        "multipanel"
+      ],
+      "page": 2,
+      "bbox_pt": [
+        57.856,
+        572.017,
+        269.035,
+        669.585
+      ],
+      "observations": [
+        "All three lattice/loop diagrams are complete, showing an original mesh, a refined mesh and two highlighted loop paths near bulk/boundary sites."
+      ],
+      "review_limitations": [
+        "Graph positions represent the model lattice, but this review does not infer physical units or interpolation rules.",
+        "Visual appearance, crop completeness and caption association only; scientific validity and numerical reproducibility are not certified."
+      ],
+      "reviewer_type": "agent_visual_review",
+      "image_sha256": "0e3a7917ba99eb8d0e900bef7af0f5f7cb9a1252000f81ec13cb3b835e652a23",
+      "pdf_sha256": "49fa143c5c4fd07d2a5bff6f5ec05776ce991313d81469d0a861c8183d2cab79"
+    },
+    {
+      "figure_id": "10.1103/physrevlett.133.216401_fig2",
+      "doi": "10.1103/physrevlett.133.216401",
+      "title": "Universal Spectral Moment Theorem and Its Applications in Non-Hermitian Systems",
+      "source_url": "https://doi.org/10.1103/physrevlett.133.216401",
+      "family_ids": [
+        "schematic",
+        "network",
+        "scatter",
+        "multipanel"
+      ],
+      "page": 3,
+      "bbox_pt": [
+        314.541,
+        46.297,
+        557.132,
+        197.508
+      ],
+      "observations": [
+        "Four panels show a directed lattice, boundary-condition geometry, complex-eigenvalue support and a convergence-point comparison. The complete source page confirms crop and caption association."
+      ],
+      "review_limitations": [
+        "Imported caption is truncated; source-page caption was consulted. The complex-eigenvalue-plane display is not a frequency-response spectrum or a Cartesian 3D surface.",
+        "Appearance and caption-association review only; no independent validation of scientific results or extraction of exact typography."
+      ],
+      "reviewer_type": "agent_visual_review",
+      "image_sha256": "774b040991482a27e6abceb884f47b7bce1b55757e360772c45ec3bf45949679",
+      "pdf_sha256": "49fa143c5c4fd07d2a5bff6f5ec05776ce991313d81469d0a861c8183d2cab79"
+    },
+    {
+      "figure_id": "10.1103/physrevlett.133.216401_fig3",
+      "doi": "10.1103/physrevlett.133.216401",
+      "title": "Universal Spectral Moment Theorem and Its Applications in Non-Hermitian Systems",
+      "source_url": "https://doi.org/10.1103/physrevlett.133.216401",
+      "family_ids": [
+        "schematic",
+        "line_comparison",
+        "multipanel"
+      ],
+      "page": 4,
+      "bbox_pt": [
+        52.299,
+        494.128,
+        297.297,
+        641.67
+      ],
+      "observations": [
+        "A categorical conceptual strip above two aligned plots shows spectrum regimes, complex-eigenvalue loci and time-dependent response; all three caption panels are present."
+      ],
+      "review_limitations": [
+        "A complex-eigenvalue locus is not a frequency-response spectrum, spatial trajectory or state-space phase portrait.",
+        "Visual appearance, crop completeness and caption association only; scientific validity and numerical reproducibility are not certified."
+      ],
+      "reviewer_type": "agent_visual_review",
+      "image_sha256": "70e2fe192f633a6e1a6ed0a230917aec8e1053e944b28ed9242d30f1d33ee0a7",
+      "pdf_sha256": "49fa143c5c4fd07d2a5bff6f5ec05776ce991313d81469d0a861c8183d2cab79"
+    },
+    {
+      "figure_id": "10.1103/physrevlett.133.216401_fig4",
+      "doi": "10.1103/physrevlett.133.216401",
+      "title": "Universal Spectral Moment Theorem and Its Applications in Non-Hermitian Systems",
+      "source_url": "https://doi.org/10.1103/physrevlett.133.216401",
+      "family_ids": [
+        "phase_discrete",
+        "schematic",
+        "network",
+        "line_comparison",
+        "multipanel"
+      ],
+      "page": 5,
+      "bbox_pt": [
+        51.855,
+        390.448,
+        295.936,
+        598.663
+      ],
+      "observations": [
+        "Four panels combine labeled phase-boundary diagrams, a directed lattice schematic and contrasting time-series curves. Both named regions and boundary markers are visible and match the caption."
+      ],
+      "review_limitations": [
+        "Phase-boundary curves have a specific computed origin; this review does not validate the transition criterion.",
+        "Appearance and caption-association review only; no independent validation of scientific results or extraction of exact typography."
+      ],
+      "reviewer_type": "agent_visual_review",
+      "image_sha256": "734d5ec0eeab5b45d49d3bdf8ee1d703786c4301692d6946e5f63f7f8d99721b",
+      "pdf_sha256": "49fa143c5c4fd07d2a5bff6f5ec05776ce991313d81469d0a861c8183d2cab79"
+    },
+    {
+      "figure_id": "10.1103/physrevlett.134.126601_fig1",
+      "doi": "10.1103/physrevlett.134.126601",
+      "title": "Topological Phenomena in Artificial Quantum Materials Revealed by Local Chern Markers",
+      "source_url": "https://doi.org/10.1103/physrevlett.134.126601",
+      "family_ids": [
+        "schematic",
+        "image_scalebar",
+        "line_comparison",
+        "inset_zoom",
+        "multipanel",
+        "wide_narrow"
+      ],
+      "page": 2,
+      "bbox_pt": [
+        316.437,
+        45.212,
+        558.452,
+        303.836
+      ],
+      "observations": [
+        "All six panels are visible: an antidot schematic, a SEM image with a 10 micrometer scale bar, experimental and calculated wide field sweeps, and their narrower expanded ranges. The source caption identifies the enlargement relationship."
+      ],
+      "review_limitations": [
+        "The enlarged views are separate panels rather than embedded insets; inset_zoom applies to the full-view-plus-zoom design relationship.",
+        "Visual appearance, crop completeness and caption association only; scientific validity and numerical reproducibility are not certified."
+      ],
+      "reviewer_type": "agent_visual_review",
+      "image_sha256": "3b776c4e32114eed7df7822a6adfd473acbac556087a6188abe3cd9c6e80c817",
+      "pdf_sha256": "682517131d1b93d9e4932a87beb9c74134384c7af60e002bc8e45d3730534f55"
+    },
+    {
+      "figure_id": "10.1103/physrevlett.134.126601_fig2",
+      "doi": "10.1103/physrevlett.134.126601",
+      "title": "Topological Phenomena in Artificial Quantum Materials Revealed by Local Chern Markers",
+      "source_url": "https://doi.org/10.1103/physrevlett.134.126601",
+      "family_ids": [
+        "line_comparison",
+        "heatmap",
+        "wide_narrow"
+      ],
+      "page": 3,
+      "bbox_pt": [
+        51.798,
+        438.669,
+        296.996,
+        608.453
+      ],
+      "observations": [
+        "Two upper field-dependent DOS/marker panels are followed by five full-width local-density images labeled (c)-(g). Source-page inspection confirms the black strips and their edges are complete."
+      ],
+      "review_limitations": [
+        "No image scale bars or per-strip quantitative color scale are visible; not an image_scalebar example.",
+        "Appearance and caption-association review only; no independent validation of scientific results or extraction of exact typography."
+      ],
+      "reviewer_type": "agent_visual_review",
+      "image_sha256": "997caae17eeaec3e04002a1e81037bd09872b11d7eba240c2c97501818361236",
+      "pdf_sha256": "682517131d1b93d9e4932a87beb9c74134384c7af60e002bc8e45d3730534f55"
+    },
+    {
+      "figure_id": "10.1103/physrevlett.134.126601_fig4",
+      "doi": "10.1103/physrevlett.134.126601",
+      "title": "Topological Phenomena in Artificial Quantum Materials Revealed by Local Chern Markers",
+      "source_url": "https://doi.org/10.1103/physrevlett.134.126601",
+      "family_ids": [
+        "spectrum",
+        "line_comparison",
+        "multipanel"
+      ],
+      "page": 5,
+      "bbox_pt": [
+        51.386,
+        45.187,
+        297.352,
+        171.236
+      ],
+      "observations": [
+        "The complete 2-by-2 set compares blue density-of-states spectra and red Chern-marker curves versus energy at four magnetic-field settings; PDF source confirms all panel labels and caption association."
+      ],
+      "review_limitations": [
+        "Imported caption is truncated; source-page caption was consulted. Left and right axes encode different quantities and require distinct labels.",
+        "Appearance and caption-association review only; no independent validation of scientific results or extraction of exact typography."
+      ],
+      "reviewer_type": "agent_visual_review",
+      "image_sha256": "486c7110ffca89d9b592264d3413041d211105b37006c656b4ef21ebf8aa53bd",
+      "pdf_sha256": "682517131d1b93d9e4932a87beb9c74134384c7af60e002bc8e45d3730534f55"
+    },
+    {
+      "figure_id": "10.1103/physrevlett.132.248403_fig2",
+      "doi": "10.1103/physrevlett.132.248403",
+      "title": "Topological Spectra and Entropy of Chromatin Loop Networks",
+      "source_url": "https://doi.org/10.1103/physrevlett.132.248403",
+      "family_ids": [
+        "network",
+        "schematic",
+        "line_comparison",
+        "uncertainty_bars",
+        "multipanel"
+      ],
+      "page": 2,
+      "bbox_pt": [
+        315.101,
+        44.97,
+        559.703,
+        247.951
+      ],
+      "observations": [
+        "Complete panels show a chain of binding sites, three boxed classes of loop topologies, a frequency pie chart, and normalized weights with capped error bars against two calculation curves. The panel structure matches Fig. 2."
+      ],
+      "review_limitations": [
+        "The taxonomy has no dedicated pie-chart family. Network cartoons encode topology, not physical positions; error semantics require the paper.",
+        "Appearance and source-association review only; not scientific replication, typography measurement, or human expert review."
+      ],
+      "reviewer_type": "agent_visual_review",
+      "image_sha256": "19156cf59c754e20c3b08c76366d2b7de23888eab9d4dfba8e372fa136ac7da1",
+      "pdf_sha256": "7f0e15d1060437f8cd8d7ea51e3aa20b6a2707b9effdb8342502d01da0271172"
+    },
+    {
+      "figure_id": "10.1103/physrevlett.132.248403_fig1",
+      "doi": "10.1103/physrevlett.132.248403",
+      "title": "Topological Spectra and Entropy of Chromatin Loop Networks",
+      "source_url": "https://doi.org/10.1103/physrevlett.132.248403",
+      "family_ids": [
+        "network",
+        "schematic",
+        "multipanel"
+      ],
+      "page": 2,
+      "bbox_pt": [
+        45.236,
+        43.451,
+        294.692,
+        206.509
+      ],
+      "observations": [
+        "The full two-row figure shows bead-based polymer binding and clustering above three black loop-network sketches. Panel letters, subpanel indices and arrowheads are retained."
+      ],
+      "review_limitations": [
+        "The bead rendering is a conceptual molecular/polymer schematic, not an experimental image.",
+        "Appearance and source-association review only; not scientific replication, typography measurement, or human expert review."
+      ],
+      "reviewer_type": "agent_visual_review",
+      "image_sha256": "a4996f182bce309936b3599e6a4b8c0395dd2315a2a6a2c766ae29ffe76ea207",
+      "pdf_sha256": "7f0e15d1060437f8cd8d7ea51e3aa20b6a2707b9effdb8342502d01da0271172"
+    },
+    {
+      "figure_id": "10.1103/physrevlett.132.248403_fig3",
+      "doi": "10.1103/physrevlett.132.248403",
+      "title": "Topological Spectra and Entropy of Chromatin Loop Networks",
+      "source_url": "https://doi.org/10.1103/physrevlett.132.248403",
+      "family_ids": [
+        "histogram",
+        "network",
+        "multipanel"
+      ],
+      "page": 4,
+      "bbox_pt": [
+        313.203,
+        362.864,
+        558.309,
+        566.83
+      ],
+      "observations": [
+        "Two overlaid blue/orange density histograms occupy the top row; two frequency pie charts with topology sketches and percentages occupy the bottom row. HSA18/HSA19 legends and gene labels match the caption."
+      ],
+      "review_limitations": [
+        "Histogram bin-width and sample provenance are not inferred from the image. Pie sectors are outside the current family list.",
+        "Appearance and source-association review only; not scientific replication, typography measurement, or human expert review."
+      ],
+      "reviewer_type": "agent_visual_review",
+      "image_sha256": "d6395133e27fb0441c9bf203da81aa5fb7b04c38f67e702964f17b67e06cf37e",
+      "pdf_sha256": "7f0e15d1060437f8cd8d7ea51e3aa20b6a2707b9effdb8342502d01da0271172"
+    },
+    {
+      "figure_id": "10.1103/physrevlett.134.060602_fig4",
+      "doi": "10.1103/physrevlett.134.060602",
+      "title": "Observation of the Two-Photon Landau-Zener-Stückelberg-Majorana Effect",
+      "source_url": "https://doi.org/10.1103/physrevlett.134.060602",
+      "family_ids": [
+        "line_comparison",
+        "uncertainty_band",
+        "phase_continuous",
+        "heatmap",
+        "contours",
+        "multipanel"
+      ],
+      "page": 4,
+      "bbox_pt": [
+        315.748,
+        45.088,
+        559.055,
+        210.752
+      ],
+      "observations": [
+        "Four population-versus-time panels labeled A-D are paired with an amplitude-offset population map. Gray confidence regions, black comparison curves, explicit contours and labeled A-E sample locations are visible; axes and colorbar survive the crop."
+      ],
+      "review_limitations": [
+        "The map is a continuous population response rather than a categorical phase diagram. Some gray intervals are narrow at this raster size; the caption identifies their meaning.",
+        "Appearance and source-association review only; not scientific replication, typography measurement, or human expert review."
+      ],
+      "reviewer_type": "agent_visual_review",
+      "image_sha256": "a746dc7cee9081fa302c05d3271d759454dfbef4437cfb71e6d069ff68c1bf48",
+      "pdf_sha256": "bc6143cc25ab6ea3be1baad49d80d830239007363c0593882ee7918446d4fe99"
+    },
+    {
+      "figure_id": "10.1103/physrevlett.134.060602_fig5",
+      "doi": "10.1103/physrevlett.134.060602",
+      "title": "Observation of the Two-Photon Landau-Zener-Stückelberg-Majorana Effect",
+      "source_url": "https://doi.org/10.1103/physrevlett.134.060602",
+      "family_ids": [
+        "line_comparison",
+        "scatter",
+        "uncertainty_bars"
+      ],
+      "page": 5,
+      "bbox_pt": [
+        73.083,
+        45.256,
+        275.497,
+        203.279
+      ],
+      "observations": [
+        "Three colored diamond series have vertical error bars and three black reference lines; the vertical variable is a logarithm of population and the horizontal variable is an amplitude raised to a power. Axis labels and the legend are complete."
+      ],
+      "review_limitations": [
+        "The transformed axes must be interpreted from the paper; this is not evidence for using a logarithmic axis for arbitrary data. Error-bar definition was not independently established.",
+        "Appearance and source-association review only; not scientific replication, typography measurement, or human expert review."
+      ],
+      "reviewer_type": "agent_visual_review",
+      "image_sha256": "d3cb27134e9334a3efe3a3ea2691b63446c191289744660885fe33691e0f58f0",
+      "pdf_sha256": "bc6143cc25ab6ea3be1baad49d80d830239007363c0593882ee7918446d4fe99"
+    },
+    {
+      "figure_id": "10.1103/physrevlett.132.218301_fig1",
+      "doi": "10.1103/physrevlett.132.218301",
+      "title": "Emerging Mesoscale Flows and Chaotic Advection in Dense Active Matter",
+      "source_url": "https://doi.org/10.1103/physrevlett.132.218301",
+      "family_ids": [
+        "vector_field",
+        "streamlines",
+        "heatmap",
+        "multipanel"
+      ],
+      "page": 2,
+      "bbox_pt": [
+        54.157,
+        46.677,
+        557.732,
+        194.571
+      ],
+      "observations": [
+        "Four aligned spatial panels compare two active-particle models. Velocity-amplitude maps include dense directional glyphs, and neighboring vorticity maps overlay black streamlines; separate magnitude and signed-vorticity color scales are retained."
+      ],
+      "review_limitations": [
+        "The velocity glyphs are dense at the exported raster size. This is simulated spatial-field evidence, not a microscopy reference or a universal colormap recommendation.",
+        "Appearance and source-association review only; not scientific replication, typography measurement, or human expert review."
+      ],
+      "reviewer_type": "agent_visual_review",
+      "image_sha256": "dfbb133519a6598bd835b002791ac78e0a866a7e54c7162906ec048d7b5e19c2",
+      "pdf_sha256": "acc17ff1bd8164792a7fb49986514b5e047632d397f8c0129061595820d8ed7e"
+    },
+    {
+      "figure_id": "10.1103/physrevlett.132.218301_fig3",
+      "doi": "10.1103/physrevlett.132.218301",
+      "title": "Emerging Mesoscale Flows and Chaotic Advection in Dense Active Matter",
+      "source_url": "https://doi.org/10.1103/physrevlett.132.218301",
+      "family_ids": [
+        "line_comparison",
+        "parameter_sweep",
+        "multipanel"
+      ],
+      "page": 4,
+      "bbox_pt": [
+        51.342,
+        46.512,
+        299.312,
+        246.123
+      ],
+      "observations": [
+        "Four closely stacked panels compare longitudinal and transverse spatial correlations for two models using consistent ordered colors and distinct markers. Shared x positioning and the separate model headings are complete."
+      ],
+      "review_limitations": [
+        "The vertical axes show correlation magnitudes and logarithmic ticks; no finite-size collapse or scaling-law inference is assigned from appearance.",
+        "Appearance and source-association review only; not scientific replication, typography measurement, or human expert review."
+      ],
+      "reviewer_type": "agent_visual_review",
+      "image_sha256": "ca09c571ba05232c4455c316937e079232b3329a25eec89c4b9f904e8b3905c9",
+      "pdf_sha256": "acc17ff1bd8164792a7fb49986514b5e047632d397f8c0129061595820d8ed7e"
+    },
+    {
+      "figure_id": "10.1103/physrevlett.132.218301_fig4",
+      "doi": "10.1103/physrevlett.132.218301",
+      "title": "Emerging Mesoscale Flows and Chaotic Advection in Dense Active Matter",
+      "source_url": "https://doi.org/10.1103/physrevlett.132.218301",
+      "family_ids": [
+        "line_comparison",
+        "log_scaling",
+        "multipanel"
+      ],
+      "page": 4,
+      "bbox_pt": [
+        53.195,
+        485.681,
+        559.241,
+        663.912
+      ],
+      "observations": [
+        "Four time-stamped particle snapshots occupy the left block, with two displacement panels on the right. Filled/open symbols distinguish observables; reference slope lines and arrows link selected times to the snapshots."
+      ],
+      "review_limitations": [
+        "The snapshots are discrete times, not a continuous space-time heatmap. Spatial colors encode initial particle position, not instantaneous scalar amplitude.",
+        "Appearance and source-association review only; not scientific replication, typography measurement, or human expert review."
+      ],
+      "reviewer_type": "agent_visual_review",
+      "image_sha256": "4e7100817b6e6a5f38c9132e5f4085969d06bdf46b003c8029fd4579b3738aef",
+      "pdf_sha256": "acc17ff1bd8164792a7fb49986514b5e047632d397f8c0129061595820d8ed7e"
+    },
+    {
+      "figure_id": "10.1103/physrevlett.132.054005_fig1",
+      "doi": "10.1103/physrevlett.132.054005",
+      "title": "Anisotropic Mean Flow Enhancement and Anomalous Transport of Finite-Size Spherical Particles in Turbulent Flows",
+      "source_url": "https://doi.org/10.1103/physrevlett.132.054005",
+      "family_ids": [
+        "heatmap",
+        "multipanel"
+      ],
+      "page": 2,
+      "bbox_pt": [
+        51.461,
+        45.055,
+        297.62,
+        213.334
+      ],
+      "observations": [
+        "Six spatial component maps compare single-phase and particulate flows in a 2-by-3 arrangement. Coordinate axes, red/white/black signed fields and particle overlays are complete. PDF page 2 confirms the candidate caption, including the unusual sentence about the trajectory plane."
+      ],
+      "review_limitations": [
+        "The color range is stated in the caption, without an on-image colorbar. The trajectory-plane sentence is present in the published caption and is not extraction contamination.",
+        "Appearance and source-association review only; not scientific replication, typography measurement, or human expert review."
+      ],
+      "reviewer_type": "agent_visual_review",
+      "image_sha256": "fce207640a637b92d7daa81792030091784b9517c4e7c1e678f4f5d4d713cc70",
+      "pdf_sha256": "5aa921c9bc804a1a5700a0edbd27e7a6457786cdd11ee4b2595f92bbefab1bdc"
+    },
+    {
+      "figure_id": "10.1103/physrevlett.132.054005_fig3",
+      "doi": "10.1103/physrevlett.132.054005",
+      "title": "Anisotropic Mean Flow Enhancement and Anomalous Transport of Finite-Size Spherical Particles in Turbulent Flows",
+      "source_url": "https://doi.org/10.1103/physrevlett.132.054005",
+      "family_ids": [
+        "scatter",
+        "line_comparison",
+        "contours",
+        "multipanel"
+      ],
+      "page": 3,
+      "bbox_pt": [
+        316.116,
+        46.585,
+        559.661,
+        207.719
+      ],
+      "observations": [
+        "Three Poincare sections with differently colored sampled intersections and black zero-level contours sit above two parameter-comparison panels. The full crop preserves secondary Stokes-number axes and marker keys."
+      ],
+      "review_limitations": [
+        "The source caption labels the single-phase position as right and the last case as right; this apparent published left/right typo is not silently corrected. Poincare sections are not assigned to trajectory or phase-portrait families requiring a continuous time order.",
+        "Appearance and source-association review only; not scientific replication, typography measurement, or human expert review."
+      ],
+      "reviewer_type": "agent_visual_review",
+      "image_sha256": "5338ead3487ca0c92db74498e09c38a8417665bfcfc5981f21fa63d46f3e4fee",
+      "pdf_sha256": "5aa921c9bc804a1a5700a0edbd27e7a6457786cdd11ee4b2595f92bbefab1bdc"
+    },
+    {
+      "figure_id": "10.1103/physrevlett.132.054005_fig4",
+      "doi": "10.1103/physrevlett.132.054005",
+      "title": "Anisotropic Mean Flow Enhancement and Anomalous Transport of Finite-Size Spherical Particles in Turbulent Flows",
+      "source_url": "https://doi.org/10.1103/physrevlett.132.054005",
+      "family_ids": [
+        "trajectory",
+        "histogram",
+        "scatter",
+        "multipanel"
+      ],
+      "page": 4,
+      "bbox_pt": [
+        52.228,
+        46.168,
+        296.732,
+        299.828
+      ],
+      "observations": [
+        "Two three-dimensional particle trajectories with red starting and blue ending markers are paired with velocity-density curves, followed by a full-width mode-versus-control comparison. All five regions and labels are included."
+      ],
+      "review_limitations": [
+        "The density family includes plotted density estimates here; binning or smoothing method is not recoverable from the figure. The 3D trajectories are not scalar-height surface plots.",
+        "Appearance and source-association review only; not scientific replication, typography measurement, or human expert review."
+      ],
+      "reviewer_type": "agent_visual_review",
+      "image_sha256": "4db2d3e86bac2b32f84440130732deebd52e505baa27bd5a5d22a107ba85c975",
+      "pdf_sha256": "5aa921c9bc804a1a5700a0edbd27e7a6457786cdd11ee4b2595f92bbefab1bdc"
+    },
+    {
+      "figure_id": "10.1103/physrevlett.132.054005_fig5",
+      "doi": "10.1103/physrevlett.132.054005",
+      "title": "Anisotropic Mean Flow Enhancement and Anomalous Transport of Finite-Size Spherical Particles in Turbulent Flows",
+      "source_url": "https://doi.org/10.1103/physrevlett.132.054005",
+      "family_ids": [
+        "line_comparison",
+        "log_scaling",
+        "multipanel"
+      ],
+      "page": 4,
+      "bbox_pt": [
+        314.874,
+        44.855,
+        561.022,
+        128.007
+      ],
+      "observations": [
+        "Two log-log mean-squared-displacement panels compare component curves with total displacement; separate dashed and dash-dotted power-law guides are visible. Axis labels, legend and both panels are intact."
+      ],
+      "review_limitations": [
+        "The original uses very small single-column labels and mixed line patterns; acceptance records completeness, not a requirement to copy that exact sizing.",
+        "Appearance and source-association review only; not scientific replication, typography measurement, or human expert review."
+      ],
+      "reviewer_type": "agent_visual_review",
+      "image_sha256": "3b15b3430c0b7a514c41a3181cd854f704b1d19393d00df242ecdc1e55bee3ad",
+      "pdf_sha256": "5aa921c9bc804a1a5700a0edbd27e7a6457786cdd11ee4b2595f92bbefab1bdc"
+    }
+  ]
+}

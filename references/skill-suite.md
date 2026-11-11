@@ -5,6 +5,7 @@
 | Skill | Task |
 | --- | --- |
 | `prl-figures` | Design, render, revise and inspect scientific figures |
+| `prl-schematics` | Create scientific Fig. 1, model/apparatus diagrams, feedback loops and process workflows |
 | `prl-writing-en` | Draft, polish, compress and restructure English prose |
 | `prl-writing-zh` | Draft and polish natural Chinese scientific prose |
 | `prl-bilingual` | Translate and align protected scientific facts |
@@ -15,7 +16,7 @@
 Install from the extracted distribution with `python3 install.py --agent codex`,
 `--agent claude-code` or `--agent opencode`. `--destination PATH` selects another
 parent skill directory. The installer creates independent copies, each with one
-entrypoint and its own resources. Reinstall from a new distribution to update;
+entrypoint and its own resources: one main skill and eight specialized skills. Reinstall from a new distribution to update;
 previous managed copies are retained in a hidden backup directory.
 
 All entrypoints share the [direct writing policy](assertive-writing.md),

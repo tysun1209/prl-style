@@ -1,6 +1,6 @@
 # Inspecting sources and extending rules
 
-Start with [figure sources](figure-sources.json), [writing sources](writing-sources.json)
+Start with [figure sources](figure-sources.json), [Fig. 1 schematic sources](schematic-sources.json), [writing sources](writing-sources.json)
 and the DOI links in the palette catalog. The distribution contains original
 guidance, paraphrased observations and source metadata; acquire source papers
 separately when a task needs the actual figure or full text.

@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Install independent copies of all eight PRL skills. Python 3.10+, no extra packages."""
+"""Install independent copies of all nine PRL skills. Python 3.10+, no extra packages."""
 import argparse
 from datetime import datetime, timezone
 import json

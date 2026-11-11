@@ -1,6 +1,6 @@
 ---
 name: prl-style
-description: Design and audit PRL-oriented physics figures; draft, polish, restructure and translate scientific writing in English and native Chinese. Use for Physical Review Letters figure style, captions, Letter narratives, bilingual alignment and evidence-preserving compression. Chinese is a working adaptation, not an official PRL publication format.
+description: Design and audit PRL-oriented physics figures, scientific schematics and Fig. 1 flowcharts; draft, polish, restructure and translate scientific writing in English and native Chinese. Use for Physical Review Letters figure style, captions, Letter narratives, bilingual alignment and evidence-preserving compression. Chinese is a working adaptation, not an official PRL publication format.
 ---
 
 # PRL figures and bilingual scientific writing
@@ -9,7 +9,7 @@ Writing uses v3 [calibrated, direct prose](references/assertive-writing.md): sta
 
 Reproduce the communication standards of a precise physics Letter: a clear physical question, compact evidence, legible final-size figures, and conclusions proportionate to the evidence. Preserve the user's data, technical conventions and intended meaning. A published paper is an observation, not a universal template; no single font, palette, panel sequence or stock phrase defines PRL.
 
-This is the integrated router for the [PRL skill suite](references/skill-suite.md). Use `prl-figures`, `prl-writing-en`, `prl-writing-zh`, `prl-bilingual`, `prl-captions`, `prl-review`, or `prl-evidence` when the request is clearly limited to that mode; keep `prl-style` for combined or ambiguous work.
+This is the integrated router for the [PRL skill suite](references/skill-suite.md). Use `prl-figures`, `prl-schematics`, `prl-writing-en`, `prl-writing-zh`, `prl-bilingual`, `prl-captions`, `prl-review`, or `prl-evidence` when the request is clearly limited to that mode; keep `prl-style` for combined or ambiguous work.
 
 ## Choose the relevant mode
 
@@ -17,6 +17,7 @@ Read only the references needed for the task. If the request is already clear, p
 
 | Request | Read and use | Deliver |
 |---|---|---|
+| Scientific schematic, apparatus/model diagram, feedback loop, method flowchart or mixed Fig. 1 | `prl-schematics`; [source-backed schematic design](references/prl-schematics.md); `scripts/prl_schematic.py` and original examples in `scripts/render_schematics.py` | Original 600 dpi PNG, editable source and concise caption defining entities, arrow meanings and schematic/data status |
 | Figure planning, generation or revision | [Figure design](references/figure-design.md); [palette selection](references/prl-color-palettes.md); [figure families and recipes](references/figure-families.md) for type selection; [captions](references/caption-writing.md) when needed | Source/data provenance, fixed-size 600 dpi PNG, precise inspection findings; other formats on request |
 | PRL color selection or palette distillation | [2025–2026 source-backed palettes](references/prl-color-palettes.md); `scripts/prl_palette.py` for colors and colormaps | Colors linked to source figures, physical roles, direction and numeric bins |
 | New data-backed figure specification or reproducible caption | [Figure contract](references/figure-contract.md), [captions](references/caption-writing.md), and the relevant family recipe | Validated JSON specification, PNG/source, caption text, separate caption-facts manifest, and semantic review findings; other image formats on request |
