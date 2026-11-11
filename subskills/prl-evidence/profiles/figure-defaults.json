@@ -9,10 +9,10 @@
     "sans": {"family": "DejaVu Sans", "mathtext": "dejavusans"},
     "serif": {"family": "Nimbus Roman", "mathtext": "stix"}
   },
-  "colors": ["#0072B2", "#D55E00", "#009E73", "#CC79A7", "#222222"],
+  "categorical_palette": "prl-070",
+  "sequential_palette": "prl-017",
+  "diverging_palette": "prl-110",
   "markers": ["o", "s", "^", "D", "v"],
   "line_styles": ["-", "--", "-.", ":", "-"],
-  "continuous_cmap": "cividis",
-  "diverging_cmap": "RdBu_r",
   "note": "No universal PRL palette or typeface is claimed. Continuous parameter sweeps may use a colorbar; meaningful categories require redundant coding."
 }

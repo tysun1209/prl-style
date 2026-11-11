@@ -21,6 +21,9 @@ lines.linewidth: 1.15
 lines.markersize: 4
 xtick.direction: in
 ytick.direction: in
+# Start with reading-side ticks; enable opposite marks per panel when useful.
+xtick.top: False
+ytick.right: False
 xtick.major.width: 0.65
 ytick.major.width: 0.65
 xtick.minor.width: 0.55

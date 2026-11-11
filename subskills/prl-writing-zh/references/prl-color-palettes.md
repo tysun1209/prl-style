@@ -10,7 +10,7 @@
 
 ## 选色顺序
 
-先确定颜色表达什么，再选组合。
+先确定颜色表达什么，再选组合。普通绘图也执行这一步，无需用户额外提出“请调用配色库”。代码中实际调用 `categorical()` / `colormap()`，并保存配色 ID、对象—颜色映射、色标方向与归一化；只阅读本说明或列出色卡不算调用。用户已有明确配色时保留其选择。
 
 | 图中任务 | 选择方式 | 来源示例 |
 |---|---|---|
@@ -51,7 +51,7 @@ from pathlib import Path
 skill = Path.cwd().resolve()
 sys.path.insert(0, str(skill / 'scripts'))
 from prl_palette import categorical, colormap, get_palette
-from prl_figure import figure_context
+from prl_figure import figure_context, new_figure
 from matplotlib.colors import TwoSlopeNorm, BoundaryNorm
 
 colors = categorical('prl-001', n=3)
@@ -64,6 +64,11 @@ p = get_palette('prl-105')
 step_cmap = colormap(p['id'])
 step_norm = BoundaryNorm(p['bin_edges_normalized'], step_cmap.N)
 # 实际物理区间不是 0–1 时，将归一化边界转换到该物理区间。
+
+# 也可直接把库配色应用到局部绘图上下文，并把返回值写入 provenance：
+with figure_context(palette_id='prl-070') as palette_info:
+    fig, ax = new_figure()
+    ax.plot([0, 1], [0, 1])  # 演示数据；实际使用时传入用户数据。
 ```
 
 类别色不插值、不循环补齐。所需类别数超过配色长度时，另选足够长的方案。连续色图返回采样后的近似 sRGB 映射；`reverse=True` 可显式反向。辅助函数不修改全局 `rcParams`，不会改变 Times New Roman / 宋体、刻度朝内、默认无图内小字及默认不生成灰度图的设置。

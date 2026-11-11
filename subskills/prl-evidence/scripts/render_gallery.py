@@ -7,7 +7,7 @@ import matplotlib
 matplotlib.use('Agg')
 import matplotlib.pyplot as plt
 from matplotlib.patches import Circle,FancyArrowPatch
-from prl_figure import figure_context,new_figure,export_figure,DEFAULTS
+from prl_figure import default_colormap,figure_context,new_figure,export_figure,DEFAULTS
 from corpus_lib import write_json
 
 
@@ -37,7 +37,7 @@ def render_gallery(out):
         finish(fig,'02-scaling','(a) Three explicitly generated power-law series. (b) The same values divided by the known generating size factor. This example demonstrates layout only and is not evidence of a scaling law.','scaling')
         fig,ax=new_figure(85,72)
         x=np.linspace(-2,2,101);X,Y=np.meshgrid(x,x);Z=np.tanh(X-.5*Y)
-        im=ax.pcolormesh(X,Y,Z,cmap='RdBu_r',vmin=-1,vmax=1,rasterized=True,shading='auto')
+        im=ax.pcolormesh(X,Y,Z,cmap=default_colormap('diverging'),vmin=-1,vmax=1,rasterized=True,shading='auto')
         ax.plot(.5*x,x,'k--',lw=1);ax.text(-1.6,1.2,'A',color='white',weight='bold');ax.text(1,-1.5,'B',color='white',weight='bold')
         ax.set(xlabel='Control 1 (a.u.)',ylabel='Control 2 (a.u.)');cb=fig.colorbar(im,ax=ax);cb.set_label('Order (a.u.)')
         finish(fig,'03-phase-map','Illustrative signed field with a fixed zero-centered scale. The dashed line denotes its analytic zero contour; A and B identify sides independently of color.','phase_map')
@@ -49,7 +49,7 @@ def render_gallery(out):
         finish(fig,'04-distribution','Two analytical demonstration densities, distinguished by both line style and color. Neither curve is a fit to measured data.','distribution')
         fig,axes=new_figure(178,78,ncols=2)
         x=np.linspace(-2,2,70);X,Y=np.meshgrid(x,x);Z=np.exp(-((X-.6)**2+(Y+.2)**2))
-        im=axes[0].imshow(Z,extent=(-2,2,-2,2),origin='lower',cmap='cividis',vmin=0,vmax=1)
+        im=axes[0].imshow(Z,extent=(-2,2,-2,2),origin='lower',cmap=default_colormap('sequential'),vmin=0,vmax=1)
         t=np.linspace(0,5,180);axes[1].plot(np.cos(t)*np.exp(-t/4),np.sin(t)*np.exp(-t/4),color=colors[0]);axes[1].plot([1],[0],'o',color=colors[0]);axes[1].plot([np.cos(5)*np.exp(-1.25)],[np.sin(5)*np.exp(-1.25)],'s',color=colors[1])
         axes[1].set_aspect('equal');axes[1].set(xlim=(-2,2),ylim=(-2,2))
         for ax,label in zip(axes,['(a)','(b)']):ax.set(xlabel='x (mm)',ylabel='y (mm)');ax.text(.03,.97,label,transform=ax.transAxes,va='top',color='white' if ax is axes[0] else 'black')

@@ -13,12 +13,21 @@ import numpy as np
 from PIL import Image
 from corpus_lib import write_json,sha256
 from typography import resolve_font,check_figure_fonts
+from prl_palette import categorical, colormap, get_palette
 
 ROOT=Path(__file__).resolve().parents[1]
 DEFAULTS=json.loads((ROOT/'profiles/figure-defaults.json').read_text())
+# Compatibility for family recipes: colors are resolved from the real catalog.
+DEFAULTS['colors']=categorical(DEFAULTS['categorical_palette'])
+
+
+def default_colormap(role='sequential'):
+    if role not in ('sequential', 'diverging'):
+        raise ValueError('role must be sequential or diverging')
+    return colormap(DEFAULTS[role+'_palette'])
 
 @contextmanager
-def figure_context(profile=None, width_mm=None):
+def figure_context(profile=None, width_mm=None, *, palette_id=None):
     profile=profile or DEFAULTS['default_font_profile']
     if profile not in DEFAULTS['font_profiles']:raise ValueError('profile must be times, sans or serif')
     font=DEFAULTS['font_profiles'][profile]
@@ -26,15 +35,20 @@ def figure_context(profile=None, width_mm=None):
     families=[font['family']]
     if font.get('cjk_family') and resolve_font(font['cjk_family'],required=False):
         families.append(font['cjk_family'])
+    palette_id=palette_id or DEFAULTS['categorical_palette']
+    colors=categorical(palette_id)
+    palette=get_palette(palette_id)
     with mpl.rc_context(fname=ROOT/'assets/styles/prl.mplstyle'):
         mpl.rcParams.update({'font.family':families,'mathtext.fontset':font['mathtext'],
-            'axes.prop_cycle':cycler(color=DEFAULTS['colors'])})
-        yield
+            'axes.prop_cycle':cycler(color=colors)})
+        yield {'palette_id':palette_id, 'colors':colors,
+               'source_dois':sorted({s['doi'] for s in palette['sources']})}
 
 
 def new_figure(width_mm=85,height_mm=65,nrows=1,ncols=1,**kwargs):
     if not np.isfinite([width_mm,height_mm]).all() or min(width_mm,height_mm)<=0:raise ValueError('positive finite dimensions required')
-    return plt.subplots(nrows,ncols,figsize=(width_mm/25.4,height_mm/25.4),layout='constrained',**kwargs)
+    kwargs.setdefault('layout','constrained')
+    return plt.subplots(nrows,ncols,figsize=(width_mm/25.4,height_mm/25.4),**kwargs)
 
 
 def read_xy_csv(path):

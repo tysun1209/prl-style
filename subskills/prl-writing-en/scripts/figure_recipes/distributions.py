@@ -1,7 +1,7 @@
 """Distribution summaries with explicit normalization and estimator choices."""
 import numpy as np
 from .common import Example,single,labels,C,panel
-from prl_figure import new_figure
+from prl_figure import default_colormap,new_figure
 NAMES={'histogram','ecdf','box_violin','joint_density','survival','polar'}
 
 def build(name,rng):
@@ -24,6 +24,6 @@ def build(name,rng):
         ax.step(xx,yy,where='post',color=C[0]);ax.set_ylim(0,1.03);labels(ax,'Value (a.u.)','Fraction ≤ value' if name=='ecdf' else 'Fraction > value')
         return Example(fig,'Empirical '+('cumulative distribution' if name=='ecdf' else 'strict upper-tail fraction')+' of 400 uncensored synthetic samples. Repeated values use their full multiplicity; no parametric distribution is fitted.',dict(samples=samples,x=xx,fraction=yy),['empirical rank with right-inclusive cumulative counts'])
     if name=='joint_density':
-        a=rng.normal(size=1500);b=.5*a+rng.normal(size=1500)*.7;h= ax.hist2d(a,b,bins=24,cmap='cividis');fig.colorbar(h[3],ax=ax,label='Samples per bin');labels(ax,'Observable A (a.u.)','Observable B (a.u.)')
+        a=rng.normal(size=1500);b=.5*a+rng.normal(size=1500)*.7;h= ax.hist2d(a,b,bins=24,cmap=default_colormap('sequential'));fig.colorbar(h[3],ax=ax,label='Samples per bin');labels(ax,'Observable A (a.u.)','Observable B (a.u.)')
         return Example(fig,'Two-dimensional counts for 1500 synthetic paired samples on 24 bins per coordinate. Color represents counts per rectangular bin, not a probability density.',dict(x=a,y=b,counts=h[0],xedges=h[1],yedges=h[2]),['24 rectangular bins per coordinate; no smoothing'])
     raise ValueError(name)

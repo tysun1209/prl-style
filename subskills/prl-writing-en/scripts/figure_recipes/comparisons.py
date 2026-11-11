@@ -1,7 +1,7 @@
 """Comparison and scaling recipes; no fitted scientific result is asserted."""
 import numpy as np
 from .common import Example,single,labels,panel,C
-from prl_figure import new_figure
+from prl_figure import default_colormap,new_figure
 
 NAMES={'line_comparison','scatter','uncertainty_bars','uncertainty_band','residuals','parity','parameter_sweep','log_scaling','finite_size_collapse'}
 
@@ -40,7 +40,7 @@ def build(name,rng):
     if name=='parameter_sweep':
         from matplotlib.colors import Normalize
         from matplotlib.cm import ScalarMappable
-        params=np.linspace(.7,1.7,6);cmap=__import__('matplotlib').colormaps['viridis'];norm=Normalize(params.min(),params.max())
+        params=np.linspace(.7,1.7,6);cmap=default_colormap('sequential');norm=Normalize(params.min(),params.max())
         for p in params:ax.plot(x,np.exp(-x/p),color=cmap(norm(p)))
         fig.colorbar(ScalarMappable(norm=norm,cmap=cmap),ax=ax,label='Decay scale (a.u.)');labels(ax)
         return Example(fig,'Analytic responses for six ordered decay scales. Color encodes a continuous parameter, not six unordered phases.',dict(x=x,parameters=params,y=np.exp(-x[None,:]/params[:,None])))

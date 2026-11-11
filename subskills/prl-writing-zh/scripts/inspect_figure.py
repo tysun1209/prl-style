@@ -56,7 +56,15 @@ def inspect_artists(fig):
         if not collection.get_visible() or not len(collection.get_segments()):continue
         for width_pt in collection.get_linewidths():
             if width_pt<.5:errors.append({'code':'thin_line_collection','width_pt':float(width_pt)})
-    return {'errors':errors,'warnings':warnings,'base_capital_height_min_mm':min(heights) if heights else None,
+    geometry=[]
+    for ax in fig.axes:
+        legend=ax.get_legend()
+        lb=legend.get_window_extent(renderer) if legend is not None and legend.get_visible() else None
+        geometry.append({'data_box_mm':[float(v*25.4/fig.dpi) for v in ax.bbox.extents],
+          'legend_inside_data_box':None if lb is None else bool(ax.bbox.contains(lb.x0,lb.y0) and ax.bbox.contains(lb.x1,lb.y1)),
+          'top_ticks':any(t.tick2line.get_visible() for t in ax.xaxis.get_major_ticks()),
+          'right_ticks':any(t.tick2line.get_visible() for t in ax.yaxis.get_major_ticks())})
+    return {'errors':errors,'warnings':warnings,'layout_observations':geometry,'base_capital_height_min_mm':min(heights) if heights else None,
       'limits':['Does not prove semantic correctness, label-data separation or color-vision accessibility.','Scatter area, rasters, custom transforms and math scripts require separate visual inspection.']}
 
 
