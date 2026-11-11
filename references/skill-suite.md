@@ -5,7 +5,7 @@
 | Skill | Task |
 | --- | --- |
 | `prl-figures` | Design, render, revise and inspect scientific figures |
-| `prl-schematics` | Create scientific Fig. 1, model/apparatus diagrams, feedback loops and process workflows |
+| `prl-schematics` | Generate scientific Fig. 1 PNGs with the host image model, then reconstruct editable PowerPoint diagrams |
 | `prl-writing-en` | Draft, polish, compress and restructure English prose |
 | `prl-writing-zh` | Draft and polish natural Chinese scientific prose |
 | `prl-bilingual` | Translate and align protected scientific facts |

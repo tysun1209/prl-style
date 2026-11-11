@@ -1,0 +1,955 @@
+{
+  "schema_version": 1,
+  "width_mm": 178,
+  "height_mm": 89,
+  "background": "#FFFFFF",
+  "source_png": {
+    "path": "fig1-model.png",
+    "sha256": "4a46d48d190e4cd8550b3f40c32b6c6b4591f4ae4a759658b5302192d8f3512c"
+  },
+  "palette_id": "prl-029",
+  "color_mapping": {
+    "particle_and_action": "#3268B2",
+    "observation": "#21AA64",
+    "reward": "#9B73B2",
+    "target": "#C7972C"
+  },
+  "caption": "Conceptual illustration of active-particle steering. (a) A particle moves through a confined channel toward a target while avoiding fixed obstacles; the dashed path is an illustrative proposed route. (b) A controller sends an action to the environment and receives separate observation and reward signals. The network icon is symbolic and does not specify an implemented architecture. All geometry is schematic; no measured or simulated results are shown.",
+  "objects": [
+    {
+      "id": "physical-model",
+      "kind": "group",
+      "objects": [
+        {
+          "id": "channel",
+          "kind": "rect",
+          "box": [
+            2.30778,
+            32.40924,
+            105.15445,
+            35.72041
+          ],
+          "fill": "#E7F3FB",
+          "stroke": null
+        },
+        {
+          "id": "upper-wall",
+          "kind": "path",
+          "commands": [
+            [
+              "M",
+              2.30778,
+              32.40924
+            ],
+            [
+              "L",
+              107.46223,
+              32.40924
+            ]
+          ],
+          "stroke": "#3268B2",
+          "line_pt": 1
+        },
+        {
+          "id": "lower-wall",
+          "kind": "path",
+          "commands": [
+            [
+              "M",
+              2.30778,
+              68.12965
+            ],
+            [
+              "L",
+              107.46223,
+              68.12965
+            ]
+          ],
+          "stroke": "#3268B2",
+          "line_pt": 1
+        },
+        {
+          "id": "obstacle-1",
+          "kind": "ellipse",
+          "box": [
+            33.41263,
+            40.73732,
+            10.83653,
+            10.83653
+          ],
+          "fill": "#CAD1DA",
+          "stroke": null
+        },
+        {
+          "id": "obstacle-2",
+          "kind": "ellipse",
+          "box": [
+            51.87486,
+            50.16911,
+            9.43179,
+            9.43179
+          ],
+          "fill": "#CAD1DA",
+          "stroke": null
+        },
+        {
+          "id": "obstacle-3",
+          "kind": "ellipse",
+          "box": [
+            66.82525,
+            40.23563,
+            11.23788,
+            11.23788
+          ],
+          "fill": "#CAD1DA",
+          "stroke": null
+        },
+        {
+          "id": "proposed-path",
+          "kind": "path",
+          "commands": [
+            [
+              "M",
+              16.35513,
+              51.47351
+            ],
+            [
+              "C",
+              24.08117,
+              52.27621,
+              29.29876,
+              38.22886,
+              38.42954,
+              38.42954
+            ],
+            [
+              "C",
+              46.65727,
+              38.3292,
+              49.66742,
+              42.14205,
+              47.96167,
+              49.66742
+            ],
+            [
+              "C",
+              45.65389,
+              57.79481,
+              44.95152,
+              63.11274,
+              51.87486,
+              64.91883
+            ],
+            [
+              "C",
+              64.81849,
+              68.33033,
+              75.354,
+              49.3664,
+              92.01015,
+              49.56708
+            ]
+          ],
+          "stroke": "#3268B2",
+          "line_pt": 1.2,
+          "dash": true,
+          "arrow_end": true,
+          "meaning": "Illustrative proposed route toward target; not a measured trajectory",
+          "from": "particle",
+          "to": "target"
+        },
+        {
+          "id": "orientation",
+          "kind": "path",
+          "commands": [
+            [
+              "M",
+              12.64262,
+              51.27283
+            ],
+            [
+              "L",
+              20.66967,
+              46.05524
+            ]
+          ],
+          "stroke": "#3268B2",
+          "line_pt": 1.1,
+          "arrow_end": true,
+          "meaning": "Instantaneous particle orientation"
+        },
+        {
+          "id": "particle",
+          "kind": "ellipse",
+          "box": [
+            10.13416,
+            48.76437,
+            5.01691,
+            5.01691
+          ],
+          "fill": "#3268B2",
+          "stroke": null
+        },
+        {
+          "id": "target",
+          "kind": "ellipse",
+          "box": [
+            92.61218,
+            46.25592,
+            6.823,
+            6.823
+          ],
+          "fill": "#FFFFFF",
+          "stroke": "#C7972C",
+          "line_pt": 1.8
+        },
+        {
+          "id": "particle-leader",
+          "kind": "path",
+          "commands": [
+            [
+              "M",
+              15.95378,
+              40.13529
+            ],
+            [
+              "L",
+              13.24464,
+              48.66404
+            ]
+          ],
+          "stroke": "#17212B",
+          "line_pt": 0.6
+        },
+        {
+          "id": "obstacle-leader-1",
+          "kind": "path",
+          "commands": [
+            [
+              "M",
+              52.27621,
+              32.71026
+            ],
+            [
+              "L",
+              43.24577,
+              41.54002
+            ]
+          ],
+          "stroke": "#17212B",
+          "line_pt": 0.6
+        },
+        {
+          "id": "obstacle-leader-2",
+          "kind": "path",
+          "commands": [
+            [
+              "M",
+              56.59076,
+              32.71026
+            ],
+            [
+              "L",
+              56.59076,
+              49.46674
+            ]
+          ],
+          "stroke": "#17212B",
+          "line_pt": 0.6
+        },
+        {
+          "id": "obstacle-leader-3",
+          "kind": "path",
+          "commands": [
+            [
+              "M",
+              60.50395,
+              32.71026
+            ],
+            [
+              "L",
+              68.531,
+              40.73732
+            ]
+          ],
+          "stroke": "#17212B",
+          "line_pt": 0.6
+        },
+        {
+          "id": "target-leader",
+          "kind": "path",
+          "commands": [
+            [
+              "M",
+              98.53213,
+              40.13529
+            ],
+            [
+              "L",
+              96.72604,
+              46.05524
+            ]
+          ],
+          "stroke": "#17212B",
+          "line_pt": 0.6
+        },
+        {
+          "id": "particle-label",
+          "kind": "text",
+          "text": "Active particle",
+          "box": [
+            4.81623,
+            34.71702,
+            30.70349,
+            5.11725
+          ],
+          "font_pt": 11.7,
+          "align": "left"
+        },
+        {
+          "id": "obstacles-label",
+          "kind": "text",
+          "text": "Obstacles",
+          "box": [
+            45.45321,
+            27.09132,
+            23.8805,
+            5.01691
+          ],
+          "font_pt": 11.7
+        },
+        {
+          "id": "target-label",
+          "kind": "text",
+          "text": "Target",
+          "box": [
+            92.51184,
+            34.81736,
+            14.54904,
+            5.01691
+          ],
+          "font_pt": 11.7
+        }
+      ]
+    },
+    {
+      "id": "controller",
+      "kind": "group",
+      "objects": [
+        {
+          "id": "controller-box",
+          "kind": "roundrect",
+          "box": [
+            119.2018,
+            14.34837,
+            51.47351,
+            26.68997
+          ],
+          "fill": "#E7F0F9",
+          "stroke": "#3268B2",
+          "line_pt": 0.85
+        },
+        {
+          "id": "controller-title",
+          "kind": "text",
+          "text": "Controller",
+          "box": [
+            124.41939,
+            15.7531,
+            41.13867,
+            5.11725
+          ],
+          "font_pt": 13,
+          "bold": true
+        },
+        {
+          "id": "network-edge-0-0-0",
+          "kind": "path",
+          "commands": [
+            [
+              "M",
+              132.34611,
+              25.08455
+            ],
+            [
+              "L",
+              144.98873,
+              24.38219
+            ]
+          ],
+          "stroke": "#3268B2",
+          "line_pt": 0.6
+        },
+        {
+          "id": "network-edge-0-0-1",
+          "kind": "path",
+          "commands": [
+            [
+              "M",
+              132.34611,
+              25.08455
+            ],
+            [
+              "L",
+              144.98873,
+              30.50282
+            ]
+          ],
+          "stroke": "#3268B2",
+          "line_pt": 0.6
+        },
+        {
+          "id": "network-edge-0-0-2",
+          "kind": "path",
+          "commands": [
+            [
+              "M",
+              132.34611,
+              25.08455
+            ],
+            [
+              "L",
+              144.98873,
+              36.32244
+            ]
+          ],
+          "stroke": "#3268B2",
+          "line_pt": 0.6
+        },
+        {
+          "id": "network-edge-0-1-0",
+          "kind": "path",
+          "commands": [
+            [
+              "M",
+              132.34611,
+              30.60316
+            ],
+            [
+              "L",
+              144.98873,
+              24.38219
+            ]
+          ],
+          "stroke": "#3268B2",
+          "line_pt": 0.6
+        },
+        {
+          "id": "network-edge-0-1-1",
+          "kind": "path",
+          "commands": [
+            [
+              "M",
+              132.34611,
+              30.60316
+            ],
+            [
+              "L",
+              144.98873,
+              30.50282
+            ]
+          ],
+          "stroke": "#3268B2",
+          "line_pt": 0.6
+        },
+        {
+          "id": "network-edge-0-1-2",
+          "kind": "path",
+          "commands": [
+            [
+              "M",
+              132.34611,
+              30.60316
+            ],
+            [
+              "L",
+              144.98873,
+              36.32244
+            ]
+          ],
+          "stroke": "#3268B2",
+          "line_pt": 0.6
+        },
+        {
+          "id": "network-edge-0-2-0",
+          "kind": "path",
+          "commands": [
+            [
+              "M",
+              132.34611,
+              36.12176
+            ],
+            [
+              "L",
+              144.98873,
+              24.38219
+            ]
+          ],
+          "stroke": "#3268B2",
+          "line_pt": 0.6
+        },
+        {
+          "id": "network-edge-0-2-1",
+          "kind": "path",
+          "commands": [
+            [
+              "M",
+              132.34611,
+              36.12176
+            ],
+            [
+              "L",
+              144.98873,
+              30.50282
+            ]
+          ],
+          "stroke": "#3268B2",
+          "line_pt": 0.6
+        },
+        {
+          "id": "network-edge-0-2-2",
+          "kind": "path",
+          "commands": [
+            [
+              "M",
+              132.34611,
+              36.12176
+            ],
+            [
+              "L",
+              144.98873,
+              36.32244
+            ]
+          ],
+          "stroke": "#3268B2",
+          "line_pt": 0.6
+        },
+        {
+          "id": "network-edge-1-0-0",
+          "kind": "path",
+          "commands": [
+            [
+              "M",
+              144.98873,
+              24.38219
+            ],
+            [
+              "L",
+              157.63134,
+              27.59301
+            ]
+          ],
+          "stroke": "#3268B2",
+          "line_pt": 0.6
+        },
+        {
+          "id": "network-edge-1-0-1",
+          "kind": "path",
+          "commands": [
+            [
+              "M",
+              144.98873,
+              24.38219
+            ],
+            [
+              "L",
+              157.63134,
+              33.71364
+            ]
+          ],
+          "stroke": "#3268B2",
+          "line_pt": 0.6
+        },
+        {
+          "id": "network-edge-1-1-0",
+          "kind": "path",
+          "commands": [
+            [
+              "M",
+              144.98873,
+              30.50282
+            ],
+            [
+              "L",
+              157.63134,
+              27.59301
+            ]
+          ],
+          "stroke": "#3268B2",
+          "line_pt": 0.6
+        },
+        {
+          "id": "network-edge-1-1-1",
+          "kind": "path",
+          "commands": [
+            [
+              "M",
+              144.98873,
+              30.50282
+            ],
+            [
+              "L",
+              157.63134,
+              33.71364
+            ]
+          ],
+          "stroke": "#3268B2",
+          "line_pt": 0.6
+        },
+        {
+          "id": "network-edge-1-2-0",
+          "kind": "path",
+          "commands": [
+            [
+              "M",
+              144.98873,
+              36.32244
+            ],
+            [
+              "L",
+              157.63134,
+              27.59301
+            ]
+          ],
+          "stroke": "#3268B2",
+          "line_pt": 0.6
+        },
+        {
+          "id": "network-edge-1-2-1",
+          "kind": "path",
+          "commands": [
+            [
+              "M",
+              144.98873,
+              36.32244
+            ],
+            [
+              "L",
+              157.63134,
+              33.71364
+            ]
+          ],
+          "stroke": "#3268B2",
+          "line_pt": 0.6
+        },
+        {
+          "id": "neuron-0-0",
+          "kind": "ellipse",
+          "box": [
+            130.64036,
+            23.3788,
+            3.4115,
+            3.4115
+          ],
+          "fill": "#3268B2",
+          "stroke": null
+        },
+        {
+          "id": "neuron-0-1",
+          "kind": "ellipse",
+          "box": [
+            130.64036,
+            28.89741,
+            3.4115,
+            3.4115
+          ],
+          "fill": "#3268B2",
+          "stroke": null
+        },
+        {
+          "id": "neuron-0-2",
+          "kind": "ellipse",
+          "box": [
+            130.64036,
+            34.41601,
+            3.4115,
+            3.4115
+          ],
+          "fill": "#3268B2",
+          "stroke": null
+        },
+        {
+          "id": "neuron-1-0",
+          "kind": "ellipse",
+          "box": [
+            143.28298,
+            22.67644,
+            3.4115,
+            3.4115
+          ],
+          "fill": "#3268B2",
+          "stroke": null
+        },
+        {
+          "id": "neuron-1-1",
+          "kind": "ellipse",
+          "box": [
+            143.28298,
+            28.79707,
+            3.4115,
+            3.4115
+          ],
+          "fill": "#3268B2",
+          "stroke": null
+        },
+        {
+          "id": "neuron-1-2",
+          "kind": "ellipse",
+          "box": [
+            143.28298,
+            34.61669,
+            3.4115,
+            3.4115
+          ],
+          "fill": "#3268B2",
+          "stroke": null
+        },
+        {
+          "id": "neuron-2-0",
+          "kind": "ellipse",
+          "box": [
+            155.92559,
+            25.88726,
+            3.4115,
+            3.4115
+          ],
+          "fill": "#3268B2",
+          "stroke": null
+        },
+        {
+          "id": "neuron-2-1",
+          "kind": "ellipse",
+          "box": [
+            155.92559,
+            32.00789,
+            3.4115,
+            3.4115
+          ],
+          "fill": "#3268B2",
+          "stroke": null
+        }
+      ]
+    },
+    {
+      "id": "environment",
+      "kind": "group",
+      "objects": [
+        {
+          "id": "environment-box",
+          "kind": "roundrect",
+          "box": [
+            117.59639,
+            60.9053,
+            54.18264,
+            21.87373
+          ],
+          "fill": "#EAF7EF",
+          "stroke": "#21AA64",
+          "line_pt": 0.85
+        },
+        {
+          "id": "environment-title",
+          "kind": "text",
+          "text": "Environment",
+          "box": [
+            122.41263,
+            62.2097,
+            44.75085,
+            5.11725
+          ],
+          "font_pt": 13,
+          "bold": true
+        },
+        {
+          "id": "environment-orientation",
+          "kind": "path",
+          "commands": [
+            [
+              "M",
+              128.83427,
+              75.354
+            ],
+            [
+              "L",
+              135.35626,
+              70.63811
+            ]
+          ],
+          "stroke": "#3268B2",
+          "line_pt": 1,
+          "arrow_end": true,
+          "meaning": "Particle orientation in environment icon"
+        },
+        {
+          "id": "environment-particle",
+          "kind": "ellipse",
+          "box": [
+            126.32582,
+            72.84555,
+            5.01691,
+            5.01691
+          ],
+          "fill": "#3268B2",
+          "stroke": null
+        },
+        {
+          "id": "environment-obstacle",
+          "kind": "ellipse",
+          "box": [
+            140.67418,
+            70.43743,
+            9.03044,
+            9.03044
+          ],
+          "fill": "#CAD1DA",
+          "stroke": null
+        },
+        {
+          "id": "environment-target",
+          "kind": "ellipse",
+          "box": [
+            157.33033,
+            71.1398,
+            6.823,
+            6.823
+          ],
+          "fill": "#FFFFFF",
+          "stroke": "#C7972C",
+          "line_pt": 1.8
+        }
+      ]
+    },
+    {
+      "id": "action",
+      "kind": "connector",
+      "start": [
+        163.5513,
+        41.13867
+      ],
+      "end": [
+        163.5513,
+        60.60428
+      ],
+      "stroke": "#3268B2",
+      "line_pt": 1.15,
+      "arrow_end": true,
+      "dash": false,
+      "meaning": "Steering action from controller to environment",
+      "from": "controller",
+      "to": "environment"
+    },
+    {
+      "id": "observation",
+      "kind": "connector",
+      "start": [
+        138.56708,
+        60.60428
+      ],
+      "end": [
+        138.56708,
+        41.33935
+      ],
+      "stroke": "#21AA64",
+      "line_pt": 1.15,
+      "arrow_end": true,
+      "dash": false,
+      "meaning": "Observation from environment to controller",
+      "from": "environment",
+      "to": "controller"
+    },
+    {
+      "id": "reward",
+      "kind": "connector",
+      "start": [
+        126.62683,
+        60.60428
+      ],
+      "end": [
+        126.62683,
+        41.33935
+      ],
+      "stroke": "#9B73B2",
+      "line_pt": 1.15,
+      "arrow_end": true,
+      "dash": true,
+      "meaning": "Reward from environment to controller",
+      "from": "environment",
+      "to": "controller"
+    },
+    {
+      "id": "reward-label",
+      "kind": "text",
+      "text": "Reward",
+      "box": [
+        110.97407,
+        47.86133,
+        14.34837,
+        5.11725
+      ],
+      "font_pt": 10.5,
+      "align": "left"
+    },
+    {
+      "id": "observation-label",
+      "kind": "text",
+      "text": "Observation",
+      "box": [
+        139.97182,
+        47.86133,
+        22.07441,
+        5.11725
+      ],
+      "font_pt": 10.5,
+      "align": "left"
+    },
+    {
+      "id": "action-label",
+      "kind": "text",
+      "text": "Action",
+      "box": [
+        164.75536,
+        47.86133,
+        12.44194,
+        5.11725
+      ],
+      "font_pt": 10.5,
+      "align": "left"
+    },
+    {
+      "id": "panel-a",
+      "kind": "text",
+      "text": "(a)",
+      "box": [
+        1.50507,
+        10.33484,
+        8.02706,
+        6.22097
+      ],
+      "font_pt": 15,
+      "align": "left"
+    },
+    {
+      "id": "panel-b",
+      "kind": "text",
+      "text": "(b)",
+      "box": [
+        109.87035,
+        10.33484,
+        8.02706,
+        6.22097
+      ],
+      "font_pt": 15,
+      "align": "left"
+    }
+  ],
+  "provenance": {
+    "source": "Built-in image generator, followed by visual semantic reconstruction",
+    "synthetic": true,
+    "retained_raster": [],
+    "reconstruction_adjustments": [
+      "Flat palette fills and actual Times New Roman text replace raster approximations.",
+      "Path lowered-loop minimum is lifted slightly for particle/wall clearance.",
+      "Short labels use fitted native text boxes and a right margin."
+    ]
+  }
+}

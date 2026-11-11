@@ -52,9 +52,9 @@
 
 **Fig. 1：流程图与科学示意图**
 
-[![六种原创 Fig. 1 示例](assets/showcase/schematics.png)](assets/showcase/schematics.png)
+[![内置图像模型生成的 Fig. 1 示例](assets/examples/model-first-schematic/fig1-model.png)](assets/examples/model-first-schematic/fig1-model.png)
 
-示例为原创教学模型，展示几何、装置、反馈、数据流程、操作序列及混合排版；附[绘制方法与可运行源码说明](references/prl-schematics.md)。
+先由内置绘图模型生成 PNG，再重建文字、形状、曲线与箭头可独立修改的 PPT。[下载可编辑示例](assets/examples/model-first-schematic/fig1.pptx) · [查看 PPT 实际渲染](assets/examples/model-first-schematic/fig1.preview.png) · [制作方法](references/schematic-image-pptx.md)。示例为原创概念图，不是实验或模拟结果。
 
 ## 能做什么
 
@@ -63,7 +63,7 @@
 | 入口 | 功能 |
 | --- | --- |
 | `$prl-figures` | 根据数据绘图、修改已有绘图代码，调整多面板布局、配色、字体、坐标轴与图例；默认保存 600 dpi PNG，按需导出 PDF、EPS、SVG 等格式。 |
-| `$prl-schematics` | 绘制论文 Fig. 1、物理模型与装置示意、反馈回路、方法流程和示意／结果混合图；依据已有 100 篇论文的 Fig. 1 检查归纳构图与表达规则。 |
+| `$prl-schematics` | 用内置绘图模型生成 Fig. 1、模型／装置示意和流程图，再重建可编辑 PPT；依据已有 100 篇论文归纳科学表达规则。 |
 | `$prl-writing-en` | 起草、润色、压缩和重组英文标题、摘要、引言、结果与结论，梳理整篇 Letter 的论证结构。 |
 | `$prl-writing-zh` | 撰写和修改中文科研稿件，将紧凑的论证方式用于自然中文表达。 |
 | `$prl-bilingual` | 中英互译与双语对照，核对术语、数值、单位、符号和结论含义。 |
@@ -73,7 +73,7 @@
 
 **绘图覆盖 36 类图型**，包括曲线、散点、误差棒与误差带、统计分布、相图、热图、标度坍缩、矢量场、粒子轨迹、时空图、频谱、能带、网络、示意图和多面板组合。详见[图型目录](references/figure-families.md)。
 
-**新增 Fig. 1 示意图子 skill**：从原有 100 篇中检查 96 张 Fig. 1，识别出 48 张示意或混合图。提供六个原创示例，覆盖粒子几何、实验装置、反馈控制、数据流程、操作协议和混合图。详见[设计指南与来源](references/prl-schematics.md)。
+**Fig. 1 示意图子 skill**：从原有 100 篇中检查 96 张 Fig. 1，识别出 48 张示意或混合图。默认采用“模型 PNG → 可编辑 PPT”，也保留六个 Python 示例供按需使用。详见[设计指南与来源](references/prl-schematics.md)。
 
 **配色库包含 117 组方案**，提取自 2025-01-01 至 2026-11-08 发表的 PRL 图件，覆盖类别色、顺序色标、发散色标和多色相色标，每组均附论文来源。可浏览[配色图册](reports/prl-colors-2025-2026/index.html)或下载[色卡 PDF](reports/prl-colors-2025-2026/palette-atlas.pdf)，再指定配色 ID 使用。
 
@@ -115,6 +115,7 @@ python3 install.py --destination "${DSH_HOME:-$HOME/.dsh}/skills" --check
 **其他 agent：** 支持 Agent Skills 时，用 `--destination PATH` 指向该 agent 的技能父目录，安装器会创建 9 个独立 skill 文件夹并携带完整资源。安装后在目标 agent 中确认能发现并加载 `prl-style`；`--check` 只检查已安装文件。没有自动发现功能时，可让 agent 直接读取解压目录中的 `SKILL.md` 和相关资料。
 
 绘图和检查需要文件读写、Python 执行及图像查看能力。
+示意图／流程图默认还需要宿主内置图像生成工具；PPT 重建使用 python-pptx，实际渲染核对可用 PowerPoint 或 LibreOffice。
 上面的命令适用于 Linux/macOS；Windows 可将 `python3` 换成 `python -X utf8`，该系统尚未实测。
 
 需要绘图或运行检查脚本时，在发布包根目录准备 Python 环境：
@@ -138,7 +139,7 @@ python3 install.py --agent codex --check
 
 ## 怎么使用
 
-例如：`使用 $prl-schematics，根据下面的模型与方法画论文 Fig. 1，附简洁图注。` 随后提供物理对象、相互作用或流程步骤即可；也可直接说“画模型示意图”，由 agent 选择对应 skill。
+例如：`使用 $prl-schematics，根据下面的模型与方法画论文 Fig. 1，生成 PNG 和可编辑 PPT，附简洁图注。` 随后提供物理对象、相互作用或流程步骤即可；也可直接说“画模型示意图”，默认走内置绘图模型。宿主需要具备图像生成工具；重建 PPT 需 Python 和 python-pptx，实际渲染核对可用 PowerPoint 或 LibreOffice。
 
 提供文件或内容，并说明希望得到的结果即可。绘图时说明数据列、单位和误差含义；写作时附上已有结果、参考文献和篇幅要求。可以指定字体、颜色、图尺寸、术语和修改范围。
 
@@ -150,7 +151,7 @@ $prl-style 根据 results.csv 绘制五组参数的曲线对比图。
 各列含义、单位和误差定义见 data-notes.md。
 ```
 
-不指定格式时，图片仅保存为 **600 dpi PNG**。需要其他格式时直接补充“同时保存 PDF”或“只导出 EPS”；也可指定其他 dpi。脚本对应参数为 `--formats png pdf`、`--formats eps` 和 `--dpi 1200`。
+数据图不指定格式时保存 **600 dpi PNG**。需要其他格式时直接补充“同时保存 PDF”或“只导出 EPS”；也可指定其他 dpi。脚本对应参数为 `--formats png pdf`、`--formats eps` 和 `--dpi 1200`。示意图／流程图默认另交付可编辑 PPTX；生成 PNG 的实际分辨率按原生像素核查。
 
 **修改英文稿件：**
 
@@ -188,7 +189,7 @@ $prl-bilingual 对照 manuscript-zh.md 与 manuscript-en.tex，
 - **图面：** 刻度朝内；保留坐标、单位、图例、色标和面板编号，解释性小字放在独立图注或正文中。
 - **图例与布局：** 图例优先放在不遮挡数据的图内空白处；多面板按实际绘图区对齐，压缩不必要的间距，为色标单独预留空间。
 - **配色与刻度：** 未指定颜色时，按数据含义调用 PRL 配色库；上侧、右侧刻度逐面板选择，不默认全部开启。
-- **输出：** 图件默认只保存彩色 PNG，分辨率为 600 dpi；PDF、EPS、SVG 等格式及灰度版本按需生成。文字任务先交付正文，随后简要说明必要的修改或缺失信息。
+- **输出：** 数据图默认 600 dpi PNG；示意图先由模型生成 PNG，再重建可编辑 PPTX，保留原生像素并核查有效分辨率。PDF、EPS、SVG 和灰度图按需生成。文字任务先交付正文，再简述必要修改。
 - **写作：** 保留科学事实与证据强度，直接陈述有依据的结果，减少重复限定和无信息量的套话。
 
 本项目是独立工具，以上为可调整的默认设置。中文写作用于科研工作稿；实际投稿的语言、篇幅与格式要求以 PRL 官方指南为准。

@@ -9,7 +9,7 @@ Use [calibrated, direct writing](references/assertive-writing.md) for prose and 
 
 Use this skill for planning, generating, revising, or auditing physics figures. Keep the scientific meaning and source provenance explicit while applying the PRL-oriented local defaults.
 
-For scientific schematics, apparatus/model diagrams, control loops and method flowcharts, use `prl-schematics` and [schematic design](references/prl-schematics.md). A mixed Fig. 1 combines that workflow with the quantitative-panel rules below. Pure diagrams do not require a data-table figure specification.
+For scientific schematics, apparatus/model diagrams, control loops and method flowcharts, use `prl-schematics` and [schematic design](references/prl-schematics.md): built-in image model → PNG → editable PPTX is the default. A mixed Fig. 1 combines that workflow with the quantitative-panel rules below. Pure diagrams do not require a data-table figure specification.
 
 ## Workflow
 
