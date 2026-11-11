@@ -1,0 +1,28 @@
+% Chinese working draft, not an official Chinese PRL publication format.
+% Compile with XeLaTeX or Tectonic; requires Times New Roman and SimSun.
+\PassOptionsToPackage{no-math}{fontspec}
+\documentclass[fontset=none,UTF8,11pt]{ctexart}
+\usepackage[margin=22mm]{geometry}
+\usepackage{amsmath,amssymb,bm,graphicx}
+\usepackage{mathspec}
+\setmainfont{Times New Roman}
+\setsansfont{Times New Roman}
+\setmathsfont(Digits,Latin){Times New Roman}
+\setmathrm{Times New Roman}
+\setmathsf{Times New Roman}
+\setmathtt{Times New Roman}
+% SimSun usually has only a regular face; bold headings are explicitly synthetic.
+\setCJKmainfont[AutoFakeBold=2]{SimSun}
+\setCJKsansfont[AutoFakeBold=2]{SimSun}
+\setCJKmonofont{SimSun}
+\begin{document}
+\title{固定几何中路径策略对平均疏散时间的影响}
+\author{虚构编辑测试}
+\date{}
+\maketitle
+\noindent 本文为中文工作稿片段，全部事实为编辑流程的虚构测试，不是可投稿的研究结果。
+
+在固定几何中，合并所考察的3种密度后，平均疏散时间相对最短路径基线降低了12\%。这一总体变化尚不能说明每个密度下均有改善，也不能据此确定作用机制或推断其他几何中的表现。
+
+尚未提供统计显著性检验和误差定义，因此这里仅报告给定的平均变化，不作统计显著性判断。要将性能差异归因于具体机制，还需能区分候选解释的分析或对照；现有事实不足以指定应采用哪一种机制解释。
+\end{document}

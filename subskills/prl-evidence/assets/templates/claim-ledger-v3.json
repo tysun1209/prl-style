@@ -1,0 +1,96 @@
+{
+  "citations": [],
+  "claims": [
+    {
+      "aggregation_level": "pooled",
+      "allowed_verbs": [
+        "show",
+        "shows",
+        "find",
+        "found"
+      ],
+      "audit_status": "pending",
+      "causal_status": "not_tested",
+      "citation_ids": [],
+      "claim_type": "comparison",
+      "evidence_ids": [
+        "E1"
+      ],
+      "evidence_level": "numerical",
+      "figure_ids": [],
+      "forbidden_strengthening": [
+        "universal mechanism",
+        "arbitrary geometries",
+        "statistically significant"
+      ],
+      "hedge_reason": "The numerical comparison is established; mechanism was not tested.",
+      "id": "C1",
+      "protected_facts": [
+        {
+          "id": "reduction",
+          "meaning": "Relative reduction in aggregate mean time against shortest-path baseline",
+          "unit": "percent",
+          "value": "12"
+        },
+        {
+          "id": "densities",
+          "meaning": "Number of simulated densities",
+          "unit": "count",
+          "value": "3"
+        }
+      ],
+      "protected_terms": [
+        {
+          "category": "baseline",
+          "forms": [
+            "shortest-path baseline"
+          ],
+          "id": "baseline"
+        },
+        {
+          "category": "comparison",
+          "forms": [
+            "lower than"
+          ],
+          "id": "direction"
+        }
+      ],
+      "required_boundary": [
+        {
+          "forms": [
+            "In a fixed geometry",
+            "For a fixed geometry"
+          ],
+          "id": "geometry"
+        },
+        {
+          "forms": [
+            "aggregated over 3 simulated densities",
+            "pooled across 3 simulated densities"
+          ],
+          "id": "aggregate"
+        }
+      ],
+      "scope": "Aggregate over three simulated densities in one fixed geometry; condition-resolved improvement unestablished",
+      "status": "supported",
+      "strength": "Numerical comparison within tested conditions",
+      "supporting_artifacts": [
+        "E1"
+      ],
+      "text": "In a fixed geometry, the mean evacuation time aggregated over 3 simulated densities is 12% lower than that of the shortest-path baseline.",
+      "uncertainty": "No statistical uncertainty or significance test supplied"
+    }
+  ],
+  "evidence": [
+    {
+      "description": "Synthetic editing fixture: aggregate mean time over three simulated densities is 12% lower than shortest-path baseline in one fixed geometry; per-density changes, mechanism ablation and hypothesis tests are not supplied.",
+      "id": "E1",
+      "kind": "synthetic_demo",
+      "locator": "Numerical example",
+      "source": "references/writing-en.md"
+    }
+  ],
+  "figures": [],
+  "purpose": "Synthetic editing example; no empirical result is asserted.",
+  "schema_version": 3
+}

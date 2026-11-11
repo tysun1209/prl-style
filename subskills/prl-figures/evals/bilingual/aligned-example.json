@@ -1,0 +1,60 @@
+{
+  "purpose": "Synthetic bilingual editing fixture",
+  "segments": [
+    {
+      "id": "S1",
+      "claim_ids": [
+        "C1"
+      ],
+      "en": "In a fixed geometry, the mean evacuation time aggregated over the three simulated densities is 12% lower than that of the shortest-path baseline. These results do not establish improvement at each density, a mechanism, or performance in other geometries.",
+      "zh": "在固定几何中，合并所考察的3种模拟密度后，平均疏散时间相对最短路径基线降低了12%。现有结果尚不能说明每个密度下均有改善，也尚不能确定作用机制或推断其他几何中的表现。",
+      "protected_facts": [
+        {
+          "id": "reduction",
+          "values": [
+            "12"
+          ],
+          "unit": "percent",
+          "anchors": {
+            "en": "12%",
+            "zh": "12%"
+          }
+        },
+        {
+          "id": "densities",
+          "values": [
+            "3"
+          ],
+          "unit": "count",
+          "anchors": {
+            "en": "three simulated densities",
+            "zh": "3种模拟密度"
+          }
+        }
+      ],
+      "term_checks": [],
+      "meaning_anchors": [
+        {
+          "id": "baseline",
+          "en": "shortest-path baseline",
+          "zh": "最短路径基线"
+        },
+        {
+          "id": "scope",
+          "en": "In a fixed geometry",
+          "zh": "固定几何"
+        },
+        {
+          "id": "boundary",
+          "en": "do not establish",
+          "zh": "尚不能确定"
+        },
+        {
+          "id": "aggregation",
+          "en": "aggregated over",
+          "zh": "合并"
+        }
+      ]
+    }
+  ]
+}

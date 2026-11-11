@@ -1,0 +1,40 @@
+# Local PRL-oriented working defaults; requirements are sourced separately.
+font.family: Times New Roman, SimSun
+mathtext.fontset: custom
+mathtext.rm: Times New Roman
+mathtext.it: Times New Roman:italic
+mathtext.bf: Times New Roman:bold
+mathtext.bfit: Times New Roman:italic:bold
+mathtext.sf: Times New Roman
+mathtext.tt: Times New Roman
+mathtext.cal: STIXGeneral:italic
+mathtext.fallback: stix
+text.usetex: False
+font.size: 9.5
+axes.labelsize: 10
+axes.titlesize: 10
+xtick.labelsize: 9
+ytick.labelsize: 9
+legend.fontsize: 9
+axes.linewidth: 0.65
+lines.linewidth: 1.15
+lines.markersize: 4
+xtick.direction: in
+ytick.direction: in
+xtick.major.width: 0.65
+ytick.major.width: 0.65
+xtick.minor.width: 0.55
+ytick.minor.width: 0.55
+xtick.major.size: 3
+ytick.major.size: 3
+xtick.minor.size: 1.8
+ytick.minor.size: 1.8
+legend.frameon: False
+axes.grid: False
+figure.facecolor: white
+axes.facecolor: white
+pdf.fonttype: 42
+ps.fonttype: 42
+svg.fonttype: none
+savefig.bbox: standard
+savefig.dpi: 600

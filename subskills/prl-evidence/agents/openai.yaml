@@ -1,0 +1,3 @@
+interface:
+  display_name: PRL Evidence
+  short_description: Maintain source-backed PRL style evidence

@@ -1,0 +1,13 @@
+# Construct a Letter around its physical result
+
+Use the paired v3 cards for section-specific choices. These are editorial adaptations from selected, directly inspected development passages in the fixed 100-paper corpus. The inventory covers all 100 sources; it is not a fresh semantic review of every paragraph or a frequency estimate for these recommendations. The pre-existing 20-paper holdout is used for evaluation and was already inspected in v2.
+
+Start by identifying the result that answers the physical question, and the evidence needed to establish it. Choose a title that names the object and distinguishing result or method. In the abstract, give the result enough space to be understood; place its decisive condition beside it. An abstract may begin with a puzzle, a construction, a result, or a measurement restriction. There is no prescribed four-sentence sequence.
+
+Let the opening explain why the question arises and what existing work leaves unresolved. Introduce a model or apparatus where it becomes necessary to understand the evidence. Define observables and shared conditions once. Arrange the results so each paragraph resolves a particular question: a prediction, a comparison, a discrepancy, a discriminating test, or a change of regime. Theory may develop from a construction; experiment may begin with a measurement. Use headings when they make these dependencies easier to follow.
+
+Give each equation a purpose and interpret its consequence. The caption identifies the figure's quantities, encodings and relevant conditions; the text uses the figure to establish a physical statement. A schematic explains a construction, while a statistical comparison supports a measured claim. Close by answering the initial question and explaining a concrete consequence. Add a specific open question when it follows from that result or changes its scope.
+
+Write measured results and derived conclusions directly. Keep the distinctions between data, calculation, interpretation and proposed application. Exact theoretical language can be appropriate within an explicit model. A qualified mechanism interpretation remains qualified when the evidence does not distinguish alternatives. Remove ceremonial introductions and repeated disclaimers; retain numerical uncertainty, assumptions, baselines and aggregation.
+
+Local user choices, rather than corpus findings, set prose-first delivery, a batch diagnostic target of 20–35% less redundant hedging, Times New Roman for Latin text/digits and SimSun for Chinese. This target never requires padding a baseline or retaining unnecessary words. Current journal layout and submission rules require separate verification; the Chinese version is a working adaptation.
