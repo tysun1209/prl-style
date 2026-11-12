@@ -41,7 +41,7 @@ A runnable synthetic illustration is [quantity-example.py](../assets/templates/q
   --text captions=/tmp/prl-quantity-example/captions.txt
 ```
 
-The loader verifies that each figure report still matches its sibling PDF hash. The label inventory records artist text, not a fresh semantic extraction from the PDF; visually inspect the rendered symbols. An old ledger with no quantity extension reports `not_requested`, not a successful identity audit. Declared quantities without real artifacts fail. This bounded check cannot discover omitted quantities, certify source truth, verify all dimensional conversions, or identify arbitrary symbols in unrestricted LaTeX. Review completeness against the real source and every final artifact.
+The loader verifies every exported image named in the figure report's `artifacts` map against its recorded hash. The default PNG is sufficient; PDF is optional. Legacy reports without an `artifacts` map still use the sibling PDF hash. The label inventory records artist text, not a fresh semantic extraction from the image; visually inspect the rendered symbols. An old ledger with no quantity extension reports `not_requested`, not a successful identity audit. Declared quantities without real artifacts fail. This bounded check cannot discover omitted quantities, certify source truth, verify all dimensional conversions, or identify arbitrary symbols in unrestricted LaTeX. Review completeness against the real source and every final artifact.
 
 ## Commands
 

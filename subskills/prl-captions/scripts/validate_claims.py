@@ -63,7 +63,7 @@ def validate(ledger, artifacts=None):
 if __name__=='__main__':
     from quantity_audit import load_artifacts
     p=argparse.ArgumentParser(description=__doc__);p.add_argument('ledger',type=Path);p.add_argument('--output',type=Path)
-    p.add_argument('--figure-report',action='append',default=[],metavar='ID=PATH',help='Export report with actual labels and matching sibling PDF')
+    p.add_argument('--figure-report',action='append',default=[],metavar='ID=PATH',help='Export report with actual labels and hash-verified images (PNG by default; legacy PDF reports supported)')
     p.add_argument('--text',action='append',default=[],metavar='ID=PATH',help='Actual caption/manuscript file; locator is text')
     a=p.parse_args()
     try:

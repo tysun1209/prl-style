@@ -107,7 +107,7 @@ def check(doc,known_claim_ids=None):
 
 def main(argv=None):
     p=argparse.ArgumentParser(description=__doc__);p.add_argument('pair',type=Path);p.add_argument('--ledger',type=Path);p.add_argument('--output',type=Path)
-    p.add_argument('--figure-report',action='append',default=[],metavar='ID=PATH',help='Bind actual export labels and matching PDF for the ledger quantity audit')
+    p.add_argument('--figure-report',action='append',default=[],metavar='ID=PATH',help='Bind actual export labels and hash-verified images (PNG by default; legacy PDF reports supported)')
     p.add_argument('--text',action='append',default=[],metavar='ID=PATH',help='Bind actual caption/manuscript text for the ledger quantity audit')
     a=p.parse_args(argv)
     if (a.figure_report or a.text) and not a.ledger:p.error('artifact bindings require --ledger')
