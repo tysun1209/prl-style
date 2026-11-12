@@ -4,8 +4,9 @@ The collection contains 133 palettes extracted from
 126 reviewed figures in 105 PRL papers.
 It combines the original 2025–2026 collection and the recent cross-field visual
 development cohort. It is a source-linked design collection, not a journal-wide
-frequency estimate. The archived PDF atlas contains the original 117 palettes;
-the gallery and machine-readable collection contain the current complete set.
+frequency estimate. The PDF atlas, gallery and machine-readable collection
+all contain the complete set of 133 palettes, including the
+cross-field additions.
 
 Each palette retains source DOI, figure/panel, role, color order, numeric bins
 where applicable, and hashes identifying the development PDF/crop. Source

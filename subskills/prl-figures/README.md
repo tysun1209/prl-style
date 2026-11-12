@@ -34,13 +34,11 @@
 
 [![PRL 2025–2026 色卡节选：prl-025 至 prl-033](assets/showcase/palette-preview.png)](reports/prl-colors-2025-2026/palette-atlas.pdf)
 
-[检索全部配色](reports/prl-colors-2025-2026/index.html) · [原 117 组色卡 PDF](reports/prl-colors-2025-2026/palette-atlas.pdf) · [配色选择与调用](references/prl-color-palettes.md)
+[检索全部配色](reports/prl-colors-2025-2026/index.html) · [完整色卡 PDF · 133 组](reports/prl-colors-2025-2026/palette-atlas.pdf) · [配色选择与调用](references/prl-color-palettes.md)
 
 新增 50 篇近五年、跨领域 PRL 图形参考，补充 **14 种构图方式和 16 组配色**，包括量子线路、光路反馈、散射顶点、自旋结构、微观放大和状态序列。
 
-[![跨领域新增色卡](assets/showcase/crossfield-palettes-1.png)](assets/showcase/crossfield-palettes-1.png)
-
-[第二页色卡](assets/showcase/crossfield-palettes-2.png) · [构图方式与来源](references/crossfield-visual-design.md)
+新增配色已并入上方完整 PDF。[构图方式与来源](references/crossfield-visual-design.md)。
 
 ### 更多图型
 
