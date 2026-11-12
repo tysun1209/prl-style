@@ -10,7 +10,7 @@
 
 核心由 `SKILL.md`、参考资料、模板和 Python 脚本组成，可用于 Codex，也可接入 Claude Code、OpenCode、DeepSeek Harness 等支持该格式的 agent。目前工作流主要在 Codex 中验证，其他 agent 的完整执行效果尚未实测。
 
-当前默认版本见 [VERSION](VERSION)。更新后继续使用 `$prl-style` 或原来的子 skill 名称，即可应用最新规则，无需添加“新版”提示词。采用本项目链接安装的用户，更新源项目后即生效；独立发布包安装的用户，使用新包再次运行安装命令。
+当前默认版本见 [VERSION](VERSION)。更新后继续使用 `$prl-style` 或原来的子 skill 名称，即可应用最新规则，无需添加“新版”提示词。采用源项目安装的用户，更新源项目后重新运行两条安装命令以刷新入口；独立发布包安装的用户，使用新包再次运行安装命令。
 
 ## 一句话安装
 
@@ -93,12 +93,13 @@
 python3 install.py --agent codex
 python3 install.py --agent claude-code
 python3 install.py --agent opencode
+python3 install.py --agent deepseek-harness
 ```
 
 每条命令为所选 agent 安装主入口和 8 个子 skill 的独立副本。安装后的 skill 文件不依赖原始解压目录；运行脚本的 Python 环境需单独保留。
-默认用户目录分别为 `~/.codex/skills`、`~/.claude/skills` 和 `~/.config/opencode/skills`；
-Codex 尊重 `CODEX_HOME`，OpenCode 尊重 `XDG_CONFIG_HOME`。可用 `--destination PATH` 指定其他父目录。
-已有其他来源的同名 skill 时安装器会停止；更新本发布包安装的 skill 时会保留旧副本。
+默认用户目录分别为 `~/.agents/skills`、`~/.claude/skills`、`~/.config/opencode/skills` 和 `~/.dsh/skills`；
+OpenCode 尊重 `XDG_CONFIG_HOME`，Harness 尊重 `DSH_HOME`。`CODEX_HOME` 不改变 Codex 的新默认目录。可用 `--destination PATH` 指定其他父目录。
+已有其他来源的同名 skill 时安装器会停止；更新本发布包安装的 skill 时会保留旧副本。Codex 默认安装会将旧 `CODEX_HOME/skills`（默认 `~/.codex/skills`）中由本发布包管理的副本迁出扫描目录并备份，避免重复条目；不会移动其他来源的技能。
 
 | Agent | 调用主入口 |
 | --- | --- |
@@ -109,14 +110,16 @@ Codex 尊重 `CODEX_HOME`，OpenCode 尊重 `XDG_CONFIG_HOME`。可用 `--destin
 
 子 skill 沿用各平台的前缀，例如 `/prl-writing-en`。
 
-**DeepSeek Harness：** 默认配置下扫描 `~/.dsh/skills`（设置了 `DSH_HOME` 时使用其下的 `skills` 目录），可直接使用现有安装器：
+**DeepSeek Harness：** 在实际运行 Harness 的机器上执行。默认安装到 `~/.dsh/skills`（设置了 `DSH_HOME` 时使用其下的 `skills` 目录）；另一台机器上的 Codex 安装不会自动同步：
 
 ```bash
-python3 install.py --destination "${DSH_HOME:-$HOME/.dsh}/skills"
-python3 install.py --destination "${DSH_HOME:-$HOME/.dsh}/skills" --check
+python3 install.py --agent deepseek-harness
+python3 install.py --agent deepseek-harness --check
 ```
 
 安装后在 DeepSeek Harness 中输入 `/prl-style`，或 `/prl-figures`、`/prl-writing-zh` 等子 skill 名称。自定义了技能目录时，使用配置中的实际路径；其目录发现和调用方式见 [Skills 文档](https://github.com/deepseek-ai/deepseek-harness/blob/master/docs/subsystems/skills.md)与[调用说明](https://github.com/deepseek-ai/deepseek-harness/blob/master/packages/skill/tool-skill/README.md)。
+
+**安装后验证：** 在 Codex 中运行 `/skills` 或输入 `$prl`，应能选到 `$prl-style` 及 8 个子 skill；Harness 中输入 `/prl-style`。主入口名称是 `prl-style`，没有独立的 `prl` 别名。若未出现，重启 agent，并确认运行机器、用户和安装目录一致。技能入口使用普通文件，安装器不创建 `SKILL.md` 文件软链接。
 
 **其他 agent：** 支持 Agent Skills 时，用 `--destination PATH` 指向该 agent 的技能父目录，安装器会创建 9 个独立 skill 文件夹并携带完整资源。安装后在目标 agent 中确认能发现并加载 `prl-style`；`--check` 只检查已安装文件。没有自动发现功能时，可让 agent 直接读取解压目录中的 `SKILL.md` 和相关资料。
 

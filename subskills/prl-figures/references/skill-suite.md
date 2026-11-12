@@ -14,10 +14,15 @@
 | `prl-evidence` | Find source precedents and develop source-scoped rules |
 
 Install from the extracted distribution with `python3 install.py --agent codex`,
-`--agent claude-code` or `--agent opencode`. `--destination PATH` selects another
+`--agent claude-code`, `--agent opencode` or `--agent deepseek-harness`.
+Codex defaults to `~/.agents/skills`; Harness defaults to `~/.dsh/skills` and
+respects `DSH_HOME`. Run installation on the machine hosting the agent.
+`--destination PATH` selects another
 parent skill directory. The installer creates independent copies, each with one
 entrypoint and its own resources: one main skill and eight specialized skills. Reinstall from a new distribution to update;
-previous managed copies are retained in a hidden backup directory.
+previous managed copies are retained in a hidden backup directory outside the
+skill scan root. Entrypoints are regular files. Check the agent's skill catalog
+after installation; file integrity alone does not prove discovery.
 
 All entrypoints share the [direct writing policy](assertive-writing.md),
 Times New Roman / SimSun defaults, inward ticks and separate explanatory captions.

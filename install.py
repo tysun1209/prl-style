@@ -12,18 +12,11 @@ import tempfile
 ROOT = Path(__file__).resolve().parent
 sys.path.insert(0, str(ROOT / 'scripts'))
 from verify_package import verify, write_manifest
+from skill_install_paths import AGENTS, default_destination
 
 SHARED = ('references', 'assets', 'profiles', 'scripts', 'corpus', 'compat', 'evals', 'reports')
 PUBLIC_FILES = ('README.md', 'VERSION', 'NOTICE.md', 'LICENSE', 'requirements.txt')
 MARKER = '.prl-package.json'
-
-
-def default_destination(agent):
-    if agent == 'codex':
-        return Path(os.environ.get('CODEX_HOME', str(Path.home() / '.codex'))) / 'skills'
-    if agent == 'claude-code':
-        return Path.home() / '.claude' / 'skills'
-    return Path(os.environ.get('XDG_CONFIG_HOME', str(Path.home() / '.config'))) / 'opencode' / 'skills'
 
 
 def entries(source):
@@ -41,7 +34,7 @@ def managed(target, name):
         return False
 
 
-def install(source, destination):
+def install(source, destination, legacy_destination=None):
     source, destination = Path(source).resolve(), Path(destination).expanduser().absolute()
     check = verify(source)
     if not check['passed']:
@@ -49,6 +42,11 @@ def install(source, destination):
     if destination.resolve() == source or source in destination.resolve().parents:
         raise ValueError('installation must be outside the source directory')
     selected = entries(source)
+    legacy = []
+    if legacy_destination is not None:
+        legacy_root = Path(legacy_destination).expanduser().absolute()
+        if legacy_root.resolve() != destination.resolve():
+            legacy = [legacy_root / name for name, _ in selected if managed(legacy_root / name, name)]
     for name, _ in selected:
         target = destination / name
         if (target.exists() or target.is_symlink()) and not managed(target, name):
@@ -79,12 +77,17 @@ def install(source, destination):
             for name, _ in selected:
                 target = destination / name
                 if target.exists():
-                    backup = destination / '.prl-backups' / stamp / name
+                    backup = destination.parent / '.prl-backups' / stamp / name
                     backup.parent.mkdir(parents=True, exist_ok=True)
                     target.rename(backup)
                     backups.append((target, backup))
                 (stage / name).rename(target)
                 published.append(target)
+            for target in legacy:
+                backup = destination.parent / '.prl-backups' / stamp / 'legacy-codex' / target.name
+                backup.parent.mkdir(parents=True, exist_ok=True)
+                target.rename(backup)
+                backups.append((target, backup))
         except OSError:
             for target in reversed(published):
                 shutil.rmtree(target)
@@ -92,7 +95,8 @@ def install(source, destination):
                 backup.rename(target)
             raise
     return {'passed': True, 'version': version, 'destination': str(destination),
-            'skills': [name for name, _ in selected], 'backups': [str(b) for _, b in backups]}
+            'skills': [name for name, _ in selected], 'backups': [str(b) for _, b in backups],
+            'migrated_legacy_skills': [str(p) for p in legacy]}
 
 
 def check_installation(source, destination):
@@ -107,19 +111,24 @@ def check_installation(source, destination):
         if points != ['SKILL.md']:
             result['passed'] = False
             result['errors'].append('expected exactly one skill entrypoint')
+        if (target / 'SKILL.md').is_symlink():
+            result['passed'] = False
+            result['errors'].append('SKILL.md must be a regular file for discovery')
         results[name] = result
     return {'passed': all(r['passed'] for r in results.values()), 'skills': results}
 
 
 def main():
     parser = argparse.ArgumentParser(description=__doc__)
-    parser.add_argument('--agent', choices=['codex', 'claude-code', 'opencode'], default='codex')
+    parser.add_argument('--agent', choices=AGENTS, default='codex')
     parser.add_argument('--destination', type=Path, help='override the parent skills directory')
     parser.add_argument('--check', action='store_true', help='verify an existing installation')
     args = parser.parse_args()
     destination = (args.destination or default_destination(args.agent)).expanduser()
+    legacy = (Path(os.environ.get('CODEX_HOME') or Path.home() / '.codex') / 'skills'
+              if args.agent == 'codex' and args.destination is None else None)
     try:
-        result = check_installation(ROOT, destination) if args.check else install(ROOT, destination)
+        result = check_installation(ROOT, destination) if args.check else install(ROOT, destination, legacy)
     except (OSError, ValueError) as exc:
         result = {'passed': False, 'errors': [str(exc)]}
     print(json.dumps(result, ensure_ascii=False, indent=2))
