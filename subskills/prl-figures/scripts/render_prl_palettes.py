@@ -64,7 +64,8 @@ def render_atlas(out=OUT, *, formats=None, dpi=None):
                     text = f"{p['colors'][0]}  ->  {p['colors'][-1]} | {p['interpolation']}"
                 ax.text(0,.31,text,fontsize=8,va='top',linespacing=1.3)
                 s=p['sources'][0]
-                ax.text(0,.04,f"{s['doi']} | Fig. {s['figure_number']}",fontsize=8,url=s['source_url'])
+                version='AM' if s.get('source_version')=='chorus_accepted_manuscript' else 'VOR'
+                ax.text(0,.04,f"{s['doi']} | Fig. {s['figure_number']} | {version}",fontsize=7.5,url=s['source_url'])
             for ax in list(axes.flat)[len(page):]: ax.set_axis_off()
             if pdf is not None:pdf.savefig(fig,dpi=dpi)
             for fmt in formats:

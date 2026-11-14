@@ -11,6 +11,10 @@ style rules. Read [corpus method](references/corpus-method.md),
 [style-rule contract](references/style-rule-contract.md).
 
 Search figure metadata with `scripts/select_references.py --family FAMILY`.
+For all 291 retained sources, use [full visual references](references/visual-corpus.md)
+and `scripts/select_visual_references.py --family FAMILY`. The index covers
+1,022 unique figures, distinguishes publisher PDFs and CHORUS accepted manuscripts,
+and excludes held-out sources from default selection.
 For recent cross-field precedents, use [cross-field design](references/crossfield-visual-design.md)
 and `scripts/select_crossfield_references.py --pattern PATTERN` or `--family FAMILY`.
 Its 50 additional papers and 14 composition patterns are visual-development

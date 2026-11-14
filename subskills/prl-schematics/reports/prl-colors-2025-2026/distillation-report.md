@@ -1,11 +1,12 @@
 # PRL color collection
 
-The collection contains 133 palettes extracted from
-126 reviewed figures in 105 PRL papers.
-It combines the original 2025–2026 collection and the recent cross-field visual
-development cohort. It is a source-linked design collection, not a journal-wide
+The collection contains 555 palettes extracted from
+611 reviewed figures in 241 PRL papers.
+It combines the original collection, the cross-field cohort, and the complete
+291-paper visual extraction. Source versions are labeled separately.
+It is a source-linked design collection, not a journal-wide
 frequency estimate. The PDF atlas, gallery and machine-readable collection
-all contain the complete set of 133 palettes, including the
+all contain the complete set of 555 palettes, including the
 cross-field additions.
 
 Each palette retains source DOI, figure/panel, role, color order, numeric bins
