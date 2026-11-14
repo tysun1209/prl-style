@@ -50,6 +50,12 @@ PRL Style 从 *Physical Review Letters* 的真实论文中提炼绘图细节、�
 
 已完成 **291 篇文献、1,022 张独立图件**的图型与用色提取，支持按图型、论文和稿件版本查找参考。所有新增色卡已并入上方 PDF。[完整文献覆盖与检索](references/visual-corpus.md) · [跨领域构图方式](references/crossfield-visual-design.md)。
 
+### 配色应用示例
+
+下面展示配色在曲线与误差带、离散相图、连续场、正负场、填色等高线和参数扫描曲线中的使用效果。点击图片可查看完整尺寸。
+
+[![PRL 配色应用示例：曲线与误差带、离散相图、连续场、正负场、填色等高线和参数扫描曲线](reports/prl-colors-2025-2026/usage-examples.png)](reports/prl-colors-2025-2026/usage-examples.png)
+
 ### 更多图型
 
 除了常见曲线和统计图，也支持轨迹、流线、时空场、三维曲面与网络等表达方式。点击图片可查看完整尺寸。
