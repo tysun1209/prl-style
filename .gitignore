@@ -1,0 +1,29 @@
+# Local runtime/cache files
+__pycache__/
+*.py[cod]
+.venv/
+.pytest_cache/
+.mypy_cache/
+.DS_Store
+
+# Development and generated evaluation outputs stay in the development tree.
+/tests/
+/evals/
+/benchmarks/
+/audit/
+/tmp/
+/output/
+/outputs/
+/figures/
+/promo/
+/dist/
+/docs/superpowers/
+/reports/*
+!/reports/prl-colors-2025-2026/
+/reports/prl-colors-2025-2026/*
+!/reports/prl-colors-2025-2026/index.html
+!/reports/prl-colors-2025-2026/palette-atlas.pdf
+!/reports/prl-colors-2025-2026/usage-examples.png
+!/reports/prl-colors-2025-2026/usage-examples.pdf
+!/reports/prl-colors-2025-2026/usage-examples-caption.md
+!/reports/prl-colors-2025-2026/distillation-report.md

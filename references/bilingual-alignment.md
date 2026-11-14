@@ -36,10 +36,10 @@
 
 ## 可执行保护片段
 
-示例：[aligned-example.json](../evals/bilingual/aligned-example.json)。每段包含`id`、`claim_ids`、`en`、`zh`、`protected_facts`。每项数值事实包含`id`、有序`values`、`unit`和两版原文中的`anchors`；例如均值与误差分别按顺序记录。`term_checks`保存具体语境下的术语及禁用译法；`meaning_anchors`可标记比较基线、范围或否定片段以检查是否遗漏。
+示例：[bilingual-alignment.json](../assets/templates/bilingual-alignment.json)。每段包含`id`、`claim_ids`、`en`、`zh`、`protected_facts`。每项数值事实包含`id`、有序`values`、`unit`和两版原文中的`anchors`；例如均值与误差分别按顺序记录。`term_checks`保存具体语境下的术语及禁用译法；`meaning_anchors`可标记比较基线、范围或否定片段以检查是否遗漏。
 
 ```bash
-.venv/bin/python scripts/check_bilingual.py evals/bilingual/aligned-example.json \
+.venv/bin/python scripts/check_bilingual.py assets/templates/bilingual-alignment.json \
   --ledger assets/templates/claim-ledger.json --output reports/bilingual-example.json
 ```
 

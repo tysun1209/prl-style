@@ -14,7 +14,7 @@ sys.path.insert(0, str(ROOT / 'scripts'))
 from verify_package import verify, write_manifest
 from skill_install_paths import AGENTS, default_destination
 
-SHARED = ('references', 'assets', 'profiles', 'scripts', 'corpus', 'compat', 'evals', 'reports')
+SHARED = ('references', 'assets', 'profiles', 'scripts', 'corpus', 'compat', 'reports')
 PUBLIC_FILES = ('README.md', 'VERSION', 'NOTICE.md', 'LICENSE', 'requirements.txt')
 MARKER = '.prl-package.json'
 
@@ -67,7 +67,12 @@ def install(source, destination, legacy_destination=None):
             for filename in PUBLIC_FILES:
                 if (source / filename).is_file():
                     shutil.copy2(source / filename, view / filename)
-            shutil.copy2(entry / 'SKILL.md', view / 'SKILL.md')
+            text = (entry / 'SKILL.md').read_text(encoding='utf-8')
+            if entry != source:
+                for folder in SHARED:
+                    text = text.replace('../../' + folder + '/', folder + '/')
+                text = text.replace('(../../NOTICE.md)', '(NOTICE.md)')
+            (view / 'SKILL.md').write_text(text, encoding='utf-8')
             if (entry / 'agents').is_dir():
                 shutil.copytree(entry / 'agents', view / 'agents')
             (view / MARKER).write_text(json.dumps({'package': 'prl-style', 'skill': name,

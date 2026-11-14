@@ -122,6 +122,7 @@ python3 install.py --agent codex --check
 - 默认目录：Codex 为 `~/.agents/skills`，Claude Code 为 `~/.claude/skills`，OpenCode 为 `~/.config/opencode/skills`，Harness 为 `~/.dsh/skills`。
 - OpenCode 尊重 `XDG_CONFIG_HOME`，Harness 尊重 `DSH_HOME`；其他目录或 agent 使用 `--destination PATH` 指定技能父目录。
 - 安装后技能资源独立保存，更新会备份旧版；运行脚本的 Python 环境需保留。
+- 仓库和下载包只存一套共享资源；请从根目录运行安装器，不要单独复制 `subskills/` 下的目录。
 
 需要绘图或运行检查脚本时，准备并使用以下环境：
 

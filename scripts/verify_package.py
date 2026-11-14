@@ -7,6 +7,9 @@ from pathlib import Path
 
 IGNORED_PARTS = {'.venv', '__pycache__', '.git', '.pytest_cache'}
 IGNORED_FILES = {'MANIFEST.json', '.prl-package.json'}
+DEVELOPMENT_DIRS = {'tests', 'evals', 'benchmarks', 'audit', 'tmp', 'output', 'outputs', 'promo', 'dist'}
+PALETTE_PUBLIC_FILES = {'index.html', 'palette-atlas.pdf', 'usage-examples.png',
+                        'usage-examples.pdf', 'usage-examples-caption.md', 'distillation-report.md'}
 
 
 def file_hash(path):
@@ -27,6 +30,24 @@ def write_manifest(root):
     return data
 
 
+def publication_errors(files):
+    """Reject development outputs even if somebody regenerates the manifest."""
+    errors = []
+    for name in files:
+        p = Path(name)
+        if set(p.parts) & DEVELOPMENT_DIRS or p.name.startswith('test_'):
+            errors.append('development-only file: ' + name)
+        if p.parts[0] == 'reports' and (len(p.parts) != 3 or
+                p.parts[1] != 'prl-colors-2025-2026' or p.name not in PALETTE_PUBLIC_FILES):
+            errors.append('non-public report: ' + name)
+        if p.parts[0] == 'subskills':
+            entry = len(p.parts) == 3 and p.name in {'SKILL.md', 'MANIFEST.json'}
+            metadata = len(p.parts) == 4 and p.parts[2:] == ('agents', 'openai.yaml')
+            if not (entry or metadata):
+                errors.append('duplicated subskill resource: ' + name)
+    return errors
+
+
 def verify(root):
     root = Path(root).resolve()
     errors = []
@@ -43,6 +64,8 @@ def verify(root):
             if not set(p.relative_to(root).parts) & IGNORED_PARTS and p.is_symlink():
                 errors.append('symlink: ' + p.relative_to(root).as_posix())
         actual = inventory(root)
+        if (root / 'install.py').is_file():
+            errors.extend(publication_errors(actual))
         errors.extend('missing: ' + name for name in sorted(expected.keys() - actual.keys()))
         errors.extend('changed: ' + name for name in sorted(expected.keys() & actual.keys())
                       if expected[name] != actual[name])

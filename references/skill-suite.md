@@ -27,3 +27,8 @@ after installation; file integrity alone does not prove discovery.
 All entrypoints share the [direct writing policy](assertive-writing.md),
 Times New Roman / SimSun defaults, inward ticks and separate explanatory captions.
 See [writing modes](v3-migration.md) for the optional legacy route.
+
+The source repository and download package store shared resources once at the
+root. `subskills/` contains the eight entrypoints and their agent metadata;
+use the root installer instead of copying a subskill directory by itself.
+The installer resolves resource links into independent installed skills.

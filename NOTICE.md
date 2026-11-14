@@ -17,8 +17,8 @@ the requested output requires them.
 ## Validation
 
 The distributed resources are checked for integrity, relocation, independent
-installation and core runtime behavior. The release verification report shipped
-beside the archives records the actual checks. Codex is the development host;
+installation and core runtime behavior. Development test suites and detailed
+test outputs remain outside the public package. Codex is the development host;
 Claude Code and OpenCode directory layouts are tested locally, without claiming
 that their agent models have completed the same workflow evaluations.
 
