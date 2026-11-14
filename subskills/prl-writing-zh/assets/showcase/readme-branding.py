@@ -1,4 +1,4 @@
-"""Build the README's native vector artwork and 600 dpi PNG display assets."""
+"""Build the four README statistic cards; preserve the model-generated cover."""
 from pathlib import Path
 import json
 import sys
@@ -18,7 +18,6 @@ FONT = FontProperties(fname=resolve_font('Times New Roman'))
 BASE = categorical('prl-081')
 BLUE, TEAL, ORANGE = BASE[0], BASE[2], BASE[3]
 PURPLE = categorical('prl-070')[0]
-NAVY = '#102747'
 
 
 def letters(text, x, y, size, color, center=False):
@@ -47,26 +46,6 @@ def save(name, width, height, body, title):
 
 
 def main():
-    body = f'''<defs>
-      <clipPath id="clip"><rect width="1440" height="430" rx="24"/></clipPath>
-    </defs><g clip-path="url(#clip)"><rect width="1440" height="430" fill="{NAVY}"/>
-    <rect width="480" height="7" fill="{BLUE}"/><rect x="480" width="480" height="7" fill="{TEAL}"/><rect x="960" width="480" height="7" fill="{ORANGE}"/>
-    <circle cx="1250" cy="200" r="275" fill="{TEAL}" opacity=".055"/>
-    <circle cx="1250" cy="200" r="202" fill="none" stroke="#ADC9DC" stroke-width="1" opacity=".13"/>
-    <circle cx="1250" cy="200" r="145" fill="none" stroke="#ADC9DC" stroke-width="1" opacity=".12"/>
-    <path d="M850 340 C1000 330 1000 65 1140 85 S1290 355 1450 200" fill="none" stroke="{BLUE}" stroke-width="9"/>
-    <path d="M850 355 C970 300 1050 370 1120 230 S1300 110 1460 125" fill="none" stroke="{TEAL}" stroke-width="7"/>
-    <path d="M875 370 C1030 370 1060 305 1170 310 S1330 220 1460 245" fill="none" stroke="{ORANGE}" stroke-width="7"/>
-    <circle cx="1140" cy="85" r="11" fill="{BLUE}" stroke="#E9F1F8" stroke-width="3"/>
-    <circle cx="1120" cy="230" r="10" fill="{TEAL}" stroke="#E9F1F8" stroke-width="3"/>
-    <circle cx="1170" cy="310" r="10" fill="{ORANGE}" stroke="#E9F1F8" stroke-width="3"/>
-    <rect x="76" y="91" width="70" height="5" rx="2" fill="{TEAL}"/>
-    <rect x="156" y="91" width="38" height="5" rx="2" fill="{ORANGE}"/>
-    {letters('PRL Style', 68, 241, 148, '#FFFFFF')}
-    {letters('Scientific figures. Bilingual writing.', 78, 309, 35, '#CDDFEA')}
-    <path d="M78 350 H710" stroke="#7893AD" opacity=".35"/>
-    </g>'''
-    save('readme-hero', 1440, 430, body, 'PRL Style — Scientific figures and bilingual writing')
     for name, value, label, color in [
         ('figures', '36', 'FIGURE TYPES', BLUE),
         ('palettes', '555', 'PALETTES', TEAL),
@@ -80,10 +59,9 @@ def main():
                 + letters(label, 155, 110, 20, '#FFFFFF', center=True))
         save('readme-stat-' + name, 310, 122, body, value + ' ' + label)
     (OUT / 'readme-branding.json').write_text(json.dumps({
-        'purpose': 'README branding; decorative curves do not encode research data',
+        'purpose': 'Four README statistic cards; the model-generated cover has separate provenance in readme-hero.json',
         'palette_ids': ['prl-081', 'prl-070'],
         'colors': {'figures': BLUE, 'palettes': TEAL, 'visual_papers': ORANGE, 'writing_papers': PURPLE},
-        'neutral_background': NAVY,
         'font': 'Times New Roman', 'svg_text': 'outlined paths; no font files bundled',
         'png_dpi': 600,
     }, indent=2) + '\n')

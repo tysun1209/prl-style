@@ -1,5 +1,5 @@
 {
-  "purpose": "README branding; decorative curves do not encode research data",
+  "purpose": "Four README statistic cards; the model-generated cover has separate provenance in readme-hero.json",
   "palette_ids": [
     "prl-081",
     "prl-070"
@@ -10,7 +10,6 @@
     "visual_papers": "#D45E00",
     "writing_papers": "#6A0CAC"
   },
-  "neutral_background": "#102747",
   "font": "Times New Roman",
   "svg_text": "outlined paths; no font files bundled",
   "png_dpi": 600
