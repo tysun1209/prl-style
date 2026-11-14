@@ -1,16 +1,28 @@
-# PRL Style
+<div align="center">
 
-面向支持 Agent Skills 的 AI 助手的科研绘图与中英文写作 skill。参考 *Physical Review Letters*（PRL）的图形表达和论文组织方式，帮助研究者把数据、图注与正文组织成清晰、紧凑的科学论证。
+<h1>PRL Style</h1>
 
-| **36 类图型** | **555 组配色** | **100 篇 PRL 写作参考** | **中英文写作** |
+<p><strong>让图更清晰，让论证更有力。</strong></p>
+
+<p>为你的 AI agent 配备一套 PRL 风格的科研表达工具。<br>
+从数据绘图、科学示意，到中英文写作、图注与审校。</p>
+
+<p>可接入 <code>Codex</code> · <code>Claude Code</code> · <code>OpenCode</code> · <code>DeepSeek Harness</code></p>
+
+<p>
+  <a href="#一句话安装"><strong>一句话安装</strong></a> &nbsp;·&nbsp;
+  <a href="#效果预览">看看效果</a> &nbsp;·&nbsp;
+  <a href="https://github.com/tysun1209/prl-style/releases/latest">下载最新版</a> &nbsp;·&nbsp;
+  <a href="#怎么使用">使用示例</a>
+</p>
+
+</div>
+
+| **36 类图型** | **555 组配色** | **291 篇图形参考** | **100 篇写作参考** |
 | :---: | :---: | :---: | :---: |
-| 曲线、统计图、场图与组图 | 按数据含义选择，附文献来源 | 粒子运动、活性粒子与强化学习 | 起草、润色、翻译与图注 |
+| 数据图、场图与多面板组合 | 按数据含义选色，附文献来源 | 1,022 幅图件的构图与用色观察 | 英文表达与中文写作规则 |
 
-**[下载最新版](https://github.com/tysun1209/prl-style/releases/latest)** · [一句话安装](#一句话安装) · [效果预览](#效果预览) · [手动安装](#安装与接入) · [使用示例](#怎么使用)
-
-核心由 `SKILL.md`、参考资料、模板和 Python 脚本组成，可用于 Codex，也可接入 Claude Code、OpenCode、DeepSeek Harness 等支持该格式的 agent。目前工作流主要在 Codex 中验证，其他 agent 的完整执行效果尚未实测。
-
-当前默认版本见 [VERSION](VERSION)。更新后继续使用 `$prl-style` 或原来的子 skill 名称，即可应用最新规则，无需添加“新版”提示词。采用源项目安装的用户，更新源项目后重新运行两条安装命令以刷新入口；独立发布包安装的用户，使用新包再次运行安装命令。
+PRL Style 从 *Physical Review Letters* 的真实论文中提炼绘图细节、配色与文章组织方式，将它们整理为 agent 可调用的规则、模板和脚本。交给它数据、草稿或研究思路，即可协助完成从图到文的表达：调整布局与图例，制作 Fig. 1，打磨中英文论证，并核对图件、图注与正文的一致性。
 
 ## 一句话安装
 
@@ -82,6 +94,10 @@
 **写作参考库收录 100 篇 PRL 论文**，聚焦粒子运动、活性粒子和强化学习相关研究。写作强调明确的物理问题、紧凑的证据链和直接的结果表达；精简重复铺垫与空泛限定，同时保留实际适用条件和不确定性。
 
 ## 安装与接入
+
+支持 Codex、Claude Code、OpenCode、DeepSeek Harness 等采用 Agent Skills 的助手。目前完整工作流主要在 Codex 中验证，其他 agent 已验证安装目录与脚本运行，完整交互流程尚未实测。
+
+当前版本见 [VERSION](VERSION)。更新时，使用新发布包再次运行同一安装命令；继续使用 `$prl-style` 或原来的子 skill 名称。
 
 解压发布包，在包含 `install.py` 的目录运行以下任一命令（Python 3.10+）：
 

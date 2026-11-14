@@ -2,7 +2,7 @@
   "schema": "prl-distribution-manifest-1",
   "files": {
     "NOTICE.md": "1d697dc0167f269c923b9a906436d4bb78d575ece0c61f349c505ec173416059",
-    "README.md": "7b0eaa3a00903a6aa82b9482e91058b7827c657969724c8c144accd5c79297b1",
+    "README.md": "05e79615f24c21830ca58d8953a9421e7c79d85753cba6070f8f9af468f950ad",
     "SKILL.md": "6d8bd3a066411fa4dcdbdf6d37d27f5e8b0b784c24980f48e6baee8f7598cb0f",
     "VERSION": "ecd823f238b3f0124caa8003554224000108d2ffa77d382d0eb873cab120672a",
     "agents/openai.yaml": "5516dc88c8c56d5fd26e7570249f73c2d783e2ee096b4c40f28c857dc64eebd3",
