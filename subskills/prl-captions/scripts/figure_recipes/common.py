@@ -1,8 +1,7 @@
 """Original demonstrations only; adapt data and scientific definitions explicitly."""
 from dataclasses import dataclass,field
 import numpy as np
-from prl_figure import new_figure,DEFAULTS
-C=DEFAULTS['colors']
+from prl_figure import new_figure
 
 @dataclass
 class Example:
@@ -10,6 +9,7 @@ class Example:
     caption: str
     data: dict=field(default_factory=dict)
     transformations: list=field(default_factory=list)
+    palettes: list=field(default_factory=list)
 
 def single(width=85,height=70):return new_figure(width,height)
 def labels(ax,x='Control (a.u.)',y='Response (a.u.)'):ax.set(xlabel=x,ylabel=y)

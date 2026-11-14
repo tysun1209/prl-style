@@ -1,11 +1,12 @@
 """Comparison and scaling recipes; no fitted scientific result is asserted."""
 import numpy as np
-from .common import Example,single,labels,panel,C
+from .common import Example,single,labels,panel
 from prl_figure import default_colormap,new_figure
 
 NAMES={'line_comparison','scatter','uncertainty_bars','uncertainty_band','residuals','parity','parameter_sweep','log_scaling','finite_size_collapse'}
 
-def build(name,rng):
+def build(name,rng,*,colors):
+    C=colors
     x=np.linspace(0,4,16);reference=np.exp(-x);observed=reference+.035*np.sin(3*x)
     if name=='residuals':
         fig,axs=new_figure(110,105,nrows=2)

@@ -1,6 +1,7 @@
 #!/usr/bin/env python3
 """Reproducible local style and fixed-size scientific figure exports."""
 from contextlib import contextmanager
+from contextvars import ContextVar
 import csv
 from io import BytesIO
 import json
@@ -14,13 +15,42 @@ import numpy as np
 from PIL import Image
 from corpus_lib import write_json,sha256
 from typography import resolve_font,check_figure_fonts
-from prl_palette import categorical, colormap, get_palette
+from prl_palette import categorical
+from palette_selection import select_palette, plan_colormap, family_rule
 
 ROOT=Path(__file__).resolve().parents[1]
 DEFAULTS=json.loads((ROOT/'profiles/figure-defaults.json').read_text())
-# Compatibility for family recipes: colors are resolved from the real catalog.
+# Legacy explicit-palette compatibility; new renderers use choose_colors().
 DEFAULTS['colors']=categorical(DEFAULTS['categorical_palette'])
 SUPPORTED_FORMATS=('png','pdf','eps','svg','jpg','tiff')
+_PALETTE_STATE = ContextVar('prl_palette_state', default=None)
+
+
+@contextmanager
+def palette_context(family=None, *, palette_id=None, colors=None):
+    """Scope family selection and provenance; inherit only explicit overrides."""
+    parent = _PALETTE_STATE.get() or {}
+    if palette_id is not None or colors is not None:
+        override = {'palette_id': palette_id, 'colors': colors}
+    else:
+        override = parent.get('override', {})
+    state = {'family': family or parent.get('family'), 'override': override, 'records': []}
+    token = _PALETTE_STATE.set(state)
+    try:
+        yield state['records']
+    finally:
+        _PALETTE_STATE.reset(token)
+
+
+def choose_colors(family=None, *, role='categorical', **kwargs):
+    state = _PALETTE_STATE.get() or {}
+    family = family or state.get('family')
+    if role == 'categorical' and not any(kwargs.get(k) is not None for k in ('palette_id','colors')):
+        kwargs.update(state.get('override', {}))
+    plan = select_palette(family, role=role, **kwargs)
+    if 'records' in state and plan not in state['records']:
+        state['records'].append(plan)
+    return plan
 
 
 def resolve_export_options(formats=None,dpi=None):
@@ -36,13 +66,14 @@ def resolve_export_options(formats=None,dpi=None):
     return formats,dpi
 
 
-def default_colormap(role='sequential'):
-    if role not in ('sequential', 'diverging'):
-        raise ValueError('role must be sequential or diverging')
-    return colormap(DEFAULTS[role+'_palette'])
+def default_colormap(role='sequential', *, family=None, mark=None, palette_id=None):
+    if role not in ('sequential', 'diverging', 'cyclic', 'multihue'):
+        raise ValueError('role must describe a continuous encoding')
+    return plan_colormap(choose_colors(family, role=role, mark=mark, palette_id=palette_id))
 
 @contextmanager
-def figure_context(profile=None, width_mm=None, *, palette_id=None):
+def figure_context(profile=None, width_mm=None, *, palette_id=None, colors=None,
+                   family=None, n_colors=None, objects=None):
     profile=profile or DEFAULTS['default_font_profile']
     if profile not in DEFAULTS['font_profiles']:raise ValueError('profile must be times, sans or serif')
     font=DEFAULTS['font_profiles'][profile]
@@ -50,20 +81,24 @@ def figure_context(profile=None, width_mm=None, *, palette_id=None):
     families=[font['family']]
     if font.get('cjk_family') and resolve_font(font['cjk_family'],required=False):
         families.append(font['cjk_family'])
-    palette_id=palette_id or DEFAULTS['categorical_palette']
-    colors=categorical(palette_id)
-    palette=get_palette(palette_id)
-    with mpl.rc_context(fname=ROOT/'assets/styles/prl.mplstyle'):
+    with palette_context(family, palette_id=palette_id, colors=colors), mpl.rc_context(fname=ROOT/'assets/styles/prl.mplstyle'):
+        mark = family_rule(family)['mark']
+        if mark not in {'line','point','fill'}: mark = 'line'
+        if n_colors is None and objects is None and not _PALETTE_STATE.get()['override']:
+            n_colors = 5
+        plan = choose_colors(family, role='categorical', n_colors=n_colors, objects=objects, mark=mark)
         mpl.rcParams.update({'font.family':families,'mathtext.fontset':font['mathtext'],
-            'axes.prop_cycle':cycler(color=colors)})
-        yield {'palette_id':palette_id, 'colors':colors,
-               'source_dois':sorted({s['doi'] for s in palette['sources']})}
+            'axes.prop_cycle':cycler(color=plan['colors'])})
+        yield plan
 
 
 def new_figure(width_mm=85,height_mm=65,nrows=1,ncols=1,**kwargs):
     if not np.isfinite([width_mm,height_mm]).all() or min(width_mm,height_mm)<=0:raise ValueError('positive finite dimensions required')
     kwargs.setdefault('layout','constrained')
-    return plt.subplots(nrows,ncols,figsize=(width_mm/25.4,height_mm/25.4),**kwargs)
+    fig,axes=plt.subplots(nrows,ncols,figsize=(width_mm/25.4,height_mm/25.4),**kwargs)
+    state = _PALETTE_STATE.get()
+    if state is not None: fig._prl_palette_plans = state['records']
+    return fig,axes
 
 
 def read_xy_csv(path):
@@ -88,6 +123,9 @@ def export_figure(fig,output_stem,provenance,*,formats=None,dpi=None,grayscale=F
     from inspect_figure import inspect_artists,inspect_pdf
     from quantity_audit import collect_labels
     formats,dpi=resolve_export_options(formats,dpi)
+    provenance = dict(provenance)
+    if getattr(fig, '_prl_palette_plans', None):
+        provenance['palette_selections'] = fig._prl_palette_plans
     font_paths=check_figure_fonts(fig)
     stem=Path(output_stem);stem.parent.mkdir(parents=True,exist_ok=True)
     artifacts={}
@@ -103,6 +141,20 @@ def export_figure(fig,output_stem,provenance,*,formats=None,dpi=None,grayscale=F
                 break
             previous=positions
         artist_report=inspect_artists(fig)
+        encodings=[]
+        for index,ax in enumerate(fig.axes):
+            if getattr(ax,'_colorbar',None) is not None:continue
+            for artist in [*ax.images,*ax.collections]:
+                if artist.get_array() is None:continue
+                norm=artist.norm
+                item={'axes_index':index,'artist':type(artist).__name__,
+                      'colormap':artist.cmap.name,'normalization':type(norm).__name__,
+                      'vmin':float(norm.vmin) if norm.vmin is not None else None,
+                      'vmax':float(norm.vmax) if norm.vmax is not None else None}
+                if hasattr(norm,'vcenter'):item['center']=float(norm.vcenter)
+                if hasattr(norm,'boundaries'):item['boundaries']=np.asarray(norm.boundaries).tolist()
+                encodings.append(item)
+        provenance['color_encodings']=encodings
         for fmt in formats:
             path=stem.with_suffix('.'+fmt)
             options={'metadata':{'Creator':'prl-style','CreationDate':None,'ModDate':None}} if fmt=='pdf' else {}

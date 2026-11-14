@@ -72,8 +72,21 @@ def main():
     parser.add_argument("--query")
     parser.add_argument("--min-colors", type=int, default=2)
     parser.add_argument("--catalog", type=Path, default=CATALOG)
+    parser.add_argument('--recommend', action='store_true', help='Choose by color meaning, family and mark visibility')
+    parser.add_argument('--family', help='Figure family; physical role takes precedence')
+    parser.add_argument('--n-colors', type=int)
+    parser.add_argument('--mark', choices=['line','point','fill','field','ordered_lines'])
+    parser.add_argument('--background', default='#FFFFFF')
     args = parser.parse_args()
-    result = get_palette(args.palette_id, args.catalog) if args.palette_id else [
+    if args.recommend:
+        from palette_selection import select_palette
+        result = select_palette(args.family, role=args.kind, n_colors=args.n_colors,
+                                mark=args.mark, background=args.background,
+                                palette_id=args.palette_id, path=args.catalog)
+    else:
+        if args.family or args.n_colors or args.mark:
+            parser.error('--family, --n-colors and --mark require --recommend')
+        result = get_palette(args.palette_id, args.catalog) if args.palette_id else [
         {k: r[k] for k in ("id", "name_zh", "kind", "colors", "uses")}
         for r in find_palettes(args.kind, args.query, args.min_colors, args.catalog)]
     print(json.dumps(result, ensure_ascii=False, indent=2))

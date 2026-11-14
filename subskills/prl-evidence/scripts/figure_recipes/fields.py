@@ -2,14 +2,15 @@
 import numpy as np
 import matplotlib.pyplot as plt
 from matplotlib.colors import ListedColormap,BoundaryNorm
-from .common import Example,single,labels,C
+from .common import Example,single,labels
 from prl_figure import default_colormap
 NAMES={'phase_discrete','phase_continuous','heatmap','contours','correlation_matrix','image_scalebar','vector_field','streamlines','space_time','trajectory','phase_portrait','surface_3d','raster_events'}
 
-def build(name,rng):
+def build(name,rng,*,colors):
+    C=colors
     x=np.linspace(-2,2,51);X,Y=np.meshgrid(x,x);Z=np.sin(X)*np.cos(Y)
     if name=='surface_3d':
-        fig=plt.figure(figsize=(140/25.4,105/25.4),layout='constrained');ax=fig.add_subplot(projection='3d');ax.plot_surface(X,Y,Z,cmap=default_colormap('sequential'),linewidth=0,rasterized=True);ax.set(xlabel='x (a.u.)',ylabel='y (a.u.)',zlabel='Field (a.u.)');ax.view_init(elev=28,azim=-55)
+        fig=plt.figure(figsize=(140/25.4,105/25.4),layout='constrained');ax=fig.add_subplot(projection='3d');ax.plot_surface(X,Y,Z,cmap=default_colormap('diverging'),vmin=-1,vmax=1,linewidth=0,rasterized=True);ax.set(xlabel='x (a.u.)',ylabel='y (a.u.)',zlabel='Field (a.u.)');ax.view_init(elev=28,azim=-55)
         return Example(fig,'Perspective of a prescribed scalar field. Height and color encode the same field; inspect a map or alternate view if occlusion hides a decisive feature.',dict(x=x,y=x,field=Z))
     fig,ax=single(width=100 if name in ['vector_field','streamlines','correlation_matrix'] else 85,height=80)
     if name in ['phase_discrete','phase_continuous','heatmap']:
@@ -26,7 +27,13 @@ def build(name,rng):
         return Example(fig,'Pearson correlations of four synthetic variables across 150 samples. Colors describe estimates, not significance tests or causal relations.',dict(samples=values,correlation=matrix),['Pearson sample correlation'])
     if name=='image_scalebar':
         half_pixel=(x[1]-x[0])/2
-        z=np.exp(-((X-.5)**2+(Y+.3)**2));ax.imshow(z,extent=(x[0]-half_pixel,x[-1]+half_pixel,x[0]-half_pixel,x[-1]+half_pixel),origin='lower',cmap=default_colormap('sequential'),vmin=0,vmax=1);ax.plot([-1.65,-.65],[-1.55,-1.55],color='white',lw=2,solid_capstyle='butt');ax.text(-1.15,-1.35,'1 mm',color='white',ha='center');labels(ax,'x (mm)','y (mm)');caption='Synthetic image with assigned spatial calibration. Saved coordinates locate pixel centers, with outer edges half a pixel beyond. White bar spans exactly 1 mm in the declared coordinates; no experimental microscopy or measured calibration is implied.'
+        z=np.exp(-((X-.5)**2+(Y+.3)**2));cmap=default_colormap('sequential')
+        # Choose the scale bar contrast against its actual local image colors.
+        region=z[(X>=-1.65)&(X<=-.65)&(Y>=-1.65)&(Y<=-1.2)]
+        rgb=cmap(region)[:,:3];linear=np.where(rgb<=.04045,rgb/12.92,((rgb+.055)/1.055)**2.4)
+        light=linear@np.array([.2126,.7152,.0722])
+        bar_color='black' if np.min((light+.05)/.05)>np.min(1.05/(light+.05)) else 'white'
+        ax.imshow(z,extent=(x[0]-half_pixel,x[-1]+half_pixel,x[0]-half_pixel,x[-1]+half_pixel),origin='lower',cmap=cmap,vmin=0,vmax=1);ax.plot([-1.65,-.65],[-1.55,-1.55],color=bar_color,lw=2,solid_capstyle='butt');ax.text(-1.15,-1.35,'1 mm',color=bar_color,ha='center');labels(ax,'x (mm)','y (mm)');caption='Synthetic image with assigned spatial calibration. Saved coordinates locate pixel centers, with outer edges half a pixel beyond. The contrasting bar spans exactly 1 mm in the declared coordinates; no experimental microscopy or measured calibration is implied.'
         return Example(fig,caption,dict(x_mm=x,y_mm=x,intensity=z,scale_bar_mm=np.array([1.])))
     if name in ['vector_field','streamlines']:
         xx=np.linspace(-2,2,13);xxg,yyg=np.meshgrid(xx,xx);u=-yyg;v=xxg

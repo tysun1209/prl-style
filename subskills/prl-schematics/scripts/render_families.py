@@ -22,7 +22,7 @@ def render(names,out,grayscale=False,seed=20261016,*,formats=None,dpi=None):
         if name not in catalog or name not in implemented():raise ValueError('unimplemented family: '+name)
         with figure_context():
             example=build(name,seed);data_path=out/(name+'.npz');np.savez(data_path,**example.data)
-            provenance={'data_kind':'original_synthetic_demonstration','family':name,'seed':seed,'data_file':data_path.name,'data_sha256':sha256(data_path),'transformations':example.transformations,'scientific_claim':'No empirical finding; layout demonstration only.','caption':example.caption,
+            provenance={'data_kind':'original_synthetic_demonstration','family':name,'seed':seed,'data_file':data_path.name,'data_sha256':sha256(data_path),'transformations':example.transformations,'palette_selections':example.palettes,'scientific_claim':'No empirical finding; layout demonstration only.','caption':example.caption,
                         'recipe_source_sha256':{str(p.relative_to(ROOT)):sha256(p) for p in sorted((ROOT/'scripts/figure_recipes').glob('*.py'))}}
             report=export_figure(example.figure,out/name,provenance,grayscale=grayscale,formats=formats,dpi=dpi);plt.close(example.figure)
         (out/(name+'.caption.txt')).write_text('SYNTHETIC DEMONSTRATION. '+example.caption+'\n')

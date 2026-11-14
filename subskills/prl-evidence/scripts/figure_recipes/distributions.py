@@ -1,15 +1,20 @@
 """Distribution summaries with explicit normalization and estimator choices."""
 import numpy as np
-from .common import Example,single,labels,C,panel
+from .common import Example,single,labels,panel
 from prl_figure import default_colormap,new_figure
 NAMES={'histogram','ecdf','box_violin','joint_density','survival','polar'}
 
-def build(name,rng):
+def build(name,rng,*,colors):
+    C=colors
     samples=rng.normal(size=400)
     if name=='box_violin':
         fig,axs=new_figure(178,78,ncols=2);groups=[rng.normal(i*.35, .65, size=80) for i in range(3)]
-        axs[0].boxplot(groups,whis=1.5,flierprops={'marker':'o','markersize':3.2},boxprops={'linewidth':.8},medianprops={'linewidth':1},whiskerprops={'linewidth':.8},capprops={'linewidth':.8})
-        axs[1].violinplot(groups,showmeans=False,showmedians=True,bw_method=.3)
+        boxes=axs[0].boxplot(groups,whis=1.5,patch_artist=True,flierprops={'marker':'o','markersize':3.2},boxprops={'linewidth':.8},medianprops={'linewidth':1,'color':'0.15'},whiskerprops={'linewidth':.8},capprops={'linewidth':.8})
+        violins=axs[1].violinplot(groups,showmeans=False,showmedians=True,bw_method=.3)
+        for patch,body,color in zip(boxes['boxes'],violins['bodies'],C):
+            patch.set(facecolor=color,edgecolor='0.25')
+            body.set(facecolor=color,edgecolor='0.25',alpha=1,linewidth=.8)
+        for key in ['cmedians','cbars','cmins','cmaxes']:violins[key].set_color('0.25')
         for ax,l in zip(axs,['(a)','(b)']):ax.set_xticks([1,2,3],['A','B','C']);labels(ax,'Group','Value (a.u.)');panel(ax,l)
         return Example(fig,'Three constructed groups, 80 samples each. (a) Median, quartiles, and whiskers reaching the most extreme samples within 1.5 IQR; points beyond are retained. (b) Gaussian-kernel violin estimates with bandwidth factor 0.3; horizontal central marks show medians, and vertical lines with end caps span each full sample minimum–maximum range.',dict(samples=np.array(groups)),['quartiles; 1.5 IQR whisker rule','Gaussian kernel with bandwidth factor 0.3; full sample min–max extent'])
     if name=='polar':

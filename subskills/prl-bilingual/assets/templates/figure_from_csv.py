@@ -21,7 +21,8 @@ from prl_figure import figure_context,new_figure,read_xy_csv,export_figure
 from corpus_lib import sha256
 values=read_xy_csv(a.csv)
 if values.shape[1]==3 and not a.uncertainty_description:p.error('yerr needs --uncertainty-description stating what the bars represent')
-with figure_context(a.font,palette_id=a.palette) as palette_info:
+family='uncertainty_bars' if values.shape[1]==3 else 'scatter'
+with figure_context(a.font,palette_id=a.palette,family=family,objects=['samples']) as palette_info:
     fig,ax=new_figure(a.width_mm,a.height_mm)
     if values.shape[1]==3:ax.errorbar(values[:,0],values[:,1],yerr=values[:,2],fmt='o',capsize=2,elinewidth=.65)
     else:ax.plot(values[:,0],values[:,1],'o',ms=4)

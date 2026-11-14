@@ -1,0 +1,151 @@
+{
+  "schema_version": 1,
+  "classification": "local_design_heuristics",
+  "scope": "Color role overrides figure-family suggestions. No inference from the sign of numbers or the word phase. Source-family matches are supporting precedents, not frequency estimates.",
+  "families": {
+    "box_violin": {
+      "role": "categorical",
+      "mark": "fill"
+    },
+    "contours": {
+      "role": "categorical",
+      "mark": "line"
+    },
+    "correlation_matrix": {
+      "role": "diverging",
+      "mark": "field"
+    },
+    "dispersion": {
+      "role": "categorical",
+      "mark": "line"
+    },
+    "ecdf": {
+      "role": "categorical",
+      "mark": "line"
+    },
+    "energy_levels": {
+      "role": "categorical",
+      "mark": "line"
+    },
+    "finite_size_collapse": {
+      "role": "categorical",
+      "mark": "line"
+    },
+    "heatmap": {
+      "role": "sequential",
+      "mark": "field"
+    },
+    "histogram": {
+      "role": "categorical",
+      "mark": "fill"
+    },
+    "image_scalebar": {
+      "role": "sequential",
+      "mark": "field"
+    },
+    "inset_zoom": {
+      "role": "categorical",
+      "mark": "line"
+    },
+    "joint_density": {
+      "role": "sequential",
+      "mark": "field"
+    },
+    "line_comparison": {
+      "role": "categorical",
+      "mark": "line"
+    },
+    "log_scaling": {
+      "role": "categorical",
+      "mark": "line"
+    },
+    "multipanel": {
+      "role": "categorical",
+      "mark": "line"
+    },
+    "network": {
+      "role": "categorical",
+      "mark": "point"
+    },
+    "parameter_sweep": {
+      "role": "sequential",
+      "mark": "ordered_lines"
+    },
+    "parity": {
+      "role": "categorical",
+      "mark": "point"
+    },
+    "phase_continuous": {
+      "role": "sequential",
+      "mark": "field"
+    },
+    "phase_discrete": {
+      "role": "categorical",
+      "mark": "fill"
+    },
+    "phase_portrait": {
+      "role": "categorical",
+      "mark": "line"
+    },
+    "polar": {
+      "role": "categorical",
+      "mark": "line"
+    },
+    "raster_events": {
+      "role": "categorical",
+      "mark": "line"
+    },
+    "residuals": {
+      "role": "categorical",
+      "mark": "line"
+    },
+    "scatter": {
+      "role": "categorical",
+      "mark": "point"
+    },
+    "schematic": {
+      "role": "categorical",
+      "mark": "fill"
+    },
+    "space_time": {
+      "role": "sequential",
+      "mark": "field"
+    },
+    "spectrum": {
+      "role": "categorical",
+      "mark": "line"
+    },
+    "streamlines": {
+      "role": "sequential",
+      "mark": "ordered_lines"
+    },
+    "surface_3d": {
+      "role": "sequential",
+      "mark": "field"
+    },
+    "survival": {
+      "role": "categorical",
+      "mark": "line"
+    },
+    "trajectory": {
+      "role": "categorical",
+      "mark": "line"
+    },
+    "uncertainty_band": {
+      "role": "categorical",
+      "mark": "line"
+    },
+    "uncertainty_bars": {
+      "role": "categorical",
+      "mark": "line"
+    },
+    "vector_field": {
+      "role": "categorical",
+      "mark": "line"
+    },
+    "wide_narrow": {
+      "role": "categorical",
+      "mark": "line"
+    }
+  }
+}

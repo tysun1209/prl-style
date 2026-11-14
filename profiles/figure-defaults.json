@@ -1,20 +1,47 @@
 {
   "classification": "local_default",
-  "export_formats": ["png"],
+  "export_formats": [
+    "png"
+  ],
   "export_dpi": 600,
   "single_width_mm": 85,
   "wide_width_mm": 178,
   "wide_width_note": "Working preview width; replace with the actual document text width.",
   "default_font_profile": "times",
   "font_profiles": {
-    "times": {"family": "Times New Roman", "cjk_family": "SimSun", "mathtext": "custom"},
-    "sans": {"family": "DejaVu Sans", "mathtext": "dejavusans"},
-    "serif": {"family": "Nimbus Roman", "mathtext": "stix"}
+    "times": {
+      "family": "Times New Roman",
+      "cjk_family": "SimSun",
+      "mathtext": "custom"
+    },
+    "sans": {
+      "family": "DejaVu Sans",
+      "mathtext": "dejavusans"
+    },
+    "serif": {
+      "family": "Nimbus Roman",
+      "mathtext": "stix"
+    }
   },
   "categorical_palette": "prl-070",
   "sequential_palette": "prl-017",
   "diverging_palette": "prl-110",
-  "markers": ["o", "s", "^", "D", "v"],
-  "line_styles": ["-", "--", "-.", ":", "-"],
-  "note": "No universal PRL palette or typeface is claimed. Continuous parameter sweeps may use a colorbar; meaningful categories require redundant coding."
+  "markers": [
+    "o",
+    "s",
+    "^",
+    "D",
+    "v"
+  ],
+  "line_styles": [
+    "-",
+    "--",
+    "-.",
+    ":",
+    "-"
+  ],
+  "note": "No universal PRL palette or typeface is claimed. Continuous parameter sweeps may use a colorbar; meaningful categories require redundant coding.",
+  "palette_selection": "automatic_by_role_family_and_mark",
+  "palette_rules": "palette-selection.json",
+  "legacy_palette_note": "Named palettes remain explicit compatibility examples; ordinary rendering uses palette_selection.select_palette."
 }

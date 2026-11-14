@@ -1,11 +1,12 @@
 """Spectra, structures and layouts with explicit scientific roles."""
 import numpy as np
 from matplotlib.patches import Circle,FancyArrowPatch
-from .common import Example,single,labels,panel,C
+from .common import Example,single,labels,panel
 from prl_figure import new_figure
 NAMES={'spectrum','dispersion','energy_levels','network','schematic','inset_zoom','multipanel','wide_narrow'}
 
-def build(name,rng):
+def build(name,rng,*,colors):
+    C=colors
     if name in ['multipanel','wide_narrow']:
         if name=='multipanel':fig,axes=new_figure(178,130,nrows=2,ncols=2);axs=list(axes.flat)
         else:
