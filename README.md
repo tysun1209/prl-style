@@ -1,6 +1,6 @@
 <div align="center">
 
-<h1>PRL Style</h1>
+<p><img src="assets/showcase/readme-hero.png" width="1440" alt="PRL Style — 科研绘图与中英文写作"></p>
 
 <p><strong>让图更清晰，让论证更有力。</strong></p>
 
@@ -18,7 +18,7 @@
 
 </div>
 
-| **36 类图型** | **555 组配色** | **291 篇图形参考** | **100 篇写作参考** |
+| <img src="assets/showcase/readme-stat-figures.png" width="180" alt="36 类图型"> | <img src="assets/showcase/readme-stat-palettes.png" width="180" alt="555 组配色"> | <img src="assets/showcase/readme-stat-visual-papers.png" width="180" alt="291 篇图形参考"> | <img src="assets/showcase/readme-stat-writing-papers.png" width="180" alt="100 篇写作参考"> |
 | :---: | :---: | :---: | :---: |
 | 数据图、场图与多面板组合 | 按数据含义选色，附文献来源 | 1,022 幅图件的构图与用色观察 | 英文表达与中文写作规则 |
 

@@ -1,0 +1,17 @@
+{
+  "purpose": "README branding; decorative curves do not encode research data",
+  "palette_ids": [
+    "prl-081",
+    "prl-070"
+  ],
+  "colors": {
+    "figures": "#005A9F",
+    "palettes": "#019E72",
+    "visual_papers": "#D45E00",
+    "writing_papers": "#6A0CAC"
+  },
+  "neutral_background": "#102747",
+  "font": "Times New Roman",
+  "svg_text": "outlined paths; no font files bundled",
+  "png_dpi": 600
+}
