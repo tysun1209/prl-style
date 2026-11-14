@@ -26,11 +26,11 @@ PRL Style 从 *Physical Review Letters* 的真实论文中提炼绘图、配色�
 
 ## 效果预览
 
-### 同一批数据，使用前后
+### 相同数据，使用前后
 
-下面展示直方图、箱线图、热图与离散相图。左右使用相同数据和基础任务提示，完整原图按相同显示宽度呈现，原始物理尺寸标在图中。重点观察字体、图例、配色、留白和坐标轴的变化。
+下面展示直方图、箱线图、热图、离散相图、曲线图和分组散点图。左侧为没用 skill，右侧为用了 skill，各按三行两列排列，对应位置使用相同数据和基础任务提示，完整原图按相同显示宽度呈现。前四类来自原有测试，曲线图和散点图补充 NOAA 和 Palmer Penguins 公开数据。重点观察字体、图例、配色、留白和坐标轴的变化。
 
-[![没用 skill 与用了 PRL Style 的四类图型对比](assets/showcase/skill-comparison.png)](assets/showcase/skill-comparison.png)
+[![没用 skill 与用了 PRL Style 的六类图型对比](assets/showcase/skill-comparison.png)](assets/showcase/skill-comparison.png)
 
 ### 从 PRL 图件中提取的配色
 
